@@ -54,7 +54,7 @@ class Word {
     //Determine if mouse is hovereing the word width
     if (d < wordWidth) {
       //Word hover - print "DRAG WORD"
-      print("DRAG WORD");
+      // print("DRAG WORD");
 
       // Word drag
       if (mouseIsPressed) {
@@ -62,11 +62,11 @@ class Word {
         this.y = mouseY;
         this.r = 254;
         this.g = 241;
-        this.b = 2;     
+        this.b = 2;
       } else {
         this.r = 216;
         this.g = 216;
-        this.b = 216;    
+        this.b = 216;
       }
     }
 
@@ -77,7 +77,7 @@ class Word {
   kill() {
     //Delete words after a while - for now print DELETE WORD
     if (this.x > width + this.size) {
-      print("DELETE WORD")
+      // print("DELETE WORD")
     };
 
   }

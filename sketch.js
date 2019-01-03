@@ -1,20 +1,17 @@
-//Source words 
+//Source words
 var json = ["unicorn", "purple", "love", "heart"];
 
-//Array of words in the words system 
+//Array of words in the words system
 var words = [];
-
+var btn = new inspectionBtn()
 
 
 
 function setup() {
-  createCanvas(360, 640);
-
-
+  createCanvas(canvasSize.width, canvasSize.height);
+  frameRate(60)
 
 }
-
-
 
 function draw() {
   background(26, 24, 25);
@@ -43,6 +40,8 @@ function draw() {
       words[i].drag();
       words[i].kill();
     }
+
+    btn.show()
 
     timer = 0;
   }
