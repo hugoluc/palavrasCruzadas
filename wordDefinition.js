@@ -1,4 +1,4 @@
-//btn.nextPage(definitionPage.init,jsonExample.pitanga)
+//btn.nextPage(() => { definitionPage.init(jsonExample.pitanga) } )
 
 function wordDefinition(){
 
