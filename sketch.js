@@ -3,9 +3,6 @@ var json = ["unicorn", "purple", "love", "heart"];
 
 //Array of words in the words system
 var words = [];
-var btn = new inspectionBtn()
-
-
 
 function setup() {
   createCanvas(canvasSize.width, canvasSize.height);

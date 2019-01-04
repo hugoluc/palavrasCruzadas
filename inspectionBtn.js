@@ -23,7 +23,11 @@ function inspectionBtn(){
 
 }
 
-inspectionBtn.prototype.nextPage = function(){
+inspectionBtn.prototype.nextPage = function(_callBack,_data){
+
+    this.callBack = _callBack
+
+    console.log(this.callBack);
 
     this.transtitionNextPage = true
     this.speed = 1
@@ -34,6 +38,7 @@ inspectionBtn.prototype.nextPage = function(){
       x : false,
       y : false,
     }
+
 }
 
 inspectionBtn.prototype.dislayNextPage = function(){
@@ -56,6 +61,7 @@ inspectionBtn.prototype.dislayNextPage = function(){
     this.transtitionsDone.width = true
   }
 
+  //transition y position
   if(this.position.y > 0 ){
       this.position.y = this.position.y - this.speed -  this.acceleration
   }else{
@@ -63,6 +69,7 @@ inspectionBtn.prototype.dislayNextPage = function(){
     this.transtitionsDone.y = true
   }
 
+  //transition x position
   if(this.position.x > 0 ){
       this.position.x = this.position.x - this.speed -  this.acceleration
   }else{
@@ -70,6 +77,7 @@ inspectionBtn.prototype.dislayNextPage = function(){
     this.transtitionsDone.x = true
   }
 
+  //transition alpha
     if(this.alpha < 1){
       this.alpha = this.alpha + 0.08
       if(this.alpha > 0.8){
@@ -77,6 +85,11 @@ inspectionBtn.prototype.dislayNextPage = function(){
     }
   }
 
+  //stop transition when finished and call callback function to change to next page
+  if(this.transtitionsDone.x && this.transtitionsDone.y && this.transtitionsDone.height && this.transtitionsDone.width){
+    this.transtitionNextPage = false
+    this.callBack()
+  }
 
 }
 
@@ -132,15 +145,17 @@ inspectionBtn.prototype.show = function(){
   rect(this.position.x, this.position.y,this.size.width, this.size.height)
   noStroke()
 
-  //display fill
-  fill( "rgba(" + this.yellow[0] + "," + this.yellow[1] + "," + this.yellow[2] + "," + this.alpha + ")")
-  rect(this.position.x, this.position.y,this.size.width, this.size.height)
-  noStroke()
-
   //display text
   textSize(this.text.size);
   fill(this.text.color[0],this.text.color[1],this.text.color[2])
   textAlign(CENTER)
   text(this.text.string, canvasSize.width/2, this.position.y + this.size.height/2 + (this.text.size/4));
+
+  //display fill
+  fill( "rgba(" + this.yellow[0] + "," + this.yellow[1] + "," + this.yellow[2] + "," + this.alpha + ")")
+  rect(this.position.x, this.position.y,this.size.width, this.size.height)
+  noStroke()
+
+
 
 }
