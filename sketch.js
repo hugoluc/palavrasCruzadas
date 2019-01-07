@@ -1,46 +1,31 @@
-//Source words
-var json = ["unicorn", "purple", "love", "heart"];
+var system;
 
+
+var btn = new inspectionBtn()
 //Array of words in the words system
 var words = [];
 
 function setup() {
   createCanvas(canvasSize.width, canvasSize.height);
-  frameRate(60)
-
+  frameRate(60);
+  system = new WordSystem(createVector(180, 260));
 }
 
 function draw() {
   background(26, 24, 25);
 
-  //Time intervals between new word is created and displayed
-  var timer = millis();
+  //Time intervals between new word is created and added to the system
+   var timer = millis();
 
-  if (timer >= 10000) {
+   if (timer >= 1000) {
+     if (random(1) < 0.009) {
+       system.addWord();
+     }
 
+     system.run();
+     btn.show()
 
-    if (random(1) < 0.009) {
-      //Select the word from the source
-      selectedWord = random(json);
-      //Pass is to the Word class constructor
-      let w = new Word(selectedWord);
-      //Add it to the words system array
-      words.push(w);
-    }
-
-
-    for (var i = words.length - 1; i >= 0; i--) {
-      words[i].show();
-      words[i].move();
-      words[i].grow();
-      words[i].white();
-      words[i].drag();
-      words[i].kill();
-    }
-
-    btn.show()
-
-    timer = 0;
-  }
+     timer = 0;
+   }
 
 }
