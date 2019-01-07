@@ -78,10 +78,12 @@ class Word {
   kill() {
 
     //When the words leave the canvas return "Kill it"
-    return this.location.x > width;
-    return this.location.x < 0;
-    return this.location.y > height;
-    return this.location.y < 0;
+
+    if (this.location.x > width || this.location.x < 0|| this.location.y > height || this.location.y < 0){
+      return true;
+    }else{
+      return false;
+    };
 
 
   }
