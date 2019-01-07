@@ -5,3 +5,41 @@ html, body {
 canvas {
   display: block;
 }
+
+.wordexplorer.container{
+
+  position: absolute;
+  z-index: 2;
+  font-family: sans-serif;
+
+}
+
+
+.wordexplorer.title{
+
+  top : 40px;
+  left : 30px;
+  position : absolute;
+  font-family: sans-serif;
+
+}
+
+.wordexplorer.line{
+
+  position : absolute;
+
+}
+
+.wordexplorer.word{
+
+  font-size: 30px;
+  font-weight: 900;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+.wordexplorer.description{
+  font-size: 28px;
+
+}

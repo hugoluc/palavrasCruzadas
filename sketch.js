@@ -1,8 +1,9 @@
 var system;
 
+
 var btn = new inspectionBtn()
-
-
+//Array of words in the words system
+var words = [];
 
 function setup() {
   createCanvas(canvasSize.width, canvasSize.height);
