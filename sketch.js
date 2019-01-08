@@ -16,10 +16,10 @@ function setup() {
 
     definitionPage.init(data.palavras[0], () => {
 
-        menu.init(data.menu)
+        btn.toBlack()
+        setTimeout(() => { menu.init(data.menu) }, 300)
 
      })
-
   })
 
 }

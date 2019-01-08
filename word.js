@@ -22,8 +22,6 @@ class Word {
 
   }
 
-
-
   white() {
     //whitening Words
     //Calculate the distance between the initial to final location
@@ -33,7 +31,6 @@ class Word {
     this.b = map(d, 0, 50, 24, 216)
   }
 
-
   grow() {
     //Grow Words
     if (mouseIsPressed) {
@@ -42,8 +39,6 @@ class Word {
       this.size = this.size + 0.1;
     }
   }
-
-
 
   drag() {
 
@@ -74,7 +69,6 @@ class Word {
 
   }
 
-
   kill() {
 
     //When the words leave the canvas return "Kill it"
@@ -88,7 +82,6 @@ class Word {
 
   }
 
-
   show() {
     //display the word
     fill(this.r, this.g,this.b,);
@@ -96,6 +89,5 @@ class Word {
     text(this.word, this.location.x, this.location.y);
 
   }
-
 
 }

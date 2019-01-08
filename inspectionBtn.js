@@ -21,8 +21,34 @@ function inspectionBtn(){
   this.isHovered = false
   this.transtitionHover = false
 
-  this.speed = 0.5
-  this.acceleration = canvasSize.height / 1100
+  this.speed = canvasSize.height * 0.01
+  this.acceleration = 1.1
+
+}
+
+inspectionBtn.prototype.toBlack = function(_callBack,_data){
+  this.transitionToBlack= true
+}
+
+inspectionBtn.prototype.displayToBlack = function(_callBack,_data){
+
+  if ( this.yellow[0] - 5 > 25 ){
+    this.yellow[0] = this.yellow[0] - 10
+  }else{
+    this.yellow[0] = 0
+  }
+
+  if ( this.yellow[1] - 5 > 25 ){
+    this.yellow[1] = this.yellow[1] - 10
+  }else{
+    this.yellow[1] = 0
+  }
+
+  if ( this.yellow[2] - 5 > 25 ){
+    this.yellow[2] = this.yellow[2] - 10
+  }else{
+    this.yellow[2] = 0
+  }
 
 }
 
@@ -136,6 +162,7 @@ inspectionBtn.prototype.show = function(){
   //handle hover animation
   if(this.transtitionHover ){ this.displayHover(this.isHovered) }
   if(this.transtitionNextPage ){ this.dislayNextPage() }
+  if(this.transitionToBlack){ this.displayToBlack() }
 
   //display outline
   stroke(this.yellow[0],this.yellow[1],this.yellow[2]);

@@ -105,6 +105,7 @@ wordDefinition.prototype.finish = function(_data) {
 
   this.transContainer.classList.add("off")
   this.secondTitle .classList.add("off")
+  this.line.style.opacity = 0
   this.callBack()
 
 }

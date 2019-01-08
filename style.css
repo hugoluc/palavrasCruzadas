@@ -1,10 +1,23 @@
 html, body {
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
 
 canvas {
   display: block;
+}
+
+#menu_backBtn{
+  background-color: transparent;
+  transition: opacity 2s, transform 0.5s;
+  transform: translateY(-10px);
+  opacity: 0;
+}
+
+.menuItem{
+  transition: opacity 2s, transform 0.5s;
+  transform: translateY(0px);
 }
 
 .wordexplorer{
@@ -33,7 +46,8 @@ canvas {
 }
 .wordexplorer.line{
   width: 0;
-  transition: width 0.5s;
+  opacity: 1;
+  transition: width 0.5s, opacity 0.5s;
   transition-delay: 0.1s;
   position: absolute;
 }
