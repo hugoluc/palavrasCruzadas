@@ -2,44 +2,64 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
 canvas {
   display: block;
 }
 
-.wordexplorer.container{
+.wordexplorer{
+  font-family: sans-serif;
+}
 
+
+/*  TITLE */
+
+.wordexplorer.titleContainer{
+  position : absolute;
+}
+.wordexplorer.title{
+  position: absolute;
+  margin-left: -5%;
+  opacity: 0;
+  transition: margin-left 0.5s, opacity 0.5s;
+}
+.wordexplorer.title.on{
+  margin-left: 0%;
+  opacity: 1;
+}
+.wordexplorer.title.off{
+  margin-left: 10%;
+  opacity: 0;
+}
+.wordexplorer.line{
+  width: 0;
+  transition: width 0.5s;
+  transition-delay: 0.1s;
+  position: absolute;
+}
+
+
+/* WORDS */
+
+.wordexplorer.container{
   position: absolute;
   z-index: 2;
-  font-family: sans-serif;
-
+  margin-left: -5%;
+  opacity: 0;
+  transition: margin-left 0.5s, opacity 0.5s;
+  transition-delay: 0.2s;
 }
 
-
-.wordexplorer.title{
-
-  top : 40px;
-  left : 30px;
-  position : absolute;
-  font-family: sans-serif;
-
+.wordexplorer.container.on{
+  margin-left: 0;
+  opacity: 1;
 }
 
-.wordexplorer.line{
-
-  position : absolute;
-
+.wordexplorer.container.off{
+  margin-left: 10%;
+  opacity: 0;
+  transition-delay: 0.07s;
 }
-
 .wordexplorer.word{
-
-  font-size: 30px;
   font-weight: 900;
-  margin-top: 10px;
-  margin-bottom: 10px;
-
-}
-
-.wordexplorer.description{
-  font-size: 28px;
-
 }

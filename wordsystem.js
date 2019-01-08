@@ -35,8 +35,6 @@ class WordSystem {
       // If the word status is dead, out of the canvas, deleted it from the array
       if (w.kill()) {
         this.words.splice(i, 1);
-        print ("WORD IS DEAD");
-        print (this.words.length);
       }
 
     }

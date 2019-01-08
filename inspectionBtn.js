@@ -4,7 +4,7 @@ function inspectionBtn(){
   this.margin = 25
   this.size = {
     width : canvasSize.width - (2*this.margin),
-    height : 75
+    height : canvasSize.height * 0.121
   }
   this.position = {
     x :   this.margin,
@@ -12,7 +12,7 @@ function inspectionBtn(){
   }
 
   this.text = {
-    size : 18,
+    size : canvasSize.height * 0.03,
     string : "Arraste as palavras aqui",
     color : this.yellow
   }
@@ -21,17 +21,16 @@ function inspectionBtn(){
   this.isHovered = false
   this.transtitionHover = false
 
+  this.speed = 0.5
+  this.acceleration = canvasSize.height / 1100
+
 }
 
 inspectionBtn.prototype.nextPage = function(_callBack,_data){
 
     this.callBack = _callBack
 
-    console.log(this.callBack);
-
     this.transtitionNextPage = true
-    this.speed = 1
-    this.acceleration = 1
     this.transtitionsDone = {
       height : false,
       width : false,
@@ -43,11 +42,11 @@ inspectionBtn.prototype.nextPage = function(_callBack,_data){
 
 inspectionBtn.prototype.dislayNextPage = function(){
 
-  this.acceleration++
+  this.speed = this.speed * this.acceleration
 
   //transition height
   if(this.size.height < canvasSize.height){
-    this.size.height = this.size.height + (2 * (this.speed + this.acceleration))
+    this.size.height = this.size.height + (2 * this.speed )
   }else{
     this.size.height = canvasSize.height
     this.transtitionsDone.height = true
@@ -55,15 +54,15 @@ inspectionBtn.prototype.dislayNextPage = function(){
 
   //transition width
   if(this.size.width < canvasSize.width){
-    this.size.width = this.size.width + (2 * (this.speed + this.acceleration))
+    this.size.width = this.size.width + (2 * this.speed )
   }else{
     this.size.width = canvasSize.width
     this.transtitionsDone.width = true
   }
 
   //transition y position
-  if(this.position.y > 0 ){
-      this.position.y = this.position.y - this.speed -  this.acceleration
+  if(this.position.y - (this.speed *  this.acceleration ) > 0 ){
+      this.position.y = this.position.y - this.speed
   }else{
     this.position.y =0
     this.transtitionsDone.y = true
@@ -71,7 +70,7 @@ inspectionBtn.prototype.dislayNextPage = function(){
 
   //transition x position
   if(this.position.x > 0 ){
-      this.position.x = this.position.x - this.speed -  this.acceleration
+      this.position.x = this.position.x - this.speed
   }else{
     this.position.x =0
     this.transtitionsDone.x = true

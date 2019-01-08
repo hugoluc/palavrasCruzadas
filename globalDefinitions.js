@@ -1,7 +1,10 @@
 //constant definitions
+
+var x = 2
+
 var canvasSize = {
-  width : 360,
-  height : 620
+  width : 360 * x,
+  height : 620 * x
 }
 
 var globalColors = {
@@ -13,15 +16,4 @@ var globalColors = {
 }
 
 //classes instances
-var btn = new inspectionBtn()
-var definitionPage = new wordDefinition()
-
-//Data
-var jsonExample = {
-  pitanga : {
-    word : "Rankokamekra",
-    description : "fruto da pitangueira com uma frase muito grande",
-    transWord : "ybápytánga",
-    transDestription : "fruto da pitangueira, literalmente: fruta vermelha"
-  }
-}
+var btn, definitionPage, menu;
