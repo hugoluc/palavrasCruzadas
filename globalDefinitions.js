@@ -1,6 +1,7 @@
 //constant definitions
 
 var x = 1
+var enableCanvas = true
 
 var canvasSize = {
   width : 800 * x,
@@ -16,4 +17,49 @@ var globalColors = {
 }
 
 //classes instances
-var btn, definitionPage, menu;
+var btn, definitionPage, menu, system;
+
+function mousePressed() {
+
+  if(enableCanvas){
+    system.checkWordsClick();
+  }
+
+}
+
+function mouseDragged() {
+
+  if(enableCanvas){
+    if(btn.checkHover() && system.dragId){
+      btn.setHover(true, system.words[system.dragId].data.palavra )
+    }else{
+      btn.setHover(false)
+    }
+  }
+
+
+}
+
+function mouseReleased() {
+  if(enableCanvas){
+
+    if(system.checkDrag() && btn.checkHover()){
+
+      btn.nextPage(() => {
+
+        enableCanvas = false
+        definitionPage.init( system.words[system.dragId].data, () => {
+
+          btn.toBlack()
+          setTimeout(() => { menu.init(data.menu) }, 300)
+
+        })
+      })
+
+  }else{
+    system.clearDrag();
+  }
+
+  }
+
+}

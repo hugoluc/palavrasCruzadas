@@ -118,6 +118,20 @@ inspectionBtn.prototype.dislayNextPage = function(){
 
 }
 
+inspectionBtn.prototype.checkHover = function(){
+
+  //Determine if mouse is hovereing the word width
+  if (mouseY > this.position.y) {
+
+    return true;
+
+  }else{
+
+    false
+
+  }
+}
+
 inspectionBtn.prototype.setHover = function(_isHovered, _selectedWord){
 
   this.isHovered = _isHovered
@@ -130,11 +144,12 @@ inspectionBtn.prototype.displayHover = function(_isHovered){
 
   //transition to hovered state
   if(_isHovered){
+
     if(this.alpha < 1){
       this.alpha = this.alpha + 0.08
       if(this.alpha > 0.8){
         this.text.string = this.selectedWord
-        this.text.color = [0,0,0]
+        this.text.color = [1,1,1]
         this.text.size = 38
       }
     }

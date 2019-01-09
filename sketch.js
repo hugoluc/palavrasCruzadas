@@ -1,5 +1,3 @@
-var system;
-
 //Array of words in the words system
 var words = [];
 
@@ -7,38 +5,35 @@ function setup() {
   createCanvas(canvasSize.width, canvasSize.height);
   frameRate(60);
 
-  system = new WordSystem(createVector(180, 260));
-  definitionPage = new wordDefinition()
   btn = new inspectionBtn()
+  definitionPage = new wordDefinition()
   menu = new menuPage()
-
-  btn.nextPage(() => {
-
-    definitionPage.init(data.palavras[0], () => {
-
-        btn.toBlack()
-        setTimeout(() => { menu.init(data.menu) }, 300)
-
-     })
-  })
+  system = new WordSystem(createVector(canvasSize.width/2, canvasSize.height/2 - btn.size.height));
+  //
 
 }
 
 function draw() {
-  background(26, 24, 25);
 
-  //Time intervals between new word is created and added to the system
-   var timer = millis();
 
-   if (timer >= 1000) {
-     if (random(1) < 0.009) {
-       system.addWord();
-     }
+    background(26, 24, 25);
+    btn.show()
 
-     system.run();
-     btn.show()
+    if(enableCanvas){
 
-     timer = 0;
-   }
+    //Time intervals between new word is created and added to the system
+    var timer = millis();
+
+    if (timer >= 1000) {
+      if (random(1) < 0.009) {
+        system.addWord();
+      }
+
+      system.run();
+
+      timer = 0;
+    }
+
+  }
 
 }

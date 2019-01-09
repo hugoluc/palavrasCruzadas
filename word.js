@@ -1,19 +1,43 @@
 class Word {
 
-  constructor(tempWord, position) {
+  constructor(_data, position, id) {
     //initial selected position and direction it moves
     this.location = position.copy();
     this.speed = createVector(random(-0.8, 0.8), random(-0.8, 0.8));
+    this.id = id;
+    this.data = _data
 
     //Word, color, size
     this.size = 10;
     this.r = 24;
     this.g = 24;
     this.b = 24;
-    this.word = tempWord;
+    this.word = _data.palavra;
+
   }
 
+  checkClick(){
 
+
+    //Calculate the distance between the mouse and word location
+    var d = dist(mouseX, mouseY, this.location.x, this.location.y);
+
+    //Calculate the word width
+    var wordString = this.word;
+    var wordWidth = textWidth(wordString);
+
+    //Determine if mouse is hovereing the word width
+    if (d < wordWidth) {
+
+      return true;
+
+    }else{
+
+      return false;
+
+    }
+
+  }
 
   move() {
 
@@ -42,30 +66,11 @@ class Word {
 
   drag() {
 
-    //Calculate the distance between the mouse and word location
-    var d = dist(mouseX, mouseY, this.location.x, this.location.y);
-    //Calculate the word width
-    var wordString = this.word;
-    var wordWidth = textWidth(wordString);
-    //Determine if mouse is hovereing the word width
-    if (d < wordWidth) {
-      //Word hover - print "DRAG WORD"
-      //print("DRAG WORD");
-
-      // Word drag
-      if (mouseIsPressed) {
-        this.location.x = mouseX;
-        this.location.y = mouseY;
-        this.r = 254;
-        this.g = 241;
-        this.b = 2;
-      } else {
-        this.r = 216;
-        this.g = 216;
-        this.b = 216;
-      }
-    }
-
+    this.location.x = mouseX;
+    this.location.y = mouseY;
+    this.r = 254;
+    this.g = 241;
+    this.b = 2;
 
   }
 
