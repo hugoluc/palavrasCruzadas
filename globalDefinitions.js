@@ -1,10 +1,10 @@
 //constant definitions
 
-var x = 2
+var x = 1
 
 var canvasSize = {
-  width : 360 * x,
-  height : 620 * x
+  width : 800 * x,
+  height : 1280 * x
 }
 
 var globalColors = {

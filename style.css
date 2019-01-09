@@ -8,16 +8,50 @@ canvas {
   display: block;
 }
 
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+#images{
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+
 #menu_backBtn{
   background-color: transparent;
-  transition: opacity 2s, transform 0.5s;
+  transition: opacity 1s, transform 0.5s;
   transform: translateY(-10px);
   opacity: 0;
 }
 
+#aditionalText{
+  overflow: auto;
+}
+
+#aditionalInfo_Contaiter{
+  top : 0px;
+  left : 0px;
+  position: absolute;
+  color : white;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .menuItem{
-  transition: opacity 2s, transform 0.5s;
-  transform: translateY(0px);
+  transition: opacity 0.8s, transform 1s cubic-bezier(0, 1, 0, 1);
+  transform: translateY(1000px);
+}
+
+.menuItem.off{
+  transition: opacity 0.3s, transform 0.3s cubic-bezier(0, 1, 0, 1);
+  transform: translateY(100px);
 }
 
 .wordexplorer{
@@ -27,21 +61,15 @@ canvas {
 
 /*  TITLE */
 
-.wordexplorer.titleContainer{
-  position : absolute;
-}
 .wordexplorer.title{
   position: absolute;
-  margin-left: -5%;
   opacity: 0;
-  transition: margin-left 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s;
 }
 .wordexplorer.title.on{
-  margin-left: 0%;
   opacity: 1;
 }
 .wordexplorer.title.off{
-  margin-left: 10%;
   opacity: 0;
 }
 .wordexplorer.line{
@@ -57,10 +85,8 @@ canvas {
 
 .wordexplorer.container{
   position: absolute;
-  z-index: 2;
-  margin-left: -5%;
   opacity: 0;
-  transition: margin-left 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s;
   transition-delay: 0.2s;
 }
 
