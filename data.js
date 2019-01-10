@@ -25,8 +25,8 @@ var data = {
       significado : "bolo de massa de mandioca",
       tradução : "Mbeiú",
       significadoOriginal : "bolo de mandioca ou tapicoca",
-      audio : ".mp4",
-      audioOriginal : ".mp4"
+      audio : "Beiju.mp4",
+      audioOriginal : "Mbeiú.mp4"
     },
     {
       origem : "Tupinambá",
@@ -39,21 +39,12 @@ var data = {
     },
     {
       origem : "Tupinambá",
-      palavra : "",
-      significado : "",
-      tradução : "",
-      significadoOriginal : "",
-      audio : ".mp4",
-      audioOriginal : ".mp4"
-    },
-    {
-      origem : "Tupinambá",
       palavra : "Caju",
       significado : "fruto do cajueiro",
       tradução : "akaiú",
       significadoOriginal : "fruto do cajueiro",
-      audio : ".mp4",
-      audioOriginal : ".mp4"
+      audio : "Caju.mp4",
+      audioOriginal : "akaiú.mp4"
     },
     {
       origem : "Tupinambá",
@@ -61,8 +52,8 @@ var data = {
       significado : "designação comum a várias espécies de gramíneas",
       tradução : "kapi’í",
       significadoOriginal : "erva gramínea",
-      audio : ".mp4",
-      audioOriginal : ".mp4"
+      audio : "Capim.mp4",
+      audioOriginal : "kapi’í.mp4"
     },
     {
       origem : "Tupinambá",
@@ -70,8 +61,8 @@ var data = {
       significado : "grande roedor semiaquático encontrado nas Américas do Sul e Central",
       tradução : "kapi’ybára",
       significadoOriginal : "grande roedor semiaquático, Hydrochoerus capibara",
-      audio : ".mp4",
-      audioOriginal : ".mp4"
+      audio : "Capivara.mp4",
+      audioOriginal : "kapi’ybára.mp4"
     },
     {
       origem : "Tupinambá",
@@ -79,8 +70,8 @@ var data = {
       significado : "recipiente usado para beber ou transportar líquidos, sementes, farinha, esvaziar canoas",
       tradução : "kúia",
       significadoOriginal : "meia cabaça",
-      audio : ".mp4",
-      audioOriginal : ".mp4"
+      audio : "Cuia.mp4",
+      audioOriginal : "kúia.mp4"
     },
     {
       origem : "Tupinambá",
@@ -88,8 +79,8 @@ var data = {
       significado : "térmita, inseto social, que se alimenta de madeira e outros materiais vegetais",
       tradução : "kupi’í",
       significadoOriginal : "térmita, inseto que rói a madeira",
-      audio : ".mp4",
-      audioOriginal : ".mp4"
+      audio : "Cupim.mp4",
+      audioOriginal : "kupi’í.mp4"
     },
     {
       origem : "Tupinambá",
@@ -97,8 +88,8 @@ var data = {
       significado : "tocar com a ponta do dedo ou com o cotovelo em outrem, para chamar-lhe a atenção; tocar com insistência",
       tradução : "kutúk",
       significadoOriginal : "tocar com objeto pontudo; ferir",
-      audio : ".mp4",
-      audioOriginal : ".mp4"
+      audio : "Cutucar.mp4",
+      audioOriginal : "kutúk.mp4"
     },
     {
       origem : "Tupinambá",
@@ -106,8 +97,8 @@ var data = {
       significado : "lobo-guará",
       tradução : "awará",
       significadoOriginal : "lobo-guará",
-      audio : ".mp4",
-      audioOriginal : ".mp4"
+      audio : "Guará.mp4",
+      audioOriginal : "awará.mp4"
     },
     {
       origem : "Tupinambá",
@@ -115,8 +106,8 @@ var data = {
       significado : "espécie de árvore",
       tradução : "ypé",
       significadoOriginal : "casca de pau",
-      audio : ".mp4",
-      audioOriginal : ".mp4"
+      audio : "Ipê.mp4",
+      audioOriginal : "ypé.mp4"
     },
     {
       origem : "Tupinambá",
@@ -124,8 +115,8 @@ var data = {
       significado : "espécie de quelônio encontrado nas Américas Central e do Sul",
       tradução : "iabotí",
       significadoOriginal : "espécie de quelônio terrestre",
-      audio : ".mp4",
-      audioOriginal : ".mp4"
+      audio : "Jabuti.mp4",
+      audioOriginal : "iabotí.mp4"
     },
     {
       origem : "Tupinambá",
@@ -133,8 +124,8 @@ var data = {
       significado : "fruto da jabuticabeira",
       tradução : "iabotíkába",
       significadoOriginal : "fruto da jabuticabeira, literalmente: gordura de jabuti",
-      audio : ".mp4",
-      audioOriginal : ".mp4"
+      audio : "Jabuticaba.mp4",
+      audioOriginal : "iabotíkába.mp4"
     }
   ],
 
