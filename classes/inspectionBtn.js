@@ -14,7 +14,8 @@ function inspectionBtn(){
   this.text = {
     size : canvasSize.height * 0.03,
     string : "Arraste as palavras aqui",
-    color : this.yellow
+    color : this.yellow,
+    alpha : 1
   }
 
   this.alpha = 0
@@ -103,15 +104,16 @@ inspectionBtn.prototype.dislayNextPage = function(){
   }
 
   //transition alpha
-    if(this.alpha < 1){
-      this.alpha = this.alpha + 0.08
-      if(this.alpha > 0.8){
-        this.text.string = ""
-    }
+  if(this.text.alpha > 0){
+    this.text.alpha = this.text.alpha - 0.08
+  }else{
+    this.text.string = ""
+    this.transtitionsDone.text = true
+
   }
 
   //stop transition when finished and call callback function to change to next page
-  if(this.transtitionsDone.x && this.transtitionsDone.y && this.transtitionsDone.height && this.transtitionsDone.width){
+  if(this.transtitionsDone.text && this.transtitionsDone.x && this.transtitionsDone.y && this.transtitionsDone.height && this.transtitionsDone.width){
     this.transtitionNextPage = false
     this.callBack()
   }
@@ -127,13 +129,13 @@ inspectionBtn.prototype.checkHover = function(){
 
   }else{
 
-    false
+    return false
 
   }
 }
 
 inspectionBtn.prototype.setHover = function(_isHovered, _selectedWord){
-
+  console.log(_isHovered, _selectedWord);
   this.isHovered = _isHovered
   this.selectedWord = _selectedWord
   this.transtitionHover = true
@@ -141,6 +143,7 @@ inspectionBtn.prototype.setHover = function(_isHovered, _selectedWord){
 }
 
 inspectionBtn.prototype.displayHover = function(_isHovered){
+
 
   //transition to hovered state
   if(_isHovered){
@@ -161,7 +164,7 @@ inspectionBtn.prototype.displayHover = function(_isHovered){
       if(this.alpha < 0.8){
         this.text.string = "Arraste as palavras aqui"
         this.text.color =  this.yellow
-        this.text.size = 18
+        this.text.size = canvasSize.height * 0.03
       }
       if(this.alpha < 0){
         this.transtitionHover = false
@@ -186,16 +189,16 @@ inspectionBtn.prototype.show = function(){
   rect(this.position.x, this.position.y,this.size.width, this.size.height)
   noStroke()
 
-  //display text
-  textSize(this.text.size);
-  fill(this.text.color[0],this.text.color[1],this.text.color[2])
-  textAlign(CENTER)
-  text(this.text.string, canvasSize.width/2, this.position.y + this.size.height/2 + (this.text.size/4));
-
   //display fill
   fill( "rgba(" + this.yellow[0] + "," + this.yellow[1] + "," + this.yellow[2] + "," + this.alpha + ")")
   rect(this.position.x, this.position.y,this.size.width, this.size.height)
   noStroke()
+
+  //display text
+  textSize(this.text.size);
+  fill( "rgba(" + this.text.color[0] + "," + this.text.color[1] + "," + this.text.color[2] + "," + this.text.alpha + ")")
+  textAlign(CENTER)
+  text(this.text.string, canvasSize.width/2, this.position.y + this.size.height/2 + (this.text.size/4));
 
 
 

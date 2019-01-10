@@ -1,6 +1,8 @@
 
 function wordDefinition(){
 
+  this.tempoPorCaracter = 70
+
   this.margin = canvasSize.height * 0.08
   this.allContainer = document.createElement("div")
   this.allContainer.style.position = "absolute"
@@ -70,7 +72,6 @@ function wordDefinition(){
 wordDefinition.prototype.init = function(_data, _callBack) {
 
   //setting callback and time per caracter
-  this.tempoPorCaracter = 0
   this.callBack = () => { _callBack() }
 
   //setting text for content

@@ -9,16 +9,23 @@ class WordSystem {
     this.origin = position.copy();
     this.wordId = 0
     this.clearDrag();
-  }
 
+    this.wordLimit = 10
+    this.wordCount = 0
+
+  }
 
   addWord() {
 
-    //Select the word from the source
-    selectedWord = random(data.palavras);
-    //Pass is to the Word class constructor
-    this.words.push(new Word(selectedWord, this.origin, this.wordId));
-    this.wordId++
+    if(this.wordCount < this.wordLimit){
+      //Select the word from the source
+      selectedWord = random(data.palavras);
+      //Pass is to the Word class constructor
+      this.words.push(new Word(selectedWord, this.origin, this.wordId));
+      // console.log(this.wordId)
+      this.wordId++
+      this.wordCount++
+    }
   }
 
   clearDrag(){
@@ -39,15 +46,15 @@ class WordSystem {
 
   checkWordsClick(){
 
-    for (var i = this.words.length - 1; i >= 0; i--) {
+    for (var i = 0; i < this.words.length; i++) {
 
       if(this.words[i].checkClick()){
 
         this.dragId = this.words[i].id
-
+        return
       }
-
     }
+
   }
 
   run() {
@@ -68,11 +75,11 @@ class WordSystem {
       // If the word status is dead, out of the canvas, deleted it from the array
       if (w.kill()) {
         this.words.splice(i, 1);
+        this.wordCount--
       }
 
     }
 
   }
-
 
 }

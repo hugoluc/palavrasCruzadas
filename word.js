@@ -13,28 +13,32 @@ class Word {
     this.g = 24;
     this.b = 24;
     this.word = _data.palavra;
+    this.textWidth = textWidth(this.word)
+    this.isBeingDragged = false
 
   }
 
   checkClick(){
 
-
     //Calculate the distance between the mouse and word location
     var d = dist(mouseX, mouseY, this.location.x, this.location.y);
 
-    //Calculate the word width
-    var wordString = this.word;
-    var wordWidth = textWidth(wordString);
+    var wordPositions = {
+      x : {
+        start : this.location.x - (this.textWidth/2),
+        end : this.location.x + this.textWidth - (this.textWidth/2)
+      },
+      y : {
+        start : this.location.y - (this.size * 0.75),
+        end : this.location.y
+      }
+    }
 
-    //Determine if mouse is hovereing the word width
-    if (d < wordWidth) {
-
-      return true;
-
+    if (mouseX > wordPositions.x.start && mouseX < wordPositions.x.end && mouseY > wordPositions.y.start && mouseY < wordPositions.y.end){
+      this.isBeingDragged = true
+      return true
     }else{
-
-      return false;
-
+      return false
     }
 
   }
@@ -56,8 +60,8 @@ class Word {
   }
 
   grow() {
-    //Grow Words
-    if (mouseIsPressed) {
+    // Grow Words
+    if (this.isBeingDragged) {
       this.size = this.size;
     } else {
       this.size = this.size + 0.1;
@@ -91,6 +95,7 @@ class Word {
     //display the word
     fill(this.r, this.g,this.b,);
     textSize(this.size);
+    this.textWidth = textWidth(this.word)
     text(this.word, this.location.x, this.location.y);
 
   }

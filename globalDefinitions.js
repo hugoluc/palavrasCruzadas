@@ -30,20 +30,23 @@ function mousePressed() {
 function mouseDragged() {
 
   if(enableCanvas){
-    if(btn.checkHover() && system.dragId){
+    if(btn.checkHover() && system.dragId != null){
       btn.setHover(true, system.words[system.dragId].data.palavra )
     }else{
       btn.setHover(false)
     }
   }
 
-
 }
 
 function mouseReleased() {
   if(enableCanvas){
 
-    if(system.checkDrag() && btn.checkHover()){
+    if (system.dragId) system.words[system.dragId].isBeingDragged = false
+
+    console.log(system.dragId, btn.checkHover())
+
+    if(system.checkDrag() != null && btn.checkHover()){
 
       btn.nextPage(() => {
 
@@ -56,9 +59,9 @@ function mouseReleased() {
         })
       })
 
-  }else{
-    system.clearDrag();
-  }
+    }else{
+      system.clearDrag();
+    }
 
   }
 
