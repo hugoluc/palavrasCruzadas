@@ -1,7 +1,7 @@
 
 function wordDefinition(){
 
-  this.tempoPorCaracter = 70
+  this.tempoPorCaracter = 0
 
   this.margin = canvasSize.height * 0.08
   this.allContainer = document.createElement("div")

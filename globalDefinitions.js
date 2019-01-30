@@ -4,8 +4,8 @@ var x = 1
 var enableCanvas = true
 
 var canvasSize = {
-  width : 800 * x,
-  height : 1280 * x
+  width :  1080 * x,
+  height : 1920 * x
 }
 
 var globalColors = {
@@ -43,8 +43,6 @@ function mouseReleased() {
   if(enableCanvas){
 
     if (system.dragId) system.words[system.dragId].isBeingDragged = false
-
-    console.log(system.dragId, btn.checkHover())
 
     if(system.checkDrag() != null && btn.checkHover()){
 

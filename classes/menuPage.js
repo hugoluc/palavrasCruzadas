@@ -42,22 +42,21 @@ function menuPage(){
   this.container.append(this.menuItemContainer)
 
   this.itemHeight = canvasSize.height * 0.08
-  var marginBottom = 50
+  this.marginBottom = 50
 
   for(var i = 0; i < 7; i++){
 
     var item = {};
     var _this = this
-    item.finalPosition = canvasSize.height - marginBottom - ( this.itemHeight * (i+ 1) ) + "px"
-
+    // item.finalPosition = canvasSize.height - this.marginBottom - ( this.itemHeight * (i+ 1) ) + "px"
     item.container = document.createElement("div")
+    item.container.style.top = canvasSize.height - this.marginBottom - ( this.itemHeight * i ) + "px"
     item.container.style.position = "absolute"
     item.container.id = i
     item.container.className = "menuItem"
     item.container.style.opacity = 0
     item.container.style.color = "white"
     item.container.style.display = "flex"
-    item.container.style.top = canvasSize.height - marginBottom - ( this.itemHeight * i ) + "px"
     item.container.style.width = canvasSize.width + "px"
     item.container.style.paddingLeft = this.margin + "px"
     item.container.style.height = this.itemHeight + "px"
@@ -66,7 +65,17 @@ function menuPage(){
       _this.toInfoPage(this.id)
     }
 
+    // item.icon = document.createElement("svg")
+    // item.icon.innerHTML = '<title>noun_Plus_60246</title> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="06-menu-completo" transform="translate(-99.000000, -798.000000)"> <g id="Group-9" transform="translate(102.000000, 274.000000)"> <g id="Group" transform="translate(1.000000, 488.000000)"> <g id="Group-3"> <g id="noun_Plus_60246" transform="translate(0.000000, 40.000000)"> <g id="Group-10"> <path d="M54.5,34.5 L39.5,34.5 L39.5,19.5 C39.5,18.119 38.381,17 37,17 C35.619,17 34.5,18.119 34.5,19.5 L34.5,34.5 L19.5,34.5 C18.119,34.5 17,35.619 17,37 C17,38.381 18.119,39.5 19.5,39.5 L34.5,39.5 L34.5,54.5 C34.5,55.881 35.619,57 37,57 C38.381,57 39.5,55.881 39.5,54.5 L39.5,39.5 L54.5,39.5 C55.881,39.5 57,38.381 57,37 C57,35.619 55.881,34.5 54.5,34.5 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path> <circle id="Oval" stroke="#FFFFFF" stroke-width="8" cx="37" cy="37" r="37"></circle> </g> </g> </g> </g> </g> </g> </g>'
+    // item.icon.setAttribute( "width" , "82px" )
+    // item.icon.setAttribute( "height" , "82px" )
+    // item.icon.setAttribute( "viewBox" , "0 0 82 82" )
+    // item.icon.setAttribute( "version" , "1.1" )
+    // item.icon.setAttribute( "xmlns" , "http://www.w3.org/2000/svg" )
+    // item.icon.setAttribute( "xmlns" , 'xlink="http://www.w3.org/1999/xlink"' )
+
     item.icon = document.getElementById("icon_svg").cloneNode(true)
+
     item.icon.style.display = "block"
     item.icon.style.width = this.itemHeight * 0.5 + "px"
     item.icon.style.height = this.itemHeight * 0.5 + "px"
@@ -82,39 +91,46 @@ function menuPage(){
     this.menuItemContainer.append(item.container)
   }
 
+    this.reset()
+
 }
 
 menuPage.prototype.init = function(_data){
 
+  this.container.style.display = "block"
   this.data = _data
-  var delay = 0.04
-  this.backBtn.style.opacity = 1
-  this.backBtn.style.transitionDelay = "translateY(0px)"
-
-  console.log(_data);
-
-  for(var i = 0; i < this.data.length; i++){
-    this.menuItems[i].data = _data[i]
-    this.menuItems[i].text.innerHTML = this.data[i].titulo
-    this.menuItems[i].container.style.transform = "translateY(-" + this.itemHeight + "px)"
-    this.menuItems[i].container.style.opacity = 1
-    this.menuItems[i].container.style.transitionDelay = (this.data.length * delay) - (i * delay) + "s"
-
-  }
+  setTimeout( menu.animateMenus ,10)
 
 }
 
-menuPage.prototype.finish = function(){
+menuPage.prototype.animateMenus = function() {
+
+    var delay = 0.04
+    menu.backBtn.style.opacity = 1
+    menu.backBtn.style.transitionDelay = "translateY(0px)"
+
+    for(var i = 0; i < menu.data.length; i++){
+      menu.menuItems[i].container.style.transition = "opacity 0.8s, transform 1s cubic-bezier(0, 1, 0, 1)"
+      menu.menuItems[i].data = menu.data[i]
+      menu.menuItems[i].text.innerHTML = menu.data[i].titulo
+      menu.menuItems[i].container.style.transform = "translateY(-" + menu.itemHeight + "px)"
+      menu.menuItems[i].container.style.opacity = 1
+      menu.menuItems[i].container.style.transitionDelay = (menu.data.length * delay) - (i * delay) + "s"
+
+    }
+}
+
+menuPage.prototype.reset = function(){
 
   var delay = 0.04
   this.backBtn.style.opacity = 0
   this.backBtn.style.transitionDelay = "translateY(-10px)"
 
-  for(var i = 0; i < this.data.length; i++){
-    this.menuItems[i].text.innerHTML = this.data[i].titulo
-    this.menuItems[i].container.classList.add("off")
+  for(var i = 0; i < 7; i++){
+    this.menuItems[i].container.style.transitionDuration = "0.3s , 0.1s"
     this.menuItems[i].container.style.opacity = 0
-    this.menuItems[i].container.style.transitionDelay = (this.data.length * delay) - (i * delay) + "s"
+    this.menuItems[i].container.style.transform = "translateY(0px)"
+    this.menuItems[i].container.style.transitionDelay = (7 * delay) - (i * delay) + "s"
   }
 
   setTimeout(() => {
@@ -125,7 +141,9 @@ menuPage.prototype.finish = function(){
 
 menuPage.prototype.toInfoPage = function(_data){
 
-  this.finish()
-  this.infoPage.init(this.data[_data])
+  this.reset()
+  setTimeout( () => {
+    this.infoPage.init(this.data[_data],this.init)
+  },400)
 
 }

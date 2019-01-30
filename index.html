@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
+
+    <script src="data.js"></script>
+    <script>
+      for(i = 0; i < data.menu.length; i++){
+        for(j = 0; j < data.menu[i].imagens.length; j++){
+
+          var res = document.createElement("link")
+          res.rel = "preload"
+          res.as = "image"
+          res.href = "imagens/" + data.menu[i].imagens[j]
+          document.head.appendChild(res)
+
+        }
+      }
+    </script>
+
     <script src="libs/p5.min.js"></script>
     <script src="libs/p5.dom.min.js"></script>
     <script src="libs/p5.sound.min.js"></script>
 
-    <script src="data.js"></script>
-    
+
     <script src="classes/aditionalInfoPage.js"></script>
     <script src="classes/inspectionBtn.js"></script>
     <script src="classes/menuPage.js"></script>

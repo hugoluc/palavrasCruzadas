@@ -3,6 +3,8 @@ html, body {
   padding: 0;
   font-family: sans-serif;
   overflow: hidden;
+  height: 100%;
+  position: absolute;
 }
 
 canvas {
@@ -16,6 +18,17 @@ canvas {
 /* optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
     background: #FF0000;
+}
+#backBtnContainer{
+  position: absolute;
+  background-color: white;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  mix-blend-mode: hard-light;
+  background-color: black;
+  -webkit-mask-image: -webkit-gradient(linear, left top,
+      left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
 }
 
 #images{
@@ -45,7 +58,7 @@ canvas {
   flex-wrap: wrap;
 }
 
-.menuItem{
+/* .menuItem{
   transition: opacity 0.8s, transform 1s cubic-bezier(0, 1, 0, 1);
   transform: translateY(1000px);
 }
@@ -53,12 +66,11 @@ canvas {
 .menuItem.off{
   transition: opacity 0.3s, transform 0.3s cubic-bezier(0, 1, 0, 1);
   transform: translateY(100px);
-}
+} */
 
 .wordexplorer{
   font-family: sans-serif;
 }
-
 
 /*  TITLE */
 
@@ -103,4 +115,11 @@ canvas {
 }
 .wordexplorer.word{
   font-weight: 900;
+}
+
+.infoPagetitle{
+
+  border-bottom: 5px solid white;
+  padding-bottom: 30px;
+
 }
