@@ -92,11 +92,14 @@ aditionalInfoPage.prototype.init = function(_data,_callBack){
 
 aditionalInfoPage.prototype.reset = function(){
 
+  this.images.style.backgroundImage = ""
+  this.tittle.innerHTML = ""
   this.text.style.opacity = 0
   this.tittle.style.opacity = 0
   this.images.style.opacity = 0
   this.backBtnContainer.style.opacity = 0
   this.backBtn.style.opacity = 0
+
 }
 
 aditionalInfoPage.prototype.back = function(){
@@ -107,4 +110,5 @@ aditionalInfoPage.prototype.back = function(){
   },1000)
 
   this.reset()
+
 }

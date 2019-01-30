@@ -99,24 +99,25 @@ menuPage.prototype.init = function(_data){
 
   this.container.style.display = "block"
   this.data = _data
-  setTimeout( menu.animateMenus ,10)
+  setTimeout( () => {
+    this.animateMenus()
+  } ,10)
 
 }
 
 menuPage.prototype.animateMenus = function() {
 
     var delay = 0.04
-    menu.backBtn.style.opacity = 1
-    menu.backBtn.style.transitionDelay = "translateY(0px)"
+    this.backBtn.style.opacity = 1
+    this.backBtn.style.transitionDelay = "translateY(0px)"
 
-    for(var i = 0; i < menu.data.length; i++){
-      menu.menuItems[i].container.style.transition = "opacity 0.8s, transform 1s cubic-bezier(0, 1, 0, 1)"
-      menu.menuItems[i].data = menu.data[i]
-      menu.menuItems[i].text.innerHTML = menu.data[i].titulo
-      menu.menuItems[i].container.style.transform = "translateY(-" + menu.itemHeight + "px)"
-      menu.menuItems[i].container.style.opacity = 1
-      menu.menuItems[i].container.style.transitionDelay = (menu.data.length * delay) - (i * delay) + "s"
-
+    for(var i = 0; i < this.data.length; i++){
+      this.menuItems[i].container.style.transition = "opacity 0.8s, transform 1s cubic-bezier(0, 1, 0, 1)"
+      this.menuItems[i].data = this.data[i]
+      this.menuItems[i].text.innerHTML = this.data[i].titulo
+      this.menuItems[i].container.style.transform = "translateY(-" + this.itemHeight + "px)"
+      this.menuItems[i].container.style.opacity = 1
+      this.menuItems[i].container.style.transitionDelay = (this.data.length * delay) - (i * delay) + "s"
     }
 }
 

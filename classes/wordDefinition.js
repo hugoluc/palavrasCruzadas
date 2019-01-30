@@ -88,7 +88,6 @@ wordDefinition.prototype.init = function(_data, _callBack) {
   this.container.style.transform = "translateX(0px)"
   this.container.style.opacity = 1
 
-
   this.line.style.width = canvasSize.width - (2*this.margin) + "px"
 
   //calling callbac after animation
@@ -109,12 +108,11 @@ wordDefinition.prototype.changeToTrans = function(_data) {
   this.container.style.transform = "translateX(" + (canvasSize.width * 0.05) + "px)"
   this.container.style.opacity = 0
 
-
-
   setTimeout(() => {
     this.transContainer.classList.add("on")
     this.secondTitle .classList.add("on")
   },100)
+
   setTimeout( () => { this.finish() }, time + 1000)
 
 }
@@ -125,7 +123,6 @@ wordDefinition.prototype.finish = function(_data) {
   this.line.style.opacity = 0
   this.transContainer.style.opacity = 0
   this.callBack()
-
   setTimeout( () => { this.reset() } , 2000 )
 
 }
@@ -139,6 +136,5 @@ wordDefinition.prototype.reset = function(){
   this.transContainer.style.transform = "translateX(-" + canvasSize.width * 0.05 + "px)"
 
   this.line.style.width = "0px"
-
 
 }
