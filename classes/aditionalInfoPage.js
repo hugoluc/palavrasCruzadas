@@ -103,10 +103,11 @@ aditionalInfoPage.prototype.reset = function(){
 }
 
 aditionalInfoPage.prototype.back = function(){
-
+  var _this = this
   setTimeout(() => {
-    this.container.style.display = "none"
-    menu.init(menu.data)
+    console.log("aditional info page callback")
+    _this.container.style.display = "none"
+    _this.callBack(menu.data)
   },1000)
 
   this.reset()

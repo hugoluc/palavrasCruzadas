@@ -97,9 +97,10 @@ function menuPage(){
 
 menuPage.prototype.init = function(_data){
 
+  console.log("init")
   this.container.style.display = "block"
   this.data = _data
-  setTimeout( () => {
+  setTimeout( ()=> {
     this.animateMenus()
   } ,10)
 
@@ -107,6 +108,7 @@ menuPage.prototype.init = function(_data){
 
 menuPage.prototype.animateMenus = function() {
 
+    console.log("animate menu")
     var delay = 0.04
     this.backBtn.style.opacity = 1
     this.backBtn.style.transitionDelay = "translateY(0px)"
@@ -118,6 +120,7 @@ menuPage.prototype.animateMenus = function() {
       this.menuItems[i].container.style.transform = "translateY(-" + this.itemHeight + "px)"
       this.menuItems[i].container.style.opacity = 1
       this.menuItems[i].container.style.transitionDelay = (this.data.length * delay) - (i * delay) + "s"
+
     }
 }
 
@@ -128,7 +131,7 @@ menuPage.prototype.reset = function(){
   this.backBtn.style.transitionDelay = "translateY(-10px)"
 
   for(var i = 0; i < 7; i++){
-    this.menuItems[i].container.style.transitionDuration = "0.3s , 0.1s"
+    this.menuItems[i].container.style.transitionDuration = "0.3s , 0.1s "
     this.menuItems[i].container.style.opacity = 0
     this.menuItems[i].container.style.transform = "translateY(0px)"
     this.menuItems[i].container.style.transitionDelay = (7 * delay) - (i * delay) + "s"
@@ -141,10 +144,10 @@ menuPage.prototype.reset = function(){
 }
 
 menuPage.prototype.toInfoPage = function(_data){
-
+  var _this = this
   this.reset()
   setTimeout( () => {
-    this.infoPage.init(this.data[_data],this.init)
+    this.infoPage.init(this.data[_data], () => { _this.init(_this.data) })
   },400)
 
 }
