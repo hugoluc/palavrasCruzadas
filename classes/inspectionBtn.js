@@ -144,7 +144,6 @@ inspectionBtn.prototype.setHover = function(_isHovered, _selectedWord){
 
 inspectionBtn.prototype.displayHover = function(_isHovered){
 
-
   //transition to hovered state
   if(_isHovered){
 
@@ -153,7 +152,7 @@ inspectionBtn.prototype.displayHover = function(_isHovered){
       if(this.alpha > 0.8){
         this.text.string = this.selectedWord
         this.text.color = [1,1,1]
-        this.text.size = 38
+        // this.text.size = 38
       }
     }
 
@@ -182,6 +181,11 @@ inspectionBtn.prototype.show = function(){
   if(this.transtitionNextPage ){ this.dislayNextPage() }
   if(this.transitionToBlack){ this.displayToBlack() }
 
+  //display bg
+  strokeWeight(4);
+  fill(globalColors.gray.r,globalColors.gray.g,globalColors.gray.b)
+  rect(0, this.position.y - this.margin, this.size.width + (2*this.margin), this.size.height + (2*this.margin) )
+
   //display outline
   stroke(this.yellow[0],this.yellow[1],this.yellow[2]);
   strokeWeight(4);
@@ -199,7 +203,5 @@ inspectionBtn.prototype.show = function(){
   fill( "rgba(" + this.text.color[0] + "," + this.text.color[1] + "," + this.text.color[2] + "," + this.text.alpha + ")")
   textAlign(CENTER)
   text(this.text.string, canvasSize.width/2, this.position.y + this.size.height/2 + (this.text.size/4));
-
-
 
 }

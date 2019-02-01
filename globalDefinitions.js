@@ -13,6 +13,11 @@ var globalColors = {
       r : 254,
       g : 241,
       b : 2
+  },
+  "gray" : {
+    r : 26,
+    g : 24,
+    b : 25
   }
 }
 
@@ -29,38 +34,42 @@ function mousePressed() {
 
 function mouseDragged() {
 
-  if(enableCanvas){
-    if(btn.checkHover() && system.dragId != null){
-      btn.setHover(true, system.words[system.dragId].data.palavra )
-    }else{
-      btn.setHover(false)
-    }
-  }
+  if(enableCanvas && system.dragId != null){
 
+      system.allWords[system.dragId].setHover(false)
+
+      if(btn.checkHover()){
+        btn.setHover(true, system.allWords[system.dragId].data.palavra )
+        system.allWords[system.dragId].setHover(true)
+      }else{
+        btn.setHover(false)
+      }
+
+    }
 }
 
 function mouseReleased() {
-  if(enableCanvas){
+  if(enableCanvas && system.dragId){
 
-    if (system.dragId) system.words[system.dragId].isBeingDragged = false
+      system.allWords[system.dragId].isBeingDragged = false
 
-    if(system.checkDrag() != null && btn.checkHover()){
+      if(system.checkDrag() != null && btn.checkHover()){
 
-      btn.nextPage(() => {
-
-        enableCanvas = false
-        definitionPage.init( system.words[system.dragId].data, () => {
-
-          btn.toBlack()
-          setTimeout(() => { menu.init(data.menu) }, 300)
-
+        btn.nextPage(() => {
+          enableCanvas = false
+          definitionPage.init( system.allWords[system.dragId].data, () => {
+            btn.toBlack()
+            setTimeout(() => { menu.init(data.menu) }, 300)
+          })
         })
-      })
 
-    }else{
-      system.clearDrag();
-    }
+      }else{
+        system.clearDrag();
+      }
 
   }
+}
 
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
 }

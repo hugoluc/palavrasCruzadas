@@ -12,28 +12,24 @@ function setup() {
   //
 
 }
-
+var framecount = 0
+var frameMedian = 0
 function draw() {
 
-
-    background(26, 24, 25);
-    btn.show()
-
-    if(enableCanvas){
-
-    //Time intervals between new word is created and added to the system
-    var timer = millis();
-
-    if (timer >= 1000) {
-      if (random(1) < 0.009) {
-        system.addWord();
-      }
-
-      system.run();
-
-      timer = 0;
-    }
-
+  if (framecount > 100){
+    console.log(frameMedian/framecount,system.displayWords.length);
+    frameMedian = 0
+    framecount = 0
+  }else{
+    framecount++
+    frameMedian = frameMedian + frameRate()
   }
+
+  background(26, 24, 25);
+
+  if(enableCanvas){
+    system.run();
+  }
+  btn.show()
 
 }

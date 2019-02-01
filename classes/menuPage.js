@@ -32,6 +32,9 @@ function menuPage(){
 
   this.backBtn.innerHTML = "Explorar mais palavras"
   this.backBtn.id = "menu_backBtn"
+  this.backBtn.onclick = function(){
+    location.reload()
+  }
   this.container.append(this.backBtn)
 
   this.menuItems = []
@@ -102,13 +105,12 @@ menuPage.prototype.init = function(_data){
   this.data = _data
   setTimeout( ()=> {
     this.animateMenus()
-  } ,10)
+  }, 100)
 
 }
 
 menuPage.prototype.animateMenus = function() {
-
-    console.log("animate menu")
+    // debugger
     var delay = 0.04
     this.backBtn.style.opacity = 1
     this.backBtn.style.transitionDelay = "translateY(0px)"
@@ -131,7 +133,7 @@ menuPage.prototype.reset = function(){
   this.backBtn.style.transitionDelay = "translateY(-10px)"
 
   for(var i = 0; i < 7; i++){
-    this.menuItems[i].container.style.transitionDuration = "0.3s , 0.1s "
+    this.menuItems[i].container.style.transitionDuration = "0.3s , 10000s "
     this.menuItems[i].container.style.opacity = 0
     this.menuItems[i].container.style.transform = "translateY(0px)"
     this.menuItems[i].container.style.transitionDelay = (7 * delay) - (i * delay) + "s"

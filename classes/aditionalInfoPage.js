@@ -52,15 +52,18 @@ function aditionalInfoPage(){
   this.backBtnContainer.style.height =  "200px"
   this.backBtnContainer.style.transition = "opacity " + transitionTime + "s"
 
-  this.backBtn = document.createElement("div")
+  this.backBtn = document.getElementById("back_icon").cloneNode(true)
   this.backBtn.style.transition = "opacity " + transitionTime + "s"
   this.container.appendChild(this.backBtn)
   this.backBtn.id = "backBtn"
-  this.backBtn.style.height = "200px"
-  this.backBtn.style.width =  "200px"
-  this.backBtn.style.background =  "white"
+  this.backBtn.style.display = "block"
+  this.backBtn.style.height = "80px"
+  this.backBtn.style.width =  "80px"
+  this.backBtn.style.top =  "50px"
+  this.backBtn.style.left =  "50px"
   this.backBtn.style.position =  "absolute"
   this.backBtn.onclick = function(){ f() }
+
   var f = () => { this.back() }
 
   this.reset()
@@ -89,7 +92,6 @@ aditionalInfoPage.prototype.init = function(_data,_callBack){
 
 }
 
-
 aditionalInfoPage.prototype.reset = function(){
 
   this.images.style.backgroundImage = ""
@@ -105,10 +107,9 @@ aditionalInfoPage.prototype.reset = function(){
 aditionalInfoPage.prototype.back = function(){
   var _this = this
   setTimeout(() => {
-    console.log("aditional info page callback")
     _this.container.style.display = "none"
     _this.callBack(menu.data)
-  },1000)
+  },500)
 
   this.reset()
 

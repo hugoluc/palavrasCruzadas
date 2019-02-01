@@ -1,21 +1,30 @@
 class Word {
 
-  constructor(_data, position, id) {
+  constructor(position, id) {
     //initial selected position and direction it moves
-    this.location = position.copy();
-    this.speed = createVector(random(-0.8, 0.8), random(-0.8, 0.8));
+    this.originalPosition = position.copy();
     this.id = id;
-    this.data = _data
+    this.reset();
 
-    //Word, color, size
+  }
+
+  setData(_data){
+    this.data = _data
+    this.word = _data.palavra;
+    this.textWidth = textWidth(this.word)
+    this.isDisplayed = true
+    this.reset();
+  }
+
+  reset(){
+    this.location = this.originalPosition.copy()
     this.size = 10;
     this.r = 24;
     this.g = 24;
     this.b = 24;
-    this.word = _data.palavra;
-    this.textWidth = textWidth(this.word)
+    this.a = 255;
     this.isBeingDragged = false
-
+    this.speed = createVector(random(-0.8, 0.8), random(-0.8, 0.8));
   }
 
   checkClick(){
@@ -39,6 +48,26 @@ class Word {
       return true
     }else{
       return false
+    }
+
+  }
+
+  setHover(_hover){
+    this.hover = _hover
+  }
+
+  toHover(){
+
+    if(this.a > 0 & this.hover){
+      this.a =- 10
+    }
+
+  }
+
+  toNotHover(){
+
+    if(this.a < 255 & !this.hover ){
+      this.a = this.a + 10
     }
 
   }
@@ -84,6 +113,7 @@ class Word {
 
     if (this.location.x > width || this.location.x < 0|| this.location.y > height || this.location.y < 0){
       return true;
+      this.isDisplayed = false
     }else{
       return false;
     };
@@ -92,8 +122,11 @@ class Word {
   }
 
   show() {
+
+    if (!this.isDisplayed) return
+
     //display the word
-    fill(this.r, this.g,this.b,);
+    fill(this.r, this.g,this.b,this.a);
     textSize(this.size);
     this.textWidth = textWidth(this.word)
     text(this.word, this.location.x, this.location.y);

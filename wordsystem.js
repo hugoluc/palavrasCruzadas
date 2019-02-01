@@ -6,6 +6,8 @@ class WordSystem {
   constructor(position) {
     //Array of words in the words system
     this.words = []
+    this.displayWords = []
+    this.allWords = {}
     this.origin = position.copy();
     this.wordId = 0
     this.clearDrag();
@@ -13,18 +15,38 @@ class WordSystem {
     this.wordLimit = 10
     this.wordCount = 0
 
+    for(var i = 0; i < this.wordLimit; i++){
+      // debugger
+      this.words.push(new Word(this.origin, this.wordId));
+      this.allWords[this.wordId] = this.words[i]
+      this.wordId++
+    }
+
+    this.millis = millis()
+    this.lastMillis = 0
+    this.nextWordTime = 0
+
+
   }
 
   addWord() {
+    var elapsedTime = millis() - this.lastMillis
 
-    if(this.wordCount < this.wordLimit){
-      //Select the word from the source
-      selectedWord = random(data.palavras);
-      //Pass is to the Word class constructor
-      this.words.push(new Word(selectedWord, this.origin, this.wordId));
-      // console.log(this.wordId)
-      this.wordId++
-      this.wordCount++
+    if(elapsedTime > this.nextWordTime){
+
+      this.nextWordTime = getRandomInt(2000,8000)
+      this.lastMillis = millis()
+
+      if(this.wordCount < this.wordLimit){
+        //Select the word from the source
+        var selectedWord = this.words.pop()
+        selectedWord.setData(random(data.palavras));
+        //Pass is to the Word class constructor
+        this.displayWords.push(selectedWord);
+        this.wordCount++
+      }
+
+
     }
   }
 
@@ -46,11 +68,11 @@ class WordSystem {
 
   checkWordsClick(){
 
-    for (var i = 0; i < this.words.length; i++) {
+    for (var i = 0; i < this.displayWords.length; i++) {
 
-      if(this.words[i].checkClick()){
+      if(this.displayWords[i].checkClick()){
 
-        this.dragId = this.words[i].id
+        this.dragId = this.displayWords[i].id
         return
       }
     }
@@ -59,10 +81,13 @@ class WordSystem {
 
   run() {
 
-    for (var i = this.words.length - 1; i >= 0; i--) {
-      var w = this.words[i];
+    this.addWord()
 
+    for (var i = this.displayWords.length - 1; i >= 0; i--) {
+      var w = this.displayWords[i];
 
+      w.toHover();
+      w.toNotHover();
       w.show();
       w.move();
       w.grow();
@@ -74,8 +99,17 @@ class WordSystem {
 
       // If the word status is dead, out of the canvas, deleted it from the array
       if (w.kill()) {
-        this.words.splice(i, 1);
+
+        // console.log(this.words);
+        // console.log(this.displayWords);
+
+        this.words.push( this.displayWords.splice(i, 1)[0] );
         this.wordCount--
+        //
+        // console.log("------------------");
+        // console.log(this.words);
+        // console.log(this.displayWords);
+
       }
 
     }
