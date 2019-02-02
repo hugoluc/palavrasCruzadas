@@ -22,7 +22,7 @@ var globalColors = {
 }
 
 //classes instances
-var btn, definitionPage, menu, system;
+var btn, definitionPage, menu, system, sounds;
 
 function mousePressed() {
 

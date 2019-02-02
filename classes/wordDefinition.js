@@ -65,6 +65,9 @@ function wordDefinition(){
   this.transDescription = this.description.cloneNode(true)
   this.transContainer.append(this.transDescription)
 
+  //audios
+  this.audio = document.createElement("audio")
+  this.container.append(this.audio)
   this.reset()
 
 }
@@ -73,6 +76,10 @@ wordDefinition.prototype.init = function(_data, _callBack) {
 
   //setting callback and time per caracter
   this.callBack = () => { _callBack() }
+  this.data = _data
+
+
+  this.data.audioObj.play()
 
   //setting text for content
   this.word.innerHTML = _data.palavra
@@ -90,16 +97,16 @@ wordDefinition.prototype.init = function(_data, _callBack) {
 
   this.line.style.width = canvasSize.width - (2*this.margin) + "px"
 
-  //calling callbac after animation
+  //calling callBack after animation
   var time = ( this.description.innerHTML.length + this.firstTitle.innerHTML.length + this.word.innerHTML.length) * this.tempoPorCaracter
-  setTimeout( () => { this.changeToTrans() }, time + 1000)
+  setTimeout( () => { this.changeToTrans(_data) }, time + 1000)
 
 }
 
 wordDefinition.prototype.changeToTrans = function(_data) {
-
+  debugger
   var time = ( this.transDescription.innerHTML.length + this.secondTitle.innerHTML.length + this.transWord.innerHTML.length) * this.tempoPorCaracter
-
+  _data.audioOriginalObj.play()
   this.secondTitle.style.transform = "translateX(0px)"
   this.firstTitle.style.transform = "translateX(" + canvasSize.width * 0.05 + "px)"
   this.firstTitle.style.opacity = 0
@@ -110,7 +117,7 @@ wordDefinition.prototype.changeToTrans = function(_data) {
 
   setTimeout(() => {
     this.transContainer.classList.add("on")
-    this.secondTitle .classList.add("on")
+    this.secondTitle.classList.add("on")
   },100)
 
   setTimeout( () => { this.finish() }, time + 1000)
@@ -136,5 +143,9 @@ wordDefinition.prototype.reset = function(){
   this.transContainer.style.transform = "translateX(-" + canvasSize.width * 0.05 + "px)"
 
   this.line.style.width = "0px"
+
+}
+
+wordDefinition.prototype.exitAnimation = function(){
 
 }

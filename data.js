@@ -7,8 +7,8 @@ var data = {
       significado : "mandioca doce; macaxeira",
       tradução : "Aipí",
       significadoOriginal : "mandioca doce",
-      audio : "Aipim.mp4",
-      audioOriginal : "aipí.mp4"
+      audioOriginal : "aipim0.mp3",
+      audio : "aipim1.mp3"
     },
     {
       origem : "Tupinambá",
@@ -16,8 +16,8 @@ var data = {
       significado : "ave de grande porte, de cauda longa e penas coloridas",
       tradução : "Arára",
       significadoOriginal : "ave de grande porte, de cauda longa e penas coloridas",
-      audio : "Arara.mp4",
-      audioOriginal : "Arára.mp4"
+      audioOriginal : "arara0.mp3",
+      audio : "arara1.mp3"
     },
     {
       origem : "Tupinambá",
@@ -25,8 +25,8 @@ var data = {
       significado : "bolo de massa de mandioca",
       tradução : "Mbeiú",
       significadoOriginal : "bolo de mandioca ou tapicoca",
-      audio : "Beiju.mp4",
-      audioOriginal : "Mbeiú.mp4"
+      audioOriginal : "beiju0.mp3",
+      audio : "beiju1.mp3"
     },
     {
       origem : "Tupinambá",
@@ -34,8 +34,8 @@ var data = {
       significado : "vegetação típica de regiões de clima árido do Nordeste brasileiro",
       tradução : "ka’átínga",
       significadoOriginal : "mato branco, claro",
-      audio : "Caatinga.mp4",
-      audioOriginal : "ka’átínga.mp4"
+      audioOriginal : "caatinga0.mp3",
+      audio : "caatinga1.mp3"
     },
     {
       origem : "Tupinambá",
@@ -43,8 +43,8 @@ var data = {
       significado : "fruto do cajueiro",
       tradução : "akaiú",
       significadoOriginal : "fruto do cajueiro",
-      audio : "Caju.mp4",
-      audioOriginal : "akaiú.mp4"
+      audioOriginal : "caju0.mp3",
+      audio : "caju1.mp3"
     },
     {
       origem : "Tupinambá",
@@ -52,8 +52,8 @@ var data = {
       significado : "designação comum a várias espécies de gramíneas",
       tradução : "kapi’í",
       significadoOriginal : "erva gramínea",
-      audio : "Capim.mp4",
-      audioOriginal : "kapi’í.mp4"
+      audioOriginal : "capim0.mp3",
+      audio : "capim1.mp3"
     },
     {
       origem : "Tupinambá",
@@ -61,8 +61,8 @@ var data = {
       significado : "grande roedor semiaquático encontrado nas Américas do Sul e Central",
       tradução : "kapi’ybára",
       significadoOriginal : "grande roedor semiaquático, Hydrochoerus capibara",
-      audio : "Capivara.mp4",
-      audioOriginal : "kapi’ybára.mp4"
+      audioOriginal : "capivara0.mp3",
+      audio : "capivara1.mp3"
     },
     {
       origem : "Tupinambá",
@@ -70,8 +70,8 @@ var data = {
       significado : "recipiente usado para beber ou transportar líquidos, sementes, farinha, esvaziar canoas",
       tradução : "kúia",
       significadoOriginal : "meia cabaça",
-      audio : "Cuia.mp4",
-      audioOriginal : "kúia.mp4"
+      audioOriginal : "cuia0.mp3",
+      audio : "cuia1.mp3"
     },
     {
       origem : "Tupinambá",
@@ -79,8 +79,8 @@ var data = {
       significado : "térmita, inseto social, que se alimenta de madeira e outros materiais vegetais",
       tradução : "kupi’í",
       significadoOriginal : "térmita, inseto que rói a madeira",
-      audio : "Cupim.mp4",
-      audioOriginal : "kupi’í.mp4"
+      audioOriginal : "cupim0.mp3",
+      audio : "cupim1.mp3"
     },
     {
       origem : "Tupinambá",
@@ -88,8 +88,8 @@ var data = {
       significado : "tocar com a ponta do dedo ou com o cotovelo em outrem, para chamar-lhe a atenção; tocar com insistência",
       tradução : "kutúk",
       significadoOriginal : "tocar com objeto pontudo; ferir",
-      audio : "Cutucar.mp4",
-      audioOriginal : "kutúk.mp4"
+      audioOriginal : "cutucar0.mp3",
+      audio : "cutucar1.mp3"
     },
     {
       origem : "Tupinambá",
@@ -97,8 +97,8 @@ var data = {
       significado : "lobo-guará",
       tradução : "awará",
       significadoOriginal : "lobo-guará",
-      audio : "Guará.mp4",
-      audioOriginal : "awará.mp4"
+      audioOriginal : "guara0.mp3",
+      audio : "guara1.mp3"
     },
     {
       origem : "Tupinambá",
@@ -106,8 +106,8 @@ var data = {
       significado : "espécie de árvore",
       tradução : "ypé",
       significadoOriginal : "casca de pau",
-      audio : "Ipê.mp4",
-      audioOriginal : "ypé.mp4"
+      audioOriginal : "ipe0.mp3",
+      audio : "ipe1.mp3"
     },
     {
       origem : "Tupinambá",
@@ -115,8 +115,8 @@ var data = {
       significado : "espécie de quelônio encontrado nas Américas Central e do Sul",
       tradução : "iabotí",
       significadoOriginal : "espécie de quelônio terrestre",
-      audio : "Jabuti.mp4",
-      audioOriginal : "iabotí.mp4"
+      audioOriginal : "jabuti0.mp3",
+      audio : "jabuti1.mp3"
     },
     {
       origem : "Tupinambá",
@@ -124,8 +124,8 @@ var data = {
       significado : "fruto da jabuticabeira",
       tradução : "iabotíkába",
       significadoOriginal : "fruto da jabuticabeira, literalmente: gordura de jabuti",
-      audio : "Jabuticaba.mp4",
-      audioOriginal : "iabotíkába.mp4"
+      audioOriginal : "jabuticaba0.mp3",
+      audio : "jabuticaba1.mp3"
     }
   ],
 
