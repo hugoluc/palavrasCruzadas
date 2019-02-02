@@ -73,7 +73,7 @@ function wordDefinition(){
   this.audio.style.display = "block"
   this.audio.style.position = "absolute"
   this.audio.style.width = "100px"
-  this.audio.style.top =  this.margin + canvasSize.height * 0.07    + "px"
+  this.audio.style.top =  this.margin + canvasSize.height * 0.08    + "px"
   this.audio.style.left = canvasSize.width - this.margin - 100 + "px"
   this.audio.style.marginTop = "200x"
   this.audio.style.opacity = 0
