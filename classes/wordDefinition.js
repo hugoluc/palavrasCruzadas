@@ -50,7 +50,7 @@ function wordDefinition(){
   //words
   this.word = document.createElement("div")
   this.word.className = "wordexplorer word"
-  this.word.style.fontSize = canvasSize.height * 0.09 + "px"
+  this.word.style.fontSize = "12vw"
   this.container.append(this.word)
 
   this.transWord = this.word.cloneNode(true)
@@ -66,8 +66,9 @@ function wordDefinition(){
   this.transContainer.append(this.transDescription)
 
   //audios
-  this.audio = document.createElement("audio")
-  this.container.append(this.audio)
+  this.audio = document.getElementById("soud_icon").cloneNode(true)
+  this.audio.style.display = "block"
+  this.allContainer.append(this.audio)
   this.reset()
 
 }
@@ -77,7 +78,6 @@ wordDefinition.prototype.init = function(_data, _callBack) {
   //setting callback and time per caracter
   this.callBack = () => { _callBack() }
   this.data = _data
-
 
   this.data.audioObj.play()
 
@@ -99,11 +99,12 @@ wordDefinition.prototype.init = function(_data, _callBack) {
 
   //calling callBack after animation
   var time = ( this.description.innerHTML.length + this.firstTitle.innerHTML.length + this.word.innerHTML.length) * this.tempoPorCaracter
-  setTimeout( () => { this.changeToTrans(_data) }, time + 1000)
+  // setTimeout( () => { this.changeToTrans(_data) }, time + 1000)
 
 }
 
 wordDefinition.prototype.changeToTrans = function(_data) {
+
   var time = ( this.transDescription.innerHTML.length + this.secondTitle.innerHTML.length + this.transWord.innerHTML.length) * this.tempoPorCaracter
   _data.audioOriginalObj.play()
   this.secondTitle.style.transform = "translateX(0px)"
@@ -142,9 +143,5 @@ wordDefinition.prototype.reset = function(){
   this.transContainer.style.transform = "translateX(-" + canvasSize.width * 0.05 + "px)"
 
   this.line.style.width = "0px"
-
-}
-
-wordDefinition.prototype.exitAnimation = function(){
 
 }
