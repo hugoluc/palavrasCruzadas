@@ -134,7 +134,7 @@ wordDefinition.prototype.changeToTrans = function(_data) {
     this.secondTitle.classList.add("on")
   },100)
 
-  // setTimeout( () => { this.finish() }, time + 1000)
+  setTimeout( () => { this.finish() }, time + 1000)
 
 }
 
