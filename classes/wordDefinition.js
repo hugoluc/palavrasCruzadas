@@ -104,9 +104,12 @@ function wordDefinition(){
 }
 
 wordDefinition.prototype.init = function(_data, _callBack) {
+
+  this.data = _data
+
   //setting callback and time per caracter
   this.callBack = () => { _callBack() }
-  this.data = _data
+
   this.currentAudio = this.data.audioObj
   this.playSound()
   this.forwardBtn.onclick = () => {
@@ -116,7 +119,6 @@ wordDefinition.prototype.init = function(_data, _callBack) {
   //setting text for content
   this.setContent( this.word, _data.palavra)
   this.description.innerHTML = _data.significado
-
   this.setContent( this.transWord, _data.tradução)
   this.transDescription.innerHTML = _data.significadoOriginal
   this.secondTitle.innerHTML = "Em " + _data.origem
@@ -208,6 +210,20 @@ wordDefinition.prototype.playSound = function(){
   if(!this.currentAudio.isPlaying()){
     this.currentAudio.play()
   }
+
+  this.currentAudio._onended = () => { this.playEnd() }
+
+  this.forwardBtn.style.opacity = 0.1
+this.audio.querySelector("#soundWavesIcon").setAttribute("opacity","1")
+
+}
+
+wordDefinition.prototype.playEnd = function(){
+  if(!this.currentAudio.isPlaying()){
+    this.currentAudio.stop()
+  }
+  this.audio.querySelector("#soundWavesIcon").setAttribute("opacity","0.1")
+  this.forwardBtn.style.opacity = 1
 
 }
 
