@@ -81,10 +81,12 @@ wordDefinition.prototype.init = function(_data, _callBack) {
 
   this.data.audioObj.play()
 
+
   //setting text for content
-  this.word.innerHTML = _data.palavra
+  this.setContent( this.word, _data.palavra)
   this.description.innerHTML = _data.significado
-  this.transWord.innerHTML = _data.tradução
+
+  this.setContent( this.transWord, _data.tradução)
   this.transDescription.innerHTML = _data.significadoOriginal
   this.secondTitle.innerHTML = "Em " + _data.origem
 
@@ -145,3 +147,23 @@ wordDefinition.prototype.reset = function(){
   this.line.style.width = "0px"
 
 }
+<<<<<<< HEAD
+=======
+
+wordDefinition.prototype.exitAnimation = function(){
+
+}
+
+wordDefinition.prototype.setContent = function(_DOM,_string){
+
+  var size = (1 / _string.length ) * 1100
+  size = size > 140 ? 140 : size
+  _DOM.innerHTML = _string
+  _DOM.style.fontSize = size + "px"
+
+}
+
+wordDefinition.prototype.exitAnimation = function(){
+
+}
+>>>>>>> b87f30494258a8dce06f3ead8ea8210919d887d3
