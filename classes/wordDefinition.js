@@ -101,7 +101,7 @@ wordDefinition.prototype.init = function(_data, _callBack) {
 
   //calling callBack after animation
   var time = ( this.description.innerHTML.length + this.firstTitle.innerHTML.length + this.word.innerHTML.length) * this.tempoPorCaracter
-  // setTimeout( () => { this.changeToTrans(_data) }, time + 1000)
+  setTimeout( () => { this.changeToTrans(_data) }, time + 1000)
 
 }
 
@@ -152,7 +152,7 @@ wordDefinition.prototype.exitAnimation = function(){
 }
 
 wordDefinition.prototype.setContent = function(_DOM,_string){
-  
+
   var size = (1 / _string.length ) * 1100
   size = size > 140 ? 140 : size
   _DOM.innerHTML = _string
