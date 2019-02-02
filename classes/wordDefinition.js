@@ -104,7 +104,6 @@ wordDefinition.prototype.init = function(_data, _callBack) {
 }
 
 wordDefinition.prototype.changeToTrans = function(_data) {
-  debugger
   var time = ( this.transDescription.innerHTML.length + this.secondTitle.innerHTML.length + this.transWord.innerHTML.length) * this.tempoPorCaracter
   _data.audioOriginalObj.play()
   this.secondTitle.style.transform = "translateX(0px)"
