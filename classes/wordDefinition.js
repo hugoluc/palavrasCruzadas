@@ -66,8 +66,19 @@ function wordDefinition(){
   this.transContainer.append(this.transDescription)
 
   //audios
+  // this.currentAudio = this.data.audioObj
+
   this.audio = document.getElementById("soud_icon").cloneNode(true)
   this.audio.style.display = "block"
+  this.audio.style.position = "absolute"
+  this.audio.style.width = "100px"
+  this.audio.style.top =  this.margin + canvasSize.height * 0.07    + "px"
+  this.audio.style.left = canvasSize.width - this.margin - 100 + "px"
+  this.audio.style.marginTop = "200x"
+
+  this.audio.onclick = () => {
+    this.playSound()
+  }
   this.allContainer.append(this.audio)
   this.reset()
 
@@ -78,9 +89,8 @@ wordDefinition.prototype.init = function(_data, _callBack) {
   //setting callback and time per caracter
   this.callBack = () => { _callBack() }
   this.data = _data
-
-  this.data.audioObj.play()
-
+  this.currentAudio = this.data.audioObj
+  this.playSound()
 
   //setting text for content
   this.setContent( this.word, _data.palavra)
@@ -101,14 +111,16 @@ wordDefinition.prototype.init = function(_data, _callBack) {
 
   //calling callBack after animation
   var time = ( this.description.innerHTML.length + this.firstTitle.innerHTML.length + this.word.innerHTML.length) * this.tempoPorCaracter
-  // setTimeout( () => { this.changeToTrans(_data) }, time + 1000)
+  setTimeout( () => { this.changeToTrans(_data) }, time + 1000)
 
 }
 
 wordDefinition.prototype.changeToTrans = function(_data) {
-
   var time = ( this.transDescription.innerHTML.length + this.secondTitle.innerHTML.length + this.transWord.innerHTML.length) * this.tempoPorCaracter
-  _data.audioOriginalObj.play()
+
+  this.currentAudio = this.data.audioOriginalObj
+  this.playSound()
+
   this.secondTitle.style.transform = "translateX(0px)"
   this.firstTitle.style.transform = "translateX(" + canvasSize.width * 0.05 + "px)"
   this.firstTitle.style.opacity = 0
@@ -122,7 +134,7 @@ wordDefinition.prototype.changeToTrans = function(_data) {
     this.secondTitle.classList.add("on")
   },100)
 
-  setTimeout( () => { this.finish() }, time + 1000)
+  // setTimeout( () => { this.finish() }, time + 1000)
 
 }
 
@@ -147,8 +159,6 @@ wordDefinition.prototype.reset = function(){
   this.line.style.width = "0px"
 
 }
-<<<<<<< HEAD
-=======
 
 wordDefinition.prototype.exitAnimation = function(){
 
@@ -163,7 +173,9 @@ wordDefinition.prototype.setContent = function(_DOM,_string){
 
 }
 
-wordDefinition.prototype.exitAnimation = function(){
+wordDefinition.prototype.playSound = function(){
+  if(!this.currentAudio.isPlaying()){
+    this.currentAudio.play()
+  }
 
 }
->>>>>>> b87f30494258a8dce06f3ead8ea8210919d887d3
