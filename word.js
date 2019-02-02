@@ -111,7 +111,7 @@ class Word {
 
     //When the words leave the canvas return "Kill it"
 
-    if (this.location.x > width || this.location.x < 0|| this.location.y > height || this.location.y < 0){
+    if (this.location.x > width || this.location.x < 0|| this.location.y > height - canvasSize.height * 0.121 || this.location.y < 0){
       return true;
       this.isDisplayed = false
     }else{

@@ -10,6 +10,7 @@ function menuPage(){
   this.container.style.position = "absolute"
   this.container.style.top = "0px"
   this.container.style.left = "0px"
+  this.container.style.display = "none"
   document.body.append(this.container)
 
   var btnSize = {
