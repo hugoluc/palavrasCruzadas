@@ -7,6 +7,7 @@ function wordDefinition(){
   this.allContainer = document.createElement("div")
   this.allContainer.style.position = "absolute"
   this.allContainer.style.top = "0px"
+  this.allContainer.style.display = "none"
   this.allContainer.style.bottom = "0px"
   this.allContainer.id = "definition_container"
   document.body.append(this.allContainer)
@@ -72,9 +73,11 @@ function wordDefinition(){
   this.audio.style.display = "block"
   this.audio.style.position = "absolute"
   this.audio.style.width = "100px"
-  this.audio.style.top =  this.margin + canvasSize.height * 0.07    + "px"
+  this.audio.style.top =  this.margin + canvasSize.height * 0.08    + "px"
   this.audio.style.left = canvasSize.width - this.margin - 100 + "px"
   this.audio.style.marginTop = "200x"
+  this.audio.style.opacity = 0
+  this.audio.style.transform = "translateX(" - canvasSize.width * 0.05 +" )"
 
   this.audio.onclick = () => {
     this.playSound()
@@ -86,32 +89,41 @@ function wordDefinition(){
 
 wordDefinition.prototype.init = function(_data, _callBack) {
 
-  //setting callback and time per caracter
-  this.callBack = () => { _callBack() }
-  this.data = _data
-  this.currentAudio = this.data.audioObj
-  this.playSound()
+  this.allContainer.style.display = "block"
 
-  //setting text for content
-  this.setContent( this.word, _data.palavra)
-  this.description.innerHTML = _data.significado
+  setTimeout( () => {
 
-  this.setContent( this.transWord, _data.tradução)
-  this.transDescription.innerHTML = _data.significadoOriginal
-  this.secondTitle.innerHTML = "Em " + _data.origem
+    this.audio.style.opacity = 1
+    this.audio.style.transform = "translateX(0)"
 
-  //initiating animations
-  this.firstTitle.style.transform = "translateX(0px)"
-  this.firstTitle.style.opacity = 1
+    //setting callback and time per caracter
+    this.callBack = () => { _callBack() }
+    this.data = _data
+    this.currentAudio = this.data.audioObj
+    this.playSound()
 
-  this.container.style.transform = "translateX(0px)"
-  this.container.style.opacity = 1
+    //setting text for content
+    this.setContent( this.word, _data.palavra)
+    this.description.innerHTML = _data.significado
 
-  this.line.style.width = canvasSize.width - (2*this.margin) + "px"
+    this.setContent( this.transWord, _data.tradução)
+    this.transDescription.innerHTML = _data.significadoOriginal
+    this.secondTitle.innerHTML = "Em " + _data.origem
 
-  //calling callBack after animation
-  var time = ( this.description.innerHTML.length + this.firstTitle.innerHTML.length + this.word.innerHTML.length) * this.tempoPorCaracter
-  setTimeout( () => { this.changeToTrans(_data) }, time + 1000)
+    //initiating animations
+    this.firstTitle.style.transform = "translateX(0px)"
+    this.firstTitle.style.opacity = 1
+
+    this.container.style.transform = "translateX(0px)"
+    this.container.style.opacity = 1
+
+    this.line.style.width = canvasSize.width - (2*this.margin) + "px"
+
+    //calling callBack after animation
+    var time = ( this.description.innerHTML.length + this.firstTitle.innerHTML.length + this.word.innerHTML.length) * this.tempoPorCaracter
+    setTimeout( () => { this.changeToTrans(_data) }, time + 1000)
+
+  }, 100 )
 
 }
 
@@ -134,7 +146,7 @@ wordDefinition.prototype.changeToTrans = function(_data) {
     this.secondTitle.classList.add("on")
   },100)
 
-  // setTimeout( () => { this.finish() }, time + 1000)
+  setTimeout( () => { this.finish() }, time + 1000)
 
 }
 
@@ -143,6 +155,7 @@ wordDefinition.prototype.finish = function(_data) {
   this.secondTitle.style.opacity = 0
   this.line.style.opacity = 0
   this.transContainer.style.opacity = 0
+  this.audio.style.opacity = 0
   this.callBack()
   setTimeout( () => { this.reset() } , 2000 )
 
@@ -157,6 +170,7 @@ wordDefinition.prototype.reset = function(){
   this.transContainer.style.transform = "translateX(-" + canvasSize.width * 0.05 + "px)"
 
   this.line.style.width = "0px"
+  this.allContainer.style.display = "none"
 
 }
 
