@@ -19,6 +19,11 @@ canvas {
 ::-webkit-scrollbar-thumb {
     background: #FF0000;
 }
+
+#soud_icon{
+  transition: opacity 0.8s, transform 0.8s;
+}
+
 #backBtnContainer{
   position: absolute;
   background-color: white;
