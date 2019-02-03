@@ -135,7 +135,6 @@ inspectionBtn.prototype.checkHover = function(){
 }
 
 inspectionBtn.prototype.setHover = function(_isHovered, _selectedWord){
-  console.log(_isHovered, _selectedWord);
   this.isHovered = _isHovered
   this.selectedWord = _selectedWord
   this.transtitionHover = true
