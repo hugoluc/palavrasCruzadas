@@ -16,7 +16,7 @@ class WordSystem {
     this.wordCount = 0
 
     for(var i = 0; i < this.wordLimit; i++){
-      // debugger
+
       this.words.push(new Word(this.origin, this.wordId));
       this.allWords[this.wordId] = this.words[i]
       this.wordId++

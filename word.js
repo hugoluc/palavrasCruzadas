@@ -4,6 +4,11 @@ class Word {
     //initial selected position and direction it moves
     this.originalPosition = position.copy();
     this.id = id;
+    this.speedLimits = {
+      min : 0.5,
+      max : 1
+    }
+
     this.reset();
 
   }
@@ -24,7 +29,13 @@ class Word {
     this.b = 24;
     this.a = 255;
     this.isBeingDragged = false
-    this.speed = createVector(random(-0.8, 0.8), random(-0.8, 0.8));
+
+    var direction = [-1,1]
+    var speed = random(this.speedLimits.min, this.speedLimits.max)
+    var speedX = random(0, speed)
+    var speedY = Math.sqrt( (speed * speed) - (speedX * speedX)  ) * direction[getRandomInt(2)]
+    speedX = speedX * direction[getRandomInt(2)]
+    this.speed = createVector(speedX, speedY);
   }
 
   checkClick(){
@@ -93,7 +104,7 @@ class Word {
     if (this.isBeingDragged) {
       this.size = this.size;
     } else {
-      this.size = this.size + 0.1;
+      this.size = this.size + 0.05;
     }
   }
 
