@@ -6,7 +6,7 @@ function aditionalInfoPage(){
     padding : canvasSize.width * 0.05
   }
 
-  var transitionTime = "0.6"
+  var transitionTime = 0.6
 
   //Container
   this.container = document.createElement("div")
@@ -77,13 +77,16 @@ aditionalInfoPage.prototype.init = function(_data,_callBack){
   this.data = _data
   this.container.style.display = "flex"
   setTimeout(() => {
+    this.text.style.transform = "translateX(0px)"
     this.text.style.opacity = 1
     this.text.innerHTML = _data.text
 
     this.tittle.style.opacity = 1
+    this.tittle.style.transform = "translateX(0px)"
     this.tittle.innerHTML = "<div class='infoPagetitle'>" + _data.titulo + "</div>"
 
     this.images.style.opacity = 1
+    this.images.style.transform = "translateX(0px)"
     this.images.style.backgroundImage = "url(imagens/" + _data.imagens[0] + ")"
 
     this.backBtn.style.opacity = 1
@@ -94,11 +97,18 @@ aditionalInfoPage.prototype.init = function(_data,_callBack){
 
 aditionalInfoPage.prototype.reset = function(){
 
-  this.images.style.backgroundImage = ""
-  this.tittle.innerHTML = ""
   this.text.style.opacity = 0
+  this.text.style.transition = "opacity  0.5s, transform 0.5s"
+  this.text.style.transform = "translateX(50px)"
+
   this.tittle.style.opacity = 0
+  this.tittle.style.transition = "opacity  0.5s, transform 0.5s"
+  this.tittle.style.transform = "translateX(-50px)"
+
   this.images.style.opacity = 0
+  this.images.style.transition = "opacity  0.5s, transform 0.5s"
+  this.images.style.transform = "translateY(-50px)"
+
   this.backBtnContainer.style.opacity = 0
   this.backBtn.style.opacity = 0
 
@@ -106,9 +116,10 @@ aditionalInfoPage.prototype.reset = function(){
 
 aditionalInfoPage.prototype.back = function(){
   var _this = this
+  _this.callBack(menu.data)
+
   setTimeout(() => {
     _this.container.style.display = "none"
-    _this.callBack(menu.data)
   },500)
 
   this.reset()

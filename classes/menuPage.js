@@ -23,14 +23,11 @@ function menuPage(){
   this.backBtn.style.top = this.margin + "px"
   this.backBtn.style.left = this.margin + "px"
   this.backBtn.style.position = "absolute"
-
   this.backBtn.style.borderRadius = btnSize.height + "px"
   this.backBtn.style.borderColor = "rgba(" + this.yellow[0] + "," + this.yellow[1] + "," + this.yellow[2] + "," + this.alpha + ")"
   this.backBtn.style.border = btnSize.height * 0.06 + "px solid";
-
   this.backBtn.style.fontSize = btnSize.height * 0.35 + "px"
   this.backBtn.style.color = "rgba(" + this.yellow[0] + "," + this.yellow[1] + "," + this.yellow[2] + "," + this.alpha + ")"
-
   this.backBtn.innerHTML = "Explorar mais palavras"
   this.backBtn.id = "menu_backBtn"
   this.backBtn.onclick = function(){
@@ -101,7 +98,6 @@ function menuPage(){
 
 menuPage.prototype.init = function(_data){
 
-  console.log("init")
   this.container.style.display = "block"
   this.data = _data
   setTimeout( ()=> {
@@ -135,7 +131,8 @@ menuPage.prototype.reset = function(){
   this.backBtn.style.transitionDelay = "translateY(-10px)"
 
   for(var i = 0; i < 7; i++){
-    this.menuItems[i].container.style.transitionDuration = animationTime + "s , 10000s "
+    this.menuItems[i].container.style.transitionDuration = animationTime + "s , 1.5s "
+    this.menuItems[i].container.style.transitionTimingFunction = "ease, ease"
     this.menuItems[i].container.style.opacity = 0
     this.menuItems[i].container.style.transform = "translateY(0px)"
     this.menuItems[i].container.style.transitionDelay = (7 * delay) - (i * delay) + "s"
@@ -152,6 +149,6 @@ menuPage.prototype.toInfoPage = function(_data){
   this.reset()
   setTimeout( () => {
     this.infoPage.init(this.data[_data], () => { _this.init(_this.data) })
-  },400)
+  },200)
 
 }
