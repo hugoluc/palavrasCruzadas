@@ -1,9 +1,5 @@
 function aditionalInfoPage(){
 
-
-  this.imageIndex = -1
-  this.imageTimer = 4500
-
   this.proportions = {
     height : (6/10),
     width : (2/3),
@@ -119,6 +115,8 @@ aditionalInfoPage.prototype.reset = function(){
   this.backBtnContainer.style.opacity = 0
   this.backBtn.style.opacity = 0
 
+  this.removeSlide()
+
 }
 
 aditionalInfoPage.prototype.back = function(){
@@ -187,21 +185,28 @@ aditionalInfoPage.prototype.addslide = function(_images){
   this.changeImage()
   this.slideActive = true
 
-  setTimeout ( () => {
-    if(this.slideActive == true) this.slideLoop()
-  }, this.imageTimer)
+  if(!this.waiting){
+    setTimeout ( () => {
+      if(this.slideActive == true) this.slideLoop()
+    }, this.imageTimer)
+  }
 
 }
 
 aditionalInfoPage.prototype.removeSlide = function(_images){
   this.images.innerHTML = ""
   this.slideActive = false
+  this.imageIndex = -1
+  this.imageTimer = 10000
 }
 
 aditionalInfoPage.prototype.slideLoop = function(_images){
   if(this.slideActive == true){
+    this.waiting = true
     this.changeImage()
     setTimeout( () => { this.slideLoop() }, this.imageTimer)
+  }else{
+    this.waiting = false
   }
 
 }
