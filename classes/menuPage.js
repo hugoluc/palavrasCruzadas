@@ -129,12 +129,13 @@ menuPage.prototype.animateMenus = function() {
 
 menuPage.prototype.reset = function(){
 
+  var animationTime = 0.3
   var delay = 0.04
   this.backBtn.style.opacity = 0
   this.backBtn.style.transitionDelay = "translateY(-10px)"
 
   for(var i = 0; i < 7; i++){
-    this.menuItems[i].container.style.transitionDuration = "0.3s , 10000s "
+    this.menuItems[i].container.style.transitionDuration = animationTime + "s , 10000s "
     this.menuItems[i].container.style.opacity = 0
     this.menuItems[i].container.style.transform = "translateY(0px)"
     this.menuItems[i].container.style.transitionDelay = (7 * delay) - (i * delay) + "s"
@@ -142,7 +143,7 @@ menuPage.prototype.reset = function(){
 
   setTimeout(() => {
     this.container.style.display = "none"
-  }, 2000)
+  }, 1000)
 
 }
 
