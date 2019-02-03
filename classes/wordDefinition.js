@@ -208,7 +208,7 @@ wordDefinition.prototype.setContent = function(_DOM,_string){
 
 wordDefinition.prototype.playSound = function(){
   if(!this.currentAudio.isPlaying()){
-    // this.currentAudio.play()
+    this.currentAudio.play()
   }
 
   this.currentAudio._onended = () => { this.playEnd() }
