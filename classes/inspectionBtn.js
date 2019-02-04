@@ -1,29 +1,8 @@
 function inspectionBtn(){
 
-  this.yellow = [globalColors.yellow.r,globalColors.yellow.g,globalColors.yellow.b]
   this.margin = 25
-  this.size = {
-    width : canvasSize.width - (2*this.margin),
-    height : canvasSize.height * 0.121
-  }
-  this.position = {
-    x :   this.margin,
-    y : canvasSize.height - this.size.height -   this.margin,
-  }
 
-  this.text = {
-    size : canvasSize.height * 0.03,
-    string : "Arraste as palavras aqui",
-    color : this.yellow,
-    alpha : 1
-  }
-
-  this.alpha = 0
-  this.isHovered = false
-  this.transtitionHover = false
-
-  this.speed = canvasSize.height * 0.01
-  this.acceleration = 1.1
+  this.init()
 
 }
 
@@ -56,14 +35,7 @@ inspectionBtn.prototype.displayToBlack = function(_callBack,_data){
 inspectionBtn.prototype.nextPage = function(_callBack,_data){
 
     this.callBack = _callBack
-
     this.transtitionNextPage = true
-    this.transtitionsDone = {
-      height : false,
-      width : false,
-      x : false,
-      y : false,
-    }
 
 }
 
@@ -202,5 +174,42 @@ inspectionBtn.prototype.show = function(){
   fill( "rgba(" + this.text.color[0] + "," + this.text.color[1] + "," + this.text.color[2] + "," + this.text.alpha + ")")
   textAlign(CENTER)
   text(this.text.string, canvasSize.width/2, this.position.y + this.size.height/2 + (this.text.size/4));
+
+}
+
+inspectionBtn.prototype.init = function(){
+
+  this.yellow = [globalColors.yellow.r,globalColors.yellow.g,globalColors.yellow.b]   
+  this.transtitionHover = false
+  this.transtitionNextPage = false
+  this.transitionToBlack= false
+  this.isHovered = false
+  this.transtitionsDone = {
+    height : false,
+    width : false,
+    x : false,
+    y : false,
+  }
+
+
+  this.alpha = 0
+  this.text = {
+    size : canvasSize.height * 0.03,
+    string : "Arraste as palavras aqui",
+    color : this.yellow,
+    alpha : 1
+  }
+
+  this.size = {
+    width : canvasSize.width - (2*this.margin),
+    height : canvasSize.height * 0.121
+  }
+
+  this.speed = canvasSize.height * 0.01
+  this.acceleration = 1.1
+  this.position = {
+    x : this.margin,
+    y : canvasSize.height - this.size.height -   this.margin,
+  }
 
 }
