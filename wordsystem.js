@@ -38,6 +38,7 @@ class WordSystem {
       this.lastMillis = millis()
 
       if(this.wordCount < this.wordLimit){
+
         //Select the word from the source
         var selectedWord = this.words.pop()
         selectedWord.setData(random(data.palavras));
@@ -73,7 +74,8 @@ class WordSystem {
       if(this.displayWords[i].checkClick()){
 
         this.dragId = this.displayWords[i].id
-        return
+        this.displayWords[i].isBeingDragged = true
+        return this.displayWords[i]
       }
     }
 
@@ -100,8 +102,9 @@ class WordSystem {
       // If the word status is dead, out of the canvas, deleted it from the array
       if (w.kill()) {
 
-        // console.log(this.words);
-        // console.log(this.displayWords);
+        console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+        console.log(w.id);
+        console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
 
         this.words.push( this.displayWords.splice(i, 1)[0] );
         this.wordCount--

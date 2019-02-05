@@ -27,7 +27,7 @@ var btn, definitionPage, menu, system, sounds;
 function mousePressed() {
 
   if(enableCanvas){
-    system.checkWordsClick();
+    system.checkWordsClick()
   }
 
 }
@@ -36,6 +36,9 @@ function mouseDragged() {
 
   if(enableCanvas && system.dragId != null){
 
+
+      console.log(system.dragId);
+      console.log(system.allWords[system.dragId].isBeingDragged);
       system.allWords[system.dragId].setHover(false)
 
       if(btn.checkHover()){
