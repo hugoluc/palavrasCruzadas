@@ -5,8 +5,8 @@ class Word {
     this.originalPosition = position.copy();
     this.id = id;
     this.speedLimits = {
-      min : 0.5,
-      max : 1
+      min : 1,
+      max : 5
     }
 
     this.reset();
@@ -104,7 +104,7 @@ class Word {
     if (this.isBeingDragged) {
       this.size = this.size;
     } else {
-      this.size = this.size + 0.05;
+      this.size = this.size + 0.15;
     }
   }
 

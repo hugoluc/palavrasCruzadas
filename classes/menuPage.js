@@ -48,6 +48,7 @@ function menuPage(){
   for(var i = 0; i < 7; i++){
 
     var item = {};
+    item.id = i
     var _this = this
     // item.finalPosition = canvasSize.height - this.marginBottom - ( this.itemHeight * (i+ 1) ) + "px"
     item.container = document.createElement("div")
@@ -57,7 +58,7 @@ function menuPage(){
     item.container.className = "menuItem"
     item.container.style.opacity = 0
     item.container.style.color = "white"
-    item.container.style.display = "flex"
+    item.container.style.display = "none"
     item.container.style.width = canvasSize.width + "px"
     item.container.style.paddingLeft = this.margin + "px"
     item.container.style.height = this.itemHeight + "px"
@@ -107,20 +108,27 @@ menuPage.prototype.init = function(_data){
 }
 
 menuPage.prototype.animateMenus = function() {
-    // debugger
+     // debugger
     var delay = 0.04
     this.backBtn.style.opacity = 1
     this.backBtn.style.transitionDelay = "translateY(0px)"
 
     for(var i = 0; i < this.data.length; i++){
-      this.menuItems[i].container.style.transition = "opacity 0.8s, transform 1s cubic-bezier(0, 1, 0, 1)"
+      this.menuItems[i].container.style.display = "flex"
       this.menuItems[i].data = this.data[i]
       this.menuItems[i].text.innerHTML = this.data[i].titulo
-      this.menuItems[i].container.style.transform = "translateY(-" + this.itemHeight + "px)"
-      this.menuItems[i].container.style.opacity = 1
-      this.menuItems[i].container.style.transitionDelay = (this.data.length * delay) - (i * delay) + "s"
-
     }
+
+    setTimeout( () => {
+      for(var i = 0; i < this.data.length; i++){
+        var element = this.menuItems[i]
+        element.container.style.transition = "opacity 0.8s, transform 1s cubic-bezier(0, 1, 0, 1)"
+        element.container.style.transform = "translateY(-" + this.itemHeight + "px)"
+        element.container.style.opacity = 1
+        element.container.style.transitionDelay = (this.data.length * delay) - (i * delay) + "s"
+      }
+    },50)
+
 }
 
 menuPage.prototype.reset = function(){
@@ -131,6 +139,7 @@ menuPage.prototype.reset = function(){
   this.backBtn.style.transitionDelay = "translateY(-10px)"
 
   for(var i = 0; i < 7; i++){
+    // this.menuItems[i].container.style.display = "none"
     this.menuItems[i].container.style.transitionDuration = animationTime + "s , 1.5s "
     this.menuItems[i].container.style.transitionTimingFunction = "ease, ease"
     this.menuItems[i].container.style.opacity = 0
@@ -148,6 +157,7 @@ menuPage.prototype.toInfoPage = function(_data){
   var _this = this
   this.reset()
   setTimeout( () => {
+    debugger
     this.infoPage.init(this.data[_data], () => { _this.init(_this.data) })
   },200)
 

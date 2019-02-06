@@ -1,6 +1,7 @@
 //constant definitions
 var x = 1
 var enableCanvas = true
+var toDefinition = false
 
 var selectedData = data[0]
 
@@ -37,9 +38,6 @@ function mouseDragged() {
 
   if(enableCanvas && system.dragId != null){
 
-
-      console.log(system.dragId);
-      console.log(system.allWords[system.dragId].isBeingDragged);
       system.allWords[system.dragId].setHover(false)
 
       if(btn.checkHover()){
@@ -54,10 +52,11 @@ function mouseDragged() {
 
 function mouseReleased() {
   if(enableCanvas && system.dragId){
-
       system.allWords[system.dragId].isBeingDragged = false
 
       if(system.checkDrag() != null && btn.checkHover()){
+
+        toDefinition = true
 
         btn.nextPage(() => {
           enableCanvas = false
@@ -65,6 +64,7 @@ function mouseReleased() {
             btn.toBlack()
             setTimeout(() => { menu.init(system.data.menu) }, 300)
           })
+
         })
 
       }else{

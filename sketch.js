@@ -39,7 +39,7 @@ function draw() {
 
   background(26, 24, 25);
 
-  if(enableCanvas){
+  if(enableCanvas && !toDefinition){
     system.run();
   }
   btn.show()

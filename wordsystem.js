@@ -5,6 +5,10 @@ class WordSystem {
 
   constructor(position,_data) {
     //Array of words in the words system
+    this.createWordTime = {
+      min : 200,
+      max : 800
+    }
     this.data = _data
     this.words = []
     this.displayWords = []
@@ -35,7 +39,7 @@ class WordSystem {
 
     if(elapsedTime > this.nextWordTime){
 
-      this.nextWordTime = getRandomInt(2000,8000)
+      this.nextWordTime = getRandomInt( this.createWordTime.min,this.createWordTime.max)
       this.lastMillis = millis()
 
       if(this.wordCount < this.wordLimit){
@@ -76,6 +80,7 @@ class WordSystem {
 
         this.dragId = this.displayWords[i].id
         this.displayWords[i].isBeingDragged = true
+        console.log(this.displayWords[i].id,this.displayWords[i].word)
         return this.displayWords[i]
       }
     }

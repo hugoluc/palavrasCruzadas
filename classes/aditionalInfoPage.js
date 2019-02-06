@@ -7,6 +7,7 @@ function aditionalInfoPage(){
   }
 
   var transitionTime = 0.6
+  this.imageTimer = 5000
 
   //Container
   this.container = document.createElement("div")
@@ -72,7 +73,7 @@ function aditionalInfoPage(){
 }
 
 aditionalInfoPage.prototype.init = function(_data,_callBack){
-
+  console.log(_data);
   this.callBack = _callBack
   this.data = _data
   this.container.style.display = "flex"
@@ -197,7 +198,6 @@ aditionalInfoPage.prototype.removeSlide = function(_images){
   this.images.innerHTML = ""
   this.slideActive = false
   this.imageIndex = -1
-  this.imageTimer = 10000
 }
 
 aditionalInfoPage.prototype.slideLoop = function(_images){
