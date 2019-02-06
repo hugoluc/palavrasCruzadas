@@ -3,8 +3,9 @@ var selectedWord;
 
 class WordSystem {
 
-  constructor(position) {
+  constructor(position,_data) {
     //Array of words in the words system
+    this.data = _data
     this.words = []
     this.displayWords = []
     this.allWords = {}
@@ -41,7 +42,7 @@ class WordSystem {
 
         //Select the word from the source
         var selectedWord = this.words.pop()
-        selectedWord.setData(random(data.palavras));
+        selectedWord.setData(random(this.data.palavras));
         //Pass is to the Word class constructor
         this.displayWords.push(selectedWord);
         this.wordCount++
@@ -102,9 +103,6 @@ class WordSystem {
       // If the word status is dead, out of the canvas, deleted it from the array
       if (w.kill()) {
 
-        console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
-        console.log(w.id);
-        console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
 
         this.words.push( this.displayWords.splice(i, 1)[0] );
         this.wordCount--

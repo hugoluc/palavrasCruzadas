@@ -1,7 +1,8 @@
 //constant definitions
-
 var x = 1
 var enableCanvas = true
+
+var selectedData = data[0]
 
 var canvasSize = {
   width :  1080 * x,
@@ -62,7 +63,7 @@ function mouseReleased() {
           enableCanvas = false
           definitionPage.init( system.allWords[system.dragId].data, () => {
             btn.toBlack()
-            setTimeout(() => { menu.init(data.menu) }, 300)
+            setTimeout(() => { menu.init(system.data.menu) }, 300)
           })
         })
 

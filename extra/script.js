@@ -1,6 +1,7 @@
 const csv = require('csvtojson')
 const fs = require("fs")
 
+var allData = {}
 var names = [
   "Línguas Indígenas Tupinambá",
   "Línguas indígenas hoje",
@@ -11,19 +12,23 @@ var names = [
   "Línguas de imigrantes",
   "Português no mundo",
 ]
+for (var i = 0; i < names.length; i++) {
+  alldata[names[i]] = { nome : names[i] }
+}
 
 var index = 0
-var allData = {}
+var menuIndex = 0
+var wordsDone = false
+var menuDone = false
+getWords()
+getMenus()
 
-// var csvFilePath = "../" + names[0] + ".csv"
-getWords(index)
 
 
 function getWords() {
+  var csvFilePath = "palavras/"+ index + ".csv"
 
-  console.log(index);
-  var csvFilePath = "CSVs/"+ index + ".csv"
-
+  //readFile---------------------------------------------------------
   csv().fromFile(csvFilePath).then((jsonObj) => {
 
     var palavras = []
@@ -41,20 +46,53 @@ function getWords() {
       palavras.push(palavra)
     }
 
-    allData[names[index]] = { palavras : palavras }
+    allData[names[index]].palavras = palavras
 
     if(index < names.length-1){
       index++
       getWords()
     }else{
+      wordsDone = true
       saveData()
     }
+  })
+}
 
+
+
+
+function getMenus() {
+  var csvFilePath = "menu/"+ menuIndex + ".csv"
+
+  //readFile---------------------------------------------------------
+  csv().fromFile(csvFilePath).then((jsonObj) => {
+
+    var menu = []
+
+    for (var l = 0; l < jsonObj.length; l++) {
+      var item = {}
+      item.titulo = jsonObj[l]["titulo"]
+      item.text = jsonObj[l]["texto"]
+      item.imagens = jsonObj[l]["imagens"]
+      menu.push(item)
+    }
+
+    allData[names[index]].menu = menu
+
+    if(menuIndex < names.length-1){
+      menuIndex++
+      getMenus()
+    }else{
+      menuDone = true
+      saveData()
+    }
   })
 }
 
 
 function saveData() {
+
+  if(!menuDone || !wordsDone ) return
 
   var data = 'var data = ' + JSON.stringify(allData, null, 1)
 

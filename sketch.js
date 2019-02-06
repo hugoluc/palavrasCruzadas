@@ -4,9 +4,9 @@ var words = [];
 
 function preload(){
 
-  for(i = 0; i < data.palavras.length; i++){
-    data.palavras[i].audioObj = loadSound( "audios/" + data.palavras[i].audio)
-    data.palavras[i].audioOriginalObj = loadSound( "audios/" + data.palavras[i].audioOriginal)
+  for(i = 0; i <selectedData.palavras.length; i++){
+   selectedData.palavras[i].audioObj = loadSound( "audios/" +selectedData.palavras[i].audio)
+   selectedData.palavras[i].audioOriginalObj = loadSound( "audios/" +selectedData.palavras[i].audioOriginal)
   }
 
 }
@@ -19,7 +19,7 @@ function setup() {
   btn = new inspectionBtn()
   definitionPage = new wordDefinition()
   menu = new menuPage()
-  system = new WordSystem(createVector(canvasSize.width/2, canvasSize.height/2 - btn.size.height));
+  system = new WordSystem(createVector(canvasSize.width/2, canvasSize.height/2 - btn.size.height),selectedData);
   //
 
 }
@@ -27,7 +27,7 @@ function setup() {
 var framecount = 0
 var frameMedian = 0
 function draw() {
-  // 
+  //
   // if (framecount > 100){
   //   console.log(frameMedian/framecount,system.displayWords.length);
   //   frameMedian = 0
