@@ -4,6 +4,9 @@ var words = [];
 
 function preload(){
 
+  sohne = loadFont('Söhne/Söhne-Mager.otf');
+  sohneBold = loadFont('Söhne/Söhne-Halbfett.otf');
+
   for(i = 0; i < data.palavras.length; i++){
     data.palavras[i].audioObj = loadSound( "audios/" + data.palavras[i].audio)
     data.palavras[i].audioOriginalObj = loadSound( "audios/" + data.palavras[i].audioOriginal)
@@ -27,7 +30,7 @@ function setup() {
 var framecount = 0
 var frameMedian = 0
 function draw() {
-  // 
+  //
   // if (framecount > 100){
   //   console.log(frameMedian/framecount,system.displayWords.length);
   //   frameMedian = 0

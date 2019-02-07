@@ -102,10 +102,6 @@ class WordSystem {
       // If the word status is dead, out of the canvas, deleted it from the array
       if (w.kill()) {
 
-        console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
-        console.log(w.id);
-        console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
-
         this.words.push( this.displayWords.splice(i, 1)[0] );
         this.wordCount--
         //

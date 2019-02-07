@@ -123,7 +123,7 @@ class Word {
     //When the words leave the canvas return "Kill it"
     if(this.isBeingDragged) return false
 
-    if (this.location.x > width || this.location.x < 0|| this.location.y > height - canvasSize.height * 0.121 || this.location.y < 0 && this.isBeingDragged ){
+    if (this.location.x > width || this.location.x < 0|| this.location.y > height - btn.getTotalHeight() || this.location.y < 0 && this.isBeingDragged ){
       return true;
       this.isDisplayed = false
     }else{
@@ -140,6 +140,7 @@ class Word {
     //display the word
     fill(this.r, this.g,this.b,this.a);
     textSize(this.size);
+    textFont(sohne)
     this.textWidth = textWidth(this.word)
     text(this.word, this.location.x, this.location.y);
 

@@ -2,6 +2,7 @@
 
 var x = 1
 var enableCanvas = true
+let sohne, sohneBold;
 
 var canvasSize = {
   width :  1080 * x,
