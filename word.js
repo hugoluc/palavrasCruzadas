@@ -5,13 +5,8 @@ class Word {
     this.originalPosition = position.copy();
     this.id = id;
     this.speedLimits = {
-<<<<<<< HEAD
-      min : 1,
-      max : 5
-=======
       min : 0.5,
       max : 2
->>>>>>> 312081c78367b31709bff3b7868048e80c796799
     }
 
     this.reset();
@@ -101,14 +96,10 @@ class Word {
     if (this.isBeingDragged) {
       this.size = this.size;
     } else {
-<<<<<<< HEAD
-      this.size = this.size + 0.15;
-=======
       this.size = this.size + (this.totalSpeed * CONTROLS.growMultiplyer);
       this.r = map(this.size,0,100,0,255,true)
       this.g = map(this.size,0,100,0,255,true)
       this.b = map(this.size,0,100,0,255,true)
->>>>>>> 312081c78367b31709bff3b7868048e80c796799
     }
   }
 

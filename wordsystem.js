@@ -39,11 +39,7 @@ class WordSystem {
 
     if(elapsedTime > this.nextWordTime){
 
-<<<<<<< HEAD
-      this.nextWordTime = getRandomInt( this.createWordTime.min,this.createWordTime.max)
-=======
       this.nextWordTime = getRandomInt(CONTROLS.wordTimeMin,CONTROLS.wordTimeMin)
->>>>>>> 312081c78367b31709bff3b7868048e80c796799
       this.lastMillis = millis()
 
       if(this.wordCount < this.wordLimit){
@@ -111,10 +107,6 @@ class WordSystem {
       // If the word status is dead, out of the canvas, deleted it from the array
       if (w.kill()) {
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 312081c78367b31709bff3b7868048e80c796799
         this.words.push( this.displayWords.splice(i, 1)[0] );
         this.wordCount--
         //

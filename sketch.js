@@ -4,18 +4,12 @@ var words = [];
 
 function preload(){
 
-<<<<<<< HEAD
-  for(i = 0; i <selectedData.palavras.length; i++){
-   selectedData.palavras[i].audioObj = loadSound( "audios/" +selectedData.palavras[i].audio)
-   selectedData.palavras[i].audioOriginalObj = loadSound( "audios/" +selectedData.palavras[i].audioOriginal)
-=======
   sohne = loadFont('Söhne/Söhne-Mager.otf');
   sohneBold = loadFont('Söhne/Söhne-Halbfett.otf');
 
   for(i = 0; i < data.palavras.length; i++){
     data.palavras[i].audioObj = loadSound( "audios/" + data.palavras[i].audio)
     data.palavras[i].audioOriginalObj = loadSound( "audios/" + data.palavras[i].audioOriginal)
->>>>>>> 312081c78367b31709bff3b7868048e80c796799
   }
 
 }
