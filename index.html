@@ -5,16 +5,20 @@
     <script src="data.js"></script>
     <script>
 
-      for(i = 0; i < data.menu.length; i++){
-        for(j = 0; j < data.menu[i].imagens.length; j++){
+
+    for (var l = 0; l < data.length; l++) {
+      for(i = 0; i < data[l].menu.length; i++){
+        for(j = 0; j < data[l].menu[i].imagens.length; j++){
 
           var res = document.createElement("link")
           res.rel = "preload"
           res.as = "image"
-          res.href = "imagens/" + data.menu[i].imagens[j]
+          res.href = "imagens/" + data[l].menu[i].imagens[j]
           document.head.appendChild(res)
+
         }
       }
+    }
 
     </script>
 

@@ -105,6 +105,7 @@ function wordDefinition(){
 
 wordDefinition.prototype.init = function(_data, _callBack) {
 
+  console.log("word.init", _data);
   this.data = _data
 
   //setting callback and time per caracter

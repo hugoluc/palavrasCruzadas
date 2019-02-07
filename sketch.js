@@ -22,7 +22,7 @@ function setup() {
   btn = new inspectionBtn()
   definitionPage = new wordDefinition()
   menu = new menuPage()
-  system = new WordSystem(createVector(canvasSize.width/2, canvasSize.height/2 - btn.size.height));
+  system = new WordSystem(createVector(canvasSize.width/2, canvasSize.height/2 - btn.size.height),selectedData);
   //
 
 }
@@ -42,7 +42,7 @@ function draw() {
 
   background(26, 24, 25);
 
-  if(enableCanvas){
+  if(enableCanvas && !toDefinition){
     system.run();
   }
   btn.show()

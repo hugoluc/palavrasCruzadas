@@ -7,6 +7,7 @@ function aditionalInfoPage(){
   }
 
   var transitionTime = 0.6
+  this.imageTimer = 5000
 
   //Container
   this.container = document.createElement("div")
@@ -73,7 +74,7 @@ function aditionalInfoPage(){
 }
 
 aditionalInfoPage.prototype.init = function(_data,_callBack){
-
+  console.log(_data);
   this.callBack = _callBack
   this.data = _data
   this.container.style.display = "flex"
@@ -192,7 +193,10 @@ aditionalInfoPage.prototype.removeSlide = function(_images){
   this.images.innerHTML = ""
   this.slideActive = false
   this.imageIndex = -1
+<<<<<<< HEAD
+=======
   this.imageTimer = 5000
+>>>>>>> 312081c78367b31709bff3b7868048e80c796799
 }
 
 aditionalInfoPage.prototype.slideLoop = function(){

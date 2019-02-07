@@ -69,17 +69,19 @@ function mouseDragged() {
 
 function mouseReleased() {
   if(enableCanvas && system.dragId){
-
       system.allWords[system.dragId].isBeingDragged = false
 
       if(system.checkDrag() != null && btn.checkHover()){
+
+        toDefinition = true
 
         btn.nextPage(() => {
           enableCanvas = false
           definitionPage.init( system.allWords[system.dragId].data, () => {
             btn.toBlack()
-            setTimeout(() => { menu.init(data.menu) }, 300)
+            setTimeout(() => { menu.init(system.data.menu) }, 300)
           })
+
         })
 
       }else{
