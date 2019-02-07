@@ -1,6 +1,7 @@
 function inspectionBtn(){
 
   this.margin = 100
+  this.marginTop= 30
   this.init()
 
 }
@@ -109,7 +110,6 @@ inspectionBtn.prototype.setHover = function(_isHovered, _selectedWord){
   this.isHovered = _isHovered
   this.selectedWord = _selectedWord
   this.transtitionHover = true
-  this.fontFamily = sohneBold
 
 }
 
@@ -117,7 +117,7 @@ inspectionBtn.prototype.displayHover = function(_isHovered){
 
   //transition to hovered state
   if(_isHovered){
-
+    this.fontFamily = sohneBold
     if(this.alpha < 1){
       this.alpha = this.alpha + 0.08
       if(this.alpha > 0.8){
@@ -129,6 +129,7 @@ inspectionBtn.prototype.displayHover = function(_isHovered){
 
   //transition to nothovered state
   }else{
+    this.fontFamily = sohne
     if(this.alpha > 0){
       this.alpha = this.alpha - 0.08
       if(this.alpha < 0.8){
@@ -154,7 +155,7 @@ inspectionBtn.prototype.show = function(){
 
   //display bg
   fill(globalColors.gray.r,globalColors.gray.g,globalColors.gray.b)
-  rect(0, this.position.y - this.margin, this.size.width + (2*this.margin), this.size.height + (2*this.margin) )
+  rect(0, this.position.y - this.marginTopr, this.size.width + (2*this.margin), this.size.height + this.margin + this.marginTop )
 
   //display outline
   stroke(this.yellow[0],this.yellow[1],this.yellow[2]);
@@ -179,7 +180,7 @@ inspectionBtn.prototype.show = function(){
 
 inspectionBtn.prototype.init = function(){
 
-  this.fontFamily = sohne 
+  this.fontFamily = sohne
   this.yellow = [globalColors.yellow.r,globalColors.yellow.g,globalColors.yellow.b]
   this.transtitionHover = false
   this.transtitionNextPage = false
@@ -217,6 +218,6 @@ inspectionBtn.prototype.init = function(){
 
 inspectionBtn.prototype.getTotalHeight = function(){
 
-  return ( this.margin * 2 ) +  this.size.height
+  return  this.margin +  this.size.height + this.marginTop
 
 }

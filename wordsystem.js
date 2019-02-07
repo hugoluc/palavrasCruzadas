@@ -12,7 +12,7 @@ class WordSystem {
     this.wordId = 0
     this.clearDrag();
 
-    this.wordLimit = 10
+    this.wordLimit = CONTROLS.maxWodCount
     this.wordCount = 0
 
     for(var i = 0; i < this.wordLimit; i++){
@@ -34,7 +34,7 @@ class WordSystem {
 
     if(elapsedTime > this.nextWordTime){
 
-      this.nextWordTime = getRandomInt(2000,8000)
+      this.nextWordTime = getRandomInt(CONTROLS.wordTimeMin,CONTROLS.wordTimeMin)
       this.lastMillis = millis()
 
       if(this.wordCount < this.wordLimit){
@@ -90,10 +90,9 @@ class WordSystem {
 
       w.toHover();
       w.toNotHover();
-      w.show();
       w.move();
       w.grow();
-      w.white();
+      w.show();
 
       if(w.id == this.dragId) {
         w.drag();

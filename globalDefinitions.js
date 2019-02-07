@@ -1,5 +1,23 @@
 //constant definitions
 
+
+
+//-------------CONTROLES--------------------
+
+CONTROLS = {
+
+  speedMin : 1,
+  speedMax : 1.5,
+  wordTimeMin : 1000,
+  wordTimeMax : 5000,
+  growMultiplyer : 0.15,
+  maxWodCount : 30,
+
+}
+
+//-----------------------------------------
+
+
 var x = 1
 var enableCanvas = true
 let sohne, sohneBold;
@@ -73,4 +91,8 @@ function mouseReleased() {
 
 function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
+}
+
+function toRadians (angle) {
+  return angle * (Math.PI / 180);
 }

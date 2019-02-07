@@ -6,7 +6,7 @@ class Word {
     this.id = id;
     this.speedLimits = {
       min : 0.5,
-      max : 1
+      max : 2
     }
 
     this.reset();
@@ -30,12 +30,13 @@ class Word {
     this.a = 255;
     this.isBeingDragged = false
 
-    var direction = [-1,1]
-    var speed = random(this.speedLimits.min, this.speedLimits.max)
-    var speedX = random(0, speed)
-    var speedY = Math.sqrt( (speed * speed) - (speedX * speedX)  ) * direction[getRandomInt(2)]
-    speedX = speedX * direction[getRandomInt(2)]
+    this.totalSpeed = random(CONTROLS.speedMin, CONTROLS.speedMax)
+    var angle = getRandomInt(361)
+    var speedX = Math.cos(toRadians(angle)) * this.totalSpeed
+    var speedY =  Math.sin(toRadians(angle)) * this.totalSpeed
     this.speed = createVector(speedX, speedY);
+
+
   }
 
   checkClick(){
@@ -90,21 +91,15 @@ class Word {
 
   }
 
-  white() {
-    //whitening Words
-    //Calculate the distance between the initial to final location
-    var d = dist(180, 260, this.location.x, this.location.y);
-    this.r = map(d, 0, 50, 24, 216);
-    this.g = map(d, 0, 50, 24, 216)
-    this.b = map(d, 0, 50, 24, 216)
-  }
-
   grow() {
     // Grow Words
     if (this.isBeingDragged) {
       this.size = this.size;
     } else {
-      this.size = this.size + 0.05;
+      this.size = this.size + (this.totalSpeed * CONTROLS.growMultiplyer);
+      this.r = map(this.size,0,100,0,255,true)
+      this.g = map(this.size,0,100,0,255,true)
+      this.b = map(this.size,0,100,0,255,true)
     }
   }
 
@@ -137,10 +132,11 @@ class Word {
 
     if (!this.isDisplayed) return
 
-    //display the word
+    // console.log(this.r,this.g,this.b);
+    // console.log("------------");
     fill(this.r, this.g,this.b,this.a);
     textSize(this.size);
-    textFont(sohne)
+    textFont(sohneBold)
     this.textWidth = textWidth(this.word)
     text(this.word, this.location.x, this.location.y);
 
