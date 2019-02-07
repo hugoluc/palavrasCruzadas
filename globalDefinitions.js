@@ -1,5 +1,9 @@
 //constant definitions
 
+var x = 1
+var enableCanvas = true
+var toDefinition = false
+var selectedData = data[0]
 
 
 //-------------CONTROLES--------------------
@@ -17,10 +21,8 @@ CONTROLS = {
 
 //-----------------------------------------
 
-
-var x = 1
-var enableCanvas = true
 let sohne, sohneBold;
+
 
 var canvasSize = {
   width :  1080 * x,

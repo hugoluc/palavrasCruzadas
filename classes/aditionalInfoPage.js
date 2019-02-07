@@ -193,10 +193,6 @@ aditionalInfoPage.prototype.removeSlide = function(_images){
   this.images.innerHTML = ""
   this.slideActive = false
   this.imageIndex = -1
-<<<<<<< HEAD
-=======
-  this.imageTimer = 5000
->>>>>>> 312081c78367b31709bff3b7868048e80c796799
 }
 
 aditionalInfoPage.prototype.slideLoop = function(){
