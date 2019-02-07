@@ -1,9 +1,28 @@
 //constant definitions
+
 var x = 1
 var enableCanvas = true
 var toDefinition = false
-
 var selectedData = data[0]
+
+
+//-------------CONTROLES--------------------
+
+CONTROLS = {
+
+  speedMin : 1,
+  speedMax : 1.5,
+  wordTimeMin : 1000,
+  wordTimeMax : 5000,
+  growMultiplyer : 0.15,
+  maxWodCount : 30,
+
+}
+
+//-----------------------------------------
+
+let sohne, sohneBold;
+
 
 var canvasSize = {
   width :  1080 * x,
@@ -76,4 +95,8 @@ function mouseReleased() {
 
 function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
+}
+
+function toRadians (angle) {
+  return angle * (Math.PI / 180);
 }

@@ -69,6 +69,7 @@ function aditionalInfoPage(){
 
   this.reset()
   this.callBack = function() {return null}
+  this.slideLoop()
 
 }
 
@@ -132,7 +133,6 @@ aditionalInfoPage.prototype.back = function(){
 
 }
 
-
 aditionalInfoPage.prototype.addslide = function(_images){
 
   this.removeSlide()
@@ -183,14 +183,9 @@ aditionalInfoPage.prototype.addslide = function(_images){
 
   }
 
+  console.log("------------------");
   this.changeImage()
   this.slideActive = true
-
-  if(!this.waiting){
-    setTimeout ( () => {
-      if(this.slideActive == true) this.slideLoop()
-    }, this.imageTimer)
-  }
 
 }
 
@@ -200,19 +195,16 @@ aditionalInfoPage.prototype.removeSlide = function(_images){
   this.imageIndex = -1
 }
 
-aditionalInfoPage.prototype.slideLoop = function(_images){
+aditionalInfoPage.prototype.slideLoop = function(){
+
   if(this.slideActive == true){
-    this.waiting = true
     this.changeImage()
-    setTimeout( () => { this.slideLoop() }, this.imageTimer)
-  }else{
-    this.waiting = false
   }
+  setTimeout( () => { this.slideLoop() }, this.imageTimer)
 
 }
 
-aditionalInfoPage.prototype.changeImage = function(_images){
-
+aditionalInfoPage.prototype.changeImage = function(){
 
   var images = this.images.querySelector("#imageContainer")
   var circles = this.images.querySelector("#circles")

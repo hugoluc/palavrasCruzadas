@@ -1,7 +1,19 @@
+@font-face {
+  font-family: "Sohne";
+  src: url("Söhne/Söhne-Mager.otf")
+}
+
+@font-face {
+  font-family: "Sohne bold";
+  src: url("Söhne/Söhne-Halbfett.otf")
+}
+
+
+
 html, body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: Sohne;
   overflow: hidden;
   height: 100%;
   position: absolute;
@@ -73,9 +85,6 @@ canvas {
   transform: translateY(100px);
 } */
 
-.wordexplorer{
-  font-family: sans-serif;
-}
 
 /*  TITLE */
 
@@ -100,7 +109,6 @@ canvas {
 
 
 /* WORDS */
-
 .wordexplorer.container{
   position: absolute;
   opacity: 0;
@@ -119,7 +127,7 @@ canvas {
   transition-delay: 0.07s;
 }
 .wordexplorer.word{
-  font-weight: 900;
+  font-family: Sohne bold;
 }
 
 .infoPagetitle{

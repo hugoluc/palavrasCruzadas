@@ -1,7 +1,7 @@
 function inspectionBtn(){
 
-  this.margin = 25
-
+  this.margin = 100
+  this.marginTop= 30
   this.init()
 
 }
@@ -117,18 +117,19 @@ inspectionBtn.prototype.displayHover = function(_isHovered){
 
   //transition to hovered state
   if(_isHovered){
-
+    this.fontFamily = sohneBold
     if(this.alpha < 1){
       this.alpha = this.alpha + 0.08
       if(this.alpha > 0.8){
         this.text.string = this.selectedWord
         this.text.color = [1,1,1]
-        // this.text.size = 38
+        this.text.size = 100
       }
     }
 
   //transition to nothovered state
   }else{
+    this.fontFamily = sohne
     if(this.alpha > 0){
       this.alpha = this.alpha - 0.08
       if(this.alpha < 0.8){
@@ -153,13 +154,12 @@ inspectionBtn.prototype.show = function(){
   if(this.transitionToBlack){ this.displayToBlack() }
 
   //display bg
-  strokeWeight(4);
   fill(globalColors.gray.r,globalColors.gray.g,globalColors.gray.b)
-  rect(0, this.position.y - this.margin, this.size.width + (2*this.margin), this.size.height + (2*this.margin) )
+  rect(0, this.position.y - this.marginTopr, this.size.width + (2*this.margin), this.size.height + this.margin + this.marginTop )
 
   //display outline
   stroke(this.yellow[0],this.yellow[1],this.yellow[2]);
-  strokeWeight(4);
+  strokeWeight(10);
   noFill()
   rect(this.position.x, this.position.y,this.size.width, this.size.height)
   noStroke()
@@ -170,6 +170,7 @@ inspectionBtn.prototype.show = function(){
   noStroke()
 
   //display text
+  textFont(this.fontFamily)
   textSize(this.text.size);
   fill( "rgba(" + this.text.color[0] + "," + this.text.color[1] + "," + this.text.color[2] + "," + this.text.alpha + ")")
   textAlign(CENTER)
@@ -179,7 +180,8 @@ inspectionBtn.prototype.show = function(){
 
 inspectionBtn.prototype.init = function(){
 
-  this.yellow = [globalColors.yellow.r,globalColors.yellow.g,globalColors.yellow.b]   
+  this.fontFamily = sohne
+  this.yellow = [globalColors.yellow.r,globalColors.yellow.g,globalColors.yellow.b]
   this.transtitionHover = false
   this.transtitionNextPage = false
   this.transitionToBlack= false
@@ -211,5 +213,11 @@ inspectionBtn.prototype.init = function(){
     x : this.margin,
     y : canvasSize.height - this.size.height -   this.margin,
   }
+
+}
+
+inspectionBtn.prototype.getTotalHeight = function(){
+
+  return  this.margin +  this.size.height + this.marginTop
 
 }
