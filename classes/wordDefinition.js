@@ -2,6 +2,7 @@
 function wordDefinition(){
 
   this.tempoPorCaracter = 0
+  this.audioOpacity = 1
 
   this.margin = canvasSize.height * 0.08
   this.allContainer = document.createElement("div")
@@ -79,7 +80,6 @@ function wordDefinition(){
   this.audio.style.marginTop = "200x"
   this.audio.style.opacity = 0
   this.audio.style.transform = "translateX(" - canvasSize.width * 0.05 +" )"
-
   this.audio.onclick = () => {
     this.playSound()
   }
@@ -111,8 +111,13 @@ wordDefinition.prototype.init = function(_data, _callBack) {
   //setting callback and time per caracter
   this.callBack = () => { _callBack() }
 
-  this.currentAudio = this.data.audioObj
-  this.playSound()
+  if(this.data.audioObj){
+    this.currentAudio = this.data.audioObj
+    this.playSound()
+    this.audioOpacity = 1
+  }else{
+    this.audioOpacity = 0
+  }
   this.forwardBtn.onclick = () => {
     this.changeToTrans(_data)
   }
@@ -128,7 +133,7 @@ wordDefinition.prototype.init = function(_data, _callBack) {
   this.allContainer.style.display = "block"
   setTimeout( () => {
 
-    this.audio.style.opacity = 1
+    this.audio.style.opacity = this.audioOpacity
     this.audio.style.transform = "translateX(0)"
 
     //initiating animations
@@ -160,7 +165,9 @@ wordDefinition.prototype.changeToTrans = function(_data) {
 
   setTimeout(() => {
     this.transContainer.classList.add("on")
+    this.transContainer.style.opacity = 1
     this.secondTitle.classList.add("on")
+    this.secondTitle.style.opacity = 1
   },100)
 
 
@@ -184,12 +191,19 @@ wordDefinition.prototype.finish = function(_data) {
 wordDefinition.prototype.reset = function(){
 
   this.firstTitle.style.transform = "translateX(-" + canvasSize.width * 0.05 + "px)"
+  this.firstTitle.className = "wordexplorer title"
   this.secondTitle.style.transform = "translateX(-" + canvasSize.width * 0.05 + "px)"
+  this.secondTitle.className = "wordexplorer title"
 
   this.container.style.transform = "translateX(-" + canvasSize.width * 0.05 + "px)"
+  this.container.className = "wordexplorer container"
   this.transContainer.style.transform = "translateX(-" + canvasSize.width * 0.05 + "px)"
+  this.transContainer.className = "wordexplorer container"
+
 
   this.line.style.width = "0px"
+  this.line.className = "wordexplorer line"
+  this.line.style.opacity = 1
   this.allContainer.style.display = "none"
 
 }
@@ -208,14 +222,16 @@ wordDefinition.prototype.setContent = function(_DOM,_string){
 }
 
 wordDefinition.prototype.playSound = function(){
-  if(!this.currentAudio.isPlaying()){
-    this.currentAudio.play()
+
+  if(this.currentAudio){
+    if(!this.currentAudio.isPlaying()){
+      this.currentAudio.play()
+    }
+
+    this.currentAudio._onended = () => { this.playEnd() }
+    this.forwardBtn.style.opacity = 0.1
+    this.audio.querySelector("#soundWavesIcon").setAttribute("opacity","1")
   }
-
-  this.currentAudio._onended = () => { this.playEnd() }
-
-  this.forwardBtn.style.opacity = 0.1
-this.audio.querySelector("#soundWavesIcon").setAttribute("opacity","1")
 
 }
 
@@ -229,7 +245,11 @@ wordDefinition.prototype.playEnd = function(){
 }
 
 wordDefinition.prototype.nextPage = function(_func){
-  if(!this.currentAudio.isPlaying()){
+  if(this.currentAudio){
+    if(!this.currentAudio.isPlaying()){
       _func()
+    }
+  }else{
+    _func()
   }
 }

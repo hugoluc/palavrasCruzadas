@@ -1,10 +1,10 @@
 //constant definitions
 
 var x = 1
-var enableCanvas = true
+var enableCanvas = false
 var toDefinition = false
 var selectedData = data[0]
-
+var appStart = false
 
 //-------------CONTROLES--------------------
 
@@ -70,22 +70,23 @@ function mouseDragged() {
 }
 
 function mouseReleased() {
+
   if(enableCanvas && system.dragId){
       system.allWords[system.dragId].isBeingDragged = false
 
       if(system.checkDrag() != null && btn.checkHover()){
-
         toDefinition = true
-
         btn.nextPage(() => {
           enableCanvas = false
           definitionPage.init( system.allWords[system.dragId].data, () => {
-            btn.toBlack()
-            setTimeout(() => { menu.init(system.data.menu) }, 300)
+            btn.setColorChange(true)
+            setTimeout(() => {
+              menu.init(system.data.menu)
+              system.clearDrag()
+             }, 300)
           })
 
         })
-
       }else{
         system.clearDrag();
       }
@@ -99,4 +100,53 @@ function getRandomInt(max) {
 
 function toRadians (angle) {
   return angle * (Math.PI / 180);
+}
+
+function startApp() {
+  enableCanvas = true
+  toDefinition = false
+  createCanvas(canvasSize.width, canvasSize.height);
+  frameRate(60);
+  btn = new inspectionBtn()
+  definitionPage = new wordDefinition()
+  menu = new menuPage()
+  system = new WordSystem(createVector(canvasSize.width/2, canvasSize.height/2 - btn.size.height),selectedData);
+
+  appStart = true
+
+}
+
+function createSelectMenu(){
+
+  var container = document.createElement("div")
+  container.id = "selectDataMenu"
+  // container.style.display = "flex"
+  container.style.width = canvasSize.width + "px"
+  document.body.appendChild(container)
+
+  var height = 100
+
+  for (var i = 0; i < data.length; i++) {
+    var item = document.createElement("div")
+    item.id = i
+    item.innerHTML = data[i].nome
+    item.style.width = "70%"
+    item.style.background = "black"
+    item.style.color = "white"
+    item.style.marginLeft = "10%"
+    item.style.marginTop = "5%"
+    item.style.height = height + "px"
+    item.style.textAlign = "CENTER"
+    item.style.lineHeight = height + "px"
+    item.style.fontSize = "30px"
+    item.style.fontFamily = "Sohne bold"
+    item.onclick = function() {
+      console.log(this.parentNode);
+      document.body.removeChild(this.parentNode)
+      selectedData = data[this.id]
+      startApp()
+    }
+    container.appendChild(item)
+  }
+
 }
