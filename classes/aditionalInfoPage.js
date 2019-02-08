@@ -74,7 +74,6 @@ function aditionalInfoPage(){
 }
 
 aditionalInfoPage.prototype.init = function(_data,_callBack){
-  console.log(_data);
   this.callBack = _callBack
   this.data = _data
   this.container.style.display = "flex"

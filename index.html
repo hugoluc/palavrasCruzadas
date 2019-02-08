@@ -5,27 +5,25 @@
     <script src="data.js"></script>
     <script>
 
+      for (var l = 0; l < data.length; l++) {
+        for(i = 0; i < data[l].menu.length; i++){
+          for(j = 0; j < data[l].menu[i].imagens.length; j++){
 
-    for (var l = 0; l < data.length; l++) {
-      for(i = 0; i < data[l].menu.length; i++){
-        for(j = 0; j < data[l].menu[i].imagens.length; j++){
+            var res = document.createElement("link")
+            res.rel = "preload"
+            res.as = "image"
+            res.href = "imagens/" + data[l].menu[i].imagens[j]
+            document.head.appendChild(res)
 
-          var res = document.createElement("link")
-          res.rel = "preload"
-          res.as = "image"
-          res.href = "imagens/" + data[l].menu[i].imagens[j]
-          document.head.appendChild(res)
-
+          }
         }
       }
-    }
 
     </script>
 
     <script src="libs/p5.min.js"></script>
     <script src="libs/p5.dom.min.js"></script>
     <script src="libs/p5.sound.js"></script>
-
 
     <script src="classes/aditionalInfoPage.js"></script>
     <script src="classes/inspectionBtn.js"></script>
@@ -84,7 +82,6 @@
     </svg>
 
     <script src="sketch.js"></script>
-
 
   </body>
 

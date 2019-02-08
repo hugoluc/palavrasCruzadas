@@ -30,8 +30,15 @@ function menuPage(){
   this.backBtn.style.color = "rgba(" + this.yellow[0] + "," + this.yellow[1] + "," + this.yellow[2] + "," + this.alpha + ")"
   this.backBtn.innerHTML = "Explorar mais palavras"
   this.backBtn.id = "menu_backBtn"
-  this.backBtn.onclick = function(){
-    location.reload()
+  this.backBtn.onclick = () => {
+    enableCanvas = true
+    toDefinition = false
+    this.reset()
+    setTimeout(() => {
+      definitionPage.reset()
+      btn.setColorChange(false)
+      btn.setReturn()
+    },400)
   }
   this.container.append(this.backBtn)
 
@@ -66,15 +73,6 @@ function menuPage(){
     item.container.onclick = function() {
       _this.toInfoPage(this.id)
     }
-
-    // item.icon = document.createElement("svg")
-    // item.icon.innerHTML = '<title>noun_Plus_60246</title> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="06-menu-completo" transform="translate(-99.000000, -798.000000)"> <g id="Group-9" transform="translate(102.000000, 274.000000)"> <g id="Group" transform="translate(1.000000, 488.000000)"> <g id="Group-3"> <g id="noun_Plus_60246" transform="translate(0.000000, 40.000000)"> <g id="Group-10"> <path d="M54.5,34.5 L39.5,34.5 L39.5,19.5 C39.5,18.119 38.381,17 37,17 C35.619,17 34.5,18.119 34.5,19.5 L34.5,34.5 L19.5,34.5 C18.119,34.5 17,35.619 17,37 C17,38.381 18.119,39.5 19.5,39.5 L34.5,39.5 L34.5,54.5 C34.5,55.881 35.619,57 37,57 C38.381,57 39.5,55.881 39.5,54.5 L39.5,39.5 L54.5,39.5 C55.881,39.5 57,38.381 57,37 C57,35.619 55.881,34.5 54.5,34.5 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path> <circle id="Oval" stroke="#FFFFFF" stroke-width="8" cx="37" cy="37" r="37"></circle> </g> </g> </g> </g> </g> </g> </g>'
-    // item.icon.setAttribute( "width" , "82px" )
-    // item.icon.setAttribute( "height" , "82px" )
-    // item.icon.setAttribute( "viewBox" , "0 0 82 82" )
-    // item.icon.setAttribute( "version" , "1.1" )
-    // item.icon.setAttribute( "xmlns" , "http://www.w3.org/2000/svg" )
-    // item.icon.setAttribute( "xmlns" , 'xlink="http://www.w3.org/1999/xlink"' )
 
     item.icon = document.getElementById("icon_svg").cloneNode(true)
 
@@ -157,7 +155,6 @@ menuPage.prototype.toInfoPage = function(_data){
   var _this = this
   this.reset()
   setTimeout( () => {
-    debugger
     this.infoPage.init(this.data[_data], () => { _this.init(_this.data) })
   },200)
 

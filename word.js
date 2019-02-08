@@ -29,7 +29,7 @@ class Word {
     this.b = 24;
     this.a = 255;
     this.isBeingDragged = false
-
+    this.isTooBig = false
     this.totalSpeed = random(CONTROLS.speedMin, CONTROLS.speedMax)
     var angle = getRandomInt(361)
     var speedX = Math.cos(toRadians(angle)) * this.totalSpeed
@@ -100,6 +100,7 @@ class Word {
       this.r = map(this.size,0,100,0,255,true)
       this.g = map(this.size,0,100,0,255,true)
       this.b = map(this.size,0,100,0,255,true)
+      if (this.size > 150) this.isTooBig = true
     }
   }
 
@@ -117,6 +118,7 @@ class Word {
 
     //When the words leave the canvas return "Kill it"
     if(this.isBeingDragged) return false
+    if(this.isTooBig) return true
 
     if (this.location.x > width || this.location.x < 0|| this.location.y > height - btn.getTotalHeight() || this.location.y < 0 && this.isBeingDragged ){
       return true;
