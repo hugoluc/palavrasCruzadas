@@ -48,7 +48,9 @@ var btn, definitionPage, menu, system, sounds;
 function mousePressed() {
 
   if(enableCanvas){
-    system.checkWordsClick()
+    if(system.checkWordsClick()){
+      system.allWords[system.dragId].setPastSpeed()  
+    }
   }
 
 }
@@ -88,8 +90,12 @@ function mouseReleased() {
 
         })
       }else{
+
+        var id = system.dragId
         system.clearDrag();
+        system.allWords[id].getNewSpeed()
       }
+
 
   }
 }

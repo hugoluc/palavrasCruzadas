@@ -80,7 +80,6 @@ class WordSystem {
 
         this.dragId = this.displayWords[i].id
         this.displayWords[i].isBeingDragged = true
-        console.log(this.displayWords[i].id,this.displayWords[i].word)
         return this.displayWords[i]
       }
     }

@@ -35,8 +35,11 @@ class Word {
     var speedX = Math.cos(toRadians(angle)) * this.totalSpeed
     var speedY =  Math.sin(toRadians(angle)) * this.totalSpeed
     this.speed = createVector(speedX, speedY);
-
-
+    this.speedCounter = 0
+    this.pastMouseLocation = {
+      x : 0,
+      y : 0
+    }
   }
 
   checkClick(){
@@ -143,5 +146,19 @@ class Word {
     text(this.word, this.location.x, this.location.y);
 
   }
+
+  getNewSpeed() {
+
+    // console.log(this.location,this.pastMouseLocation);
+    var speedX = (this.location.x - this.pastMouseLocation.x) * 0.1
+    var speedY = (this.location.y - this.pastMouseLocation.y) * 0.1
+    this.speed = createVector(speedX, speedY);
+
+  }
+
+  setPastSpeed() {
+    this.pastMouseLocation = createVector(this.location.x,this.location.y)
+  }
+
 
 }
