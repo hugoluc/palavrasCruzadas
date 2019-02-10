@@ -127,7 +127,7 @@ inspectionBtn.prototype.displayHover = function(_isHovered){
 
   //transition to nothovered state
   }else{
-    this.fontFamily = sohne
+    this.fontFamily = sohneBold
     if(this.alpha > 0){
       this.alpha = this.alpha - 0.08
       if(this.alpha < 0.8){
@@ -149,7 +149,7 @@ inspectionBtn.prototype.init = function(){
   this.transitionToColor= false
   this.changeToBlack = true
   this.transitionToNormal = false
-  this.fontFamily = sohne
+  this.fontFamily = sohneBold
   this.color = [globalColors.yellow.r,globalColors.yellow.g,globalColors.yellow.b]
   this.transtitionHover = false
   this.transtitionNextPage = false
@@ -263,7 +263,8 @@ inspectionBtn.prototype.show = function(){
 
   //display bg
   fill(globalColors.gray.r,globalColors.gray.g,globalColors.gray.b)
-  rect(0, this.position.y - this.marginTopr, this.size.width + (2*this.margin), this.size.height + this.margin + this.marginTop )
+  rect(0, this.position.y - this.marginTop, this.size.width + (2*this.margin), this.size.height + this.margin + this.marginTop )
+
 
   //display outline
   stroke(this.color[0],this.color[1],this.color[2]);

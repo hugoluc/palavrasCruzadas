@@ -9,7 +9,6 @@ var names = [
   "Línguas Africanas I KIKONGO ",
   "Línguas Aficanas II e Yorubá",
   "Inglês e Francês",
-  "Línguas de imigrantes",
   "Português no mundo",
 ]
 for (var i = 0; i < names.length; i++) {
@@ -61,11 +60,12 @@ function getWords() {
 
 function getMenus() {
   var csvFilePath = "menus/"+ menuIndex + ".csv"
-
+  console.log(menuIndex);
   //readFile---------------------------------------------------------
   csv().fromFile(csvFilePath).then((jsonObj) => {
 
     var menu = []
+    console.log(jsonObj[0]);
 
     for (var l = 0; l < jsonObj.length; l++) {
       if(jsonObj[l]["titulo"] != ""){

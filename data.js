@@ -453,53 +453,68 @@ var data = [
     "audioOriginal": "tucano0.mp3"
    }
   ],
-  "menu" : [
-
-    {
-      titulo : "Povos tupinambás",
-      text : "Os povos que falavam a língua tupinambá ocupavam toda a extensão da costa brasileira à época da invasão dos europeus, em 1500. Eram conhecidos por vários nomes, dependendo da região que ocupavam. Potiguaras, da Paraíba ao Ceará; Caetés, do norte da Bahia a Pernambuco; Tupinaés, na região da foz do rio São Francisco; Tupinambás e Tupinakis, no Recôncavo Baiano e na Baía de Guanabara; ou Tupiniquins, no litoral de São Paulo. Chamados, de forma genérica, de tupis ou tupinambás, representavam uma população expressiva, estimada entre 200 mil e um milhão de índios, que foi rapidamente dizimada durante o primeiro século da colonização, por guerras e epidemias. Em 1580, o Padre José de Anchieta lamentava a morte em massa dos índios: “A gente que de vinte anos a esta parte é gastada nesta Baía, parece cousa, que não se pode crer; porque nunca ninguém cuidou, que tanta gente se gastasse nunca, quanto mais em tão pouco tempo”. \n Todo o conhecimento que temos sobre os grupos tupinambás vêm de narrativas de cronistas antigos, como jesuítas, colonos e aventureiros europeus.",
-      imagens : ["0.jpg","1.jpg","2.jpg"]
-    },
-
-    {
-      titulo : "Usos e Costumes",
-      text : 'Os povos tupinambás viviam em aldeias cercadas, que tinham entre quatro e oito malocas dispostas em torno de pátio central. Em apenas uma maloca, podiam morar até 600 pessoas. Cada aldeia abrigava uma população de quinhentos até dois ou três mil índios. No dia-a-dia da aldeia, homens e mulheres tinham tarefas bem definidas. As mulheres cuidavam da roça, do preparo da comida e do cauim – a bebida que animava as festas. Os homens dedicavam-se à fabricação de arcos, flechas, bordunas e canoas. Várias aldeias mantinham relações pacíficas entre si, participando de rituais comuns, reunindo-se para expedições guerreiras e auxiliando-se na defesa do território. A mais honrada atividade entre os Tupinambá, porém, era a guerra. Os prisioneiros que os tupinambás faziam em suas guerras eram sacrificados e comidos. Era o momento máximo da vida da aldeia, a sua grande festa. Feito prisioneiro, o índio inimigo era levado à aldeia tupinambá. As mulheres o recebiam com alarde. Cobriam seu corpo com cinzas, raspavam suas sobrancelhas e o prendiam. No dia marcado para a festa, todos cantavam e dançavam em vota da ibirapema, o tacape do executor. Em seguida, um dos índios tomava o tacape e dizia à vítima: Quero matar-te, pois tua gente também matou e comeu muitos dos meus amigos’. O prisioneiro respondia-lhe com desafio: ‘Quando estiver morto, terei ainda muitos amigos que saberão vingar-me’. Era então golpeado mortalmente na nuca. As mulheres levavam imediatamente seu corpo para o fogo, raspavam-lhe a pele e cortavam-no em pedaços. Repartiam então toda a carne entre os presentes, entre os quais podia haver convidados de outras aldeias.',
-      imagens : ["2.jpg"]
-    },
-
-    {
-      titulo : "Crenças",
-      text : " Os tupinambás acreditavam numa terra sem males, lugar de abundância, de ausência de trabalho, da imortalidade. Para os índios, essa terra milagrosa podia ser alcançada individualmente após a morte, mas também existia em algum ponto do espaço, e podia ser conquistada coletivamente em vida. Os grandes pajés – chamados de caraíbas – andavam de aldeia em aldeia, curando, profetizando e divulgando esse paraíso terrestre. Muitas vezes, levavam populações inteiras a abandonar seu território e partir em busca de terras novas, onde acreditavam que achariam a imortalidade e o descanso perpétuo.",
-      imagens : ["3.jpg"]
-    },
-
-    {
-      titulo : "Tecnologia e Arte",
-      text : "Os tupinambás fabricavam instrumentos variados para lavrar a terra, caçar, pescar e preparar os alimentos, como bastões de cavar, machados, arcos, flechas, bordunas, canoas, armadilhas, cestos, pilões de madeira, recipientes de cerâmica, assadeiras (“fornos”) de barro para torrar a farinha, entre outros. As canoas, por exemplo, eram feitas com a casca das árvores, um método ainda utilizado por índios e caboclos no interior do Brasil. Outros artefatos que os tupinambás produziam também continuam a ser fabricados, tanto por indígenas quanto por ‘brasileiros civilizados’. É o caso do tipiti, um longo tubo fechado numa das extremidades, feito à maneira de trançado de cesto, muito flexível e que serve para espremer a massa de mandioca, retirando-lhe o suco venenoso. Os cronistas antigos que escreveram sobre os tupinambás não deixaram descrições da arte desses povos. Porém, sabemos que entre eles havia excelência artística na confecção de objetos de cerâmica, esculturas de madeira, na execução de cânticos e danças rituais, nas pinturas corporais ou na criação de adornos feitos de penas de aves.",
-      imagens : ["4.jpg"]
-    },
-
-    {
-      titulo : "A língua",
-      text : "Os povos que falavam a língua tupinambá ocupavam toda a extensão da costa brasileira à época da invasão dos europeus, em 1500. Eram conhecidos por vários nomes, dependendo da região que ocupavam. Potiguaras, da Paraíba ao Ceará; Caetés, do norte da Bahia a Pernambuco; Tupinaés, na região da foz do rio São Francisco; Tupinambás e Tupinakis, no Recôncavo Baiano e na Baía de Guanabara; ou Tupiniquins, no litoral de São Paulo. Chamados, de forma genérica, de tupis ou tupinambás, representavam uma população expressiva, estimada entre 200 mil e um milhão de índios, que foi rapidamente dizimada durante o primeiro século da colonização, por guerras e epidemias. Em 1580, o Padre José de Anchieta lamentava a morte em massa dos índios: “A gente que de vinte anos a esta parte é gastada nesta Baía, parece cousa, que não se pode crer; porque nunca ninguém cuidou, que tanta gente se gastasse nunca, quanto mais em tão pouco tempo”. \n Todo o conhecimento que temos sobre os grupos tupinambás vêm de narrativas de cronistas antigos, como jesuítas, colonos e aventureiros europeus.",
-      imagens : ["5.jpg"]
-    },
-
-    {
-      titulo : "Línguas gerais",
-      text : "No processo de invasão europeia, a língua tupinambá foi incorporada por grande parte dos aventureiros e missionários europeus, e transformou-se na língua geral da colônia. Existiam duas versões dela: a Língua Geral Paulista e a Língua Geral Amazônica, também chamada de Nheengatu, palavra que significa “língua boa”. A Língua Geral Paulista foi divulgada pelos bandeirantes e mamelucos de São Paulo, e era falada também em Minas Gerais, Goiás, Mato Grosso e Paraná. A Língua Geral Paulista desapareceu no século XVIII, mas a Língua Geral Amazônica é falada até hoje. Ela é língua cooficial do município de São Gabriel da Cachoeira, no Amazonas. É a versão atual da extinta língua Tupinambá, modificada pouco a pouco quando passou a ser falada fora dos contextos das aldeias.",
-      imagens : ["6.jpg","7.jpg"]
-    },
-
-    {
-      titulo : "Outras palavras",
-      text : '<p class="p1"><strong><span class="s1">Nomes de plantas e frutas</span></strong></p><ul><li class="p1"><span class="s2">abacaxi</span></li><li class="p1"><span class="s2">aguap&eacute;</span></li><li class="p1"><span class="s2">anan&aacute;s</span></li><li class="p1"><span class="s2">ara&ccedil;&aacute;</span></li><li class="p1"><span class="s2">araticum</span></li><li class="p1"><span class="s2">aroeira</span></li><li class="p1"><span class="s2">bacupari</span></li><li class="p1"><span class="s2">caj&aacute;</span></li><li class="p1"><span class="s2">caju</span></li><li class="p1"><span class="s2">car&aacute;</span></li><li class="p1"><span class="s2">cumari</span></li><li class="p1"><span class="s2">jabuticaba</span></li><li class="p1"><span class="s2">jenipapo</span></li><li class="p1"><span class="s2">jerimum</span></li><li class="p1"><span class="s2">ju&aacute;</span></li><li class="p1"><span class="s2">ju&ccedil;ara</span></li><li class="p1"><span class="s2">manac&aacute;</span></li><li class="p1"><span class="s2">mangaba</span></li><li class="p1"><span class="s2">maniva</span></li><li class="p1"><span class="s2">maracuj&aacute;</span></li><li class="p1"><span class="s2">pitomba</span></li><li class="p1"><span class="s2">samambaia</span></li><li class="p1"><span class="s2">tai&aacute;</span></li><li class="p1"><span class="s2">taioba</span></li><li class="p1"><span class="s2">urucum</span></li></ul><p class="p1"><strong><span class="s1">Nomes de palmeiras e &aacute;rvores</span></strong></p><ul><li class="p1"><span class="s2">cabri&uacute;va</span></li><li class="p1"><span class="s2">cambu&iacute;</span></li><li class="p1"><span class="s2">carna&uacute;ba</span></li><li class="p1"><span class="s2">copa&iacute;ba</span></li><li class="p1"><span class="s2">emba&uacute;ba</span></li><li class="p1"><span class="s2">indai&aacute;</span></li><li class="p1"><span class="s2">ing&aacute;</span></li><li class="p1"><span class="s2">jaborandi</span></li><li class="p1"><span class="s2">jacarand&aacute;</span></li><li class="p1"><span class="s2">jatob&aacute;</span></li><li class="p1"><span class="s2">jequitib&aacute;</span></li><li class="p1"><span class="s2">jeriv&aacute;</span></li><li class="p1"><span class="s2">ju&ccedil;ara</span></li><li class="p1"><span class="s2">oiti</span></li><li class="p1"><span class="s2">pindoba</span></li><li class="p1"><span class="s2">pitomba</span></li><li class="p1"><span class="s2">sapucaia</span></li></ul><p><strong><span class="s1">Nomes de aves</span></strong></p><ul><li class="p1"><span class="s2">acau&atilde;</span></li><li class="p1"><span class="s2">anu</span></li><li class="p1"><span class="s2">ara&ccedil;ari</span></li><li class="p1"><span class="s2">araponga</span></li><li class="p1"><span class="s2">arara</span></li><li class="p1"><span class="s2">bacurau</span></li><li class="p1"><span class="s2">batu&iacute;ra</span></li><li class="p1"><span class="s2">canind&eacute;</span></li><li class="p1"><span class="s2">caracar&aacute;</span></li><li class="p1"><span class="s2">gra&uacute;na</span></li><li class="p1"><span class="s2">inhambu</span></li><li class="p1"><span class="s2">jaburu</span></li><li class="p1"><span class="s2">ja&ccedil;an&atilde;</span></li><li class="p1"><span class="s2">jacu</span></li><li class="p1"><span class="s2">jacutinga</span></li><li class="p1"><span class="s2">jandaia</span></li><li class="p1"><span class="s2">japu</span></li><li class="p1"><span class="s2">juriti</span></li><li class="p1"><span class="s2">macuco</span></li><li class="p1"><span class="s2">maguari</span></li><li class="p1"><span class="s2">maracan&atilde;</span></li><li class="p1"><span class="s2">mutum</span></li><li class="p1"><span class="s2">patativa</span></li><li class="p1"><span class="s2">sabi&aacute;</span></li><li class="p1"><span class="s2">sanha&ccedil;u</span></li><li class="p1"><span class="s2">saracura</span></li><li class="p1"><span class="s2">seriema</span></li><li class="p1"><span class="s2">tach&atilde;</span></li><li class="p1"><span class="s2">ti&ecirc;</span></li><li class="p1"><span class="s2">tucano</span></li><li class="p1"><span class="s2">tuiui&uacute;</span></li><li class="p1"><span class="s2">uirapuru</span></li><li class="p1"><span class="s2">urubu</span></li><li class="p1"><span class="s2">urutau</span></li></ul><p class="p1"><strong><span class="s1">Nomes de mam&iacute;feros</span></strong></p><ul><li class="p1"><span class="s2">ariranha</span></li><li class="p1"><span class="s2">caitetu</span></li><li class="p1"><span class="s2">coati</span></li><li class="p1"><span class="s2">cutia</span></li><li class="p1"><span class="s2">gamb&aacute;</span></li><li class="p1"><span class="s2">guariba</span></li><li class="p1"><span class="s2">jaguar</span></li><li class="p1"><span class="s2">paca</span></li><li class="p1"><span class="s2">pre&aacute;</span></li><li class="p1"><span class="s2">quati</span></li><li class="p1"><span class="s2">sagui</span></li><li class="p1"><span class="s2">su&ccedil;uarana</span></li><li class="p1"><span class="s2">tamandu&aacute;</span></li><li class="p1"><span class="s2">tatu</span></li></ul><p class="p1"><strong><span class="s1">Nomes de r&eacute;pteis</span></strong></p><ul><li class="p1"><span class="s2">boipeva</span></li><li class="p1"><span class="s2">caninana</span></li><li class="p1"><span class="s2">cururu</span></li><li class="p1"><span class="s2">jabuti</span></li><li class="p1"><span class="s2">jararaca</span></li><li class="p1"><span class="s2">jiboia</span></li><li class="p1"><span class="s2">sucuri</span></li><li class="p1"><span class="s2">surucucu</span></li><li class="p1"><span class="s2">tei&uacute;</span></li><li class="p1"><span class="s2">urutu</span></li></ul><p class="p1"><strong><span class="s1">Nomes de peixes</span></strong></p><ul><li class="p1"><span class="s2">acar&aacute;</span></li><li class="p1"><span class="s2">baiacu</span></li><li class="p1"><span class="s2">camarupim</span></li><li class="p1"><span class="s2">caramuru</span></li><li class="p1"><span class="s2">caranha</span></li><li class="p1"><span class="s2">ja&uacute;</span></li><li class="p1"><span class="s2">lambari</span></li><li class="p1"><span class="s2">mandi</span></li><li class="p1"><span class="s2">manjuba</span></li><li class="p1"><span class="s2">mu&ccedil;um</span></li><li class="p1"><span class="s2">pacu</span></li><li class="p1"><span class="s2">parati</span></li><li class="p1"><span class="s2">piaba</span></li><li class="p1"><span class="s2">piramutaba</span></li><li class="p1"><span class="s2">piranha</span></li><li class="p1"><span class="s2">piracanjuba</span></li><li class="p1"><span class="s2">pirarucu</span></li><li class="p1"><span class="s2">tambaqui</span></li><li class="p1"><span class="s2">tra&iacute;ra</span></li><li class="p1"><span class="s2">tucunar&eacute;</span></li></ul><p class="p1">&nbsp;</p>',
-      imagens : ["0.jpg","1.jpg"]
-    }
+  "menu": [
+   {
+    "titulo": "Tupinambá",
+    "text": "<p>Quando em 1500 os portugueses chegaram ao Brasil, na regi&atilde;o de Porto Seguro, Bahia, encontraram ali um povo que falava uma l&iacute;ngua completamente desconhecida dos europeus. Era o povo Tupinaki, que falava a l&iacute;ngua tupinamb&aacute;. A maioria dos povos que viviam ao longo da costa, desde o Rio de Janeiro at&eacute; o Cear&aacute;, falava essa mesma l&iacute;ngua. Foi com a l&iacute;ngua tupinamb&aacute; que os colonos portugueses tiveram contato mais estreito durante o s&eacute;culo XVI. Para entender-se com os ind&iacute;genas a fim de conhecer a nova terra e nela viver, muitos deles tiveram de aprend&ecirc;-la. Desse contato resultou a grande influ&ecirc;ncia da l&iacute;ngua tupinamb&aacute; no vocabul&aacute;rio do portugu&ecirc;s do Brasil. Milhares de nomes comuns e nomes de lugares que utilizamos hoje em todo o pa&iacute;s s&atilde;o palavras tupinamb&aacute;s.</p>",
+    "imagens": [
+     "tupinamba_1_1.jpg"
+    ]
+   },
+   {
+    "titulo": "Povos tupinambas",
+    "text": "<p>Os povos que falavam a l&iacute;ngua tupinamb&aacute; ocupavam toda a extens&atilde;o da costa brasileira &agrave; &eacute;poca da invas&atilde;o dos europeus, em 1500. Eram conhecidos por v&aacute;rios nomes, dependendo da regi&atilde;o que ocupavam. Potiguaras, da Para&iacute;ba ao Cear&aacute;; Caet&eacute;s, do norte da Bahia a Pernambuco; Tupina&eacute;s, na regi&atilde;o da foz do rio S&atilde;o Francisco; Tupinamb&aacute;s e Tupinakis, no Rec&ocirc;ncavo Baiano e na Ba&iacute;a de Guanabara; ou Tupiniquins, no litoral de S&atilde;o Paulo. Chamados, de forma gen&eacute;rica, de tupis ou tupinamb&aacute;s, representavam uma popula&ccedil;&atilde;o expressiva, estimada entre 200 mil e um milh&atilde;o de &iacute;ndios, que foi rapidamente dizimada durante o primeiro s&eacute;culo da coloniza&ccedil;&atilde;o, por guerras e epidemias. Em 1580, o Padre Jos&eacute; de Anchieta lamentava a morte em massa dos &iacute;ndios: &ldquo;A gente que de vinte anos a esta parte &eacute; gastada nesta Ba&iacute;a, parece cousa, que n&atilde;o se pode crer; porque nunca ningu&eacute;m cuidou, que tanta gente se gastasse nunca, quanto mais em t&atilde;o pouco tempo&rdquo;.&nbsp;</p>\n<p>Todo o conhecimento que temos sobre os grupos tupinamb&aacute;s v&ecirc;m de narrativas de cronistas antigos, como jesu&iacute;tas, colonos e aventureiros europeus.</p>",
+    "imagens": [
+     "tupinamba_2_1.jpg"
+    ]
+   },
+   {
+    "titulo": "Usos de Costumes",
+    "text": "<p>Os povos tupinamb&aacute;s viviam em aldeias cercadas, que tinham entre quatro e oito malocas dispostas em torno de p&aacute;tio central. Em apenas uma maloca, podiam morar at&eacute; 600 pessoas. Cada aldeia abrigava uma popula&ccedil;&atilde;o de quinhentos at&eacute; dois ou tr&ecirc;s mil &iacute;ndios.</p>\n<p>No dia-a-dia da aldeia, homens e mulheres tinham tarefas bem definidas. As mulheres cuidavam da ro&ccedil;a, do preparo da comida e do cauim &ndash; a bebida que animava as festas. Os homens dedicavam-se &agrave; fabrica&ccedil;&atilde;o de arcos, flechas, bordunas e canoas.</p>\n<p>V&aacute;rias aldeias mantinham rela&ccedil;&otilde;es pac&iacute;ficas entre si, participando de rituais comuns, reunindo-se para expedi&ccedil;&otilde;es guerreiras e auxiliando-se na defesa do territ&oacute;rio. A mais honrada atividade entre os Tupinamb&aacute;, por&eacute;m, era a guerra.</p>\n<p>Os prisioneiros que os tupinamb&aacute;s faziam em suas guerras eram sacrificados e comidos. Era o momento m&aacute;ximo da vida da aldeia, a sua grande festa. Feito prisioneiro, o &iacute;ndio inimigo era levado &agrave; aldeia tupinamb&aacute;. As mulheres o recebiam com alarde. Cobriam seu corpo com cinzas, raspavam suas sobrancelhas e o prendiam. No dia marcado para a festa, todos cantavam e dan&ccedil;avam em vota da ibirapema, o tacape do executor. Em seguida, um dos &iacute;ndios tomava o tacape e dizia &agrave; v&iacute;tima: &lsquo;Quero matar-te, pois tua gente tamb&eacute;m matou e comeu muitos dos meus amigos&rsquo;. O prisioneiro respondia-lhe com desafio: &lsquo;Quando estiver morto, terei ainda muitos amigos que saber&atilde;o vingar-me&rsquo;. Era ent&atilde;o golpeado mortalmente na nuca. As mulheres levavam imediatamente seu corpo para o fogo, raspavam-lhe a pele e cortavam-no em peda&ccedil;os. Repartiam ent&atilde;o toda a carne entre os presentes, entre os quais podia haver convidados de outras aldeias.</p>",
+    "imagens": [
+     "tupinamba_3_1.jpg"
+    ]
+   },
+   {
+    "titulo": "Crenças",
+    "text": "<p>Os tupinamb&aacute;s acreditavam numa terra sem males, lugar de abund&acirc;ncia, de aus&ecirc;ncia de trabalho, da imortalidade. Para os &iacute;ndios, essa terra milagrosa podia ser alcan&ccedil;ada individualmente ap&oacute;s a morte, mas tamb&eacute;m existia em algum ponto do espa&ccedil;o, e podia ser conquistada coletivamente em vida. Os grandes paj&eacute;s &ndash; chamados de cara&iacute;bas &ndash; andavam de aldeia em aldeia, curando, profetizando e divulgando esse para&iacute;so terrestre. Muitas vezes, levavam popula&ccedil;&otilde;es inteiras a abandonar seu territ&oacute;rio e partir em busca de terras novas, onde acreditavam que achariam a imortalidade e o descanso perp&eacute;tuo.</p>",
+    "imagens": [
+     "tupinamba_4_1.jpg"
+    ]
+   },
+   {
+    "titulo": "Tecnologia e Arte",
+    "text": "<p>Os tupinamb&aacute;s fabricavam instrumentos variados para lavrar a terra, ca&ccedil;ar, pescar e preparar os alimentos, como bast&otilde;es de cavar, machados, arcos, flechas, bordunas, canoas, armadilhas, cestos, pil&otilde;es de madeira, recipientes de cer&acirc;mica, assadeiras (&ldquo;fornos&rdquo;) de barro para torrar a farinha, entre outros. As canoas, por exemplo, eram feitas com a casca das &aacute;rvores, um m&eacute;todo ainda utilizado por &iacute;ndios e caboclos no interior do Brasil. Outros artefatos que os tupinamb&aacute;s produziam tamb&eacute;m continuam a ser fabricados, tanto por ind&iacute;genas quanto por &lsquo;brasileiros civilizados&rsquo;. &Eacute; o caso do tipiti, um longo tubo fechado numa das extremidades, feito &agrave; maneira de tran&ccedil;ado de cesto, muito flex&iacute;vel e que serve para espremer a massa de mandioca, retirando-lhe o suco venenoso.</p>\n<p>Os cronistas antigos que escreveram sobre os tupinamb&aacute;s n&atilde;o deixaram descri&ccedil;&otilde;es da arte desses povos. Por&eacute;m, sabemos que entre eles havia excel&ecirc;ncia art&iacute;stica na confec&ccedil;&atilde;o de objetos de cer&acirc;mica, esculturas de madeira, na execu&ccedil;&atilde;o de c&acirc;nticos e dan&ccedil;as rituais, nas pinturas corporais ou na cria&ccedil;&atilde;o de adornos feitos de penas de aves.</p>",
+    "imagens": [
+     "tupinamba_5_1.png"
+    ]
+   },
+   {
+    "titulo": "A língua",
+    "text": "<p>O tupinamb&aacute; faz parte da fam&iacute;lia Tupi-Guarani, que integra, por sua vez, o grande tronco Tupi. Os linguistas expressam as semelhan&ccedil;as e diferen&ccedil;as entre as l&iacute;nguas atrav&eacute;s da ideia de troncos e fam&iacute;lias. Quando se fala em tronco, t&ecirc;m-se em mente l&iacute;nguas de uma mesma origem cuja l&iacute;ngua-m&atilde;e est&aacute; situada h&aacute; milhares de anos. &Eacute; poss&iacute;vel detectar semelhan&ccedil;as entre elas, mas estas s&atilde;o sutis. L&iacute;nguas de uma mesma fam&iacute;lia s&atilde;o mais parecidas. Isso significa que sua origem comum &eacute; mais recente.</p>\n<p>No universo de l&iacute;nguas ind&iacute;genas no Brasil, reconhece-se a exist&ecirc;ncia de dois grandes troncos &ndash; o Tupi e o Macro-J&ecirc; &ndash; e 19 fam&iacute;lias lingu&iacute;sticas que n&atilde;o apresentam semelhan&ccedil;as suficientes para que possam ser agrupadas em troncos.</p>\n<p>O tronco Tupi tem 10 fam&iacute;lias. A fam&iacute;lia Tupi-Guarani, &agrave; qual pertencia o tupinamb&aacute;, tem 28 l&iacute;nguas faladas hoje no Brasil. (Quadro 1).</p>\n<p>Os sons da l&iacute;ngua tupinamb&aacute; n&atilde;o pareceram estranhos ou dif&iacute;ceis aos navegadores portugueses em 1500. Por&eacute;m, ao contr&aacute;rio dos sons, a gram&aacute;tica do tupinamb&aacute; era muito diferente da portuguesa. Nos verbos em tupinamb&aacute;, por exemplo, as termina&ccedil;&otilde;es de plural aparecem no in&iacute;cio da palavra, e n&atilde;o no final, como em portugu&ecirc;s. Por exemplo:</p>\n<table style=\"height: 68px;\" width=\"152\">\n<tbody>\n<tr>\n<td style=\"width: 68px;\"><strong>Portugu&ecirc;s</strong></td>\n<td style=\"width: 68px;\"><strong>Tupi</strong></td>\n</tr>\n<tr>\n<td style=\"width: 68px;\">(Eu) ando</td>\n<td style=\"width: 68px;\">&nbsp;awat&aacute; </td>\n</tr>\n<tr>\n<td style=\"width: 68px;\">(Tu) andas</td>\n<td style=\"width: 68px;\">erewat&aacute;</td>\n</tr>\n</tbody>\n</table>\n<p>&nbsp;&nbsp;</p>\n<p>L&iacute;nguas da Fam&iacute;lia Tupi-Guarani faladas hoje no Brasil</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<table style=\"height: 161px; width: 331px;\">\n<tbody>\n<tr style=\"height: 13px;\">\n<td style=\"width: 102px; height: 13px;\"><strong>L&iacute;gua</strong></td>\n<td style=\"width: 104px; height: 13px;\"><strong>Estado</strong></td>\n<td style=\"width: 105px; height: 13px;\"><strong>N&ordm; de falantes</strong></td>\n</tr>\n<tr style=\"height: 13px;\">\n<td style=\"width: 102px; height: 13px;\"><strong>Amond&aacute;wa</strong></td>\n<td style=\"width: 104px; height: 13px;\">RO</td>\n<td style=\"width: 105px; height: 13px;\">90</td>\n</tr>\n<tr style=\"height: 13px;\">\n<td style=\"width: 102px; height: 13px;\">Anamb&eacute;</td>\n<td style=\"width: 104px; height: 13px;\">PA</td>\n<td style=\"width: 105px; height: 13px;\">180</td>\n</tr>\n<tr style=\"height: 14px;\">\n<td style=\"width: 102px; height: 14px;\">Apiak&aacute;</td>\n<td style=\"width: 104px; height: 14px;\">MT</td>\n<td style=\"width: 105px; height: 14px;\">190</td>\n</tr>\n<tr style=\"height: 14px;\">\n<td style=\"width: 102px; height: 14px;\">Arawet&eacute;</td>\n<td style=\"width: 104px; height: 14px;\">PA</td>\n<td style=\"width: 105px; height: 14px;\">340</td>\n</tr>\n<tr style=\"height: 14px;\">\n<td style=\"width: 102px; height: 14px;\">Asurin&iacute; do Tocantins (Akw&aacute;wa)</td>\n<td style=\"width: 104px; height: 14px;\">PA</td>\n<td style=\"width: 105px; height: 14px;\">380</td>\n</tr>\n<tr style=\"height: 14px;\">\n<td style=\"width: 102px; height: 14px;\">Asurini do Xingu (Awaet&eacute;)</td>\n<td style=\"width: 104px; height: 14px;\">PA</td>\n<td style=\"width: 105px; height: 14px;\">270</td>\n</tr>\n<tr style=\"height: 14px;\">\n<td style=\"width: 102px; height: 14px;\">Aur&ecirc;-Aur&aacute;</td>\n<td style=\"width: 104px; height: 14px;\">MA</td>\n<td style=\"width: 105px; height: 14px;\">2</td>\n</tr>\n<tr style=\"height: 14px;\">\n<td style=\"width: 102px; height: 14px;\">Av&aacute;-Canoeiro</td>\n<td style=\"width: 104px; height: 14px;\">GO, TO</td>\n<td style=\"width: 105px; height: 14px;\">16</td>\n</tr>\n<tr style=\"height: 14px;\">\n<td style=\"width: 102px; height: 14px;\">Diah&oacute;i (Diarroi)</td>\n<td style=\"width: 104px; height: 14px;\">&nbsp;AM</td>\n<td style=\"width: 105px; height: 14px;\">90</td>\n</tr>\n<tr style=\"height: 14px;\">\n<td style=\"width: 102px; height: 14px;\">Guaj&aacute;</td>\n<td style=\"width: 104px; height: 14px;\">MA</td>\n<td style=\"width: 105px; height: 14px;\">280</td>\n</tr>\n<tr style=\"height: 14px;\">\n<td style=\"width: 102px; height: 14px;\">Guajaj&aacute;ra</td>\n<td style=\"width: 104px; height: 14px;\">&nbsp;MA</td>\n<td style=\"width: 105px; height: 14px;\">19.500</td>\n</tr>\n<tr style=\"height: 14px;\">\n<td style=\"width: 102px; height: 14px;\">Guaran&iacute; (Kaiw&aacute;, Mby&aacute;, Nhand&eacute;va)</td>\n<td style=\"width: 104px; height: 14px;\">ES, MS, PR, RJ, RS, SC e SP</td>\n<td style=\"width: 105px; height: 14px;\">34.967</td>\n</tr>\n<tr style=\"height: 14px;\">\n<td style=\"width: 102px; height: 14px;\">Juma</td>\n<td style=\"width: 104px; height: 14px;\">AM</td>\n<td style=\"width: 105px; height: 14px;\">&nbsp;4</td>\n</tr>\n<tr style=\"height: 14px;\">\n<td style=\"width: 102px; height: 14px;\">Ka&rsquo;ap&oacute;r (Urubu)</td>\n<td style=\"width: 104px; height: 14px;\">&nbsp;MA</td>\n<td style=\"width: 105px; height: 14px;\">&nbsp;1000</td>\n</tr>\n<tr style=\"height: 14px;\">\n<td style=\"width: 102px; height: 14px;\">Kamayur&aacute;</td>\n<td style=\"width: 104px; height: 14px;\">&nbsp;MT</td>\n<td style=\"width: 105px; height: 14px;\">&nbsp;500</td>\n</tr>\n<tr style=\"height: 14px;\">\n<td style=\"width: 102px; height: 14px;\">Karip&uacute;na</td>\n<td style=\"width: 104px; height: 14px;\">&nbsp;RO</td>\n<td style=\"width: 105px; height: 14px;\">14</td>\n</tr>\n<tr style=\"height: 14px;\">\n<td style=\"width: 102px; height: 14px;\">Kayab&iacute;</td>\n<td style=\"width: 104px; height: 14px;\">&nbsp;MT</td>\n<td style=\"width: 105px; height: 14px;\">&nbsp;1.620</td>\n</tr>\n<tr style=\"height: 14px;\">\n<td style=\"width: 102px; height: 14px;\">L&iacute;ngua Geral Amaz&ocirc;nica (Nheengatu)</td>\n<td style=\"width: 104px; height: 14px;\">AM</td>\n<td style=\"width: 105px; height: 14px;\">15.000</td>\n</tr>\n<tr style=\"height: 14px;\">\n<td style=\"width: 102px; height: 14px;\">Parakan&atilde;</td>\n<td style=\"width: 104px; height: 14px;\">&nbsp;PA</td>\n<td style=\"width: 105px; height: 14px;\">&nbsp;900</td>\n</tr>\n<tr style=\"height: 14px;\">\n<td style=\"width: 102px; height: 14px;\">Parintintin</td>\n<td style=\"width: 104px; height: 14px;\">AM</td>\n<td style=\"width: 105px; height: 14px;\">&nbsp;290</td>\n</tr>\n<tr style=\"height: 14px;\">\n<td style=\"width: 102px; height: 14px;\">Suru&iacute; do Tocantins (Mudjet&iacute;re, Aikew&aacute;ra)</td>\n<td style=\"width: 104px; height: 14px;\">&nbsp;PA</td>\n<td style=\"width: 105px; height: 14px;\">&nbsp;185</td>\n</tr>\n<tr style=\"height: 14px;\">\n<td style=\"width: 102px; height: 14px;\">&nbsp;Tapirap&eacute;</td>\n<td style=\"width: 104px; height: 14px;\">&nbsp;MT</td>\n<td style=\"width: 105px; height: 14px;\">&nbsp;570</td>\n</tr>\n<tr style=\"height: 14px;\">\n<td style=\"width: 102px; height: 14px;\">&nbsp;Temb&eacute;</td>\n<td style=\"width: 104px; height: 14px;\">&nbsp;PA</td>\n<td style=\"width: 105px; height: 14px;\">&nbsp;1430</td>\n</tr>\n<tr style=\"height: 14px;\">\n<td style=\"width: 102px; height: 14px;\">&nbsp;Tenharim</td>\n<td style=\"width: 104px; height: 14px;\">&nbsp;AM</td>\n<td style=\"width: 105px; height: 14px;\">&nbsp;700</td>\n</tr>\n<tr style=\"height: 14px;\">\n<td style=\"width: 102px; height: 14px;\">&nbsp;Uruewawau</td>\n<td style=\"width: 104px; height: 14px;\">&nbsp;RO</td>\n<td style=\"width: 105px; height: 14px;\">&nbsp;100</td>\n</tr>\n<tr style=\"height: 14px;\">\n<td style=\"width: 102px; height: 14px;\">&nbsp;Wayamp&iacute;</td>\n<td style=\"width: 104px; height: 14px;\">&nbsp;AP</td>\n<td style=\"width: 105px; height: 14px;\">&nbsp;750</td>\n</tr>\n<tr style=\"height: 14px;\">\n<td style=\"width: 102px; height: 14px;\">&nbsp;Xet&aacute;</td>\n<td style=\"width: 104px; height: 14px;\">&nbsp;PR</td>\n<td style=\"width: 105px; height: 14px;\">&nbsp;3</td>\n</tr>\n<tr style=\"height: 14px;\">\n<td style=\"width: 102px; height: 14px;\">Zo&rsquo;&eacute; (Jo&rsquo;&eacute;, Putur&uacute;)</td>\n<td style=\"width: 104px; height: 14px;\">&nbsp;PA</td>\n<td style=\"width: 105px; height: 14px;\">&nbsp;180</td>\n</tr>\n</tbody>\n</table>\n<p>Fonte: RODRIGUES, Aryon Dall&rsquo;Igna. L&iacute;nguas ind&iacute;genas brasileiras. Bras&iacute;lia, DF: Laborat&oacute;rio de L&iacute;nguas Ind&iacute;genas da UnB, 2013. 29p. Dispon&iacute;vel em: &lt;http://www.laliunb.com.br&gt;. Acesso em: 02 abr. 2015.</p>",
+    "imagens": [
+     "tupinamba_6_1.jpg"
+    ]
+   },
+   {
+    "titulo": "Línguas gerais",
+    "text": "<p>No processo de invas&atilde;o europeia, a l&iacute;ngua tupinamb&aacute; foi incorporada por grande parte dos aventureiros e mission&aacute;rios europeus, e transformou-se na l&iacute;ngua geral da col&ocirc;nia. Existiam duas vers&otilde;es dela: a L&iacute;ngua Geral Paulista e a L&iacute;ngua Geral Amaz&ocirc;nica, tamb&eacute;m chamada de Nheengatu, palavra que significa &ldquo;l&iacute;ngua boa&rdquo;. A L&iacute;ngua Geral Paulista foi divulgada pelos bandeirantes e mamelucos de S&atilde;o Paulo, e era falada tamb&eacute;m em Minas Gerais, Goi&aacute;s, Mato Grosso e Paran&aacute;.</p>\n<p>A L&iacute;ngua Geral Paulista desapareceu no s&eacute;culo XVIII, mas a L&iacute;ngua Geral Amaz&ocirc;nica &eacute; falada at&eacute; hoje. Ela &eacute; l&iacute;ngua cooficial do munic&iacute;pio de S&atilde;o Gabriel da Cachoeira, no Amazonas. &Eacute; a vers&atilde;o atual da extinta l&iacute;ngua Tupinamb&aacute;, modificada pouco a pouco quando passou a ser falada fora dos contextos das aldeias.</p>",
+    "imagens": [
+     ""
+    ]
+   },
+   {
+    "titulo": "Outras Palavras",
+    "text": "<p><strong>Nomes de plantas e frutas</strong></p>\n<p><br />abacaxi<br />aguap&eacute;<br />anan&aacute;s<br />ara&ccedil;&aacute;<br />araticum<br />aroeira<br />bacupari<br />caj&aacute;<br />caju<br />car&aacute;<br />cumari<br />jabuticaba<br />jenipapo<br />jerimum<br />ju&aacute;<br />ju&ccedil;ara<br />manac&aacute;<br />mangaba<br />maniva<br />maracuj&aacute;<br />pitomba<br />samambaia<br />tai&aacute;<br />taioba<br />urucum</p>\n<p>&nbsp;</p>\n<p><strong>Nomes de palmeiras e &aacute;rvores</strong></p>\n<p><br />cabri&uacute;va<br />cambu&iacute;<br />carna&uacute;ba<br />copa&iacute;ba<br />emba&uacute;ba<br />indai&aacute;<br />ing&aacute;<br />jaborandi<br />jacarand&aacute;<br />jatob&aacute;<br />jequitib&aacute;<br />jeriv&aacute;<br />ju&ccedil;ara<br />oiti<br />pindoba<br />pitomba<br />sapucaia</p>\n<p>&nbsp;</p>\n<p><strong>Nomes de aves</strong></p>\n<p><br />acau&atilde;<br />anu<br />ara&ccedil;ari<br />araponga<br />arara<br />bacurau<br />batu&iacute;ra<br />canind&eacute;<br />caracar&aacute;<br />gra&uacute;na<br />inhambu<br />jaburu<br />ja&ccedil;an&atilde;<br />jacu<br />jacutinga<br />jandaia<br />japu<br />juriti<br />macuco<br />maguari<br />maracan&atilde;<br />mutum<br />patativa<br />sabi&aacute;<br />sanha&ccedil;u<br />saracura<br />seriema<br />tach&atilde;<br />ti&ecirc;<br />tucano<br />tuiui&uacute;<br />uirapuru<br />urubu<br />urutau</p>\n<p><br /><strong>Nomes de mam&iacute;feros</strong></p>\n<p>ariranha<br />caitetu<br />coati<br />cutia<br />gamb&aacute;<br />guariba<br />jaguar<br />paca<br />pre&aacute;<br />quati<br />sagui<br />su&ccedil;uarana<br />tamandu&aacute;<br />tatu</p>\n<p><br /><strong>Nomes de r&eacute;pteis</strong></p>\n<p>boipeva<br />caninana<br />cururu<br />jabuti<br />jararaca<br />jiboia<br />sucuri<br />surucucu<br />tei&uacute;<br />urutu</p>\n<p><br /><strong>Nomes de peixes</strong></p>\n<p><br />acar&aacute;<br />baiacu<br />camarupim<br />caramuru<br />caranha<br />ja&uacute;<br />lambari<br />mandi<br />manjuba<br />mu&ccedil;um<br />pacu<br />parati<br />piaba<br />piramutaba<br />piranha<br />piracanjuba<br />pirarucu<br />tambaqui<br />tra&iacute;ra<br />tucunar&eacute;</p>",
+    "imagens": [
+     "tupinamba_8_1.jpg"
+    ]
+   }
   ]
  },
  {
   "nome": "Línguas indígenas hoje",
+  "menu": [],
   "palavras": [
    {
     "origem": "OUTRA LINGUA",
@@ -3795,21 +3810,33 @@ var data = [
     "significadoOriginal": "",
     "audioOriginal": ""
    }
-  ],
-  "menu": [
-   {
-    "titulo": "Povos tupinambas",
-    "text": "<p class=\"p1\"><strong><span class=\"s1\">Nomes de plantas e frutas</span></strong></p><ul><li class=\"p1\"><span class=\"s2\">abacaxi</span></li><li class=\"p1\"><span class=\"s2\">aguap&eacute;</span></li><li class=\"p1\"><span class=\"s2\">anan&aacute;s</span></li><li class=\"p1\"><span class=\"s2\">ara&ccedil;&aacute;</span></li><li class=\"p1\"><span class=\"s2\">araticum</span></li><li class=\"p1\"><span class=\"s2\">aroeira</span></li><li class=\"p1\"><span class=\"s2\">bacupari</span></li><li class=\"p1\"><span class=\"s2\">caj&aacute;</span></li><li class=\"p1\"><span class=\"s2\">caju</span></li><li class=\"p1\"><span class=\"s2\">car&aacute;</span></li><li class=\"p1\"><span class=\"s2\">cumari</span></li><li class=\"p1\"><span class=\"s2\">jabuticaba</span></li><li class=\"p1\"><span class=\"s2\">jenipapo</span></li><li class=\"p1\"><span class=\"s2\">jerimum</span></li><li class=\"p1\"><span class=\"s2\">ju&aacute;</span></li><li class=\"p1\"><span class=\"s2\">ju&ccedil;ara</span></li><li class=\"p1\"><span class=\"s",
-    "imagens": [
-     "0.jpg",
-     "1.jpg",
-     "2.jpg"
-    ]
-   }
   ]
  },
  {
   "nome": "Espanhol",
+  "menu": [
+   {
+    "titulo": "Espanhol",
+    "text": "<p>As l&iacute;nguas portuguesa e espanhola s&atilde;o muito parecidas. Elas compartilham a maioria das palavras de seu vocabul&aacute;rio. &Aacute;GUA, MAR, SOL, DIA s&atilde;o palavras t&atilde;o portuguesas quanto espanholas. As duas l&iacute;nguas t&ecirc;m hist&oacute;rias paralelas. Ambas surgiram como variedades do latim falado na Pen&iacute;nsula Ib&eacute;rica. Ambas se lan&ccedil;aram ao mar e desenharam novos mapas pelo mundo. Nessas andan&ccedil;as, tanto o portugu&ecirc;s quanto o espanhol se tornaram l&iacute;nguas mesti&ccedil;as, incorporando palavras de outras l&iacute;nguas e culturas. Voc&aacute;bulos como batata, tomate e chocolate, por exemplo, t&ecirc;m origem em l&iacute;nguas de povos ind&iacute;genas que os colonizadores encontraram nas Am&eacute;ricas.</p>\n<p>A l&iacute;ngua portuguesa no Brasil recebeu (e ainda recebe) in&uacute;meras influ&ecirc;ncias do espanhol. Em primeiro lugar, porque para c&aacute; vieram milhares de imigrantes da Espanha. Em segundo, porque compartilhamos uma extensa fronteira com nossos vizinhos falantes do espanhol. Essa fronteira &eacute; uma zona de trocas constantes de palavras e h&aacute;bitos culturais. A partir da d&eacute;cada de 1970, novos fluxos de imigra&ccedil;&atilde;o trouxeram ao Brasil grupos de falantes de espanhol que deixaram seus pa&iacute;ses em busca de melhores oportunidades de trabalho e educa&ccedil;&atilde;o. S&atilde;o colombianos, peruanos, paraguaios, argentinos, venezuelanos e principalmente bolivianos que, com seus falares e seus costumes, enriquecem as cidades brasileiras.</p>",
+    "imagens": [
+     "espanhol_1_1.jpg"
+    ]
+   },
+   {
+    "titulo": "Portunhol/Portuñol",
+    "text": "<p>Se TERRA &eacute; TIERRA,<br />E EU PENSO &eacute; YO PIENSO,<br />COMO &Eacute; SORVETE EM ESPANHOL?</p>\n<p>SORVIETE<br />SURBETE<br />SORBIETE<br />HELADO</p>\n<p>Como o portugu&ecirc;s e o espanhol t&ecirc;m muito em comum, os falantes de uma das l&iacute;nguas acreditam que &eacute; poss&iacute;vel falar a outra com pequenas modifica&ccedil;&otilde;es na pr&oacute;pria. Falar espanhol &eacute; muito f&aacute;cil, pensam os brasileiros. &Aacute;gua &eacute; agua; sol &eacute; sol; a&ccedil;&uacute;car, az&uacute;car. &Eacute; verdade. Mas len&ccedil;o &eacute; pa&ntilde;uelo. E a palavra correta para sorvete &eacute; helado.</p>\n<p>O argentino ou uruguaio que passa f&eacute;rias numa praia brasileira vai usar logo o \"voc&ecirc;\" e colocar, no meio do seu espanhol, alguma outra palavra que tenha ouvido nesses dias, pensando que dessa maneira facilita a compreens&atilde;o. <br />&Eacute; a armadilha do parecido. <br />Esse fen&ocirc;meno criou at&eacute; uma &ldquo;l&iacute;ngua&rdquo; nova, o portunhol ou portu&ntilde;ol. <br />Mesmo ca&oacute;tica, cheia de palavras erradas, essa &ldquo;l&iacute;ngua&rdquo; misturada e informal &eacute; &uacute;til na comunica&ccedil;&atilde;o entre os brasileiros e seus vizinhos hispanofalantes.</p>",
+    "imagens": [
+     "espanhol_2_1.jpg"
+    ]
+   },
+   {
+    "titulo": "Outras palavras",
+    "text": "<p>Alpaca<br />Apanhar<br />Apetrecho<br />Cabecilha<br />Castelhano<br />Don Juan<br />Donaire<br />Guanaco<br />Hediondo<br />Lhama<br />Maca<br />Merino<br />Paella<br />P&iacute;caro<br />Rebite<br />Rebenque<br />Ressaca<br />Tango<br />Trecho</p>",
+    "imagens": [
+     ""
+    ]
+   }
+  ],
   "palavras": [
    {
     "origem": "OUTRA LINGUA",
@@ -4072,21 +4099,61 @@ var data = [
     "significadoOriginal": "fruto do tomateiro, planta nativa da América",
     "audioOriginal": "tomate0.mp3"
    }
-  ],
-  "menu": [
-   {
-    "titulo": "Povos tupinambas",
-    "text": "<p class=\"p1\"><strong><span class=\"s1\">Nomes de plantas e frutas</span></strong></p><ul><li class=\"p1\"><span class=\"s2\">abacaxi</span></li><li class=\"p1\"><span class=\"s2\">aguap&eacute;</span></li><li class=\"p1\"><span class=\"s2\">anan&aacute;s</span></li><li class=\"p1\"><span class=\"s2\">ara&ccedil;&aacute;</span></li><li class=\"p1\"><span class=\"s2\">araticum</span></li><li class=\"p1\"><span class=\"s2\">aroeira</span></li><li class=\"p1\"><span class=\"s2\">bacupari</span></li><li class=\"p1\"><span class=\"s2\">caj&aacute;</span></li><li class=\"p1\"><span class=\"s2\">caju</span></li><li class=\"p1\"><span class=\"s2\">car&aacute;</span></li><li class=\"p1\"><span class=\"s2\">cumari</span></li><li class=\"p1\"><span class=\"s2\">jabuticaba</span></li><li class=\"p1\"><span class=\"s2\">jenipapo</span></li><li class=\"p1\"><span class=\"s2\">jerimum</span></li><li class=\"p1\"><span class=\"s2\">ju&aacute;</span></li><li class=\"p1\"><span class=\"s2\">ju&ccedil;ara</span></li><li class=\"p1\"><span class=\"s",
-    "imagens": [
-     "0.jpg",
-     "1.jpg",
-     "2.jpg"
-    ]
-   }
   ]
  },
  {
   "nome": "Línguas Africanas I KIKONGO ",
+  "menu": [
+   {
+    "titulo": "Quicongo, Quimbundo e Umbundo",
+    "text": "<p>Entre os s&eacute;culos XVI e XIX, foram trazidos para o Brasil entre quatro e cinco milh&otilde;es de africanos escravizados. Mais da metade deles foi embarcada &agrave; for&ccedil;a em navios ancorados entre o Gab&atilde;o e o sul de Angola, bem como na costa de Mo&ccedil;ambique. Essa multid&atilde;o de homens, mulheres e crian&ccedil;as falava l&iacute;nguas aparentadas, do grande grupo lingu&iacute;stico banto. Transportados como cativos por todo o Brasil, foram povoando a l&iacute;ngua portuguesa de palavras novas e sonoras. Foram carimbando nela seu jeito de viver e de ver o mundo. Hoje, quando dizemos moleque, bunda, tanga, quindim ou quitanda, estamos ecoando as palavras pronunciadas por essas incont&aacute;veis vozes africanas. Vozes que n&atilde;o trouxeram apenas aportes de vocabul&aacute;rio; o contato com l&iacute;nguas do grupo banto foi mais profundo do que se pensa como parte do processo de configura&ccedil;&atilde;o do perfil do portugu&ecirc;s do Brasil e das diferen&ccedil;as que o afastaram do portugu&ecirc;s de Portugal. Podemos afirmar que todos os brasileiros falam &ldquo;cantando&rdquo; em diversos tons e diapas&otilde;es, num ritmo pendular, bin&aacute;rio, sem a pressa da enuncia&ccedil;&atilde;o portuguesa com sua pron&uacute;ncia bem mais consonantal.</p>",
+    "imagens": [
+     "quicongo_1_1.jpg"
+    ]
+   },
+   {
+    "titulo": "Povos",
+    "text": "<p>Os congos, falantes do quicongo, vivem no noroeste da atual Angola e no leste da Rep&uacute;blica Democr&aacute;tica do Congo. No fim do s&eacute;culo XV, os portugueses encontraram ali um reino bem estruturado em v&aacute;rias prov&iacute;ncias e suserano de outros reinos. O rei do Congo, ou manicongo, e a maior parte de sua nobreza rapidamente se converteram ao catolicismo, que se tornou a religi&atilde;o oficial do reino. Este manteve a integridade at&eacute; a segunda metade do s&eacute;culo XVII, quando, ap&oacute;s a derrota militar para os portugueses em Ambu&iacute;la (1665), come&ccedil;ou a fragmentar-se.</p>\n<p>Os ambundos, falantes do quimbundo, compreendem um conjunto de povos ⎯ hungus, lenjes, pendes, andongos, songos, libolos ⎯ que ocupam o oeste e o centro de Angola. No s&eacute;culo XVI, eles formavam v&aacute;rios reinos, dos quais o mais conhecido &eacute; o andongo do Angola a quiluanje, que resistiu por muito tempo aos portugueses, mas acabou dominado por eles.</p>\n<p>Os ovimbundos, falantes do umbundo, ocupam principalmente o planalto de Benguela. Um de seus reinos mais antigos foi o de Culembe. Nele se desenvolveu uma sociedade militar, cujos membros estavam ligados por rigorosos ritos de inicia&ccedil;&atilde;o, o quilombo, que se transformou numa m&aacute;quina guerreira poderosa e disciplinada. </p>",
+    "imagens": [
+     "quicongo_2_1.jpg"
+    ]
+   },
+   {
+    "titulo": "Usos e Costumes",
+    "text": "<p>A economia dos congos baseava-se na agricultura. Plantavam banana, dend&ecirc;, coco, cola, milhetes, sorgo e inhame. Criavam galin&aacute;ceos, cabras, porcos e c&atilde;es. Produziam sal. Pescavam. Ca&ccedil;avam. Havia oleiros, ferreiros, escultores em madeira, cesteiros, tecel&otilde;es. Estes &uacute;ltimos faziam com r&aacute;fia panos bel&iacute;ssimos, comparados ao veludo. Era intensa a atividade mercantil, destacando-se o com&eacute;rcio de sal, ferro e cobre. O reino possu&iacute;a duas moedas: os panos de r&aacute;fia aveludados e o zimbo, uma concha recolhida nas praias da ilha de Luanda, que estava sob o governo do reino do Congo.</p>\n<p>A agricultura era o fundamento da vida econ&ocirc;mica dos ambundos. Criavam galinhas, cabras e talvez carneiros. Ca&ccedil;avam. Pescavam. Nas &aacute;reas livres da mosca ts&eacute;-ts&eacute;, possu&iacute;am bois. Trabalhavam o barro, a madeira, as fibras e o ferro. E comercializavam o sal. O n&uacute;cleo social era a aldeia, onde moravam os que faziam parte de um mesmo grupo familiar. A mulher pertencia &agrave; sua fam&iacute;lia, embora vivesse na aldeia do marido, e as crian&ccedil;as que dele tivesse, tamb&eacute;m. Ficavam estes na casa do pai at&eacute; um pouco antes da puberdade, quando iam morar com os tios maternos, na aldeia destes.</p>\n<p>Os ovimbundos eram sobretudo pastores de gado bovino. Mas praticavam tamb&eacute;m a agricultura. E tinham a ca&ccedil;a em alta conta. As estruturas familiares, embora importantes, sofriam a interfer&ecirc;ncia da sociedade militar do quilombo, que impunha outras obedi&ecirc;ncias, hierarquias e solidariedade.</p>",
+    "imagens": [
+     "quicongo_3_1.jpg"
+    ]
+   },
+   {
+    "titulo": "Crenças",
+    "text": "<p>Os congos veneravam os ancestrais e os esp&iacute;ritos da terra, das &aacute;guas e do c&eacute;u. Seus sacerdotes, os quitomes e os gangas, eram possu&iacute;dos por esses esp&iacute;ritos e sabiam recolher e preservar os seus poderes em inquices ⎯ pequenas pedras, penas, conchas, ervas e outros materiais reunidos num saquinho de pano ou pele ou numa escultura de madeira. (Lanterna 1. Imagem G: Inquice congo.) Possu&iacute;am sociedades secretas religiosas, como a quimpassi, que procurava harmonizar as rela&ccedil;&otilde;es dos grupos humanos com a natureza. Acreditavam no cariapemba, um poder harmonizador do mundo, que podia ser usado para favorecer um indiv&iacute;duo e sua posi&ccedil;&atilde;o na sociedade, mas sempre em detrimento de um outro, pois, para garantir o equil&iacute;brio do universo, a um aumento de riqueza e de sa&uacute;de deve necessariamente corresponder um aumento de pobreza e de doen&ccedil;a. No come&ccedil;o do s&eacute;culo XVI, boa parte dos congos converteu-se ao catolicismo, que se adaptou a muitas das cren&ccedil;as tradicionais.</p>\n<p>Os ambundos acreditavam num deus supremo, Zambi, distante dos homens. Veneravam os ancestrais e esp&iacute;ritos da natureza, que se incorporam nos quimbandas, sacerdotes-m&eacute;dicos e adivinhos. Acreditavam no poder de certos materiais, como um punhado de caulim, o pemba, ou um bocado de p&oacute; de madeira vermelha, a tacula, que permitem a liga&ccedil;&atilde;o com o esp&iacute;rito dos mortos. Outra fonte de poder era a lunga ou calunga, uma boneca de madeira que dominava um determinado rio ou riacho e que representava o esp&iacute;rito das &aacute;guas. A possess&atilde;o dos vivos pelos esp&iacute;ritos dos parentes mortos era a forma comum de contato com o sobrenatural.</p>\n<p>Os ovimbundos acreditavam num ser supremo, numa grande for&ccedil;a que move o mundo, mas est&aacute; distante dos homens e por eles n&atilde;o pode ser compreendido. Acediam ao divino por meio dos ancestrais e dos esp&iacute;ritos da natureza, que baixam ao corpo dos homens.</p>",
+    "imagens": [
+     "quicongo_4_1.jpg"
+    ]
+   },
+   {
+    "titulo": "Arquitetura",
+    "text": "<p>As habita&ccedil;&otilde;es dos congos eram de planta retangular, paredes de sopapo e tetos de colmo, as dos nobres e grandes da terra s&oacute; se distinguindo das demais pelo tamanho. Ap&oacute;s a chegada dos portugueses, come&ccedil;aram a construir igrejas e pal&aacute;cios em pedra e tijolo, sobretudo na capital do reino, Banza Congo ou S&atilde;o Salvador.</p>\n<p>N&atilde;o se distinguiam das casas congas as dos ambundos. Tamb&eacute;m eram retangulares e feitas de sopapo, com cobertura de palha. Algumas aldeias eram envolvidas por muros de madeira e alguns conjuntos de casa podiam ter a privacidade de seus p&aacute;tios resguardados por cercas de esteiras.</p>\n<p>As moradas dos ovimbundos, como as de outros povos pastores do sudoeste e sudeste da &Aacute;frica, dispunham-se em c&iacute;rculo, em torno de um grande curral central, onde guardavam o gado.</p>",
+    "imagens": [
+     "quicongo_5_1.jpg"
+    ]
+   },
+   {
+    "titulo": "Tecnologia e Arte",
+    "text": "<p>Os congos esculpiam em pedra, madeira e metal. Especialmente famosas s&atilde;o as suas imagens em pedra, as ntadi, onde se refugiam os esp&iacute;ritos dos mortos, os inquices em madeira e os Cristos crucificados, em ligas de cobre, feitos ap&oacute;s a convers&atilde;o ao catolicismo. S&atilde;o bel&iacute;ssimos os seus tecidos em r&aacute;fia, semelhantes aos feitos por outros povos vizinhos e que os europeus assemelharam ao veludo.</p>\n<p>Os ambundos esculpiam sobretudo na madeira. Sua cer&acirc;mica &eacute; de alta qualidade e beleza.</p>\n<p>Os ovimbundos eram tamb&eacute;m excelentes ceramistas e h&aacute;beis escultores na madeira, sendo louvados principalmente os seus belos bast&otilde;es de chefia.</p>",
+    "imagens": [
+     "quicongo_6_1.jpg"
+    ]
+   },
+   {
+    "titulo": "Outras palavras",
+    "text": "<p class=\"p1\"><span class=\"s1\">H&aacute; muitas outras palavras de origem banto (<em>quicongo</em>, <em>quimbundo</em> e <em>umbundo</em>) presentes na l&iacute;ngua portuguesa. Conhe&ccedil;a mais algumas delas:</span></p>\n<p class=\"p2\">&nbsp;</p>\n<p class=\"p1\"><span class=\"s1\">babaca</span></p>\n<p class=\"p1\"><span class=\"s1\">babau</span></p>\n<p class=\"p1\"><span class=\"s1\">balangand&atilde; </span></p>\n<p class=\"p1\"><span class=\"s1\">banz&eacute;</span></p>\n<p class=\"p1\"><span class=\"s1\">banzo </span></p>\n<p class=\"p1\"><span class=\"s1\">biboca </span></p>\n<p class=\"p1\"><span class=\"s1\">borocox&ocirc;</span></p>\n<p class=\"p1\"><span class=\"s1\">brucutu</span></p>\n<p class=\"p1\"><span class=\"s1\">bumba</span></p>\n<p class=\"p1\"><span class=\"s1\">buzum</span></p>\n<p class=\"p1\"><span class=\"s1\">caba&ccedil;a</span></p>\n<p class=\"p1\"><span class=\"s1\">ca&ccedil;amba</span></p>\n<p class=\"p1\"><span class=\"s1\">cacimba</span></p>\n<p class=\"p1\"><span class=\"s1\">cafofo</span></p>\n<p class=\"p1\"><span class=\"s1\">cafund&oacute;</span></p>\n<p class=\"p1\"><span class=\"s1\">cafungar</span></p>\n<p class=\"p1\"><span class=\"s1\">cafuzo</span></p>\n<p class=\"p1\"><span class=\"s1\">calombo </span></p>\n<p class=\"p1\"><span class=\"s1\">calunga </span></p>\n<p class=\"p1\"><span class=\"s1\">canjica </span></p>\n<p class=\"p1\"><span class=\"s1\">cambada </span></p>\n<p class=\"p1\"><span class=\"s1\">cambur&atilde;o </span></p>\n<p class=\"p1\"><span class=\"s1\">camundongo </span></p>\n<p class=\"p1\"><span class=\"s1\">candango</span></p>\n<p class=\"p1\"><span class=\"s1\">candombl&eacute;</span></p>\n<p class=\"p1\"><span class=\"s1\">cangalha</span></p>\n<p class=\"p1\"><span class=\"s1\">capanga</span></p>\n<p class=\"p1\"><span class=\"s1\">caruru </span></p>\n<p class=\"p1\"><span class=\"s1\">catinga</span></p>\n<p class=\"p1\"><span class=\"s1\">caxinguel&ecirc; </span></p>\n<p class=\"p1\"><span class=\"s1\">caxumba </span></p>\n<p class=\"p1\"><span class=\"s1\">chimpanz&eacute; </span></p>\n<p class=\"p1\"><span class=\"s1\">congada</span></p>\n<p class=\"p1\"><span class=\"s1\">corcunda</span></p>\n<p class=\"p1\"><span class=\"s1\">coroca</span></p>\n<p class=\"p1\"><span class=\"s1\">cotoco</span></p>\n<p class=\"p1\"><span class=\"s1\">cuca</span></p>\n<p class=\"p1\"><span class=\"s1\">cucuia</span></p>\n<p class=\"p1\"><span class=\"s1\">encafifar</span></p>\n<p class=\"p1\"><span class=\"s1\">fiof&oacute;</span></p>\n<p class=\"p1\"><span class=\"s1\">forrobod&oacute;</span></p>\n<p class=\"p1\"><span class=\"s1\">fub&aacute;</span></p>\n<p class=\"p1\"><span class=\"s1\">fu&ccedil;ar</span></p>\n<p class=\"p1\"><span class=\"s1\">fulo</span></p>\n<p class=\"p1\"><span class=\"s1\">fungar </span></p>\n<p class=\"p1\"><span class=\"s1\">futrica </span></p>\n<p class=\"p1\"><span class=\"s1\">fuzarca</span></p>\n<p class=\"p1\"><span class=\"s1\">fuzu&ecirc;</span></p>\n<p class=\"p1\"><span class=\"s1\">fuxicar</span></p>\n<p class=\"p1\"><span class=\"s1\">ganz&aacute;</span></p>\n<p class=\"p1\"><span class=\"s1\">gangorra</span></p>\n<p class=\"p1\"><span class=\"s1\">iai&aacute; </span></p>\n<p class=\"p1\"><span class=\"s1\">jabacul&ecirc;</span></p>\n<p class=\"p1\"><span class=\"s1\">jagun&ccedil;o </span></p>\n<p class=\"p1\"><span class=\"s1\">maconha</span></p>\n<p class=\"p1\"><span class=\"s1\">macumba</span></p>\n<p class=\"p1\"><span class=\"s1\">maculel&ecirc;</span></p>\n<p class=\"p1\"><span class=\"s1\">mafu&aacute;</span></p>\n<p class=\"p1\"><span class=\"s1\">mambembe </span></p>\n<p class=\"p1\"><span class=\"s1\">mandinga</span></p>\n<p class=\"p1\"><span class=\"s1\">mandraque</span></p>\n<p class=\"p1\"><span class=\"s1\">mangar</span></p>\n<p class=\"p1\"><span class=\"s1\">mangua&ccedil;a</span></p>\n<p class=\"p1\"><span class=\"s1\">maracutaia</span></p>\n<p class=\"p1\"><span class=\"s1\">marimba</span></p>\n<p class=\"p1\"><span class=\"s1\">marimbondo</span></p>\n<p class=\"p1\"><span class=\"s1\">maxixe </span></p>\n<p class=\"p1\"><span class=\"s1\">meganha </span></p>\n<p class=\"p1\"><span class=\"s1\">milonga </span></p>\n<p class=\"p1\"><span class=\"s1\">Mo&ccedil;ambique</span></p>\n<p class=\"p1\"><span class=\"s1\">mocambo</span></p>\n<p class=\"p1\"><span class=\"s1\">mocot&oacute;</span></p>\n<p class=\"p1\"><span class=\"s1\">molambento</span></p>\n<p class=\"p1\"><span class=\"s1\">mondrongo</span></p>\n<p class=\"p1\"><span class=\"s1\">monjolo</span></p>\n<p class=\"p1\"><span class=\"s1\">mucama</span></p>\n<p class=\"p1\"><span class=\"s1\">mungunz&aacute; </span></p>\n<p class=\"p1\"><span class=\"s1\">muquirana </span></p>\n<p class=\"p1\"><span class=\"s1\">muvuca </span></p>\n<p class=\"p1\"><span class=\"s1\">muxiba </span></p>\n<p class=\"p1\"><span class=\"s1\">muxoxo</span></p>\n<p class=\"p1\"><span class=\"s1\">pemba</span></p>\n<p class=\"p1\"><span class=\"s1\">pombajira</span></p>\n<p class=\"p1\"><span class=\"s1\">pongar</span></p>\n<p class=\"p1\"><span class=\"s1\">quenga</span></p>\n<p class=\"p1\"><span class=\"s1\">quiabo</span></p>\n<p class=\"p1\"><span class=\"s1\">quibebe</span></p>\n<p class=\"p1\"><span class=\"s1\">quizumba</span></p>\n<p class=\"p1\"><span class=\"s1\">sacana</span></p>\n<p class=\"p1\"><span class=\"s1\">samba</span></p>\n<p class=\"p1\"><span class=\"s1\">senzala</span></p>\n<p class=\"p1\"><span class=\"s1\">tiritar</span></p>\n<p class=\"p1\"><span class=\"s1\">titica</span></p>\n<p class=\"p1\"><span class=\"s1\">tribufu </span></p>\n<p class=\"p1\"><span class=\"s1\">tutu (de feij&atilde;o)</span></p>\n<p class=\"p1\"><span class=\"s1\">tutu (= dinheiro)</span></p>\n<p class=\"p1\"><span class=\"s1\">tutu-marambaia</span></p>\n<p class=\"p1\"><span class=\"s1\">umbanda</span></p>\n<p class=\"p1\"><span class=\"s1\">urucubaca</span></p>\n<p class=\"p1\"><span class=\"s1\">vatap&aacute;</span></p>\n<p class=\"p1\"><span class=\"s1\">xaxado</span></p>\n<p class=\"p1\"><span class=\"s1\">xod&oacute;</span></p>\n<p class=\"p1\"><span class=\"s1\">ximbica</span></p>\n<p class=\"p1\"><span class=\"s1\">zabumba</span></p>\n<p class=\"p1\"><span class=\"s1\">zanzar</span></p>\n<p class=\"p1\"><span class=\"s1\">zinga</span></p>\n<p class=\"p1\"><span class=\"s1\">zumbi</span></p>\n<p class=\"p1\"><span class=\"s1\">zunzum</span></p>",
+    "imagens": [
+     "quicongo_7_1.jpg"
+    ]
+   }
+  ],
   "palavras": [
    {
     "origem": "OUTRA LINGUA",
@@ -4493,21 +4560,54 @@ var data = [
     "significadoOriginal": "atordoado; tonto",
     "audioOriginal": "zonzo0.mp3"
    }
-  ],
-  "menu": [
-   {
-    "titulo": "Povos tupinambas",
-    "text": "<p class=\"p1\"><strong><span class=\"s1\">Nomes de plantas e frutas</span></strong></p><ul><li class=\"p1\"><span class=\"s2\">abacaxi</span></li><li class=\"p1\"><span class=\"s2\">aguap&eacute;</span></li><li class=\"p1\"><span class=\"s2\">anan&aacute;s</span></li><li class=\"p1\"><span class=\"s2\">ara&ccedil;&aacute;</span></li><li class=\"p1\"><span class=\"s2\">araticum</span></li><li class=\"p1\"><span class=\"s2\">aroeira</span></li><li class=\"p1\"><span class=\"s2\">bacupari</span></li><li class=\"p1\"><span class=\"s2\">caj&aacute;</span></li><li class=\"p1\"><span class=\"s2\">caju</span></li><li class=\"p1\"><span class=\"s2\">car&aacute;</span></li><li class=\"p1\"><span class=\"s2\">cumari</span></li><li class=\"p1\"><span class=\"s2\">jabuticaba</span></li><li class=\"p1\"><span class=\"s2\">jenipapo</span></li><li class=\"p1\"><span class=\"s2\">jerimum</span></li><li class=\"p1\"><span class=\"s2\">ju&aacute;</span></li><li class=\"p1\"><span class=\"s2\">ju&ccedil;ara</span></li><li class=\"p1\"><span class=\"s",
-    "imagens": [
-     "0.jpg",
-     "1.jpg",
-     "2.jpg"
-    ]
-   }
   ]
  },
  {
   "nome": "Línguas Aficanas II e Yorubá",
+  "menu": [
+   {
+    "titulo": "Yorubá",
+    "text": "<p>Entre os s&eacute;culos XVI e XIX foram trazidos para o Brasil entre 4 e 5 milh&otilde;es de africanos escravizados. Desse total, cerca de um 1 milh&atilde;o de pessoas foram embarcadas nos portos da &Aacute;frica Ocidental, entre a Costa do Ouro, atual Gana, e o Golfo de Biafra, na Nig&eacute;ria. Oriundos dos diversos reinos que existiam na regi&atilde;o, come&ccedil;aram a aportar no Brasil a partir da segunda metade do s&eacute;culo XVII. Seu principal destino foi a cidade de Salvador e o Rec&ocirc;ncavo Baiano, Minas Gerais e o Maranh&atilde;o. As l&iacute;nguas que eles falavam, como o yorub&aacute; e o ew&eacute;-fon, influenciaram a l&iacute;ngua portuguesa no Brasil principalmente no dom&iacute;nio religioso.</p>",
+    "imagens": [
+     "yoruba_1_1.jpg"
+    ]
+   },
+   {
+    "titulo": "Povos",
+    "text": "<p>Ew&eacute;-fon &eacute; o nome dado a um conjunto de l&iacute;nguas muito pr&oacute;ximas entre si, entre elas o ew&eacute;, o fon, o gun, o mahi e o mina. No Brasil, ficaram conhecidas como minas ou jejes. Os povos falantes destas l&iacute;nguas vivem na regi&atilde;o hoje ocupada pelos pa&iacute;ses Gana, Togo e Benim. No passado, esses povos formavam diversos pequenos reinos, o maior dos quais, at&eacute; o in&iacute;cio do s&eacute;culo XVIII, era o de Ardra ou Alada. Em 1724, ele foi conquistado por um novo poder, altamente militarizado, que se formara um pouco mais ao norte e que iniciara sua expans&atilde;o at&eacute; o mar, o reino fon do Daom&eacute;. O rei, a nobreza e parte do povo ardra deslocou-se para sudeste e ali, entre os guns, restaurou o seu reino, que guardou o mesmo nome, mas se tornou mais conhecido como Porto-Novo. Nos s&eacute;culos XVIII e XIX, o Daom&eacute; tornou-se o principal estado na &aacute;rea, ainda que, por muito tempo, fosse vassalo do reino yorubano de Oi&oacute;.</p>\n<p>A leste dos ew&eacute;s-fons, no sudeste da atual Rep&uacute;blica do Benim e no sudoeste da atual Nig&eacute;ria, viviam os yorub&aacute;s (tamb&eacute;m chamados nag&ocirc;s, no Brasil), divididos em numerosos povos ⎯ oi&oacute;s, egb&aacute;s, ijex&aacute;s, ijebus, if&eacute;s, ondos, oxob&ocirc;s, aoris, quetos, anag&ocirc;s, owos, ibadans ⎯, que falam distintos dialetos, mas se entendem entre si, e formando v&aacute;rias cidades-estados ou cidades-reinos, entre as quais duas se destacam: If&eacute;, onde surgiu o homem e origem de todos os reis yorub&aacute;s, uma esp&eacute;cie de Roma m&iacute;tica, e cujo soberano, o oni, detinha a lideran&ccedil;a espiritual dos yorub&aacute;s; e Oi&oacute;, o maior e o mais poderoso militarmente de todos esses estados e cujo rei, o alafim, era o suserano de v&aacute;rios deles. O poderio de Oi&oacute; assentava-se sobre sua cavalaria.</p>",
+    "imagens": [
+     "yoruba_2_1.jpg"
+    ]
+   },
+   {
+    "titulo": "Usos e Costumes",
+    "text": "<p class=\"p1\"><span class=\"s1\">Entre os ew&eacute;s-fons, a base da economia era a agricultura. Criavam-se cabras, porcos e galinhas. Pescava-se. Fiava-se e tecia-se. Fazia-se cer&acirc;mica, trabalhava-se a madeira, fundiam-se metais. Seus ourives eram excelentes. O com&eacute;rcio era intenso, n&atilde;o s&oacute; nos grandes mercados locais, mas tamb&eacute;m com outros povos e at&eacute; regi&otilde;es distantes.</span></p>\n<p class=\"p1\">As estruturas econ&ocirc;micas e sociais yorub&aacute;s eram semelhantes &agrave;s dos ew&eacute;s-fons. Embora o regime familiar fosse polig&acirc;mico, a mulher dispunha de autonomia e liberdade. Cada uma das v&aacute;rias esposas de um marido morava em casa separada, ainda que dentro do mesmo conjunto habitacional, e tinha patrim&ocirc;nio pr&oacute;prio. Algumas podiam ser mais ricas do que os esposos, porque se dedicavam ao com&eacute;rcio, que no varejo era praticamente monopolizado pelas mulheres. Havia div&oacute;rcio, mas, entre os fons, fora dos casos de adult&eacute;rio, s&oacute; a mulher podia pedi-lo.</p>",
+    "imagens": [
+     "yoruba_3_1.jpg"
+    ]
+   },
+   {
+    "titulo": "Crenças",
+    "text": "<p>Os fons acreditavam num deus supremo, distante dos homens, e que tinha por intermedi&aacute;rios os vodus, fossem eles for&ccedil;as da natureza ou ancestrais divinizados. A religi&atilde;o permeava toda a vida social, cada pessoa tendo o seu vodu pr&oacute;prio, a que devia permanente servi&ccedil;o.</p>\n<p>A religi&atilde;o dos yorub&aacute;s &eacute; semelhante &agrave; dos fons. Os vodus s&atilde;o substitu&iacute;dos pelos orix&aacute;s. As hist&oacute;rias de seus deuses ⎯ Olorum, Obatal&aacute;, Oi&aacute;, Ogum, Xang&ocirc;, Oxum, Ox&oacute;ssi, Yemanj&aacute; e tantos outros ⎯ &eacute; t&atilde;o rica quanto as do pante&atilde;o dos antigos gregos.</p>",
+    "imagens": [
+     "yoruba_4_1.jpg"
+    ]
+   },
+   {
+    "titulo": "Arquitetura",
+    "text": "<p>A capital do reino fon do Daom&eacute;, Abom&eacute;, era uma cidade imponente, com um conjunto de pal&aacute;cios ⎯ cada novo rei constru&iacute;a o seu ⎯ cercados por altos muros de barro. Esses conjuntos de grandes pr&eacute;dios de plantas retangulares, com varandas se abrirem para v&aacute;rios p&aacute;tios, tinham, em alguns casos, suas paredes ornadas com baixos-relevos coloridos.</p>\n<p>Uma grande resid&ecirc;ncia familiar yorubana chamava-se il&ecirc; agbo, ou &ldquo;rebanho de casas&rdquo;. Era tamb&eacute;m um conjunto de habita&ccedil;&otilde;es cercadas por um muro de barro ou paredes de esteiras, com varandas voltadas para os p&aacute;tios internos. Os pal&aacute;cios dos reis ou ob&aacute;s distinguiam-se das moradas familiares comuns apenas pelo tamanho. E tamb&eacute;m pelas colunas de madeira, profusamente esculpidas, que sustentam os alpendres.</p>",
+    "imagens": [
+     "yoruba_5_1.jpg"
+    ]
+   },
+   {
+    "titulo": "Tecnologia e arte",
+    "text": "<p>Os fons s&atilde;o ex&iacute;mios escultores na madeira e sobretudo no ferro e nas ligas de cobre. S&atilde;o famosos os seus cortejos reais feitos com figurinhas de cobre assentadas sobre blocos de madeira. Suas joias s&atilde;o bel&iacute;ssimas. S&atilde;o famosas suas bandeiras e tape&ccedil;arias feitas com aplica&ccedil;&otilde;es de figuras coloridas sobre grandes panos. A escultura yorubana &eacute; tida como uma das mais vigorosas da &Aacute;frica. Suas imagens tensas e concentradas parecem prontas a receber a revela&ccedil;&atilde;o do mist&eacute;rio. S&atilde;o famosos, entre as figuras de madeira, os Xang&ocirc;s a cavalo, os recipientes para noz de cola, as bandejas de If&aacute;, as m&aacute;scaras epas, gueled&ecirc;s e egunguns, bem como suas pequenas estatuetas de g&ecirc;meos, os ibejis.</p>",
+    "imagens": [
+     "yoruba_6_1.jpg"
+    ]
+   }
+  ],
   "palavras": [
    {
     "origem": "OUTRA LINGUA",
@@ -4779,21 +4879,33 @@ var data = [
     "significadoOriginal": "guisado de galinha ou outra carne com camarões secos e azeite de dendê",
     "audioOriginal": "xinxim0.mp3"
    }
-  ],
-  "menu": [
-   {
-    "titulo": "Povos tupinambas",
-    "text": "<p class=\"p1\"><strong><span class=\"s1\">Nomes de plantas e frutas</span></strong></p><ul><li class=\"p1\"><span class=\"s2\">abacaxi</span></li><li class=\"p1\"><span class=\"s2\">aguap&eacute;</span></li><li class=\"p1\"><span class=\"s2\">anan&aacute;s</span></li><li class=\"p1\"><span class=\"s2\">ara&ccedil;&aacute;</span></li><li class=\"p1\"><span class=\"s2\">araticum</span></li><li class=\"p1\"><span class=\"s2\">aroeira</span></li><li class=\"p1\"><span class=\"s2\">bacupari</span></li><li class=\"p1\"><span class=\"s2\">caj&aacute;</span></li><li class=\"p1\"><span class=\"s2\">caju</span></li><li class=\"p1\"><span class=\"s2\">car&aacute;</span></li><li class=\"p1\"><span class=\"s2\">cumari</span></li><li class=\"p1\"><span class=\"s2\">jabuticaba</span></li><li class=\"p1\"><span class=\"s2\">jenipapo</span></li><li class=\"p1\"><span class=\"s2\">jerimum</span></li><li class=\"p1\"><span class=\"s2\">ju&aacute;</span></li><li class=\"p1\"><span class=\"s2\">ju&ccedil;ara</span></li><li class=\"p1\"><span class=\"s",
-    "imagens": [
-     "0.jpg",
-     "1.jpg",
-     "2.jpg"
-    ]
-   }
   ]
  },
  {
   "nome": "Inglês e Francês",
+  "menu": [
+   {
+    "titulo": "Inglês e francês",
+    "text": "<p>A l&iacute;ngua portuguesa vem importando nos &uacute;ltimos s&eacute;culos in&uacute;meras palavras do ingl&ecirc;s e do franc&ecirc;s. A influ&ecirc;ncia do ingl&ecirc;s sobre o portugu&ecirc;s &eacute; bastante marcante a partir da segunda metade do s&eacute;culo passado, principalmente nas cria&ccedil;&otilde;es da moda e da tecnologia, da culin&aacute;ria e dos esportes, do cinema, da m&uacute;sica e das artes. Nos dias atuais, essa influ&ecirc;ncia tem sido cada vez mais intensa nos dom&iacute;nios do trabalho e das redes sociais, e v&aacute;rias das palavras inglesas que utilizamos com frequ&ecirc;ncia nem mesmo s&atilde;o adaptadas ortograficamente ao portugu&ecirc;s, mantendo sua grafia original.</p>\n<p>A influ&ecirc;ncia da l&iacute;ngua francesa, por sua vez, muito forte no s&eacute;culo XIX e na primeira metade do s&eacute;culo XX, permanece presente em nossa l&iacute;ngua com o empr&eacute;stimo de algumas palavras ao portugu&ecirc;s, sobretudo no &acirc;mbito da gastronomia e da moda.</p>",
+    "imagens": [
+     "Inglesfrances_1_1.jpg"
+    ]
+   },
+   {
+    "titulo": "Outras palavras Inglês",
+    "text": "<p><strong>Dom&iacute;nio do trabalho</strong> <br />business<br />coaching <br />co-working <br />homeoffice <br />networking <br />job-sharing <br />work-sharing <br />uber <br />workaholic <br />slow work <br />freelance<br /> start-up</p>\n<p><strong>Dom&iacute;nio da alimenta&ccedil;&atilde;o</strong> <br />drive-in<br />fast-food <br />junk food <br />nugget <br />snack<br />wrap <br />food truck <br />light <br />happy hour <br />fusion food <br />happy hour <br />slow food <br />bacon <br />banana split <br />brunch <br />coffee break <br />coquetel <br />hamb&uacute;rguer <br />ketchup <br />milk shake <br />sundae <br />sandu&iacute;che</p>\n<p><strong>Dom&iacute;nio das redes sociais</strong> <br />crowdfunding<br />hashtag <br />post<br />fan page <br />frame <br />inbox <br />caption</p>\n<p><strong>Dom&iacute;nio da tecnologia</strong> <br />air bag<br />CD <br />fax <br />leiaute <br />xerox <br />walkman</p>\n<p><strong>Dom&iacute;nio da tecnologia inform&aacute;tica</strong> <br />messenger <br />stories <br />blog <br />becape <br />chat<br />clique <br />cookies <br />hacker <br />hardware<br />home page <br />laptop <br />log in <br />mouse <br />off-line <br />on-line <br />print screen <br />site <br />software <br />spam <br />escanear<br />upgrade<br />designer<br />wifi</p>\n<p><strong>Dom&iacute;nio dos esportes</strong> <br />beisebol <br />boxe <br />cricket <br />golfe <br />handebol<br />jet-ski <br />j&oacute;quei <br />p&ecirc;nalti <br />play-off <br />pole position <br />ranking <br />turfe <br />voleibol</p>\n<p><strong>Dom&iacute;nio da Moda</strong> <br />antiaging<br />baby-doll<br />black-tie <br />blazer <br />blush <br />gloss <br />n&aacute;ilon <br />pul&ocirc;ver <br />short <br />t-shirt<br />t&ecirc;nis<br />top model</p>\n<p><strong>Dom&iacute;nio das artes</strong> <br />blues <br />stand up <br />country <br />grunge<br />happy end <br />jazz <br />m&iacute;dia <br />pay-per-view <br />pop <br />popstar <br />reality show <br />remake <br />rhythhm <br />rock-and-roll<br />script<br />show <br />showbiz <br />soul<br />street dance <br />street music <br />talk show <br />techno <br />twist <br />world music</p>\n<p><strong>Dom&iacute;nio do Turismo</strong> <br />all inclusive <br />apart-hotel <br />boarding pass <br />business class <br />camping<br />citytour <br />code-sharing <br />fitness center <br />free shop <br />gate<br />no show <br />overbooking <br />resort <br />room service <br />traveler's check <br />upgrade</p>\n<p><strong>Dom&iacute;nio da delinqu&ecirc;ncia</strong> <br />bullying<br />gangster<br />hold-up <br />kidnapping<br />hacker</p>\n<p><strong>De diversos dom&iacute;nios</strong> <br />fake news <br />al&ocirc; <br />antidoping <br />beatnik <br />AIDS <br />baby-sitter <br />best-seller <br />bingo <br />blecaute <br />b&oacute;i <br />office-boy <br />check-up<br />checape <br />closet <br />clube <br />crack <br />design<br />d&oacute;lar <br />drag queen <br />dumping <br />establishment <br />fashion <br />flat <br />gay <br />hall <br />happening <br />hippie <br />impeachment <br />know-how <br />marketing <br />outlet <br />pet-shop <br />piercing <br />playground <br />point <br />playboy <br />sex shop <br />sexy <br />shopping center <br />socialite <br />standard <br />streaptease <br />teen <br />top <br />topless <br />unisex <br />workshop <br />xerife <br />yuppie</p>\n<p><strong>Algumas express&otilde;es</strong>&nbsp;<br />DNA <br />O.K. <br />S.O.S. <br />VIP <br />w.c.</p>",
+    "imagens": [
+     "inglesfrances_2_1.jpg"
+    ]
+   },
+   {
+    "titulo": "Outras palavras Francês",
+    "text": "<p><strong>Dom&iacute;nio da moda</strong> <br />alta-costura <br />broche <br />busti&ecirc; <br />cachecol <br />chemisier<br />colete <br />collant<br />crepe<br />croch&ecirc;<br />echarpe<br />evas&ecirc;<br />fuseau<br />god&ecirc;<br />laqu&ecirc;<br />lingerie<br />n&eacute;cessaire<br />paet&ecirc;<br />palet&oacute;<br />penhoar<br />pochete <br />pr&ecirc;t-&agrave;-porter<br />robe<br />ruge<br />suti&atilde;<br />tailleur<br />tric&ocirc;</p>\n<p><strong>Dom&iacute;nio da gastronomia</strong> <br />&agrave; la carte<br />baguete<br />bechamel <br />bistr&ocirc;<br />buf&ecirc;<br />canap&eacute;<br />champignon<br />chantili<br />chef <br />couvert<br />crepe<br />crocante<br />croissant<br />croquete<br />escalope<br />escarg&ocirc;<br />fil&eacute; mignon<br />foie gras <br />fondue <br />frap&ecirc; <br />fricass&ecirc;<br />gourmet <br />gratinar<br />ma&icirc;tre<br />maionese<br />marrom glac&ecirc; <br />menu<br />musse <br />omelete<br />pat&ecirc; <br />pav&ecirc;<br />pur&ecirc;<br />quiche<br />raclete<br />rechaud <br />rocambole <br />saut&eacute;<br />sufl&ecirc;</p>\n<p><strong>Dom&iacute;nio da dan&ccedil;a</strong> <br />allong&eacute;<br />bal&eacute;<br />ballon&eacute;<br />demi-pli&eacute;<br />pas de deux <br />pirueta<br />pli&eacute;<br />canc&atilde;<br />quadrilha</p>\n<p><strong>Dom&iacute;nio das bebidas</strong> <br />conhaque<br />ros&eacute;<br />sommelier<br />flute</p>\n<p><strong>Dom&iacute;nio das artes</strong> <br />art d&eacute;co <br />ateli&ecirc;<br />avant-garde <br />avant-premi&egrave;re <br />belle &eacute;poque<br />cabar&eacute;<br />dubl&ecirc;<br />dublagem<br />marchand<br />matin&ecirc;<br />mise-en sc&egrave;ne<br />na&iuml;f<br />pot-pourri<br />premi&egrave;re<br />reprise<br />rococ&oacute;<br />vernissage<br />turn&ecirc;<br />vedete</p>\n<p><strong>Dom&iacute;nio das cores</strong> <br />bege <br />bord&ocirc; <br />degrad&ecirc;<br />marrom<br />ton-sur-ton</p>\n<p><strong>Dom&iacute;nio de jogos, brinquedos</strong> <br />carrossel<br />marionete <br />patinete<br />bilhar<br />roleta</p>\n<p><strong>De diversos dom&iacute;nios:</strong> <br />avalanche <br />bibel&ocirc; <br />bid&ecirc; <br />butique<br />cach&ecirc;<br />camel&ocirc;<br />cap&ocirc;<br />chal&eacute; <br />charrete  br />chofer  <r />coiffeur <br />clich&ecirc; <br />comit&ecirc; <br />compl&ocirc; <br />coqueluche <br />crach&aacute;  <b />creche <br />deboche <br />dossi&ecirc; <br />edredom <br />elite <br />envelope  <br/>fanfarra <br />fum&ecirc; <br />gafe <br />gigol&ocirc; <br />grand prix <br />greve <br />guich&ecirc; <br />habitu&eacute; <br />helic&oacute;ptero <br />jetom <br />limusine <br />madame <br />mademoiselle <br />pierr&ocirc; <br />premi&ecirc; <br />priv&ecirc; <br />raquete <br />reveillon<br />sach&ecirc; <br />toalete <br />voyeur</p>\n<p><strong>Algumas express&otilde;es</strong><br />d&eacute;j&agrave;-vu<br />en passant<br />hors-concours<br />t&ecirc;te-&agrave;-t&ecirc;te</p>",
+    "imagens": [
+     "inglesfrances_3_1.jpg"
+    ]
+   }
+  ],
   "palavras": [
    {
     "origem": "OUTRA LINGUA",
@@ -5515,21 +5627,75 @@ var data = [
     "significadoOriginal": "produto usado para lavar os cabelos",
     "audioOriginal": "xampu1.mp3"
    }
-  ],
-  "menu": [
-   {
-    "titulo": "Povos tupinambas",
-    "text": "<p class=\"p1\"><strong><span class=\"s1\">Nomes de plantas e frutas</span></strong></p><ul><li class=\"p1\"><span class=\"s2\">abacaxi</span></li><li class=\"p1\"><span class=\"s2\">aguap&eacute;</span></li><li class=\"p1\"><span class=\"s2\">anan&aacute;s</span></li><li class=\"p1\"><span class=\"s2\">ara&ccedil;&aacute;</span></li><li class=\"p1\"><span class=\"s2\">araticum</span></li><li class=\"p1\"><span class=\"s2\">aroeira</span></li><li class=\"p1\"><span class=\"s2\">bacupari</span></li><li class=\"p1\"><span class=\"s2\">caj&aacute;</span></li><li class=\"p1\"><span class=\"s2\">caju</span></li><li class=\"p1\"><span class=\"s2\">car&aacute;</span></li><li class=\"p1\"><span class=\"s2\">cumari</span></li><li class=\"p1\"><span class=\"s2\">jabuticaba</span></li><li class=\"p1\"><span class=\"s2\">jenipapo</span></li><li class=\"p1\"><span class=\"s2\">jerimum</span></li><li class=\"p1\"><span class=\"s2\">ju&aacute;</span></li><li class=\"p1\"><span class=\"s2\">ju&ccedil;ara</span></li><li class=\"p1\"><span class=\"s",
-    "imagens": [
-     "0.jpg",
-     "1.jpg",
-     "2.jpg"
-    ]
-   }
   ]
  },
  {
-  "nome": "Línguas de imigrantes",
+  "nome": "Português no mundo",
+  "menu": [
+   {
+    "titulo": "Línguas dos imigrantes",
+    "text": "<p>L&iacute;nguas: Alem&atilde;o, &Aacute;rabe, Chin&ecirc;s, Hebraico, *I&iacute;diche, Italiano, Japon&ecirc;s, Coreano, Espanhol</p>\n<p>A partir do in&iacute;cio do s&eacute;culo XIX, o Brasil recebeu v&aacute;rias levas de imigrantes estrangeiros, atra&iacute;dos por oportunidades de trabalho e melhores condi&ccedil;&otilde;es de vida. Italianos, alem&atilde;es, japoneses, s&iacute;rios, libaneses, judeus, arm&ecirc;nios, poloneses, chineses ou coreanos &ndash; eles instalaram-se principalmente nos estados de S&atilde;o Paulo, Esp&iacute;rito Santo, Paran&aacute;, Santa Catarina e Rio Grande do Sul. Integrando-se &agrave; vida do pa&iacute;s ao mesmo tempo em que mantinham alguns de seus costumes tradicionais, acabaram deixando marcas por nossa cultura. divulgando pelo Brasil suas comidas e temperos, oferecendo &agrave; l&iacute;ngua portuguesa palavras ex&oacute;ticas e saborosas. O resultado foi uma esp&eacute;cie de chop-suey cultural, pluri&eacute;tnico, multitolerante, tipicamente brasileiro, onde se pode comer quibe no caraoqu&ecirc;, tomar chope na cantina ou dan&ccedil;ar xote no bar mitzvah.</p>\n<p>Na presente d&eacute;cada, o Brasil vem recebendo fluxos significativos de imigrantes de outros pa&iacute;ses, como venezuelanos, haitianos, s&iacute;rios, angolanos, mo&ccedil;ambicanos e guineenses, por exemplo. Em sua maioria, eles fogem das crises pol&iacute;ticas, sociais e econ&ocirc;micas que estes pa&iacute;ses enfrentam. E tamb&eacute;m das crescentes barreiras &agrave; sua entrada nos pa&iacute;ses desenvolvidos, com suas duras pol&iacute;ticas migrat&oacute;rias de acolhimento.</p>",
+    "imagens": [
+     "imigrantes_1_1.jpg"
+    ]
+   },
+   {
+    "titulo": "Italianos",
+    "text": "<p>Os italianos constituem o contingente mais numeroso de imigrantes no Brasil, com cerca de um milh&atilde;o e meio de pessoas. Deixaram a Europa sobretudo em consequ&ecirc;ncia das dif&iacute;ceis condi&ccedil;&otilde;es de vida que enfrentavam. Vieram a partir de 1875, concentrando-se em S&atilde;o Paulo, Rio Grande do Sul, Paran&aacute; e Esp&iacute;rito Santo. O palco central de desenvolvimento da col&ocirc;nia italiana no Brasil ocorreu, entretanto, em S&atilde;o Paulo, estado que abrigou cerca de setenta por cento de todos os italianos vindos ao Brasil. Eles come&ccedil;aram a chegar em n&uacute;meros mais expressivos a partir dos anos oitenta do s&eacute;culo XIX. Foram trazidos com a finalidade de substituir a m&atilde;o-de-obra dos escravizados na agricultura, em especial nas lavouras de caf&eacute; que avan&ccedil;avam rumo ao oeste do estado de S&atilde;o Paulo e norte do Paran&aacute;. Em todas as regi&otilde;es onde os italianos se estabeleceram, sua presen&ccedil;a deixou marcas na l&iacute;ngua e na culin&aacute;ria.</p>",
+    "imagens": [
+     "imigrantes_2_1.jpg"
+    ]
+   },
+   {
+    "titulo": "Alemães",
+    "text": "<p>Um dos primeiros grupos de imigrantes a vir ao Brasil, os alem&atilde;es foram trazidos com o objetivo de povoar &aacute;reas ao sul do pa&iacute;s, relativamente pr&oacute;ximas &agrave; fronteira, e desenvolver a agricultura. A primeira col&ocirc;nia de imigrantes alem&atilde;es estabeleceu-se no Vale dos Sinos (no Rio Grande do Sul, onde hoje localiza-se o munic&iacute;pio de S&atilde;o Leopoldo), em 1824, data que marca o in&iacute;cio da imigra&ccedil;&atilde;o. Entre 1824 e durante os anos trinta, chegaram ao Brasil cerca de 250 mil imigrantes alem&atilde;es. Eles ajudaram a colonizar as &aacute;reas virgens de fronteira agr&iacute;cola, espalhando-se sobretudo por regi&otilde;es extensas dos estados do Rio Grande do Sul (planalto setentrional at&eacute; o rio Uruguai e vales de rios), Paran&aacute; (planalto paranaense) e Santa Catarina (regi&atilde;o noroeste e vale do Itaja&iacute;). As cidades de Blumenau, Joinville, Brusque, S&atilde;o Leopoldo, Novo Hamburgo e Iju&iacute; figuram entre os centros de expressiva presen&ccedil;a alem&atilde;. Ap&oacute;s a Primeira Guerra Mundial, muitas fam&iacute;lias rumaram a capitais como Curitiba, S&atilde;o Paulo e Porto Alegre.&nbsp;</p>",
+    "imagens": [
+     "imigrantes_3_1.jpg"
+    ]
+   },
+   {
+    "titulo": "Sírios e Libaneses",
+    "text": "<p>Os imigrantes s&iacute;rios e libaneses come&ccedil;aram a chegar ao Brasil a partir do final do s&eacute;culo XIX. A pretens&atilde;o inicial era uma imigra&ccedil;&atilde;o tempor&aacute;ria, destinada a redimir suas fam&iacute;lias de situa&ccedil;&otilde;es sociais e econ&ocirc;micas dif&iacute;ceis em seus pa&iacute;ses. Mas o provis&oacute;rio acabou se tornando permanente e, ao inv&eacute;s do imigrante retornar, a fam&iacute;lia &eacute; que o acompanhou. Irm&atilde;o puxando irm&atilde;os, filhos, esposas, primos, pais, tios, av&oacute;s, conterr&acirc;neos, conhecidos.</p>\n<p>No novo pa&iacute;s, a maior parte dos imigrantes escolheu como profiss&atilde;o o com&eacute;rcio. Em todo o Brasil, embrenharam-se como mascates, caixa ou mala &agrave;s costas ou em lombo de burro, vendendo quinquilharias de todo tipo &ndash; linhas de costura, f&oacute;sforos, roupas, tecidos, bijuterias, alimentos &ndash; todas mercadorias de consumo popular. Nas grandes cidades, aglomeraram-se em zonas centrais, pr&oacute;prias ao com&eacute;rcio. Com o passar do tempo, foram se integrando cada vez mais &agrave; sociedade brasileira, demonstrando uma extraordin&aacute;ria capacidade de adapta&ccedil;&atilde;o &agrave; nova terra. Tais fluxos tradicionais foram renovados pela chegada de fam&iacute;lias, em sua maioria mu&ccedil;ulmanas, fugidas da guerra civil libanesa (1975-1990) e, mais recentemente (a partir de 2011), de fam&iacute;lias de refugiados da guerra civil na S&iacute;ria.</p>",
+    "imagens": [
+     "imigrantes_4_1.jpg"
+    ]
+   },
+   {
+    "titulo": "Japoneses e Chineses",
+    "text": "<p>Os japoneses constitu&iacute;ram, depois de italianos, portugueses e espanh&oacute;is, o &uacute;ltimo grande contingente a imigrar para o Brasil. Vieram a partir de 1908, quando o navio Kasato Maru trouxe as primeiras 165 fam&iacute;lias, num total de 786 imigrantes. Eram fam&iacute;lias contratadas para o trabalho nas lavouras de caf&eacute;, sobretudo para os estados de S&atilde;o Paulo e Paran&aacute;, onde hoje encontramos, portanto, a maior parte de seus descendentes, estimados em mais de um milh&atilde;o em todo o pa&iacute;s. Entre 1910 e 1914, chegaram do Jap&atilde;o cerca de 14.200 imigrantes. O ponto culminante deu-se entre 1925 e 1935, com cerca de 140 mil entradas. Em 1929, instalou-se tamb&eacute;m uma col&ocirc;nia de imigrantes japoneses agricultores em Tom&eacute;-A&ccedil;u, no Par&aacute;.</p>",
+    "imagens": [
+     "imigrantes_5_1.jpg"
+    ]
+   },
+   {
+    "titulo": "Judeus",
+    "text": "<p>A maior parte dos imigrantes judeus em S&atilde;o Paulo &eacute; de origem asquenaze, provenientes de pa&iacute;ses da Europa central e oriental, especialmente da R&uacute;ssia e Pol&ocirc;nia. A partir dos anos vinte, estabeleceram-se inicialmente no bairro do Bom Retiro, e da&iacute; difundiram-se para outras regi&otilde;es da capital, dentre as quais se destaca o bairro de Higien&oacute;polis. Dedicaram-se inicialmente, como os &aacute;rabes, &agrave; mascatea&ccedil;&atilde;o e em seguida, estabeleceram-se no com&eacute;rcio de armarinhos e roupas prontas. Experimentaram um processo de ascens&atilde;o socioecon&ocirc;mica espetacular, com a primeira gera&ccedil;&atilde;o nascida no Brasil entrando em massa no mercado de profiss&otilde;es liberais, ap&oacute;s cursar universidades. Falavam originalmente o i&iacute;diche, l&iacute;ngua germ&acirc;nica das comunidades judaicas da Europa central e oriental.</p>",
+    "imagens": [
+     "imigrantes_6_1.jpg"
+    ]
+   },
+   {
+    "titulo": "Coreanos",
+    "text": "<p>Os imigrantes coreanos come&ccedil;aram a chegar em maior volume ao Brasil na primeira metade dos anos 1960, concentrando-se especialmente na capital paulista, que abriga mais de 80% dos indiv&iacute;duos desta nacionalidade. Estabeleceram-se sobretudo como negociantes e fabricantes de roupas, inicialmente na Baixada do Glic&eacute;rio, depois nos bairros do Br&aacute;s e do Bom Retiro, onde em parte substitu&iacute;ram os neg&oacute;cios de muitas fam&iacute;lias judias, desenvolvendo em particular o ramo de confec&ccedil;&otilde;es femininas. Fruto da mobilidade experimentada de uma gera&ccedil;&atilde;o a outra, muitas fam&iacute;lias passaram a tamb&eacute;m residir no bairro da Aclima&ccedil;&atilde;o, onde se encontra uma comunidade coreana significativa. Ressalte-se ainda que a maioria dos coreanos residentes no estado de S&atilde;o Paulo que obtiveram Registro Nacional de Estrangeiros em 2016 eram engenheiros e profissionais liberais, o que denota uma imigra&ccedil;&atilde;o recente bem qualificada.</p>",
+    "imagens": [
+     ""
+    ]
+   },
+   {
+    "titulo": "Bolivianos e peruanos",
+    "text": "<p class=\"p1\"><span class=\"s1\">A imigra&ccedil;&atilde;o massiva de bolivianos se iniciou no &uacute;ltimo quartel do s&eacute;culo passado e teve como destinos principais as capitais paulista e fluminense, al&eacute;m dos munic&iacute;pios de Corumb&aacute;, no Mato Grosso do Sul, e C&aacute;ceres, em Mato Grosso, ambos pr&oacute;ximos &agrave; fronteira. Nestas cidades do centro-oeste, a maioria dos bolivianos trabalha como comerciantes e quase que cotidianamente se translada de um lado a outro da fronteira. J&aacute; na capital paulista, que abriga a maior popula&ccedil;&atilde;o de bolivianos do Brasil, o grupo tendeu historicamente a se inserir no ramo de confec&ccedil;&otilde;es, inicialmente bastante explorada em longas jornadas de trabalho em oficinas de costura. Muito trabalhadores, em S&atilde;o Paulo, os bolivianos tenderam a residir em &aacute;reas mais pr&oacute;ximas ao centro da cidade, mas h&aacute; uma tend&ecirc;ncia atual a tamb&eacute;m se implantarem em bairros mais afastados. Aos finais de semana, muitos bolivianos residentes na capital paulista se re&uacute;nem na Pra&ccedil;a Kantuta, onde se tornam evidentes os tra&ccedil;os de uma cultura vigorosa.</span></p>\n<p class=\"p2\"><span class=\"s1\">J&aacute; os peruanos constituem uma imigra&ccedil;&atilde;o mais recente que a de bolivianos, s&atilde;o bem menos numerosos, e mais da metade deles se concentram nas capitais de S&atilde;o Paulo, Rio de Janeiro e Curitiba. Entre o fluxo recente de peruanos, muitos imigrantes apresentam maior escolaridade e chegam ainda solteiros&nbsp;</span><span class=\"s2\">para trabalhar com servi&ccedil;os, em especial no setor de gastronomia. O ceviche, em particular, se transformou em um grande produto de exporta&ccedil;&atilde;o do Peru (e tamb&eacute;m da Bol&iacute;via), e S&atilde;o Paulo, com certo atraso, vive uma febre de restaurantes peruanos.</span></p>",
+    "imagens": [
+     ""
+    ]
+   },
+   {
+    "titulo": "Fluxos recentes",
+    "text": "<p>Na presente d&eacute;cada o Brasil vem recebendo fluxos significativos de imigrantes de outros pa&iacute;ses como Haiti e Venezuela, na Am&eacute;rica Latina. No caso dos haitianos, estes passaram a chegar a partir do terremoto ocorrido naquele pa&iacute;s caribenho, respons&aacute;vel pela morte de 316 mil habitantes. O governo brasileiro n&atilde;o reconheceu os haitianos como refugiados, mas reconheceu que migravam por raz&otilde;es humanit&aacute;rias e criou um visto de resid&ecirc;ncia permanente que regularizava sua situa&ccedil;&atilde;o no pa&iacute;s. Entre 2012 e 2014, as solicita&ccedil;&otilde;es de ref&uacute;gio de haitianos saltaram de 3.300 para 16.700. Em dezembro de 2015, 34.224 haitianos apresentavam v&iacute;nculos ativos de empregos formais (em S&atilde;o Paulo, pedreiros s&atilde;o o maior grupo) em todo o territ&oacute;rio nacional.</p>\n<p>O caso venezuelano assemelha-se ao fluxo recente de s&iacute;rios, tamb&eacute;m refugiados em fun&ccedil;&atilde;o de uma crise pol&iacute;tica. Uma reportagem de fevereiro de 2018 publicada pelo jornal O Globo mostrou, baseado em dados fornecidos pela Pol&iacute;cia Federal, que no intervalo de apenas um m&ecirc;s e meio, cerca de 18.000 venezuelanos solicitaram ref&uacute;gio, cifra superior ao total registrado em todo o ano de 2017.</p>\n<p>Sob um ponto de vista mais abrangente, os fluxos migrat&oacute;rios recentes de venezuelanos, haitianos, s&iacute;rios, e tamb&eacute;m de outros pa&iacute;ses africanos (especialmente Angola, Mo&ccedil;ambique e Guin&eacute;-Bissau, onde tamb&eacute;m se pratica nossa l&iacute;ngua), e asi&aacute;ticos (Bangladesh, por exemplo) evidenciam a intensifica&ccedil;&atilde;o das migra&ccedil;&otilde;es Sul-Sul. Trata-se de um reflexo tanto das crises pol&iacute;ticas, sociais e econ&ocirc;micas que estes pa&iacute;ses enfrentam, quanto das crescentes barreiras &agrave; entrada que os pa&iacute;ses desenvolvidos v&ecirc;m incorporando &agrave;s suas pol&iacute;ticas migrat&oacute;rias de acolhimento.</p>\n<p>&Eacute; precisamente em raz&atilde;o da contemporaneidade de tais fluxos migrat&oacute;rios, ainda n&atilde;o &eacute; poss&iacute;vel identificar palavras de nosso l&eacute;xico influenciadas por tais grupos.</p>",
+    "imagens": [
+     ""
+    ]
+   }
+  ],
   "palavras": [
    {
     "origem": "OUTRA LINGUA",
@@ -5935,393 +6101,6 @@ var data = [
     "tradução": "Schottisch",
     "significadoOriginal": "polca escocesa parecida com a dança de roda",
     "audioOriginal": "xote1.mp3"
-   }
-  ],
-  "menu": [
-   {
-    "titulo": "Povos tupinambas",
-    "text": "<p class=\"p1\"><strong><span class=\"s1\">Nomes de plantas e frutas</span></strong></p><ul><li class=\"p1\"><span class=\"s2\">abacaxi</span></li><li class=\"p1\"><span class=\"s2\">aguap&eacute;</span></li><li class=\"p1\"><span class=\"s2\">anan&aacute;s</span></li><li class=\"p1\"><span class=\"s2\">ara&ccedil;&aacute;</span></li><li class=\"p1\"><span class=\"s2\">araticum</span></li><li class=\"p1\"><span class=\"s2\">aroeira</span></li><li class=\"p1\"><span class=\"s2\">bacupari</span></li><li class=\"p1\"><span class=\"s2\">caj&aacute;</span></li><li class=\"p1\"><span class=\"s2\">caju</span></li><li class=\"p1\"><span class=\"s2\">car&aacute;</span></li><li class=\"p1\"><span class=\"s2\">cumari</span></li><li class=\"p1\"><span class=\"s2\">jabuticaba</span></li><li class=\"p1\"><span class=\"s2\">jenipapo</span></li><li class=\"p1\"><span class=\"s2\">jerimum</span></li><li class=\"p1\"><span class=\"s2\">ju&aacute;</span></li><li class=\"p1\"><span class=\"s2\">ju&ccedil;ara</span></li><li class=\"p1\"><span class=\"s",
-    "imagens": [
-     "0.jpg",
-     "1.jpg",
-     "2.jpg"
-    ]
-   }
-  ]
- },
- {
-  "nome": "Português no mundo",
-  "palavras": [
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "parar",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "sombreiro",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "ananás",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "varanda",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "pão",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "real",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "sabão",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "candeia",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "casada",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "paga (pagamento)",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "quente",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "armário",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "balde",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "falto (faltante)",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "mesa",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "mestre",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "pão",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "armário",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "cruz",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "espada",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "martelo",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "nau",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "confeito",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "copo",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "frasco",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "marmelo",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "pão",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "têmpora(s) (dias de jejum religioso) ",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "cartaz",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "mestre",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "pena",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "talão",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "armário",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "banco",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "bandeira",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "bola",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "bomba",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "boneca",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "camisa",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "carreta",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "escola",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "festa",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "fita",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "garfo",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "limão",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "mesa",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "queijo ",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "ronda",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "toalha",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "viola",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "carta",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "copa",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "dado",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "damas",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "espada",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "ouro",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "paus",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "trunfo",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "leilão",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "OUTRA LINGUA",
-    "palavra": "real",
-    "audio": "",
-    "audioOriginal": ""
-   }
-  ],
-  "menu": [
-   {
-    "titulo": "Povos tupinambas",
-    "text": "<p class=\"p1\"><strong><span class=\"s1\">Nomes de plantas e frutas</span></strong></p><ul><li class=\"p1\"><span class=\"s2\">abacaxi</span></li><li class=\"p1\"><span class=\"s2\">aguap&eacute;</span></li><li class=\"p1\"><span class=\"s2\">anan&aacute;s</span></li><li class=\"p1\"><span class=\"s2\">ara&ccedil;&aacute;</span></li><li class=\"p1\"><span class=\"s2\">araticum</span></li><li class=\"p1\"><span class=\"s2\">aroeira</span></li><li class=\"p1\"><span class=\"s2\">bacupari</span></li><li class=\"p1\"><span class=\"s2\">caj&aacute;</span></li><li class=\"p1\"><span class=\"s2\">caju</span></li><li class=\"p1\"><span class=\"s2\">car&aacute;</span></li><li class=\"p1\"><span class=\"s2\">cumari</span></li><li class=\"p1\"><span class=\"s2\">jabuticaba</span></li><li class=\"p1\"><span class=\"s2\">jenipapo</span></li><li class=\"p1\"><span class=\"s2\">jerimum</span></li><li class=\"p1\"><span class=\"s2\">ju&aacute;</span></li><li class=\"p1\"><span class=\"s2\">ju&ccedil;ara</span></li><li class=\"p1\"><span class=\"s",
-    "imagens": [
-     "0.jpg",
-     "1.jpg",
-     "2.jpg"
-    ]
    }
   ]
  }

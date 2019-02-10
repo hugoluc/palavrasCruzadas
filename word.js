@@ -123,9 +123,15 @@ class Word {
     if(this.isBeingDragged) return false
     if(this.isTooBig) return true
 
-    if (this.location.x > width || this.location.x < 0|| this.location.y > height - btn.getTotalHeight() || this.location.y < 0 && this.isBeingDragged ){
+    if (
+      this.location.x > canvasSize.width + this.textWidth ||
+      this.location.x < -this.textWidth ||
+      this.location.y > canvasSize.height + this.size - btn.getTotalHeight() ||
+      this.location.y < -this.size
+      && this.isBeingDragged
+     ){
+       this.isDisplayed = false
       return true;
-      this.isDisplayed = false
     }else{
       return false;
     };

@@ -26,7 +26,7 @@ function draw() {
 
     if(enableCanvas && !toDefinition){
       system.run();
-    }x
+    }
     btn.show()
   }
 

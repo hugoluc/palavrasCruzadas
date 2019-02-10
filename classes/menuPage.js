@@ -42,17 +42,19 @@ function menuPage(){
   }
   this.container.append(this.backBtn)
 
+  this.itemHeight = canvasSize.height * 0.08
+  this.marginBottom = 50
+
+  var topOffset = canvasSize.height - (selectedData.menu.length * this.itemHeight) - btnSize.height - (this.margin*1.6)
   this.menuItems = []
   this.menuItemContainer = document.createElement("div")
   this.menuItemContainer.id = "menuItem_container"
   this.menuItemContainer.style.position = "absolute"
-  this.menuItemContainer.style.top = "0px"
+  this.menuItemContainer.style.top = -topOffset + "px"
   this.container.append(this.menuItemContainer)
 
-  this.itemHeight = canvasSize.height * 0.08
-  this.marginBottom = 50
 
-  for(var i = 0; i < 7; i++){
+  for(var i = 0; i < selectedData.menu.length; i++){
 
     var item = {};
     item.id = i
@@ -136,13 +138,13 @@ menuPage.prototype.reset = function(){
   this.backBtn.style.opacity = 0
   this.backBtn.style.transitionDelay = "translateY(-10px)"
 
-  for(var i = 0; i < 7; i++){
+  for(var i = 0; i < selectedData.menu.length; i++){
     // this.menuItems[i].container.style.display = "none"
     this.menuItems[i].container.style.transitionDuration = animationTime + "s , 1.5s "
     this.menuItems[i].container.style.transitionTimingFunction = "ease, ease"
     this.menuItems[i].container.style.opacity = 0
     this.menuItems[i].container.style.transform = "translateY(0px)"
-    this.menuItems[i].container.style.transitionDelay = (7 * delay) - (i * delay) + "s"
+    this.menuItems[i].container.style.transitionDelay = (selectedData.menu.length * delay) - (i * delay) + "s"
   }
 
   setTimeout(() => {

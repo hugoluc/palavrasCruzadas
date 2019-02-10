@@ -14,7 +14,7 @@ CONTROLS = {
   speedMax : 1.5,
   wordTimeMin : 1000,
   wordTimeMax : 5000,
-  growMultiplyer : 0.15,
+  growMultiplyer : 0.1,
   maxWodCount : 30,
 
 }
@@ -49,7 +49,7 @@ function mousePressed() {
 
   if(enableCanvas){
     if(system.checkWordsClick()){
-      system.allWords[system.dragId].setPastSpeed()  
+      system.allWords[system.dragId].setPastSpeed()
     }
   }
 
