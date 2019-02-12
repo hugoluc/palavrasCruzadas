@@ -3,7 +3,7 @@
 var x = 1
 var enableCanvas = false
 var toDefinition = false
-var selectedData = data[0]
+var selectedData;
 var appStart = false
 
 //-------------CONTROLES--------------------
@@ -151,6 +151,7 @@ function createSelectMenu(){
       document.body.removeChild(this.parentNode)
       selectedData = data[this.id]
       startApp()
+      preload()
     }
     container.appendChild(item)
   }
