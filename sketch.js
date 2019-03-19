@@ -23,6 +23,7 @@ function setup() {
 
 function draw() {
 
+
   if(appStart){
     background(26, 24, 25);
 
