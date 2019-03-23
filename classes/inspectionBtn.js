@@ -78,10 +78,11 @@ inspectionBtn.prototype.dislayNextPage = function(){
   }
 
   //transition alpha
-  if(this.text.alpha > 0){
+  if(this.text.alpha - 0.08 > 0){
     this.text.alpha = this.text.alpha - 0.08
   }else{
     this.text.string = ""
+    this.text.alpha = 0
     this.transitionsDone.text = true
 
   }
