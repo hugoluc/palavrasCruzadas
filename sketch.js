@@ -25,7 +25,7 @@ function draw() {
 
 
   if(appStart){
-    background(26, 24, 25);
+    background(styleColors.system.bg.r,styleColors.system.bg.g,styleColors.system.bg.b);
 
     if(enableCanvas && !toDefinition){
       system.run();

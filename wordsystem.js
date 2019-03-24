@@ -40,10 +40,8 @@ class WordSystem {
 
     if(elapsedTime > this.nextWordTime){
 
-      console.log(elapsedTime, this.nextWordTime);
 
       this.nextWordTime = getRandomInt(CONTROLS.wordTimeMax - CONTROLS.wordTimeMin) + CONTROLS.wordTimeMin
-      console.log(this.nextWordTime );
       this.lastMillis = millis()
 
       if(this.wordCount < this.wordLimit){

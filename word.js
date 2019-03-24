@@ -24,10 +24,10 @@ class Word {
   reset(){
     this.location = this.originalPosition.copy()
     this.size = 10;
-    this.r = 24;
-    this.g = 24;
-    this.b = 24;
-    this.a = 255;
+    this.r = styleColors.system.particle.r;
+    this.g = styleColors.system.particle.g;
+    this.b = styleColors.system.particle.b;
+    this.a = 0;
     this.isBeingDragged = false
     this.isTooBig = false
 
@@ -102,9 +102,7 @@ class Word {
       this.size = this.size;
     } else {
       this.size = this.size + (this.totalSpeed * CONTROLS.growMultiplyer);
-      this.r = map(this.size,0,100,0,255,true)
-      this.g = map(this.size,0,100,0,255,true)
-      this.b = map(this.size,0,100,0,255,true)
+      this.a = map(this.size,0,100,0,255,true)
       if (this.size > CONTROLS.sizeTrashhold) this.isTooBig = true
     }
   }
@@ -113,9 +111,10 @@ class Word {
 
     this.location.x = mouseX;
     this.location.y = mouseY;
-    this.r = 254;
-    this.g = 241;
-    this.b = 2;
+    this.r = styleColors.system.selectedParticle.r;
+    this.g = styleColors.system.selectedParticle.g;
+    this.b = styleColors.system.selectedParticle.b;
+    this.a = 255;
 
   }
 
@@ -145,7 +144,7 @@ class Word {
 
     if (!this.isDisplayed) return
 
-    // console.log(this.r,this.g,this.b);
+    // console.log(this.r)
     // console.log("------------");
     fill(this.r, this.g,this.b,this.a);
     textSize(this.size);

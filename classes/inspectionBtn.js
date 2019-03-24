@@ -17,13 +17,18 @@ function inspectionBtn(){
 
 }
 
-inspectionBtn.prototype.setColorChange = function(_element,_color){
-
+//-----------------------------------------------------------------
+//abstart color change
+inspectionBtn.prototype.setColorChange = function(_element,_color,_alpha){
   this.transitionToColor = true
-  _element.finalColor = [_color.r,_color.g,_color.b]
+  if(_alpha != undefined){
+    _element.finalColor = [_color.r,_color.g,_color.b,_alpha]
+
+  }else{
+    _element.finalColor = [_color.r,_color.g,_color.b,_element.alpha]
+  }
 
 }
-
 inspectionBtn.prototype.displayChangeColor = function(){
 
   var text = this.changeColor(this.text)
@@ -36,50 +41,34 @@ inspectionBtn.prototype.displayChangeColor = function(){
   }
 
 }
-
 inspectionBtn.prototype.changeColor = function(_element){
-  // console.log("--------------");
-  // console.log(_element.name);
-  // console.log(_element.color);
-  // console.log(_element.finalColor);
 
+  console.log("==============================================");
+  console.log(_element.name);
 
   if(
     _element.color[0] == _element.finalColor[0] &&
     _element.color[1] == _element.finalColor[1] &&
-    _element.color[2] == _element.finalColor[2]
+    _element.color[2] == _element.finalColor[2] &&
+    _element.alpha == _element.finalColor[3]
   ){
     return true
   }else{
 
-    // console.log("before:", _element.color);
+    console.log(    _element.color[0] , _element.finalColor[0]);
+    console.log(    _element.color[1] , _element.finalColor[1]);
+    console.log(    _element.color[2] , _element.finalColor[2]);
+    console.log(    _element.alpha    , _element.finalColor[3]);
 
-    var diff = _element.finalColor[0] - _element.color[0]
-    var multiplyer = diff > 0 ? 1 : -1
-    var speed = 10 * multiplyer
-    if(Math.abs(diff) + speed > 0){
-      _element.color[0] =  _element.color[0] + speed
-    }else{
-      _element.color[0] =  _element.finalColor[0]
-    }
+    _element.color[0] = this.transitionColorValue(_element.color[0],_element.finalColor[0])
+    _element.color[1] = this.transitionColorValue(_element.color[1],_element.finalColor[1])
+    _element.color[2] = this.transitionColorValue(_element.color[2],_element.finalColor[2])
+    _element.alpha    = this.transitionColorValue(_element.alpha,   _element.finalColor[3],true)
 
-    diff = _element.finalColor[1] - _element.color[1]
-    multiplyer = diff > 0 ? 1 : -1
-    speed = 10 * multiplyer
-    if(Math.abs(diff) + speed > 0){
-      _element.color[1] =  _element.color[1] + speed
-    }else{
-      _element.color[1] =  _element.finalColor[1]
-    }
-
-    diff = _element.finalColor[2] - _element.color[2]
-    multiplyer = diff > 0 ? 1 : -1
-    speed = 10 * multiplyer
-    if(Math.abs(diff) + speed > 0){
-      _element.color[2] =  _element.color[2] + speed
-    }else{
-      _element.color[2] =  _element.finalColor[2]
-    }
+    console.log(    _element.color[0] , _element.finalColor[0]);
+    console.log(    _element.color[1] , _element.finalColor[1]);
+    console.log(    _element.color[2] , _element.finalColor[2]);
+    console.log(    _element.alpha    , _element.finalColor[3]);
 
     return false
 
@@ -87,14 +76,87 @@ inspectionBtn.prototype.changeColor = function(_element){
 
 
 }
+inspectionBtn.prototype.transitionColorValue = function(_current,_target,_alpha){
 
+  var alphaSpeed = 0.2
+  var colorSpeed = 30
+
+  var diff = _target - _current
+  var multiplyer = diff > 0 ? 1 : -1
+  var speed = _alpha ? alphaSpeed * multiplyer :  colorSpeed * multiplyer
+
+  if((Math.abs(diff) - Math.abs(speed)).toFixed(3) > 0){
+    return _current + speed
+  }else{
+    return _target
+  }
+
+}
+
+
+//-----------------------------------------------------------------
+//change btn style for word selection
+inspectionBtn.prototype.wordSelected = function(){
+
+  this.setColorChange(this.text,    styleColors.system.selectedWord)
+  this.setColorChange(this.outline, styleColors.system.selectedBtn)
+  this.setColorChange(this.fill,    styleColors.system.selectedBtn,1)
+
+}
+inspectionBtn.prototype.wordReleased = function(){
+  debugger
+  this.setColorChange(this.text,    styleColors.system.word)
+  this.setColorChange(this.outline, styleColors.system.btn)
+  this.setColorChange(this.fill,    styleColors.system.selectedBtn,0)
+
+}
+
+
+//-----------------------------------------------------------------
+// change btn to hover style
+inspectionBtn.prototype.checkHover = function(){
+
+  //Determine if mouse is hovereing the word width
+  if (mouseY > this.position.y) {
+    return true;
+  }else{
+    return false
+  }
+}
+inspectionBtn.prototype.setHover = function(_isHovered, _selectedWord){
+  this.isHovered = _isHovered
+  this.selectedWord = _selectedWord
+  this.transtitionHover = true
+
+}
+inspectionBtn.prototype.displayHover = function(_isHovered){
+
+  //transition to hovered state
+  if(_isHovered){
+
+    this.text.string = this.selectedWord
+    this.text.size = 100
+
+  //transition to nothovered state
+  }else{
+
+    this.fontFamily = sohneBold
+    this.text.string = "Arraste as palavras aqui"
+    this.text.size = canvasSize.height * 0.03
+    this.transtitionHover = false
+
+  }
+
+}
+
+//-----------------------------------------------------------------
+//transsition no next page
 inspectionBtn.prototype.nextPage = function(_callBack,_data){
 
     this.callBack = _callBack
     this.transtitionNextPage = true
 
 }
-
 inspectionBtn.prototype.dislayNextPage = function(){
 
   this.speed = this.speed * this.acceleration
@@ -149,120 +211,9 @@ inspectionBtn.prototype.dislayNextPage = function(){
 
 }
 
-inspectionBtn.prototype.checkHover = function(){
 
-  //Determine if mouse is hovereing the word width
-  if (mouseY > this.position.y) {
-    this.setColorChange(this.text,globalColors.gray)
-    return true;
-  }else{
-    this.setColorChange(this.text,globalColors.yellow)
-    return false
-  }
-}
-
-inspectionBtn.prototype.setHover = function(_isHovered, _selectedWord){
-  this.isHovered = _isHovered
-  this.selectedWord = _selectedWord
-  this.transtitionHover = true
-
-}
-
-inspectionBtn.prototype.displayHover = function(_isHovered){
-
-  //transition to hovered state
-  if(_isHovered){
-
-    this.fontFamily = sohneBold
-
-    if(this.alpha < 1){
-
-      this.alpha = this.alpha + 0.08
-      if(this.alpha > 0.8){
-        this.text.string = this.selectedWord
-        this.text.size = 100
-      }
-    }
-
-  //transition to nothovered state
-  }else{
-    this.fontFamily = sohneBold
-    if(this.alpha > 0){
-      this.alpha = this.alpha - 0.08
-      if(this.alpha < 0.8){
-        this.text.string = "Arraste as palavras aqui"
-        this.text.color =  this.color
-        this.text.size = canvasSize.height * 0.03
-      }
-      if(this.alpha < 0){
-        this.transtitionHover = false
-        this.alpha = 0
-      }
-    }
-  }
-
-}
-
-inspectionBtn.prototype.init = function(){
-
-  this.transitionToColor= false
-  this.changeToBlack = true
-  this.transitionToNormal = false
-  this.fontFamily = sohneBold
-  this.color = [globalColors.white.r,globalColors.white.g,globalColors.white.b]
-  this.transtitionHover = false
-  this.transtitionNextPage = false
-  this.transitionToBlack= false
-  this.isHovered = false
-  this.transitionsDone = {
-    height : false,
-    width : false,
-    x : false,
-    y : false,
-  }
-  this.colorChangeElmements = []
-
-  this.alpha = 0
-  this.text = {
-    name: "text",
-    size : this.constants.size,
-    string : this.constants.string,
-    color : this.color,
-    alpha : this.constants.alpha
-  }
-
-  this.outline = {
-    name: "outline",
-    color : [this.color[0],this.color[1],this.color[2]],
-    finalColor : [this.color[0],this.color[1],this.color[2]],
-  }
-
-  this.fill = {
-    name: "fill",
-    color : [globalColors.yellow.r,globalColors.yellow.g,globalColors.yellow.b],
-    finalColor : [globalColors.yellow.r,globalColors.yellow.g,globalColors.yellow.b],
-  }
-
-  this.size = {
-    width : this.constants.width,
-    height : this.constants.height
-  }
-
-  this.speed = this.constants.speed
-  this.acceleration = 1.1
-  this.position = {
-    x : this.constants.x,
-    y : this.constants.y,
-  }
-
-}
-
-inspectionBtn.prototype.getTotalHeight = function(){
-
-  return  this.margin +  this.size.height + this.marginTop
-
-}
-
+//-----------------------------------------------------------------
+//return btn to original state
 inspectionBtn.prototype.setReturn = function(){
   enableCanvas = true
   toDefinition = false
@@ -275,7 +226,6 @@ inspectionBtn.prototype.setReturn = function(){
   this.text.size = this.constants.size
 
 }
-
 inspectionBtn.prototype.displayToNormal = function(){
 
   this.speed = this.speed * 0.97
@@ -326,6 +276,68 @@ inspectionBtn.prototype.displayToNormal = function(){
 
 }
 
+
+//-----------------------------------------------------------------
+inspectionBtn.prototype.init = function(){
+
+  this.transitionToColor= false
+  this.changeToBlack = true
+  this.transitionToNormal = false
+  this.fontFamily = sohneBold
+  this.color = [styleColors.system.word.r,styleColors.system.word.g,styleColors.system.word.b]
+  this.transtitionHover = false
+  this.transtitionNextPage = false
+  this.transitionToBlack= false
+  this.isHovered = false
+  this.transitionsDone = {
+    height : false,
+    width : false,
+    x : false,
+    y : false,
+  }
+  this.colorChangeElmements = []
+
+  this.alpha = 0
+  this.text = {
+    name: "text",
+    size : this.constants.size,
+    string : this.constants.string,
+    color : this.color,
+    alpha : this.constants.alpha
+  }
+
+  this.outline = {
+    name: "outline",
+    color : [styleColors.system.btn.r,styleColors.system.btn.g,styleColors.system.btn.b],
+    finalColor : [styleColors.system.btn.r,styleColors.system.btn.g,styleColors.system.btn.b],
+    alpha : 1
+  }
+
+  this.fill = {
+    name: "fill",
+    color : [styleColors.system.selectedBtn.r,styleColors.system.selectedBtn.g,styleColors.system.selectedBtn.b],
+    finalColor : [styleColors.system.selectedBtn.r,styleColors.system.selectedBtn.g,styleColors.system.selectedBtn.b],
+    alpha : 0
+  }
+
+  this.size = {
+    width : this.constants.width,
+    height : this.constants.height
+  }
+
+  this.speed = this.constants.speed
+  this.acceleration = 1.1
+  this.position = {
+    x : this.constants.x,
+    y : this.constants.y,
+  }
+
+}
+inspectionBtn.prototype.getTotalHeight = function(){
+
+  return  this.margin +  this.size.height + this.marginTop
+
+}
 inspectionBtn.prototype.show = function(){
 
   //handle hover animation
@@ -335,19 +347,21 @@ inspectionBtn.prototype.show = function(){
   if(this.transitionToNormal){ this.displayToNormal() }
 
   //display bg
-  fill(globalColors.gray.r,globalColors.gray.g,globalColors.gray.b)
+  fill(styleColors.system.bg.r,styleColors.system.bg.g,styleColors.system.bg.b)
   rect(0, this.position.y - this.marginTop, this.size.width + (2*this.margin), this.size.height + this.margin + this.marginTop )
 
 
   //display outline
-  stroke(this.outline.color[0],this.outline.color[1],this.outline.color[2]);
+
+
+  stroke("rgba(" + this.outline.color[0] + "," + this.outline.color[1] + "," + this.outline.color[2] + "," + this.outline.alpha + ")")
   strokeWeight(10);
   noFill()
   rect(this.position.x, this.position.y,this.size.width, this.size.height)
   noStroke()
 
   //display fill
-  fill( "rgba(" + this.fill.color[0] + "," + this.fill.color[1] + "," + this.fill.color[2] + "," + this.alpha + ")")
+  fill( "rgba(" + this.fill.color[0] + "," + this.fill.color[1] + "," + this.fill.color[2] + "," + this.fill.alpha + ")")
   rect(this.position.x, this.position.y,this.size.width, this.size.height)
   noStroke()
 
