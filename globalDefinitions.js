@@ -10,12 +10,13 @@ var appStart = false
 
 CONTROLS = {
 
-  speedMin : 1,
-  speedMax : 1.5,
-  wordTimeMin : 1000,
-  wordTimeMax : 5000,
-  growMultiplyer : 0.1,
+  speedMin : 0.8,
+  speedMax : 0.8,
+  wordTimeMin : 3000,
+  wordTimeMax : 4000,
+  growMultiplyer : 0.2,
   maxWodCount : 30,
+  sizeTrashhold : 300,
 
 }
 

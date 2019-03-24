@@ -3,8 +3,8 @@ var words = [];
 
 function preload(){
 
-  sohne = loadFont('Söhne/Söhne-Mager.otf');
-  sohneBold = loadFont('Söhne/Söhne-Halbfett.otf');
+  sohne = loadFont('Sohne/Sohne-Mager.otf');
+  sohneBold = loadFont('Sohne/Sohne-Halbfett.otf');
   if(selectedData){
     for(i = 0; i <selectedData.palavras.length; i++){
       // console.log(selectedData.palavras[i]);
@@ -22,6 +22,7 @@ function setup() {
 
 
 function draw() {
+
 
   if(appStart){
     background(26, 24, 25);

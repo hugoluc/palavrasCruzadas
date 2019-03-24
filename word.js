@@ -30,11 +30,13 @@ class Word {
     this.a = 255;
     this.isBeingDragged = false
     this.isTooBig = false
+
     this.totalSpeed = random(CONTROLS.speedMin, CONTROLS.speedMax)
     var angle = getRandomInt(361)
     var speedX = Math.cos(toRadians(angle)) * this.totalSpeed
     var speedY =  Math.sin(toRadians(angle)) * this.totalSpeed
     this.speed = createVector(speedX, speedY);
+
     this.speedCounter = 0
     this.pastMouseLocation = {
       x : 0,
@@ -103,7 +105,7 @@ class Word {
       this.r = map(this.size,0,100,0,255,true)
       this.g = map(this.size,0,100,0,255,true)
       this.b = map(this.size,0,100,0,255,true)
-      if (this.size > 150) this.isTooBig = true
+      if (this.size > CONTROLS.sizeTrashhold) this.isTooBig = true
     }
   }
 

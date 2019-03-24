@@ -35,11 +35,15 @@ class WordSystem {
   }
 
   addWord() {
+
     var elapsedTime = millis() - this.lastMillis
 
     if(elapsedTime > this.nextWordTime){
 
-      this.nextWordTime = getRandomInt(CONTROLS.wordTimeMin,CONTROLS.wordTimeMin)
+      console.log(elapsedTime, this.nextWordTime);
+
+      this.nextWordTime = getRandomInt(CONTROLS.wordTimeMax - CONTROLS.wordTimeMin) + CONTROLS.wordTimeMin
+      console.log(this.nextWordTime );
       this.lastMillis = millis()
 
       if(this.wordCount < this.wordLimit){
