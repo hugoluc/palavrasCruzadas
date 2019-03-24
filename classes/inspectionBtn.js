@@ -17,25 +17,79 @@ function inspectionBtn(){
 
 }
 
-inspectionBtn.prototype.setColorChange = function(_color){
-  this.transitionToColor= true
-  this.changeToBlack = _color
+inspectionBtn.prototype.setColorChange = function(_element,_color){
+
+  this.transitionToColor = true
+  _element.finalColor = [_color.r,_color.g,_color.b]
+
 }
 
-inspectionBtn.prototype.changeColor = function(){
+inspectionBtn.prototype.displayChangeColor = function(){
 
-  var speed = 10
-  var finalColor = this.changeToBlack ? [25,25,25]: this.constants.color
+  var text = this.changeColor(this.text)
+  var outline = this.changeColor(this.outline)
+  var fill = this.changeColor(this.fill)
 
-  this.color[0] = this.color[0] - speed > finalColor[0] ? this.color[0] - speed : this.color[0] = finalColor[0]
-  this.color[1] = this.color[1] - speed > finalColor[1] ? this.color[1] - speed : this.color[1] = finalColor[1]
-  this.color[2] = this.color[2] - speed > finalColor[2] ? this.color[2] - speed : this.color[2] = finalColor[2]
+
+  if( text && outline && fill){
+    this.transitionToColor = false
+  }
+
+}
+
+inspectionBtn.prototype.changeColor = function(_element){
+  // console.log("--------------");
+  // console.log(_element.name);
+  // console.log(_element.color);
+  // console.log(_element.finalColor);
+
+
+  if(
+    _element.color[0] == _element.finalColor[0] &&
+    _element.color[1] == _element.finalColor[1] &&
+    _element.color[2] == _element.finalColor[2]
+  ){
+    return true
+  }else{
+
+    // console.log("before:", _element.color);
+
+    var diff = _element.finalColor[0] - _element.color[0]
+    var multiplyer = diff > 0 ? 1 : -1
+    var speed = 10 * multiplyer
+    if(Math.abs(diff) + speed > 0){
+      _element.color[0] =  _element.color[0] + speed
+    }else{
+      _element.color[0] =  _element.finalColor[0]
+    }
+
+    diff = _element.finalColor[1] - _element.color[1]
+    multiplyer = diff > 0 ? 1 : -1
+    speed = 10 * multiplyer
+    if(Math.abs(diff) + speed > 0){
+      _element.color[1] =  _element.color[1] + speed
+    }else{
+      _element.color[1] =  _element.finalColor[1]
+    }
+
+    diff = _element.finalColor[2] - _element.color[2]
+    multiplyer = diff > 0 ? 1 : -1
+    speed = 10 * multiplyer
+    if(Math.abs(diff) + speed > 0){
+      _element.color[2] =  _element.color[2] + speed
+    }else{
+      _element.color[2] =  _element.finalColor[2]
+    }
+
+    return false
+
+  }
+
 
 }
 
 inspectionBtn.prototype.nextPage = function(_callBack,_data){
 
-    console.log("nextPage");
     this.callBack = _callBack
     this.transtitionNextPage = true
 
@@ -99,9 +153,11 @@ inspectionBtn.prototype.checkHover = function(){
 
   //Determine if mouse is hovereing the word width
   if (mouseY > this.position.y) {
+    this.setColorChange(this.text,globalColors.gray)
     return true;
-  }else{    return false
-
+  }else{
+    this.setColorChange(this.text,globalColors.yellow)
+    return false
   }
 }
 
@@ -116,12 +172,14 @@ inspectionBtn.prototype.displayHover = function(_isHovered){
 
   //transition to hovered state
   if(_isHovered){
+
     this.fontFamily = sohneBold
+
     if(this.alpha < 1){
+
       this.alpha = this.alpha + 0.08
       if(this.alpha > 0.8){
         this.text.string = this.selectedWord
-        this.text.color = [1,1,1]
         this.text.size = 100
       }
     }
@@ -151,7 +209,7 @@ inspectionBtn.prototype.init = function(){
   this.changeToBlack = true
   this.transitionToNormal = false
   this.fontFamily = sohneBold
-  this.color = [globalColors.yellow.r,globalColors.yellow.g,globalColors.yellow.b]
+  this.color = [globalColors.white.r,globalColors.white.g,globalColors.white.b]
   this.transtitionHover = false
   this.transtitionNextPage = false
   this.transitionToBlack= false
@@ -162,13 +220,27 @@ inspectionBtn.prototype.init = function(){
     x : false,
     y : false,
   }
+  this.colorChangeElmements = []
 
   this.alpha = 0
   this.text = {
+    name: "text",
     size : this.constants.size,
     string : this.constants.string,
-    color : this.constants.color,
+    color : this.color,
     alpha : this.constants.alpha
+  }
+
+  this.outline = {
+    name: "outline",
+    color : [this.color[0],this.color[1],this.color[2]],
+    finalColor : [this.color[0],this.color[1],this.color[2]],
+  }
+
+  this.fill = {
+    name: "fill",
+    color : [globalColors.yellow.r,globalColors.yellow.g,globalColors.yellow.b],
+    finalColor : [globalColors.yellow.r,globalColors.yellow.g,globalColors.yellow.b],
   }
 
   this.size = {
@@ -259,7 +331,7 @@ inspectionBtn.prototype.show = function(){
   //handle hover animation
   if(this.transtitionHover ){ this.displayHover(this.isHovered) }
   if(this.transtitionNextPage ){ this.dislayNextPage() }
-  if(this.transitionToColor){ this.changeColor() }
+  if(this.transitionToColor){ this.displayChangeColor() }
   if(this.transitionToNormal){ this.displayToNormal() }
 
   //display bg
@@ -268,14 +340,14 @@ inspectionBtn.prototype.show = function(){
 
 
   //display outline
-  stroke(this.color[0],this.color[1],this.color[2]);
+  stroke(this.outline.color[0],this.outline.color[1],this.outline.color[2]);
   strokeWeight(10);
   noFill()
   rect(this.position.x, this.position.y,this.size.width, this.size.height)
   noStroke()
 
   //display fill
-  fill( "rgba(" + this.color[0] + "," + this.color[1] + "," + this.color[2] + "," + this.alpha + ")")
+  fill( "rgba(" + this.fill.color[0] + "," + this.fill.color[1] + "," + this.fill.color[2] + "," + this.alpha + ")")
   rect(this.position.x, this.position.y,this.size.width, this.size.height)
   noStroke()
 

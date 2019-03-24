@@ -36,7 +36,7 @@ function menuPage(){
     this.reset()
     setTimeout(() => {
       definitionPage.reset()
-      btn.setColorChange(false)
+      btn.setColorChange(btn.fill,globalColors.yellow)
       btn.setReturn()
     },400)
   }

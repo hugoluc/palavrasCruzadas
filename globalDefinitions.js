@@ -39,6 +39,16 @@ var globalColors = {
     r : 26,
     g : 24,
     b : 25
+  },
+  "white" : {
+    r : 255,
+    g : 255,
+    b : 255
+  },
+  "black" : {
+    r : 0,
+    g : 0,
+    b : 0
   }
 }
 
@@ -49,6 +59,8 @@ function mousePressed() {
 
   if(enableCanvas){
     if(system.checkWordsClick()){
+      btn.setColorChange(btn.text,globalColors.yellow)
+      btn.setColorChange(btn.outline,globalColors.yellow)
       system.allWords[system.dragId].setPastSpeed()
     }
   }
@@ -74,15 +86,18 @@ function mouseDragged() {
 function mouseReleased() {
 
   if(enableCanvas && system.dragId){
+
       system.allWords[system.dragId].isBeingDragged = false
 
       if(system.checkDrag() != null && btn.checkHover()){
         toDefinition = true
         btn.nextPage(() => {
           enableCanvas = false
+
           definitionPage.init( system.allWords[system.dragId].data, () => {
-            btn.setColorChange(true)
+
             setTimeout(() => {
+              btn.setColorChange(btn.fill,globalColors.gray)
               menu.init(system.data.menu)
               system.clearDrag()
              }, 300)
@@ -90,7 +105,8 @@ function mouseReleased() {
 
         })
       }else{
-
+        btn.setColorChange(btn.text,globalColors.white)
+        btn.setColorChange(btn.outline,globalColors.white)
         var id = system.dragId
         system.clearDrag();
         system.allWords[id].getNewSpeed()
