@@ -110,10 +110,6 @@ class WordSystem {
 
         this.words.push( this.displayWords.splice(i, 1)[0] );
         this.wordCount--
-        //
-        // console.log("------------------");
-        // console.log(this.words);
-        // console.log(this.displayWords);
 
       }
 

@@ -99,10 +99,21 @@ class Word {
   grow() {
     // Grow Words
     if (this.isBeingDragged) {
+
       this.size = this.size;
+      this.r = styleColors.system.selectedParticle.r;
+      this.g = styleColors.system.selectedParticle.g;
+      this.b = styleColors.system.selectedParticle.b;
+      this.a = 255;
+
     } else {
+
       this.size = this.size + (this.totalSpeed * CONTROLS.growMultiplyer);
+      this.r = styleColors.system.particle.r;
+      this.g = styleColors.system.particle.g;
+      this.b = styleColors.system.particle.b;
       this.a = map(this.size,0,100,0,255,true)
+
       if (this.size > CONTROLS.sizeTrashhold) this.isTooBig = true
     }
   }
@@ -111,10 +122,6 @@ class Word {
 
     this.location.x = mouseX;
     this.location.y = mouseY;
-    this.r = styleColors.system.selectedParticle.r;
-    this.g = styleColors.system.selectedParticle.g;
-    this.b = styleColors.system.selectedParticle.b;
-    this.a = 255;
 
   }
 
@@ -144,8 +151,6 @@ class Word {
 
     if (!this.isDisplayed) return
 
-    // console.log(this.r)
-    // console.log("------------");
     fill(this.r, this.g,this.b,this.a);
     textSize(this.size);
     textFont(sohneBold)

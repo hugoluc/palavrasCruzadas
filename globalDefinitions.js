@@ -162,6 +162,7 @@ function mouseReleased() {
 
           setTimeout(() => {
             btn.setColorChange(btn.fill,globalColors.gray)
+            btn.setColorChange(btn.text,globalColors.gray,0)
             menu.init(system.data.menu)
             system.clearDrag()
            }, 300)

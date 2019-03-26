@@ -43,9 +43,6 @@ inspectionBtn.prototype.displayChangeColor = function(){
 }
 inspectionBtn.prototype.changeColor = function(_element){
 
-  console.log("==============================================");
-  console.log(_element.name);
-
   if(
     _element.color[0] == _element.finalColor[0] &&
     _element.color[1] == _element.finalColor[1] &&
@@ -104,7 +101,7 @@ inspectionBtn.prototype.wordSelected = function(){
 
 }
 inspectionBtn.prototype.wordReleased = function(){
-  debugger
+
   this.setColorChange(this.text,    styleColors.system.word)
   this.setColorChange(this.outline, styleColors.system.btn)
   this.setColorChange(this.fill,    styleColors.system.selectedBtn,0)
@@ -148,6 +145,7 @@ inspectionBtn.prototype.displayHover = function(_isHovered){
   }
 
 }
+
 
 //-----------------------------------------------------------------
 //transsition no next page
@@ -224,55 +222,74 @@ inspectionBtn.prototype.setReturn = function(){
   this.alpha = 0
   this.text.string = this.constants.string
   this.text.size = this.constants.size
+  this.init()
+
+  this.text.alpha = 0
+  this.outline.alpha = 0
+
+  debugger
+
+  this.setColorChange(this.text,    styleColors.system.word,1)
+  this.setColorChange(this.outline, styleColors.system.btn,1)
+  // this.setColorChange(this.fill,    styleColors.system.btn,0)
 
 }
 inspectionBtn.prototype.displayToNormal = function(){
 
-  this.speed = this.speed * 0.97
+  // this.size.height = this.constants.height
+  // this.transitionsDone.height = false
+  // this.size.width = this.constants.width
+  // this.transitionsDone.width = false
+  // this.position.y = this.constants.y
+  // this.transitionsDone.y = false
+  // this.position.x = this.constants.x
+  // this.transitionsDone.x = false
 
-  //transition height
-  if(this.size.height < this.constants.height){
-    this.size.height = this.size.height +  this.speed
-  }else{
-    this.size.height = this.constants.height
-    this.transitionsDone.height = false
-  }
-
-  //transition width
-  if(this.size.width > this.constants.width){
-    this.size.width = this.size.width + (this.speed * 2)
-  }else{
-    this.size.width = this.constants.width
-    this.transitionsDone.width = false
-  }
-
-  //transition y position
-  if(this.position.y - (10 * this.speed) < this.constants.y ){
-      this.position.y = this.position.y - (10 * this.speed)
-  }else{
-    this.position.y = this.constants.y
-    this.transitionsDone.y = false
-  }
-
-  //transition x position
-  if(this.position.x < this.constants.x ){
-      this.position.x = this.position.x - this.speed
-  }else{
-    this.position.x = this.constants.x
-    this.transitionsDone.x = false
-  }
+  // this.speed = this.speed * 0.97
+  //
+  // //transition height
+  // if(this.size.height < this.constants.height){
+  //   this.size.height = this.size.height +  this.speed
+  // }else{
+  //   this.size.height = this.constants.height
+  //   this.transitionsDone.height = false
+  // }
+  //
+  // //transition width
+  // if(this.size.width > this.constants.width){
+  //   this.size.width = this.size.width + (this.speed * 2)
+  // }else{
+  //   this.size.width = this.constants.width
+  //   this.transitionsDone.width = false
+  // }
+  //
+  // //transition y position
+  // if(this.position.y - (10 * this.speed) < this.constants.y ){
+  //     this.position.y = this.position.y - (10 * this.speed)
+  // }else{
+  //   this.position.y = this.constants.y
+  //   this.transitionsDone.y = false
+  // }
+  //
+  // //transition x position
+  // if(this.position.x < this.constants.x ){
+  //     this.position.x = this.position.x - this.speed
+  // }else{
+  //   this.position.x = this.constants.x
+  //   this.transitionsDone.x = false
+  // }
 
   // transition alpha
-  if(this.text.alpha < 1){
-    this.text.alpha = this.text.alpha + 0.05
-  }else{
-    this.transitionsDone.text = false
-  }
+  // if(this.text.alpha < 1){
+  //   this.text.alpha = this.text.alpha + 0.05
+  // }else{
+  //   this.transitionsDone.text = false
+  // }
 
   // stop transition when finished and call callback function to change to next page
-  if(!this.transitionsDone.text && !this.transitionsDone.x && !this.transitionsDone.y && !this.transitionsDone.height && !this.transitionsDone.width){
-    this.init()
-  }
+  // if(!this.transitionsDone.text && !this.transitionsDone.x && !this.transitionsDone.y && !this.transitionsDone.height && !this.transitionsDone.width){
+  //   this.init()
+  // }
 
 }
 
@@ -309,14 +326,14 @@ inspectionBtn.prototype.init = function(){
   this.outline = {
     name: "outline",
     color : [styleColors.system.btn.r,styleColors.system.btn.g,styleColors.system.btn.b],
-    finalColor : [styleColors.system.btn.r,styleColors.system.btn.g,styleColors.system.btn.b],
+    finalColor : [styleColors.system.btn.r,styleColors.system.btn.g,styleColors.system.btn.b,1],
     alpha : 1
   }
 
   this.fill = {
     name: "fill",
     color : [styleColors.system.selectedBtn.r,styleColors.system.selectedBtn.g,styleColors.system.selectedBtn.b],
-    finalColor : [styleColors.system.selectedBtn.r,styleColors.system.selectedBtn.g,styleColors.system.selectedBtn.b],
+    finalColor : [styleColors.system.selectedBtn.r,styleColors.system.selectedBtn.g,styleColors.system.selectedBtn.b,0],
     alpha : 0
   }
 

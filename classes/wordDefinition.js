@@ -208,10 +208,6 @@ wordDefinition.prototype.reset = function(){
 
 }
 
-wordDefinition.prototype.exitAnimation = function(){
-
-}
-
 wordDefinition.prototype.setContent = function(_DOM,_string){
 
   var size = (1 / _string.length ) * 1100
