@@ -92,7 +92,7 @@ function wordDefinition(){
   this.forwardBtn.style.display = "block"
   this.forwardBtn.style.height = "80px"
   this.forwardBtn.style.width =  "80px"
-  this.forwardBtn.style.bottom =  this.margin + "px"
+  this.forwardBtn.style.top = canvasSize.height - this.margin - 80 + "px"
   this.forwardBtn.style.left =  canvasSize.width - this.margin - 80 + "px"
   this.forwardBtn.style.position =  "absolute"
   this.forwardBtn.style.transform =  "rotate(180deg)"
@@ -205,10 +205,6 @@ wordDefinition.prototype.reset = function(){
   this.line.className = "wordexplorer line"
   this.line.style.opacity = 1
   this.allContainer.style.display = "none"
-
-}
-
-wordDefinition.prototype.exitAnimation = function(){
 
 }
 

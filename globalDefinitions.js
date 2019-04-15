@@ -3,26 +3,27 @@
 var x = 1
 var enableCanvas = false
 var toDefinition = false
-var selectedData = data[0]
+var selectedData;
 var appStart = false
+var selectedStyle = 0
 
 //-------------CONTROLES--------------------
 
 CONTROLS = {
 
-  speedMin : 1,
-  speedMax : 1.5,
-  wordTimeMin : 1000,
-  wordTimeMax : 5000,
-  growMultiplyer : 0.15,
+  speedMin : 0.8,
+  speedMax : 0.8,
+  wordTimeMin : 3000,
+  wordTimeMax : 4000,
+  growMultiplyer : 0.2,
   maxWodCount : 30,
+  sizeTrashhold : 300,
 
 }
 
 //-----------------------------------------
 
 let sohne, sohneBold;
-
 
 var canvasSize = {
   width :  1080 * x,
@@ -39,21 +40,96 @@ var globalColors = {
     r : 26,
     g : 24,
     b : 25
+  },
+  "white" : {
+    r : 255,
+    g : 255,
+    b : 255
+  },
+  "black" : {
+    r : 0,
+    g : 0,
+    b : 0
   }
 }
+
+var style = [
+{
+  "system" : {
+    "bg" : globalColors.gray,
+
+    "word" : globalColors.white,
+    "selectedWord" : globalColors.gray,
+
+    "btn" : globalColors.white,
+    "selectedBtn" : globalColors.yellow,
+    "hoverdBtn" : globalColors.yellow,
+
+    "particle" : globalColors.white,
+    "selectedParticle" : globalColors.yellow
+
+  },
+  "description" : {
+    "bg" : globalColors.yellow,
+    "contect" : globalColors.gray,
+  },
+  "menu" : {
+    "bg" : globalColors.gray,
+    "btn" : globalColors.yellow,
+    "menuItem" : globalColors.white,
+  },
+  "infoPage" : {
+    "content" : globalColors.white,
+  },
+},
+{
+  "system" : {
+    "bg" : globalColors.yellow,
+
+    "word" : globalColors.gray,
+    "selectedWord" : globalColors.gray,
+
+    "btn" : globalColors.gray,
+    "selectedBtn" : globalColors.white,
+    "hoverdBtn" : globalColors.white,
+
+    "particle" : globalColors.gray,
+    "selectedParticle" : globalColors.white
+
+  },
+  "description" : {
+    "bg" : globalColors.yellow,
+    "contect" : globalColors.gray,
+  },
+  "menu" : {
+    "bg" : globalColors.gray,
+    "btn" : globalColors.yellow,
+    "menuItem" : globalColors.white,
+  },
+  "infoPage" : {
+    "content" : globalColors.white,
+  },
+},
+
+]
+
+var styleColors;
 
 //classes instances
 var btn, definitionPage, menu, system, sounds;
 
+//globalFunctions
 function mousePressed() {
 
   if(enableCanvas){
     if(system.checkWordsClick()){
-      system.allWords[system.dragId].setPastSpeed()  
+      btn.wordSelected()
+      system.allWords[system.dragId].setPastSpeed()
     }
   }
 
 }
+
 
 function mouseDragged() {
 
@@ -68,33 +144,37 @@ function mouseDragged() {
         btn.setHover(false)
       }
 
-    }
+  }
 }
 
 function mouseReleased() {
 
   if(enableCanvas && system.dragId){
-      system.allWords[system.dragId].isBeingDragged = false
 
-      if(system.checkDrag() != null && btn.checkHover()){
-        toDefinition = true
-        btn.nextPage(() => {
-          enableCanvas = false
-          definitionPage.init( system.allWords[system.dragId].data, () => {
-            btn.setColorChange(true)
-            setTimeout(() => {
-              menu.init(system.data.menu)
-              system.clearDrag()
-             }, 300)
-          })
+    system.allWords[system.dragId].isBeingDragged = false
 
+    if(system.checkDrag() != null && btn.checkHover()){
+      toDefinition = true
+      btn.nextPage(() => {
+        enableCanvas = false
+
+        definitionPage.init( system.allWords[system.dragId].data, () => {
+
+          setTimeout(() => {
+            btn.setColorChange(btn.fill,globalColors.gray)
+            btn.setColorChange(btn.text,globalColors.gray,0)
+            menu.init(system.data.menu)
+            system.clearDrag()
+           }, 300)
         })
-      }else{
 
-        var id = system.dragId
-        system.clearDrag();
-        system.allWords[id].getNewSpeed()
-      }
+      })
+    }else{
+      var id = system.dragId
+      btn.wordReleased()
+      system.clearDrag();
+      system.allWords[id].getNewSpeed()
+    }
 
 
   }
@@ -117,7 +197,7 @@ function startApp() {
   definitionPage = new wordDefinition()
   menu = new menuPage()
   system = new WordSystem(createVector(canvasSize.width/2, canvasSize.height/2 - btn.size.height),selectedData);
-
+  selectedStyle = 0
   appStart = true
 
 }
@@ -150,8 +230,19 @@ function createSelectMenu(){
       console.log(this.parentNode);
       document.body.removeChild(this.parentNode)
       selectedData = data[this.id]
+      styleColors = style[this.dataset.style]
+      console.log("==--=-==" , this.dataset.style );
+      console.log("==--=-==" , this.innerHTML );
       startApp()
+      preload()
     }
+    item.dataset.style = 0
+
+    console.log(data[i].nome);
+    if(data[i].nome == "Português no mundo"){
+      item.dataset.style = 1
+    }
+
     container.appendChild(item)
   }
 
