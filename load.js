@@ -17,18 +17,17 @@ function loadAudios(){
     var res = document.createElement("link")
     res.rel = "preload"
     res.as = "audio"
-    res.href = "audios/" +selectedData.palavras[i].audio
+    res.href = "audios/" + selectedData.palavras[i].audio
     document.head.appendChild(res)
 
     var res = document.createElement("link")
     res.rel = "preload"
     res.as = "audio"
-    res.href = "audios/" +selectedData.palavras[i].audioOriginal
+    res.href = "audios/" + selectedData.palavras[i].audioOriginal
     document.head.appendChild(res)
 
 
 }
-
 
 loadAudios()
 loadImages()

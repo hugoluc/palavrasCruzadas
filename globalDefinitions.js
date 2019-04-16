@@ -5,7 +5,6 @@ var enableCanvas = false
 var toDefinition = false
 var selectedData;
 var appStart = false
-var selectedStyle = 0
 
 //-------------CONTROLES--------------------
 
@@ -18,10 +17,10 @@ CONTROLS = {
   growMultiplyer : 0.2,
   maxWodCount : 30,
   sizeTrashhold : 300,
-
 }
 
 //-----------------------------------------
+
 
 let sohne, sohneBold;
 
@@ -30,6 +29,7 @@ var canvasSize = {
   height : 1920 * x
 }
 
+//Color Schemes
 var globalColors = {
   "yellow" : {
       r : 254,
@@ -52,7 +52,6 @@ var globalColors = {
     b : 0
   }
 }
-
 var style = [
 {
   "system" : {
@@ -113,7 +112,9 @@ var style = [
 
 ]
 
-var styleColors;
+var selectedStyle = 0
+var selectedselectedStyleColors;
+var menuColorStyles = [0,0,0,0,0,0,0,1]
 
 //classes instances
 var btn, definitionPage, menu, system, sounds;
@@ -230,18 +231,15 @@ function createSelectMenu(){
       console.log(this.parentNode);
       document.body.removeChild(this.parentNode)
       selectedData = data[this.id]
-      styleColors = style[this.dataset.style]
-      console.log("==--=-==" , this.dataset.style );
-      console.log("==--=-==" , this.innerHTML );
+      selectedStyleColors = style[this.dataset.style]
       startApp()
       preload()
     }
     item.dataset.style = 0
 
     console.log(data[i].nome);
-    if(data[i].nome == "Português no mundo"){
-      item.dataset.style = 1
-    }
+    item.dataset.style = menuColorStyles[i]
+
 
     container.appendChild(item)
   }

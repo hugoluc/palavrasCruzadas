@@ -95,16 +95,16 @@ inspectionBtn.prototype.transitionColorValue = function(_current,_target,_alpha)
 //change btn style for word selection
 inspectionBtn.prototype.wordSelected = function(){
 
-  this.setColorChange(this.text,    styleColors.system.selectedWord)
-  this.setColorChange(this.outline, styleColors.system.selectedBtn)
-  this.setColorChange(this.fill,    styleColors.system.selectedBtn,1)
+  this.setColorChange(this.text,    selectedStyleColors.system.selectedWord)
+  this.setColorChange(this.outline, selectedStyleColors.system.selectedBtn)
+  this.setColorChange(this.fill,    selectedStyleColors.system.selectedBtn,1)
 
 }
 inspectionBtn.prototype.wordReleased = function(){
 
-  this.setColorChange(this.text,    styleColors.system.word)
-  this.setColorChange(this.outline, styleColors.system.btn)
-  this.setColorChange(this.fill,    styleColors.system.selectedBtn,0)
+  this.setColorChange(this.text,    selectedStyleColors.system.word)
+  this.setColorChange(this.outline, selectedStyleColors.system.btn)
+  this.setColorChange(this.fill,    selectedStyleColors.system.selectedBtn,0)
 
 }
 
@@ -227,11 +227,9 @@ inspectionBtn.prototype.setReturn = function(){
   this.text.alpha = 0
   this.outline.alpha = 0
 
-  debugger
-
-  this.setColorChange(this.text,    styleColors.system.word,1)
-  this.setColorChange(this.outline, styleColors.system.btn,1)
-  // this.setColorChange(this.fill,    styleColors.system.btn,0)
+  this.setColorChange(this.text,    selectedStyleColors.system.word,1)
+  this.setColorChange(this.outline, selectedStyleColors.system.btn,1)
+  // this.setColorChange(this.fill,    selectedStyleColors.system.btn,0)
 
 }
 inspectionBtn.prototype.displayToNormal = function(){
@@ -301,7 +299,7 @@ inspectionBtn.prototype.init = function(){
   this.changeToBlack = true
   this.transitionToNormal = false
   this.fontFamily = sohneBold
-  this.color = [styleColors.system.word.r,styleColors.system.word.g,styleColors.system.word.b]
+  this.color = [selectedStyleColors.system.word.r,selectedStyleColors.system.word.g,selectedStyleColors.system.word.b]
   this.transtitionHover = false
   this.transtitionNextPage = false
   this.transitionToBlack= false
@@ -325,15 +323,15 @@ inspectionBtn.prototype.init = function(){
 
   this.outline = {
     name: "outline",
-    color : [styleColors.system.btn.r,styleColors.system.btn.g,styleColors.system.btn.b],
-    finalColor : [styleColors.system.btn.r,styleColors.system.btn.g,styleColors.system.btn.b,1],
+    color : [selectedStyleColors.system.btn.r,selectedStyleColors.system.btn.g,selectedStyleColors.system.btn.b],
+    finalColor : [selectedStyleColors.system.btn.r,selectedStyleColors.system.btn.g,selectedStyleColors.system.btn.b,1],
     alpha : 1
   }
 
   this.fill = {
     name: "fill",
-    color : [styleColors.system.selectedBtn.r,styleColors.system.selectedBtn.g,styleColors.system.selectedBtn.b],
-    finalColor : [styleColors.system.selectedBtn.r,styleColors.system.selectedBtn.g,styleColors.system.selectedBtn.b,0],
+    color : [selectedStyleColors.system.selectedBtn.r,selectedStyleColors.system.selectedBtn.g,selectedStyleColors.system.selectedBtn.b],
+    finalColor : [selectedStyleColors.system.selectedBtn.r,selectedStyleColors.system.selectedBtn.g,selectedStyleColors.system.selectedBtn.b,0],
     alpha : 0
   }
 
@@ -364,7 +362,7 @@ inspectionBtn.prototype.show = function(){
   if(this.transitionToNormal){ this.displayToNormal() }
 
   //display bg
-  fill(styleColors.system.bg.r,styleColors.system.bg.g,styleColors.system.bg.b)
+  fill(selectedStyleColors.system.bg.r,selectedStyleColors.system.bg.g,selectedStyleColors.system.bg.b)
   rect(0, this.position.y - this.marginTop, this.size.width + (2*this.margin), this.size.height + this.margin + this.marginTop )
 
 

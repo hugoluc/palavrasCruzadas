@@ -9,8 +9,10 @@ var names = [
   "Línguas Africanas I KIKONGO ",
   "Línguas Aficanas II e Yorubá",
   "Inglês e Francês",
-  "Português no mundo",
+  "Lingua de imigrantes",
+  "Português pelo mundo",
 ]
+
 for (var i = 0; i < names.length; i++) {
   allData[i] = { nome : names[i] }
 }
@@ -22,17 +24,21 @@ var menuDone = false
 getWords()
 getMenus()
 
+
 function getWords() {
   var csvFilePath = "palavras/"+ index + ".csv"
+  console.log(">>>>>>>> getting words at index: " + index);
 
   //readFile---------------------------------------------------------
   csv().fromFile(csvFilePath).then((jsonObj) => {
+
+    console.log(jsonObj[0]);
 
     var palavras = []
 
     for (var l = 0; l < jsonObj.length; l++) {
       var palavra = {}
-      palavra.origem = "OUTRA LINGUA"
+      palavra.origem = jsonObj[l]["Lingua"]
       palavra.palavra = jsonObj[l]["Palavra PT"]
       palavra.significado = jsonObj[l]["Significado PT"]
       palavra.audio = jsonObj[l]["Audio PT"]
@@ -55,17 +61,15 @@ function getWords() {
   })
 }
 
-
-
-
 function getMenus() {
   var csvFilePath = "menus/"+ menuIndex + ".csv"
-  console.log(menuIndex);
+  console.log(">>>>>>>> getting menus at index: " + menuIndex);
+
+
   //readFile---------------------------------------------------------
   csv().fromFile(csvFilePath).then((jsonObj) => {
 
     var menu = []
-    console.log(jsonObj[0]);
 
     for (var l = 0; l < jsonObj.length; l++) {
       if(jsonObj[l]["titulo"] != ""){

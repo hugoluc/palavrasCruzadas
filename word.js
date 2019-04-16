@@ -24,9 +24,9 @@ class Word {
   reset(){
     this.location = this.originalPosition.copy()
     this.size = 10;
-    this.r = styleColors.system.particle.r;
-    this.g = styleColors.system.particle.g;
-    this.b = styleColors.system.particle.b;
+    this.r = selectedStyleColors.system.particle.r;
+    this.g = selectedStyleColors.system.particle.g;
+    this.b = selectedStyleColors.system.particle.b;
     this.a = 0;
     this.isBeingDragged = false
     this.isTooBig = false
@@ -101,17 +101,17 @@ class Word {
     if (this.isBeingDragged) {
 
       this.size = this.size;
-      this.r = styleColors.system.selectedParticle.r;
-      this.g = styleColors.system.selectedParticle.g;
-      this.b = styleColors.system.selectedParticle.b;
+      this.r = selectedStyleColors.system.selectedParticle.r;
+      this.g = selectedStyleColors.system.selectedParticle.g;
+      this.b = selectedStyleColors.system.selectedParticle.b;
       this.a = 255;
 
     } else {
 
       this.size = this.size + (this.totalSpeed * CONTROLS.growMultiplyer);
-      this.r = styleColors.system.particle.r;
-      this.g = styleColors.system.particle.g;
-      this.b = styleColors.system.particle.b;
+      this.r = selectedStyleColors.system.particle.r;
+      this.g = selectedStyleColors.system.particle.g;
+      this.b = selectedStyleColors.system.particle.b;
       this.a = map(this.size,0,100,0,255,true)
 
       if (this.size > CONTROLS.sizeTrashhold) this.isTooBig = true

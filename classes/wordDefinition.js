@@ -112,6 +112,7 @@ wordDefinition.prototype.init = function(_data, _callBack) {
   this.callBack = () => { _callBack() }
 
   if(this.data.audioObj){
+    // debugger
     this.currentAudio = this.data.audioObj
     this.playSound()
     this.audioOpacity = 1
