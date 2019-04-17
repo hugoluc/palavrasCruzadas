@@ -97,7 +97,6 @@ inspectionBtn.prototype.wordSelected = function(){
 
   this.setColorChange(this.text,    selectedStyleColors.system.selectedWord)
   this.setColorChange(this.outline, selectedStyleColors.system.selectedBtn)
-  this.setColorChange(this.fill,    selectedStyleColors.system.selectedBtn,1)
 
 }
 inspectionBtn.prototype.wordReleased = function(){
@@ -115,17 +114,24 @@ inspectionBtn.prototype.checkHover = function(){
 
   //Determine if mouse is hovereing the word width
   if (mouseY > this.position.y) {
+    this.setColorChange(this.fill,    selectedStyleColors.system.selectedBtn,1)
+    this.setColorChange(this.text,    selectedStyleColors.system.hoverdBtn)
     return true;
   }else{
+    this.setColorChange(this.text,    selectedStyleColors.system.selectedWord)
+    this.setColorChange(this.fill,    selectedStyleColors.system.selectedBtn,0)
     return false
   }
 }
+
+
 inspectionBtn.prototype.setHover = function(_isHovered, _selectedWord){
   this.isHovered = _isHovered
   this.selectedWord = _selectedWord
   this.transtitionHover = true
 
 }
+
 inspectionBtn.prototype.displayHover = function(_isHovered){
 
   //transition to hovered state
@@ -151,10 +157,12 @@ inspectionBtn.prototype.displayHover = function(_isHovered){
 //transsition no next page
 inspectionBtn.prototype.nextPage = function(_callBack,_data){
 
-    this.callBack = _callBack
-    this.transtitionNextPage = true
+  this.callBack = _callBack
+  this.transtitionNextPage = true
+  this.transitionToColor = false
 
 }
+
 inspectionBtn.prototype.dislayNextPage = function(){
 
   this.speed = this.speed * this.acceleration
@@ -232,6 +240,8 @@ inspectionBtn.prototype.setReturn = function(){
   // this.setColorChange(this.fill,    selectedStyleColors.system.btn,0)
 
 }
+
+
 inspectionBtn.prototype.displayToNormal = function(){
 
   // this.size.height = this.constants.height
@@ -290,7 +300,6 @@ inspectionBtn.prototype.displayToNormal = function(){
   // }
 
 }
-
 
 //-----------------------------------------------------------------
 inspectionBtn.prototype.init = function(){
@@ -367,8 +376,6 @@ inspectionBtn.prototype.show = function(){
 
 
   //display outline
-
-
   stroke("rgba(" + this.outline.color[0] + "," + this.outline.color[1] + "," + this.outline.color[2] + "," + this.outline.alpha + ")")
   strokeWeight(10);
   noFill()

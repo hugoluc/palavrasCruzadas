@@ -58,11 +58,12 @@ var style = [
     "bg" : globalColors.gray,
 
     "word" : globalColors.white,
-    "selectedWord" : globalColors.gray,
+    "selectedWord" : globalColors.yellow,
+    "hoverWord" : globalColors.gray,
 
     "btn" : globalColors.white,
     "selectedBtn" : globalColors.yellow,
-    "hoverdBtn" : globalColors.yellow,
+    "hoverdBtn" : globalColors.gray,
 
     "particle" : globalColors.white,
     "selectedParticle" : globalColors.yellow
@@ -86,11 +87,12 @@ var style = [
     "bg" : globalColors.yellow,
 
     "word" : globalColors.gray,
-    "selectedWord" : globalColors.gray,
+    "selectedWord" : globalColors.white,
+    "hoverWord" : globalColors.gray,
 
     "btn" : globalColors.gray,
     "selectedBtn" : globalColors.white,
-    "hoverdBtn" : globalColors.white,
+    "hoverdBtn" : globalColors.gray,
 
     "particle" : globalColors.gray,
     "selectedParticle" : globalColors.white
