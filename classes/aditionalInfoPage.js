@@ -58,10 +58,10 @@ function aditionalInfoPage(){
   this.container.appendChild(this.backBtn)
   this.backBtn.id = "backBtn"
   this.backBtn.style.display = "block"
-  this.backBtn.style.height = "80px"
-  this.backBtn.style.width =  "80px"
-  this.backBtn.style.top =  "50px"
-  this.backBtn.style.left =  "50px"
+  this.backBtn.style.height = "50px"
+  this.backBtn.style.width =  "50px"
+  this.backBtn.style.top =  "70px"
+  this.backBtn.style.left =  "60px"
   this.backBtn.style.position =  "absolute"
   this.backBtn.onclick = function(){ f() }
 
