@@ -15,13 +15,16 @@ class WordSystem {
     this.allWords = {}
     this.origin = position.copy();
     this.wordId = 0
-    this.clearDrag();
+    this.dataIndex = []
+    for(var i = 0; i < this.data.palavras.length-1; i++){ this.dataIndex.push(i) }
+    shuffleArray(this.dataIndex)
 
+
+    this.clearDrag();
     this.wordLimit = CONTROLS.maxWodCount
     this.wordCount = 0
 
     for(var i = 0; i < this.wordLimit; i++){
-
       this.words.push(new Word(this.origin, this.wordId));
       this.allWords[this.wordId] = this.words[i]
       this.wordId++
@@ -30,7 +33,6 @@ class WordSystem {
     this.millis = millis()
     this.lastMillis = 0
     this.nextWordTime = 0
-
 
   }
 
@@ -48,7 +50,20 @@ class WordSystem {
 
         //Select the word from the source
         var selectedWord = this.words.pop()
-        selectedWord.setData(random(this.data.palavras));
+
+        var index = this.dataIndex.pop()
+        var data = this.data.palavras[index]
+
+        console.log(index,this.dataIndex.length)
+        if(this.dataIndex.length <= 0){
+          console.log("-------------------------")
+          for(var i = 0; i < this.data.palavras.length-1; i++){ this.dataIndex.push(i) }
+          shuffleArray(this.dataIndex)
+
+        }
+
+        selectedWord.setData(data);
+
         //Pass is to the Word class constructor
         this.displayWords.push(selectedWord);
         this.wordCount++
