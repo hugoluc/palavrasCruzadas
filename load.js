@@ -12,6 +12,7 @@ function loadImages(){
 }
 
 function loadAudios(){
+  
   for(i = 0; i <selectedData.palavras.length; i++){
 
     var res = document.createElement("link")
@@ -31,3 +32,4 @@ function loadAudios(){
 
 loadAudios()
 loadImages()
+

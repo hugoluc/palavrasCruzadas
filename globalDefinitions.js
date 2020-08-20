@@ -8,6 +8,8 @@ var appStart = false
 
 //-------------CONTROLES--------------------
 
+
+
 CONTROLS = {
 
   speedMin : 0.8,
@@ -18,6 +20,17 @@ CONTROLS = {
   maxWodCount : 30,
   sizeTrashhold : 300,
 }
+
+var initialWordTimes = {
+
+  wordTimeMin : 3000,
+  wordTimeMax : 4000,
+
+}
+
+var realWordTimes = {}
+realWordTimes.wordTimeMin = initialWordTimes.wordTimeMin
+realWordTimes.wordTimeMax = initialWordTimes.wordTimeMax
 
 //-----------------------------------------
 
@@ -201,14 +214,20 @@ function shuffleArray(array) {
 }
 
 function startApp() {
+
   enableCanvas = true
   toDefinition = false
+  
   createCanvas(canvasSize.width, canvasSize.height);
   frameRate(60);
+  
+  
   btn = new inspectionBtn()
   definitionPage = new wordDefinition()
   menu = new menuPage()
   system = new WordSystem(createVector(canvasSize.width/2, canvasSize.height/2 - btn.size.height),selectedData);
+  
+  
   selectedStyle = 0
   appStart = true
 
@@ -239,20 +258,29 @@ function createSelectMenu(){
     item.style.fontSize = "30px"
     item.style.fontFamily = "Sohne bold"
     item.onclick = function() {
-      console.log(this.parentNode);
+      
       document.body.removeChild(this.parentNode)
       selectedData = data[this.id]
       selectedStyleColors = style[this.dataset.style]
+
       startApp()
       preload()
+
     }
+
     item.dataset.style = 0
-
-    console.log(data[i].nome);
     item.dataset.style = menuColorStyles[i]
-
 
     container.appendChild(item)
   }
 
+}
+
+Element.prototype.insertChildAtIndex = function(child, index) {
+  if (!index) index = 0
+  if (index >= this.children.length) {
+    this.appendChild(child)
+  } else {
+    this.insertBefore(child, this.children[index])
+  }
 }

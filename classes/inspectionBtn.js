@@ -52,20 +52,11 @@ inspectionBtn.prototype.changeColor = function(_element){
     return true
   }else{
 
-    console.log(    _element.color[0] , _element.finalColor[0]);
-    console.log(    _element.color[1] , _element.finalColor[1]);
-    console.log(    _element.color[2] , _element.finalColor[2]);
-    console.log(    _element.alpha    , _element.finalColor[3]);
-
     _element.color[0] = this.transitionColorValue(_element.color[0],_element.finalColor[0])
     _element.color[1] = this.transitionColorValue(_element.color[1],_element.finalColor[1])
     _element.color[2] = this.transitionColorValue(_element.color[2],_element.finalColor[2])
     _element.alpha    = this.transitionColorValue(_element.alpha,   _element.finalColor[3],true)
 
-    console.log(    _element.color[0] , _element.finalColor[0]);
-    console.log(    _element.color[1] , _element.finalColor[1]);
-    console.log(    _element.color[2] , _element.finalColor[2]);
-    console.log(    _element.alpha    , _element.finalColor[3]);
 
     return false
 

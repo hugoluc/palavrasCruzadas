@@ -3,7 +3,12 @@ var selectedWord;
 
 class WordSystem {
 
+  
+
   constructor(position,_data) {
+  
+    this.firstWordsDone = false
+  
     //Array of words in the words system
     this.createWordTime = {
       min : 200,
@@ -42,36 +47,71 @@ class WordSystem {
 
     if(elapsedTime > this.nextWordTime){
 
-
-      this.nextWordTime = getRandomInt(CONTROLS.wordTimeMax - CONTROLS.wordTimeMin) + CONTROLS.wordTimeMin
+      this.nextWordTime = getRandomInt(realWordTimes.wordTimeMax - realWordTimes.wordTimeMin) + realWordTimes.wordTimeMin
       this.lastMillis = millis()
 
       if(this.wordCount < this.wordLimit){
+    
+        this.getNewWord()
 
-        //Select the word from the source
-        var selectedWord = this.words.pop()
-
-        var index = this.dataIndex.pop()
-        var data = this.data.palavras[index]
-
-        console.log(index,this.dataIndex.length)
-        if(this.dataIndex.length <= 0){
-          console.log("-------------------------")
-          for(var i = 0; i < this.data.palavras.length-1; i++){ this.dataIndex.push(i) }
-          shuffleArray(this.dataIndex)
-
-        }
-
-        selectedWord.setData(data);
-
-        //Pass is to the Word class constructor
-        this.displayWords.push(selectedWord);
-        this.wordCount++
       }
-
 
     }
   }
+
+  getFirstWords(){
+
+    if(this.firstWordsDone) return
+
+
+    if( realWordTimes.wordTimeMax >= 4000 ){
+      realWordTimes.wordTimeMax = 4000
+    }
+    
+    if( realWordTimes.wordTimeMin >= 3000 ){
+      realWordTimes.wordTimeMin = 3000
+    }
+
+    if(realWordTimes.wordTimeMin == 3000 &&  realWordTimes.wordTimeMax >= 4000){
+
+      this.firstWordsDone = true
+      return
+
+    }else{
+
+      realWordTimes.wordTimeMin = realWordTimes.wordTimeMin + 100
+      realWordTimes.wordTimeMax = realWordTimes.wordTimeMax + 100
+
+    }
+
+
+  }
+
+
+  getNewWord(){
+    
+    //Select the word from the source
+    var selectedWord = this.words.pop()
+
+    var index = this.dataIndex.pop()
+    var data = this.data.palavras[index]
+    
+    if(this.dataIndex.length <= 0){
+        
+      for(var i = 0; i < this.data.palavras.length-1; i++){ this.dataIndex.push(i) }
+    
+      shuffleArray(this.dataIndex)
+
+    }
+
+    selectedWord.setData(data);
+
+    //Pass is to the Word class constructor
+    this.displayWords.push(selectedWord);
+    this.wordCount++
+
+  }
+
 
   clearDrag(){
 
@@ -104,6 +144,9 @@ class WordSystem {
   }
 
   run() {
+
+    this.getFirstWords()
+    console.log(this.wordCount)
 
     this.addWord()
 

@@ -1,5 +1,7 @@
-const csv = require('csvtojson')
+const csv = require("csvtojson/v2");
 const fs = require("fs")
+
+
 
 var allData = []
 var names = [
@@ -25,19 +27,23 @@ getWords()
 getMenus()
 
 
-function getWords() {
-  var csvFilePath = "palavras/"+ index + ".csv"
-  console.log(">>>>>>>> getting words at index: " + index);
+function getWords() { 
+
+  var csvFilePath = '/Users/hugogoulartdelucena/Desktop/palavrasCruzadas/extra/palavras/' + index + '.csv'
+  console.log(">>>>>>>> getting words at index: " + csvFilePath);
+  
 
   //readFile---------------------------------------------------------
   csv().fromFile(csvFilePath).then((jsonObj) => {
 
-    console.log(jsonObj[0]);
+    
 
     var palavras = []
 
     for (var l = 0; l < jsonObj.length; l++) {
       var palavra = {}
+    
+      console.log(jsonObj[l]["Lingua"]);
       palavra.origem = jsonObj[l]["Lingua"]
       palavra.palavra = jsonObj[l]["Palavra PT"]
       palavra.significado = jsonObj[l]["Significado PT"]
@@ -62,7 +68,8 @@ function getWords() {
 }
 
 function getMenus() {
-  var csvFilePath = "menus/"+ menuIndex + ".csv"
+  
+  var csvFilePath = '/Users/hugogoulartdelucena/Desktop/palavrasCruzadas/extra/menus/' + menuIndex + '.csv'
   console.log(">>>>>>>> getting menus at index: " + menuIndex);
 
 
@@ -96,11 +103,21 @@ function getMenus() {
 
 function saveData() {
 
-  if(!menuDone || !wordsDone ) return
+  console.log("SAVING....");
+
+  if(!menuDone || !wordsDone ){
+  
+    console.log("NOT READY!");
+    console.log("Menu ready? : " + menuDone);
+    console.log("Words ready? : " + wordsDone);
+    return
+
+  } 
 
   var data = 'var data = ' + JSON.stringify(allData, null, 1)
 
-  fs.writeFile("../data.js", data, 'utf8', function(error){
+  fs.writeFile("/Users/hugogoulartdelucena/Desktop/palavrasCruzadas/data.js", data, 'utf8', function(error){
+    console.log(data)
     console.log(error)
   })
 

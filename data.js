@@ -3,7 +3,8 @@ var data = [
   "nome": "Línguas Indígenas Tupinambá",
   "palavras": [
    {
-    "palavra": "Aipim",
+    "origem": "tupinambá",
+    "palavra": "aipim",
     "significado": "mandioca doce; macaxeira",
     "audio": "aipim1.mp3",
     "tradução": "Aipí",
@@ -11,7 +12,8 @@ var data = [
     "audioOriginal": "aipim0.mp3"
    },
    {
-    "palavra": "Arara",
+    "origem": "tupinambá",
+    "palavra": "arara",
     "significado": "ave de grande porte, de cauda longa e penas coloridas",
     "audio": "arara1.mp3",
     "tradução": "arára",
@@ -19,7 +21,8 @@ var data = [
     "audioOriginal": "arara0.mp3"
    },
    {
-    "palavra": "Beiju",
+    "origem": "tupinambá",
+    "palavra": "beiju",
     "significado": "bolo de massa de mandioca",
     "audio": "beiju1.mp3",
     "tradução": "mbeiú",
@@ -27,7 +30,8 @@ var data = [
     "audioOriginal": "beiju0.mp3"
    },
    {
-    "palavra": "Caatinga",
+    "origem": "tupinambá",
+    "palavra": "caatinga",
     "significado": "vegetação típica de regiões de clima árido do Nordeste brasileiro",
     "audio": "caatinga1.mp3",
     "tradução": "ka’átínga",
@@ -35,7 +39,8 @@ var data = [
     "audioOriginal": "caatinga0.mp3"
    },
    {
-    "palavra": "Caju",
+    "origem": "tupinambá",
+    "palavra": "caju",
     "significado": "fruto do cajueiro",
     "audio": "caju1.mp3",
     "tradução": "akaiú",
@@ -43,7 +48,8 @@ var data = [
     "audioOriginal": "caju0.mp3"
    },
    {
-    "palavra": "Capim",
+    "origem": "tupinambá",
+    "palavra": "capim",
     "significado": "designação comum a várias espécies de gramíneas",
     "audio": "capim1.mp3",
     "tradução": "kapi’í",
@@ -51,7 +57,8 @@ var data = [
     "audioOriginal": "capim0.mp3"
    },
    {
-    "palavra": "Capivara",
+    "origem": "tupinambá",
+    "palavra": "capivara",
     "significado": "grande roedor semiaquático encontrado nas Américas do Sul e Central",
     "audio": "capivara1.mp3",
     "tradução": "kapi’ybára",
@@ -59,23 +66,26 @@ var data = [
     "audioOriginal": "capivara0.mp3"
    },
    {
-    "palavra": "Cuia",
-    "significado": "recipiente usado para beber ou transportar líquidos, sementes, farinha, esvaziar canoas",
+    "origem": "tupinambá",
+    "palavra": "cuia",
+    "significado": "recipiente usado para beber ou transportar líquidos, sementes, farinha ou esvaziar canoas",
     "audio": "cuia1.mp3",
     "tradução": "kúia",
     "significadoOriginal": "meia cabaça",
     "audioOriginal": "cuia0.mp3"
    },
    {
-    "palavra": "Cupim",
-    "significado": "térmita, inseto social, que se alimenta de madeira e outros materiais vegetais",
+    "origem": "tupinambá",
+    "palavra": "cupim",
+    "significado": "térmita, inseto social que se alimenta de madeira e outros materiais vegetais",
     "audio": "cupim1.mp3",
     "tradução": "kupi’í",
     "significadoOriginal": "térmita, inseto que rói a madeira",
     "audioOriginal": "cupim0.mp3"
    },
    {
-    "palavra": "Cutucar",
+    "origem": "tupinambá",
+    "palavra": "cutucar",
     "significado": "tocar com a ponta do dedo ou com o cotovelo em outrem, para chamar-lhe a atenção; tocar com insistência",
     "audio": "cutucar1.mp3",
     "tradução": "kutúk",
@@ -83,7 +93,8 @@ var data = [
     "audioOriginal": "cutucar0.mp3"
    },
    {
-    "palavra": "Guará",
+    "origem": "tupinambá",
+    "palavra": "guará",
     "significado": "lobo-guará",
     "audio": "guara1.mp3",
     "tradução": "awará",
@@ -91,7 +102,8 @@ var data = [
     "audioOriginal": "guara0.mp3"
    },
    {
-    "palavra": "Ipê",
+    "origem": "tupinambá",
+    "palavra": "ipê",
     "significado": "espécie de árvore",
     "audio": "ipe1.mp3",
     "tradução": "ypé",
@@ -99,7 +111,8 @@ var data = [
     "audioOriginal": "ipe0.mp3"
    },
    {
-    "palavra": "Jabuti",
+    "origem": "tupinambá",
+    "palavra": "jabuti",
     "significado": "espécie de quelônio encontrado nas Américas Central e do Sul",
     "audio": "jabuti1.mp3",
     "tradução": "iabotí",
@@ -107,7 +120,8 @@ var data = [
     "audioOriginal": "jabuti0.mp3"
    },
    {
-    "palavra": "Jabuticaba",
+    "origem": "tupinambá",
+    "palavra": "jabuticaba",
     "significado": "fruto da jabuticabeira",
     "audio": "jabuticaba1.mp3",
     "tradução": "iabotíkába",
@@ -115,7 +129,8 @@ var data = [
     "audioOriginal": "jabuticaba0.mp3"
    },
    {
-    "palavra": "Jacaré",
+    "origem": "tupinambá",
+    "palavra": "jacaré",
     "significado": "réptil crocodiliano comum nas Américas",
     "audio": "jacare1.mp3",
     "tradução": "iakaré",
@@ -123,31 +138,35 @@ var data = [
     "audioOriginal": "jacare0.mp3"
    },
    {
-    "palavra": "Jaguatirica",
+    "origem": "tupinambá",
+    "palavra": "jaguatirica",
     "significado": "espécie de felino comum na Américas",
     "audio": "jaguatirica1.mp3",
     "tradução": "ia’wátiríka",
-    "significadoOriginal": "gato-do-mato, literalmente: onça que produz estalidos",
+    "significadoOriginal": "gato-do-mato; literalmente: onça que produz estalidos",
     "audioOriginal": "jaguatirica0.mp3"
    },
    {
-    "palavra": "Jerimum",
+    "origem": "tupinambá",
+    "palavra": "jerimum",
     "significado": "abóbora",
     "audio": "jerimum1.mp3",
-    "tradução": "iurumún",
+    "tradução": "iurumũ",
     "significadoOriginal": "abóbora",
     "audioOriginal": "jerimum0.mp3"
    },
    {
-    "palavra": "Jiboia",
-    "significado": "espécie de cobra que pode chegar a 4 m de comprimento",
+    "origem": "tupinambá",
+    "palavra": "jiboia",
+    "significado": "espécie de cobra que pode chegar a 4 metros de comprimento",
     "audio": "jiboia1.mp3",
     "tradução": "iy’ýbóia",
-    "significadoOriginal": "espécie de cobra que pode chegar a 4 m de comprimento, literalmente: cobra do arco-íris",
+    "significadoOriginal": "espécie de cobra que pode chegar a 4 metros de comprimento; literalmente: cobra do arco-íris",
     "audioOriginal": "jiboia0.mp3"
    },
    {
-    "palavra": "Jirau",
+    "origem": "tupinambá",
+    "palavra": "jirau",
     "significado": "estrado; prateleira",
     "audio": "jirau1.mp3",
     "tradução": "jurá",
@@ -155,7 +174,8 @@ var data = [
     "audioOriginal": "jirau0.mp3"
    },
    {
-    "palavra": "Jururu",
+    "origem": "tupinambá",
+    "palavra": "jururu",
     "significado": "tristonho, pensativo",
     "audio": "jururu1.mp3",
     "tradução": "iarurú",
@@ -163,7 +183,8 @@ var data = [
     "audioOriginal": "jururu0.mp3"
    },
    {
-    "palavra": "Mamão",
+    "origem": "tupinambá",
+    "palavra": "mamão",
     "significado": "fruto do mamoeiro",
     "audio": "mamao1.mp3",
     "tradução": "mamõ",
@@ -171,23 +192,26 @@ var data = [
     "audioOriginal": "mamao0.mp3"
    },
    {
-    "palavra": "Mandioca",
+    "origem": "tupinambá",
+    "palavra": "mandioca",
     "significado": "planta nativa da América do Sul, cultivada por suas raízes nutritivas; a raiz dessa planta",
     "audio": "mandioca1.mp3",
     "tradução": "mandí’óka",
-    "significadoOriginal": "raiz comestível da planta Manihot utilíssima, literalmente: tubérculo de maní, nome indígena da mandioca ou maniva",
+    "significadoOriginal": "raiz comestível da planta Manihot utilíssima; literalmente: tubérculo de maní, nome indígena da mandioca ou maniva",
     "audioOriginal": "mandioca0.mp3"
    },
    {
-    "palavra": "Maniçoba",
-    "significado": "folha de mandioca; iguaria preparada com as folhas tenras da mandioca, carne suína e temperos",
+    "origem": "tupinambá",
+    "palavra": "maniçoba",
+    "significado": "folha da mandioca ou maniva",
     "audio": "manicoba1.mp3",
     "tradução": "manísóba",
-    "significadoOriginal": "folha da mandioca ou maniva, literalmente: folha de mandioca ou maniva",
+    "significadoOriginal": "folha de mandioca; iguaria preparada com as folhas tenras da mandioca, carne suína e temperos",
     "audioOriginal": "manicoba0.mp3"
    },
    {
-    "palavra": "Maracá",
+    "origem": "tupinambá",
+    "palavra": "maracá",
     "significado": "chocalho",
     "audio": "maraca1.mp3",
     "tradução": "maraká",
@@ -195,7 +219,8 @@ var data = [
     "audioOriginal": "maraca0.mp3"
    },
    {
-    "palavra": "Maracujá",
+    "origem": "tupinambá",
+    "palavra": "maracujá",
     "significado": "trepadeira de frutos comestíveis, com propriedades calmantes; o fruto dessa planta",
     "audio": "maracuja1.mp3",
     "tradução": "murukuiá",
@@ -203,7 +228,8 @@ var data = [
     "audioOriginal": "maracuja0.mp3"
    },
    {
-    "palavra": "Mingau",
+    "origem": "tupinambá",
+    "palavra": "mingau",
     "significado": "papa; papinha",
     "audio": "mingau1.mp3",
     "tradução": "minga’ú",
@@ -211,31 +237,35 @@ var data = [
     "audioOriginal": "mingau0.mp3"
    },
    {
-    "palavra": "Mirim",
+    "origem": "tupinambá",
+    "palavra": "mirim",
     "significado": "pequeno; no futebol, categoria de jogadores na faixa dos 14 anos",
     "audio": "mirim1.mp3",
-    "tradução": "mirín",
+    "tradução": "mirĩ",
     "significadoOriginal": "pequeno",
     "audioOriginal": "mirim0.mp3"
    },
    {
-    "palavra": "Moquém",
+    "origem": "tupinambá",
+    "palavra": "moquém",
     "significado": "grelha de varas de madeira",
     "audio": "moquem1.mp3",
-    "tradução": "moka’én",
+    "tradução": "moka’ẽ",
     "significadoOriginal": "grelha de varas de madeira para assar a carne",
     "audioOriginal": "moquem0.mp3"
    },
    {
-    "palavra": "Mutirão",
-    "significado": "ajuda mútua, gratuita, que prestam os trabalhadores rurais uns aos outros, reunindo-se para a execução de uma tarefa em proveito de um dos trabalhadores",
+    "origem": "tupinambá",
+    "palavra": "mutirão",
+    "significado": "qualquer trabalho voluntário por parte de um grupo de pessoas de uma comunidade que tem por objetivo beneficiar alguém ou o grupo todos",
     "audio": "mutirao1.mp3",
     "tradução": "motyrõ",
     "significadoOriginal": "ajuda mútua e coletiva no trabalho",
     "audioOriginal": "mutirao0.mp3"
    },
    {
-    "palavra": "Mutuca",
+    "origem": "tupinambá",
+    "palavra": "mutuca",
     "significado": "mosca grande, cuja picada é dolorosa",
     "audio": "mutuca1.mp3",
     "tradução": "mutúka",
@@ -243,7 +273,8 @@ var data = [
     "audioOriginal": "mutuca0.mp3"
    },
    {
-    "palavra": "Oca",
+    "origem": "tupinambá",
+    "palavra": "oca",
     "significado": "moradia indígena",
     "audio": "oca1.mp3",
     "tradução": "óka",
@@ -251,7 +282,8 @@ var data = [
     "audioOriginal": "oca0.mp3"
    },
    {
-    "palavra": "Paçoca",
+    "origem": "tupinambá",
+    "palavra": "paçoca",
     "significado": "espécie de farinha resultante da mistura de vários ingredientes socados juntos no pilão; doce feito de amendoim socado; carne assada pilada e socada com farinha",
     "audio": "pacoca1.mp3",
     "tradução": "apásóka",
@@ -259,7 +291,8 @@ var data = [
     "audioOriginal": "pacoca0.mp3"
    },
    {
-    "palavra": "Peteca",
+    "origem": "tupinambá",
+    "palavra": "peteca",
     "significado": "brinquedo popular no Brasil",
     "audio": "peteca1.mp3",
     "tradução": "peték",
@@ -267,7 +300,8 @@ var data = [
     "audioOriginal": "peteca0.mp3"
    },
    {
-    "palavra": "Pipoca",
+    "origem": "tupinambá",
+    "palavra": "pipoca",
     "significado": "grão de milho estourado com o calor",
     "audio": "pipoca1.mp3",
     "tradução": "pípóka",
@@ -275,15 +309,17 @@ var data = [
     "audioOriginal": "pipoca0.mp3"
    },
    {
-    "palavra": "Piranha",
+    "origem": "tupinambá",
+    "palavra": "piranha",
     "significado": "peixe carnívoro extremamente voraz",
     "audio": "piranha1.mp3",
     "tradução": "pirãia",
-    "significadoOriginal": "espécie de peixe carnívoro, Pygocentrus piraya, literalmente: peixe dentudo",
+    "significadoOriginal": "espécie de peixe carnívoro, Pygocentrus piraya; literalmente: peixe dentudo",
     "audioOriginal": "piranha0.mp3"
    },
    {
-    "palavra": "Pirão",
+    "origem": "tupinambá",
+    "palavra": "pirão",
     "significado": "papa de farinha de mandioca",
     "audio": "pirao1.mp3",
     "tradução": "minypyrõ",
@@ -291,23 +327,26 @@ var data = [
     "audioOriginal": "pirao0.mp3"
    },
    {
-    "palavra": "Pitanga",
+    "origem": "tupinambá",
+    "palavra": "pitanga",
     "significado": "fruto da pitangueira",
     "audio": "pitanga1.mp3",
     "tradução": "ybápytánga",
-    "significadoOriginal": "fruto da pitangueira, literalmente: fruta vermelha",
+    "significadoOriginal": "fruto da pitangueira; literalmente: fruta vermelha",
     "audioOriginal": "pitanga0.mp3"
    },
    {
-    "palavra": "Pixaim",
+    "origem": "tupinambá",
+    "palavra": "pixaim",
     "significado": "cabelo muito crespo, carapinha",
     "audio": "pixaim1.mp3",
-    "tradução": "apixa’ín",
+    "tradução": "apixa’ĩ",
     "significadoOriginal": "crespo, enrugado",
     "audioOriginal": "pixaim0.mp3"
    },
    {
-    "palavra": "Puçá",
+    "origem": "tupinambá",
+    "palavra": "puçá",
     "significado": "rede para capturar crustáceos; peneira para apanhar peixe miúdo",
     "audio": "puca1.mp3",
     "tradução": "pysá",
@@ -315,7 +354,8 @@ var data = [
     "audioOriginal": "puca0.mp3"
    },
    {
-    "palavra": "Sabiá",
+    "origem": "tupinambá",
+    "palavra": "sabiá",
     "significado": "pássaro apreciado pela beleza de seu canto",
     "audio": "sabia1.mp3",
     "tradução": "sabi’á",
@@ -323,7 +363,8 @@ var data = [
     "audioOriginal": "sabia0.mp3"
    },
    {
-    "palavra": "Sagüi",
+    "origem": "tupinambá",
+    "palavra": "sagui",
     "significado": "pequeno primata encontrado nas Américas Central e do Sul",
     "audio": "sagui1.mp3",
     "tradução": "sawí",
@@ -331,7 +372,8 @@ var data = [
     "audioOriginal": "sagui0.mp3"
    },
    {
-    "palavra": "Siri",
+    "origem": "tupinambá",
+    "palavra": "siri",
     "significado": "crustáceo marinho",
     "audio": "siri1.mp3",
     "tradução": "siri",
@@ -339,15 +381,17 @@ var data = [
     "audioOriginal": "siri0.mp3"
    },
    {
-    "palavra": "Socar",
+    "origem": "tupinambá",
+    "palavra": "socar",
     "significado": "bater; pilar; dar socos",
     "audio": "socar1.mp3",
     "tradução": "sók",
-    "significadoOriginal": "pilar, bater com ponta",
+    "significadoOriginal": "pilar; bater com ponta",
     "audioOriginal": "socar0.mp3"
    },
    {
-    "palavra": "Taba",
+    "origem": "tupinambá",
+    "palavra": "taba",
     "significado": "aldeia indígena",
     "audio": "taba1.mp3",
     "tradução": "tába",
@@ -355,7 +399,8 @@ var data = [
     "audioOriginal": "taba0.mp3"
    },
    {
-    "palavra": "Tamanduá",
+    "origem": "tupinambá",
+    "palavra": "tamanduá",
     "significado": "animal típico da América do Sul",
     "audio": "tamandua1.mp3",
     "tradução": "tamanduá",
@@ -363,15 +408,17 @@ var data = [
     "audioOriginal": "tamandua0.mp3"
    },
    {
-    "palavra": "Tapioca",
-    "significado": "polvilho de mandioca; beiju feito com este polvilho; massa preparada com goma de mandioca e temperado com coco",
+    "origem": "tupinambá",
+    "palavra": "tapioca",
+    "significado": "polvilho de mandioca; beiju feito com este polvilho; massa preparada com goma de mandioca",
     "audio": "tapioca1.mp3",
     "tradução": "typy’óka",
-    "significadoOriginal": "polvilho de mandioca, literalmente: tirado do fundo",
+    "significadoOriginal": "polvilho de mandioca; literalmente: tirado do fundo",
     "audioOriginal": "tapioca0.mp3"
    },
    {
-    "palavra": "Tatu",
+    "origem": "tupinambá",
+    "palavra": "tatu",
     "significado": "animal típico das Américas",
     "audio": "tatu1.mp3",
     "tradução": "tatú",
@@ -379,7 +426,8 @@ var data = [
     "audioOriginal": "tatu0.mp3"
    },
    {
-    "palavra": "Tipiti",
+    "origem": "tupinambá",
+    "palavra": "tipiti",
     "significado": "prensa de mandioca",
     "audio": "tipiti1.mp3",
     "tradução": "tepití",
@@ -387,15 +435,17 @@ var data = [
     "audioOriginal": "tipiti0.mp3"
    },
    {
-    "palavra": "Tocaia",
-    "significado": "de vigia, à espreita",
+    "origem": "tupinambá",
+    "palavra": "tocaia",
+    "significado": "ação de alguém se ocultar para atacar outro ou caçar; poleiro de galinhas; de vigia, à espreita",
     "audio": "tocaia1.mp3",
     "tradução": "tokáia",
     "significadoOriginal": "pequena casa rústica em que o caçador aguarda a caça sem ser pressentido",
     "audioOriginal": "tocaia0.mp3"
    },
    {
-    "palavra": "Tucano",
+    "origem": "tupinambá",
+    "palavra": "tucano",
     "significado": "espécie de ave típica das Américas Central e do Sul",
     "audio": "tucano1.mp3",
     "tradução": "tukána",
@@ -463,2944 +513,10 @@ var data = [
   ]
  },
  {
-  "nome": "Línguas indígenas hoje",
-  "palavras": [
-   {
-    "palavra": "Aikanã",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Aikewara",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Ajuru",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Akawai",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Akuáwa",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Akuntsu",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Akwe",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Alaketesu",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Amanayé",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Amondawa",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Anambé",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Anunsu",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Aparai",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Apiaká",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Apinajé",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Apiterewa",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Apurinã",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Aranã",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Arapaso",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Arara do Acre",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Arara do Aripuanã",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Arara do Pará",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Arara de Rondônia",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Arawaio",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Araweté",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Arekuma",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Arikapu",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Aruá",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Aruã",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Ashaninka",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Assurini do Tocantins",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Assurini do Xingu",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Atikum",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Aukwayene",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Avá-Canoeiro",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Awá",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Awaeté",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Awen",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Aweti",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Bakairi",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Banawa",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Baniwa",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Bará",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Barasana",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Barbados",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Baré",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Beiço-de-Pau",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Boe",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Bororo",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Borun",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Buia-Tapuya",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Canela Apaniekra",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Canela Rankokamekra",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Canoê",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Canoeiros",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Cantaruré",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Capinauá",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Cariri",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Cariri-Chocó",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Caritiana",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Cassupa",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Chamacoco",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Chiquitano",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Cinta-Larga",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Cobewa",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Cocama",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Craô",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Dasea",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Deni",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Desana",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Djahui",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Digüt",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Dokapuara",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Enawenê-Nawê",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Ejiwajigi",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Erigpaktsa",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Ewarhuyana",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Fulni-ô",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Galibi do Oiapoque",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Galibi Marworno",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Gavião do Maranhão",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Gavião do Pará",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Gavião de Rondônia",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Gorotire",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Guajá",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Guaná",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Guajajara",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Guarani",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Guató",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Hahaintesu",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Halotesu",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Hanera",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Huitoto",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Huni-Kuin",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Hupda",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Hyskariana",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Ianomâmi",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Iauanauá",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Ikpeng",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Ingarikó",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Iranxe",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Iraru mahãdu",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Ixybiowa",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Jabuti",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Jarawara",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Javaé",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Jenipapo-Kanindé",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Jeromitxi",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Jiahui",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Jiripancó",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Juma",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Jupaú",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Juruna",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Kadiweu",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Kagwahiva",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Kayabi",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Kaingang",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Kaiowá",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Kaixana",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Kalabaça",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Kalankó",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Kalapalo",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Kamã",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Kamaiurá",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Kamba",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Kambeba",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Kambiwá",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Kampa",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Kanamanti",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Kanamari",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Kanindé",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Kantaruré",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Kapaná",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Kapinamari",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Kapinawá",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Kapon-Ingarikó",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Karafawyana",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Karajá",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Karapanã",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Karapotó",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Kararaô",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Karipuna",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Karitiana",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Karo",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Karuazu",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Katuena",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Katukina",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Katukina Pano",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Katukina Shanenawa",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Katxuyana",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Kaxaxari",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Kaxinawá",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Kaxixó",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Kayapó",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Kikretum",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Kinikinau",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Kinja",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Kiriri",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Kĩsêdjê            )",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Kithaulu",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Koaiá",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Koinukonoen",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Kokraimoro",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Kokuiregatejê",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Korubo",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Krenak",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Krenhakarore",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Krenyê",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Krikati",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Kriketum",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Kuben-Kran-Ken",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Kubeo",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Kuikuro",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Kujubim",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Kulina Madihá",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Kulina Pano",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Kurâ",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Kuripako",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Kuruaya",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Kuyubi",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Kwazá",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Latundê",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Machineri",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Macurap",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Makuxi",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Madiha",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Magüta",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Maiongong",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Maku",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Makuna",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Mamaindê",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Manduka",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Manoki",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Marubo",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Matipu",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Matis",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Matsé",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Maxakali",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Massaká",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Mawayana",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Mayoruna",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Mbya",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Mebengokre",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Mehim",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Mekens",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Mekrãnoti",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Menky",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Metuktire",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Miranha",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Mirity Tapuya",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Munduruku",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Munku",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Mura Pirahã",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Mura",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Muteamasa",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Myky",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Nadöb",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Nahukuá",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Nambikwara",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Nambikwara do Campo",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Nambikwara do Sul",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Nambikwara do Norte",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Ñandeva",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Náua",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Negarotê",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Ninam",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Nukini",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Ofaié",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Omágua",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Omutina",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Oro Win",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Oyampi",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Pageyn",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Pãi Tavyterã",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Páiter",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Pakaa Nova",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Palikur",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Palmari",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Pamíwa",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Panará",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Pankará",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Pankararé",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Pankararu",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Pankaru",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Pareci",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Parintintin",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Parkatejê",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Patamona",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Pataxó",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Pataxó Hã-Hã-Hãe",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Paumari",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Paiaku",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Pemon-Makuxi",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Pemon-Taurepang",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Pianokoto",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Pipipã",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Pirahã",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Pitaguari",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Potyguara",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Poturu",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Poyanawa",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Rankokramekra",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Rikbaktsa",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Sabanê",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Salumã",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Sakurabiat",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Sararé",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Sateré-Mawé",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Sawentesu",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Shanenawa",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Sanumá",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Shawanauá",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Siriano",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Sorowaha",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Suruí",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Suruí Paiter",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Suruwaha",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Suyá",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Tabajara",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Tapayuna",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Tapeba",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Tapirapé",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Tapuio",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Tariano",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Tarona",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Taurepang",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Tawandê",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Tembé",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Tenethehara",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Tenharim",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Terena",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Tikuna",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Timbira",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Tingui Botó",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Tiriyó",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Torá",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Tremembé",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Truká",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Trumai",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Tsikuyana",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Tsohom Djapá",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Tubarão",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Tucano",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Tukano do Rio Negro",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Tüküná",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Tumbalalá",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Tupari",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Tupinambá",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Tupiniquim",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Turiwara",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Tuxá",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Tuyuka",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Txikão",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Tyonhwak Dyapa",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Uaçaura",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Urarãgmã",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Ukopinõpõna",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Umukomasã",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Urubu-Kaapor",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Uru-Eu-Wau-Wau",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Urupain",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Utapinõmakãphõná",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Waiãpi",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Waíkana",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Waikisu",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Waimiri Atroari",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Waípinõmakã",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Wai Wai",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Walimanai",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Wakalitesu",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Wakuenai",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Wanano",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Wapixana",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Warekena",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Wari",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Wassu",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Wasusu",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Waurá",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Wira",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Witoto",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Xakriabá",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Xambioá",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Xavante",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Xerente",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Xereu",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Xetá",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Xikrin",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Xipaya",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Xirianá",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Xokleng",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Xokó",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Xukuru",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Xukuru-Kariri",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Yaminawá",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Yamamadi",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Yawalapiti",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Yawanawá",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Yawi",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Yeba-masã",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Yekuana",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Yudjá",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Zo’é",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Zoró",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "Zuruahã",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   },
-   {
-    "palavra": "",
-    "significado": "",
-    "audio": "",
-    "tradução": "",
-    "significadoOriginal": "",
-    "audioOriginal": ""
-   }
-  ],
-  "menu": []
- },
- {
   "nome": "Espanhol",
   "palavras": [
    {
-    "origem": "Espanhol",
+    "origem": "espanhol",
     "palavra": "batata",
     "significado": "tubérculo comestível",
     "audio": "batata1.mp3",
@@ -3409,7 +525,7 @@ var data = [
     "audioOriginal": "batata0.mp3"
    },
    {
-    "origem": "Espanhol",
+    "origem": "espanhol",
     "palavra": "baunilha",
     "significado": "planta nativa das América Central, cuja essência é utilizada em confeitaria",
     "audio": "baunilha1.mp3",
@@ -3418,7 +534,7 @@ var data = [
     "audioOriginal": "baunilha0.mp3"
    },
    {
-    "origem": "Espanhol",
+    "origem": "espanhol",
     "palavra": "boldo",
     "significado": "arbusto de origem chilena, cujas folhas são usadas como infusão digestiva",
     "audio": "boldo1.mp3",
@@ -3427,7 +543,7 @@ var data = [
     "audioOriginal": "boldo0.mp3"
    },
    {
-    "origem": "Espanhol",
+    "origem": "espanhol",
     "palavra": "bolero",
     "significado": "gênero musical de origem espanhola; canção popular romântica latino-americana",
     "audio": "bolero1.mp3",
@@ -3436,7 +552,7 @@ var data = [
     "audioOriginal": "bolero0.mp3"
    },
    {
-    "origem": "Espanhol",
+    "origem": "espanhol",
     "palavra": "bombachas",
     "significado": "calças típicas do traje masculino gaúcho",
     "audio": "bombachas1.mp3",
@@ -3445,7 +561,7 @@ var data = [
     "audioOriginal": "bombachas0.mp3"
    },
    {
-    "origem": "Espanhol",
+    "origem": "espanhol",
     "palavra": "cacau",
     "significado": "fruto do cacaueiro, do qual se faz manteiga e chocolate",
     "audio": "cacau1.mp3",
@@ -3454,7 +570,7 @@ var data = [
     "audioOriginal": "cacau0.mp3"
    },
    {
-    "origem": "Espanhol",
+    "origem": "espanhol",
     "palavra": "cacique",
     "significado": "chefe indígena; mandachuva",
     "audio": "cacique1.mp3",
@@ -3463,7 +579,7 @@ var data = [
     "audioOriginal": "cacique0.mp3"
    },
    {
-    "origem": "Espanhol",
+    "origem": "espanhol",
     "palavra": "camarada",
     "significado": "companheiro",
     "audio": "camarada1.mp3",
@@ -3472,7 +588,7 @@ var data = [
     "audioOriginal": "camarada0.mp3"
    },
    {
-    "origem": "Espanhol",
+    "origem": "espanhol",
     "palavra": "camarote",
     "significado": "recinto especial em área de espetáculos",
     "audio": "camarote1.mp3",
@@ -3481,7 +597,7 @@ var data = [
     "audioOriginal": "camarote0.mp3"
    },
    {
-    "origem": "Espanhol",
+    "origem": "espanhol",
     "palavra": "canoa",
     "significado": "embarcação pequena, movida a remos, de origem indígena",
     "audio": "canoa1.mp3",
@@ -3490,7 +606,7 @@ var data = [
     "audioOriginal": "canoa0.mp3"
    },
    {
-    "origem": "Espanhol",
+    "origem": "espanhol",
     "palavra": "caudilho",
     "significado": "chefe político; ditador espanhol ou latino-americano",
     "audio": "caudilho1.mp3",
@@ -3499,7 +615,7 @@ var data = [
     "audioOriginal": "caudilho0.mp3"
    },
    {
-    "origem": "Espanhol",
+    "origem": "espanhol",
     "palavra": "cavalheiro",
     "significado": "homem nobre, educado, gentil",
     "audio": "cavalheiro1.mp3",
@@ -3508,7 +624,7 @@ var data = [
     "audioOriginal": "cavalheiro0.mp3"
    },
    {
-    "origem": "Espanhol",
+    "origem": "espanhol",
     "palavra": "chácara",
     "significado": "pequena propriedade rural",
     "audio": "chacara1.mp3",
@@ -3517,7 +633,7 @@ var data = [
     "audioOriginal": "chacara0.mp3"
    },
    {
-    "origem": "Espanhol",
+    "origem": "espanhol",
     "palavra": "charque",
     "significado": "carne-seca",
     "audio": "charque1.mp3",
@@ -3526,7 +642,7 @@ var data = [
     "audioOriginal": "charque0.mp3"
    },
    {
-    "origem": "Espanhol",
+    "origem": "espanhol",
     "palavra": "chê",
     "significado": "expressão usada para chamar a atenção de alguém; forma de tratamento carinhoso; expressão de surpresa",
     "audio": "che1.mp3",
@@ -3535,16 +651,16 @@ var data = [
     "audioOriginal": "che0.mp3"
    },
    {
-    "origem": "Espanhol",
+    "origem": "espanhol",
     "palavra": "chocolate",
     "significado": "produto alimentício derivado do cacau",
     "audio": "chocolate1.mp3",
     "tradução": "chocolate",
-    "significadoOriginal": "produto alimentício derivado do cacau",
+    "significadoOriginal": "produto alimentício derivado do cacau; oriunda do náuatle, língua ameríndia falada pelo antigo povo asteca, do México",
     "audioOriginal": "chocolate0.mp3"
    },
    {
-    "origem": "Espanhol",
+    "origem": "espanhol",
     "palavra": "cigarro",
     "significado": "tabaco picado, enrolado em papel fino",
     "audio": "cigarro1.mp3",
@@ -3553,16 +669,16 @@ var data = [
     "audioOriginal": "cigarro0.mp3"
    },
    {
-    "origem": "Espanhol",
+    "origem": "espanhol",
     "palavra": "gaúcho",
-    "significado": "habitante da zona rural dos pampas no Rio Grande do Sul, na Argentina e no Uruguai",
+    "significado": "habitante da zona rural dos pampas, no Rio Grande do Sul, na Argentina e no Uruguaii",
     "audio": "gaucho1.mp3",
     "tradução": "gaucho",
-    "significadoOriginal": "habitante da zona rural dos pampas no Rio Grande do Sul, na Argentina e no Uruguai",
+    "significadoOriginal": "habitante da zona rural dos pampas, no Rio Grande do Sul, na Argentina e no Uruguai",
     "audioOriginal": "gaucho0.mp3"
    },
    {
-    "origem": "Espanhol",
+    "origem": "espanhol",
     "palavra": "guampa",
     "significado": "chifre de boi talhado em forma de copo ou vasilha para líquidos",
     "audio": "guampa1.mp3",
@@ -3571,7 +687,7 @@ var data = [
     "audioOriginal": "guampa0.mp3"
    },
    {
-    "origem": "Espanhol",
+    "origem": "espanhol",
     "palavra": "guasca",
     "significado": "tira ou correia feita de couro cru",
     "audio": "guasca1.mp3",
@@ -3580,7 +696,7 @@ var data = [
     "audioOriginal": "guasca0.mp3"
    },
    {
-    "origem": "Espanhol",
+    "origem": "espanhol",
     "palavra": "guerrilha",
     "significado": "luta armada empreendida por um movimento revolucionário",
     "audio": "guerrilha1.mp3",
@@ -3589,25 +705,25 @@ var data = [
     "audioOriginal": "guerrilha0.mp3"
    },
    {
-    "origem": "Espanhol",
+    "origem": "espanhol",
     "palavra": "mantilha",
-    "significado": "echarpe que faz parte do traje nacional das espanholas",
+    "significado": "echarpe que faz parte do traje nacional das espanholas; manto fino e rendado com que as mulheres cobrem a cabeça",
     "audio": "mantilha1.mp3",
     "tradução": "mantilla",
     "significadoOriginal": "echarpe que faz parte do traje nacional das espanholas",
     "audioOriginal": "mantilha0.mp3"
    },
    {
-    "origem": "Espanhol",
+    "origem": "espanhol",
     "palavra": "mate",
-    "significado": "infusão preparada com a erva-mate; chimarrão",
+    "significado": "infusão preparada com a erva-mate; chimarrãoo",
     "audio": "mate1.mp3",
     "tradução": "mate",
     "significadoOriginal": "infusão preparada com a erva-mate; cabaça usada para se tomar essa infusão",
     "audioOriginal": "mate0.mp3"
    },
    {
-    "origem": "Espanhol",
+    "origem": "espanhol",
     "palavra": "moreno",
     "significado": "que tem a pele mais escura; que tem os cabelos escuros",
     "audio": "moreno1.mp3",
@@ -3616,7 +732,7 @@ var data = [
     "audioOriginal": "moreno0.mp3"
    },
    {
-    "origem": "Espanhol",
+    "origem": "espanhol",
     "palavra": "pampa",
     "significado": "planície extensa e sem árvores, paisagem característica do Rio Grande do Sul, da Argentina e do Uruguai",
     "audio": "pampa1.mp3",
@@ -3625,7 +741,7 @@ var data = [
     "audioOriginal": "pampa0.mp3"
    },
    {
-    "origem": "Espanhol",
+    "origem": "espanhol",
     "palavra": "poncho",
     "significado": "capa quadrangular de lã, com orifício para a cabeça",
     "audio": "poncho1.mp3",
@@ -3634,7 +750,7 @@ var data = [
     "audioOriginal": "poncho0.mp3"
    },
    {
-    "origem": "Espanhol",
+    "origem": "espanhol",
     "palavra": "querência",
     "significado": "lugar onde se nasceu; pátria",
     "audio": "querencia1.mp3",
@@ -3643,16 +759,16 @@ var data = [
     "audioOriginal": "querencia0.mp3"
    },
    {
-    "origem": "Espanhol",
+    "origem": "espanhol",
     "palavra": "rancho",
-    "significado": "cabana rústica",
+    "significado": "pequena fazenda; chácara, sítio",
     "audio": "rancho1.mp3",
     "tradução": "rancho",
     "significadoOriginal": "lugar onde se cria gado e outros animais",
     "audioOriginal": "rancho0.mp3"
    },
    {
-    "origem": "Espanhol",
+    "origem": "espanhol",
     "palavra": "tomate",
     "significado": "fruto do tomateiro, planta nativa da América",
     "audio": "tomate1.mp3",
@@ -3689,16 +805,16 @@ var data = [
   "nome": "Línguas Africanas I KIKONGO ",
   "palavras": [
    {
-    "origem": "Quicongo/Quimbundo",
+    "origem": "quicongo/quimbundo",
     "palavra": "babá",
-    "significado": "empregada doméstica que cuida de crianças",
+    "significado": "pessoa que trabalha cuidando de crianças",
     "audio": "baba1.mp3",
     "tradução": "kibáaba",
     "significadoOriginal": "ama-de-leite",
     "audioOriginal": "baba0.mp3"
    },
    {
-    "origem": "Quicongo",
+    "origem": "quicongo/quimbundo",
     "palavra": "bagunça",
     "significado": "desordem, confusão",
     "audio": "bagunca1.mp3",
@@ -3707,7 +823,7 @@ var data = [
     "audioOriginal": "bagunca0.mp3"
    },
    {
-    "origem": "Quicongo/Quimbundo",
+    "origem": "quicongo",
     "palavra": "bamba",
     "significado": "mestre, craque",
     "audio": "bamba1.mp3",
@@ -3716,7 +832,7 @@ var data = [
     "audioOriginal": "bamba0.mp3"
    },
    {
-    "origem": "Quicongo",
+    "origem": "quicongo",
     "palavra": "banguela",
     "significado": "desdentado",
     "audio": "banguela1.mp3",
@@ -3725,7 +841,7 @@ var data = [
     "audioOriginal": "banguela0.mp3"
    },
    {
-    "origem": "Quicongo/Quimbundo",
+    "origem": "quicongo/quimbundo",
     "palavra": "batucar",
     "significado": "bater com ritmo",
     "audio": "batucar1.mp3",
@@ -3734,16 +850,16 @@ var data = [
     "audioOriginal": "batucar0.mp3"
    },
    {
-    "origem": "Quicongo",
+    "origem": "quicongo",
     "palavra": "beleléu",
-    "significado": "morrer; desaparecer; fracassar",
+    "significado": "ir para o beleléu: morrer; desaparecer; fracassar",
     "audio": "beleleu1.mp3",
     "tradução": "mbelele",
     "significadoOriginal": "cemitério",
     "audioOriginal": "beleleu0.mp3"
    },
    {
-    "origem": "Quimbundo",
+    "origem": "quimbundo",
     "palavra": "berimbau",
     "significado": "instrumento musical",
     "audio": "berimbau1.mp3",
@@ -3752,7 +868,7 @@ var data = [
     "audioOriginal": "berimbau0.mp3"
    },
    {
-    "origem": "Quicongo",
+    "origem": "quicongo/quimbundo",
     "palavra": "bunda",
     "significado": "nádegas, traseiro",
     "audio": "bunda1.mp3",
@@ -3761,7 +877,7 @@ var data = [
     "audioOriginal": "bunda0.mp3"
    },
    {
-    "origem": "Quicongo",
+    "origem": "quicongo",
     "palavra": "cachaça",
     "significado": "aguardente",
     "audio": "cachaca1.mp3",
@@ -3770,7 +886,7 @@ var data = [
     "audioOriginal": "cachaca0.mp3"
    },
    {
-    "origem": "Quimbundo",
+    "origem": "quimbundo",
     "palavra": "cachimbo",
     "significado": "utensílio para fumar",
     "audio": "cachimbo1.mp3",
@@ -3779,16 +895,16 @@ var data = [
     "audioOriginal": "cachimbo0.mp3"
    },
    {
-    "origem": "Quimbundo",
+    "origem": "quimbundo",
     "palavra": "caçula",
     "significado": "o mais novo dos filhos ou irmãos",
     "audio": "cacula1.mp3",
-    "tradução": "kasole",
+    "tradução": "kasule",
     "significadoOriginal": "o último filho",
     "audioOriginal": "cacula0.mp3"
    },
    {
-    "origem": "Quicongo",
+    "origem": "quicongo",
     "palavra": "cafuné",
     "significado": "carícia com a ponta dos dedos no couro cabeludo de outra pessoa",
     "audio": "cafune1.mp3",
@@ -3797,7 +913,7 @@ var data = [
     "audioOriginal": "cafune0.mp3"
    },
    {
-    "origem": "Quimbundo",
+    "origem": "quimbundo",
     "palavra": "calango",
     "significado": "lagarto",
     "audio": "calango1.mp3",
@@ -3806,7 +922,7 @@ var data = [
     "audioOriginal": "calango0.mp3"
    },
    {
-    "origem": "Quicongo/Quimbundo",
+    "origem": "quicongo",
     "palavra": "canga",
     "significado": "tecido usado como saída de praia",
     "audio": "canga1.mp3",
@@ -3815,7 +931,7 @@ var data = [
     "audioOriginal": "canga0.mp3"
    },
    {
-    "origem": "Quicongo",
+    "origem": "quicongo/quimbundo",
     "palavra": "cangaço",
     "significado": "quadrilha de cangaceiros, antigos bandidos do sertão nordestino",
     "audio": "cangaco1.mp3",
@@ -3824,7 +940,7 @@ var data = [
     "audioOriginal": "cangaco0.mp3"
    },
    {
-    "origem": "Quicongo",
+    "origem": "quicongo",
     "palavra": "capenga",
     "significado": "manco; defeituoso",
     "audio": "capenga1.mp3",
@@ -3833,25 +949,25 @@ var data = [
     "audioOriginal": "capenga0.mp3"
    },
    {
-    "origem": "Quicongo/Quimbundo",
+    "origem": "quicongo/quimbundo",
     "palavra": "capoeira",
-    "significado": "arte marcial de ataque e defesa introduzida no Brasil por escravos bantos",
+    "significado": "arte marcial de ataque e defesa introduzida no Brasil por escravizados bantos",
     "audio": "capoeira1.mp3",
     "tradução": "kambulela",
     "significadoOriginal": "ação de repelir e esquivar-se com rasteiras e golpes de pé",
     "audioOriginal": "capoeira0.mp3"
    },
    {
-    "origem": "Quicongo/Quimbundo/Unbundo",
+    "origem": "quicongo/quimbundo/umbundo",
     "palavra": "carimbo",
     "significado": "peça contendo letras, números ou figuras em relevo para marcar ou autenticar documentos",
     "audio": "carimbo1.mp3",
     "tradução": "kandimbu",
-    "significadoOriginal": "sinete para marcar escravos; marca de escravos",
+    "significadoOriginal": "sinete para marcar escravizados; marca de escravizados",
     "audioOriginal": "carimbo0.mp3"
    },
    {
-    "origem": "Quicongo/Quimbundo",
+    "origem": "quicongo/quimbundo",
     "palavra": "cochilar",
     "significado": "dormitar; dormir levemente",
     "audio": "cochilar1.mp3",
@@ -3860,7 +976,7 @@ var data = [
     "audioOriginal": "cochilar0.mp3"
    },
    {
-    "origem": "Quicongo/Quimbundo",
+    "origem": "quicongo/quimbundo",
     "palavra": "cuíca",
     "significado": "instrumento musical",
     "audio": "cuica1.mp3",
@@ -3869,7 +985,7 @@ var data = [
     "audioOriginal": "cuica0.mp3"
    },
    {
-    "origem": "Quicongo/Quimbundo",
+    "origem": "quicongo/quimbundo",
     "palavra": "curinga",
     "significado": "carta de baralho que pode substituir outras; indivíduo versátil",
     "audio": "curinga1.mp3",
@@ -3878,7 +994,7 @@ var data = [
     "audioOriginal": "curinga0.mp3"
    },
    {
-    "origem": "Quicongo/Quimbundo/Unbundo",
+    "origem": "quicongo/quimbundo/umbundo",
     "palavra": "dendê",
     "significado": "espécie de palmeira e seu fruto; óleo vermelho obtido desse fruto",
     "audio": "dende1.mp3",
@@ -3887,16 +1003,16 @@ var data = [
     "audioOriginal": "dende0.mp3"
    },
    {
-    "origem": "Quicongo/Quimbundo",
+    "origem": "quicongo/quimbundo",
     "palavra": "dengo",
-    "significado": "comportamento astucioso e sedutor, especialmente do sexo feminino; manha; faceirice, birra",
+    "significado": "comportamento astucioso e sedutor, especialmente do sexo feminino; manha; faceirice; birra",
     "audio": "dengo1.mp3",
     "tradução": "ndenge",
     "significadoOriginal": "faceirice, docilidade, sensibilidade feminina",
     "audioOriginal": "dengo0.mp3"
    },
    {
-    "origem": "Quicongo",
+    "origem": "quicongo",
     "palavra": "encabular",
     "significado": "provocar ou sentir vergonha; acanhar-se",
     "audio": "encabular1.mp3",
@@ -3905,7 +1021,7 @@ var data = [
     "audioOriginal": "encabular0.mp3"
    },
    {
-    "origem": "Quicongo",
+    "origem": "quicongo",
     "palavra": "forró",
     "significado": "baile popular; gênero de música de origem nordestina",
     "audio": "forro1.mp3",
@@ -3914,7 +1030,7 @@ var data = [
     "audioOriginal": "forro0.mp3"
    },
    {
-    "origem": "Quicongo/Quimbundo",
+    "origem": "quicongo/quimbundo",
     "palavra": "fubá",
     "significado": "farinha de milho ou arroz",
     "audio": "fuba1.mp3",
@@ -3923,7 +1039,7 @@ var data = [
     "audioOriginal": "fuba0.mp3"
    },
    {
-    "origem": "Quicongo/Quimbundo",
+    "origem": "quicongo/quimbundo",
     "palavra": "garapa",
     "significado": "caldo de cana",
     "audio": "garapa1.mp3",
@@ -3932,7 +1048,7 @@ var data = [
     "audioOriginal": "garapa0.mp3"
    },
    {
-    "origem": "Quicongo/Quimbundo",
+    "origem": "quicongo/quimbundo",
     "palavra": "ginga",
     "significado": "balanço de corpo; requebro; trejeito",
     "audio": "ginga1.mp3",
@@ -3941,8 +1057,8 @@ var data = [
     "audioOriginal": "ginga0.mp3"
    },
    {
-    "origem": "Quicongo/Quimbundo",
-    "palavra": "lengalenga",
+    "origem": "quicongo/quimbundo",
+    "palavra": "lenga-lenga",
     "significado": "conversa fiada, enfadonha; ladainha",
     "audio": "lengalenga1.mp3",
     "tradução": "lenga-lenga",
@@ -3950,7 +1066,7 @@ var data = [
     "audioOriginal": "lengalenga0.mp3"
    },
    {
-    "origem": "Quicongo",
+    "origem": "quicongo",
     "palavra": "macaco",
     "significado": "símio",
     "audio": "macaco1.mp3",
@@ -3959,16 +1075,16 @@ var data = [
     "audioOriginal": "macaco0.mp3"
    },
    {
-    "origem": "Quicongo/Quimbundo",
+    "origem": "quimbundo",
     "palavra": "miçanga",
     "significado": "pequena conta colorida de massa de vidro",
     "audio": "micanga1.mp3",
-    "tradução": "minsanga",
+    "tradução": "misanga",
     "significadoOriginal": "contas de vidro para colares e brincos",
     "audioOriginal": "micanga0.mp3"
    },
    {
-    "origem": "Quicongo/Quimbundo",
+    "origem": "quicongo/quimbundo",
     "palavra": "minhoca",
     "significado": "verme anelídeo",
     "audio": "minhoca1.mp3",
@@ -3977,16 +1093,16 @@ var data = [
     "audioOriginal": "minhoca0.mp3"
    },
    {
-    "origem": "Quicongo/Quimbundo/Unbundo",
+    "origem": "quicongo/quimbundo/umbundo",
     "palavra": "moleque",
     "significado": "menino, garoto",
     "audio": "moleque1.mp3",
-    "tradução": "muléke",
+    "tradução": "muleke",
     "significadoOriginal": "menino, garoto",
     "audioOriginal": "moleque0.mp3"
    },
    {
-    "origem": "Quicongo/Quimbundo",
+    "origem": "quicongo/quimbundo",
     "palavra": "moringa",
     "significado": "bilha de barro para água fresca potável",
     "audio": "moringa1.mp3",
@@ -3995,7 +1111,7 @@ var data = [
     "audioOriginal": "moringa0.mp3"
    },
    {
-    "origem": "Quicongo/Quimbundo",
+    "origem": "quicongo/quimbundo",
     "palavra": "muamba",
     "significado": "mercadoria contrabandeada; contrabando",
     "audio": "muamba1.mp3",
@@ -4004,25 +1120,25 @@ var data = [
     "audioOriginal": "muamba0.mp3"
    },
    {
-    "origem": "Quimbundo",
+    "origem": "quimbundo",
     "palavra": "quilombo",
-    "significado": "povoação de escravos fugidos",
+    "significado": "povoação de escravizados fugidos",
     "audio": "quilombo1.mp3",
     "tradução": "kilombo",
     "significadoOriginal": "aldeamento",
     "audioOriginal": "quilombo0.mp3"
    },
    {
-    "origem": "Quicongo",
+    "origem": "quicongo",
     "palavra": "quindim",
-    "significado": "doce feito com ovos, coco e açúcar",
+    "significado": "gesto carinhoso, meigo; doce feito com ovos, coco e açúcar",
     "audio": "quindim1.mp3",
     "tradução": "kintinti",
     "significadoOriginal": "delicadeza",
     "audioOriginal": "quindim0.mp3"
    },
    {
-    "origem": "Quicongo/Quimbundo",
+    "origem": "quicongo/quimbundo",
     "palavra": "quitanda",
     "significado": "pequeno estabelecimento onde se vendem verduras e frutas",
     "audio": "quitanda1.mp3",
@@ -4031,7 +1147,7 @@ var data = [
     "audioOriginal": "quitanda0.mp3"
    },
    {
-    "origem": "Quicongo",
+    "origem": "quicongo",
     "palavra": "quitute",
     "significado": "petisco, comida refinada",
     "audio": "quitute1.mp3",
@@ -4040,7 +1156,7 @@ var data = [
     "audioOriginal": "quitute0.mp3"
    },
    {
-    "origem": "Quicongo",
+    "origem": "quicongo",
     "palavra": "sunga",
     "significado": "traje de banho masculino; cueca estreita",
     "audio": "sunga1.mp3",
@@ -4049,16 +1165,16 @@ var data = [
     "audioOriginal": "sunga0.mp3"
    },
    {
-    "origem": "Quicongo/Quimbundo",
+    "origem": "quicongo/quimbundo",
     "palavra": "tanga",
     "significado": "parte de baixo da roupa de banho, de pequenas dimensões",
     "audio": "tanga1.mp3",
-    "tradução": "tanga",
+    "tradução": "ntanga",
     "significadoOriginal": "tapa-sexo",
     "audioOriginal": "tanga0.mp3"
    },
    {
-    "origem": "Quicongo",
+    "origem": "quicongo",
     "palavra": "xingar",
     "significado": "ofender; agredir por meio de palavras",
     "audio": "xingar1.mp3",
@@ -4067,7 +1183,7 @@ var data = [
     "audioOriginal": "xingar0.mp3"
    },
    {
-    "origem": "Quicongo",
+    "origem": "quicongo",
     "palavra": "xoxota",
     "significado": "vulva; genitália feminina",
     "audio": "xoxota1.mp3",
@@ -4076,16 +1192,16 @@ var data = [
     "audioOriginal": "xoxota0.mp3"
    },
    {
-    "origem": "Quicongo/Quimbundo",
+    "origem": "quicongo",
     "palavra": "zanga",
     "significado": "sentimento de raiva; rancor; mau-humor; irritação",
     "audio": "zanga1.mp3",
-    "tradução": "nzanga",
+    "tradução": "nzannga",
     "significadoOriginal": "irritação; briga",
     "audioOriginal": "zanga0.mp3"
    },
    {
-    "origem": "Quimbundo",
+    "origem": "quimbundo",
     "palavra": "zonzo",
     "significado": "tonto; desnorteado",
     "audio": "zonzo1.mp3",
@@ -4150,34 +1266,34 @@ var data = [
   "nome": "Línguas Aficanas II e Yorubá",
   "palavras": [
    {
-    "origem": "Yorubá",
+    "origem": "fon/iorubá",
     "palavra": "acarajé",
-    "significado": "bolo de feijão fradinho, temperado e moído com camarão seco, sal e cebola, frito no azeite-de-dendê",
+    "significado": "bolo de feijão fradinho, temperado e moído com camarão seco, sal e cebola, frito no azeite de dendê",
     "audio": "acaraje1.mp3",
-    "tradução": "akaraje",
+    "tradução": "Àkàrà (jä)",
     "significadoOriginal": "bolo de feijão frito no dendê",
     "audioOriginal": "acaraje0.mp3"
    },
    {
-    "origem": "Yorubá",
+    "origem": "iorubá",
     "palavra": "afoxé",
     "significado": "cortejo carnavalesco da Bahia",
     "audio": "afoxe1.mp3",
-    "tradução": "afolese",
+    "tradução": "ÁfÆæä",
     "significadoOriginal": "cortejo",
     "audioOriginal": "afoxe0.mp3"
    },
    {
-    "origem": "Yorubá",
+    "origem": "iorubá",
     "palavra": "agogô",
-    "significado": "instrumento musical usado no candomblé.",
+    "significado": "instrumento musical usado no candomblé",
     "audio": "agogo1.mp3",
-    "tradução": "agogo",
+    "tradução": "Agogo",
     "significadoOriginal": "instrumento musical com duas campânulas de ferro",
     "audioOriginal": "agogo0.mp3"
    },
    {
-    "origem": "Fon",
+    "origem": "fon",
     "palavra": "angu",
     "significado": "pasta de fubá de milho, mandioca ou arroz com sal",
     "audio": "angu1.mp3",
@@ -4186,34 +1302,34 @@ var data = [
     "audioOriginal": "angu0.mp3"
    },
    {
-    "origem": "Yorubá",
+    "origem": "iorubá",
     "palavra": "auê",
     "significado": "alvoroço, confusão",
     "audio": "aue1.mp3",
-    "tradução": "awé",
+    "tradução": "ààwè",
     "significadoOriginal": "confusão, tumulto",
     "audioOriginal": "aue0.mp3"
    },
    {
-    "origem": "Yorubá",
+    "origem": "iorubá",
     "palavra": "axé",
     "significado": "objetos sagrados do orixá; força divina; amém",
     "audio": "axe1.mp3",
-    "tradução": "àshe",
+    "tradução": "Àæä",
     "significadoOriginal": "todo objeto sagrado da divindade, alicerce mágico do terreiro",
     "audioOriginal": "axe0.mp3"
    },
    {
-    "origem": "Yorubá",
+    "origem": "iorubá",
     "palavra": "babalaô",
     "significado": "pai do segredo; vidente; sacerdote de Ifá, a divindade que preside a adivinhação com os búzios",
     "audio": "babalao1.mp3",
-    "tradução": "babaláwo",
+    "tradução": "Babaláwo",
     "significadoOriginal": "vidente; sacerdote de Ifá, a divindade que preside a adivinhação com os búzios",
     "audioOriginal": "babalao0.mp3"
    },
    {
-    "origem": "Yorubá",
+    "origem": "iorubá",
     "palavra": "babalorixá",
     "significado": "pai-de-santo",
     "audio": "babalorixa1.mp3",
@@ -4222,70 +1338,70 @@ var data = [
     "audioOriginal": "babalorixa0.mp3"
    },
    {
-    "origem": "Fon",
+    "origem": "fon",
     "palavra": "bobó",
-    "significado": "comida feita com feijão, inhame ou banana da terra com camarão e azeite de dendê",
+    "significado": "comida feita com feijão, inhame ou banana-da-terra, com camarão e azeite de dendê",
     "audio": "bobo1.mp3",
     "tradução": "abobo",
-    "significadoOriginal": "comida feita com feijão, inhame ou banana da terra com camarão e azeite de dendê",
+    "significadoOriginal": "comida feita com feijão, inhame ou banana-da-terra, com camarão e azeite de dendê",
     "audioOriginal": "bobo0.mp3"
    },
    {
-    "origem": "Yorubá",
+    "origem": "iorubá",
     "palavra": "ebó",
     "significado": "despacho, oferenda",
     "audio": "ebo1.mp3",
-    "tradução": "ebo",
+    "tradução": "ïbå",
     "significadoOriginal": "oferenda a Exu e às divindades deixada em alguma encruzilhada",
     "audioOriginal": "ebo0.mp3"
    },
    {
-    "origem": "Yorubá",
+    "origem": "iorubá",
     "palavra": "Exu",
     "significado": "divindade que serve de intermediária entre os homens e os deuses, capaz de fazer tanto o mal quanto o bem",
     "audio": "exu1.mp3",
-    "tradução": "Eshù",
+    "tradução": "Èæù",
     "significadoOriginal": "divindade que serve de intermediária entre os homens e os deuses, capaz de fazer tanto o mal quanto o bem",
     "audioOriginal": "exu0.mp3"
    },
    {
-    "origem": "Yorubá",
+    "origem": "iorubá",
     "palavra": "ialorixá",
     "significado": "mãe-de-santo",
     "audio": "ialorixa1.mp3",
-    "tradução": "iyálorishá",
+    "tradução": "Ìyálórìæà",
     "significadoOriginal": "sacerdotisa",
     "audioOriginal": "ialorixa0.mp3"
    },
    {
-    "origem": "Yorubá",
+    "origem": "iorubá",
     "palavra": "Iansã",
     "significado": "orixá do fogo, do trovão e da tempestade",
     "audio": "iansa1.mp3",
-    "tradução": "Iyásan",
+    "tradução": "Ìyá mÅsàn",
     "significadoOriginal": "mãe do fogo",
-    "audioOriginal": "iansa0.mp3"
+    "audioOriginal": "iansan0.mp3"
    },
    {
-    "origem": "Yorubá",
-    "palavra": "Ibêji",
-    "significado": "gêmeos; espíritos infantis do candomblé, identificados com São Cosme e Damião",
+    "origem": "iorubá",
+    "palavra": "ibêji",
+    "significado": "gêmeos; espíritos infantis do candomblé, identificados com os santos católicos Cosme e Damião",
     "audio": "ibeji1.mp3",
-    "tradução": "ibeji",
+    "tradução": "Ìbéjì",
     "significadoOriginal": "gêmeos; espíritos infantis",
     "audioOriginal": "ibeji0.mp3"
    },
    {
-    "origem": "Yorubá",
+    "origem": "iorubá",
     "palavra": "Iemanjá",
     "significado": "orixá do mar",
     "audio": "iemanja1.mp3",
-    "tradução": "Yemanja",
+    "tradução": "Iyämåja",
     "significadoOriginal": "orixá do mar",
-    "audioOriginal": "iemanja0.mp3"
+    "audioOriginal": "iemanja.mp3"
    },
    {
-    "origem": "Yorubá",
+    "origem": "iorubá",
     "palavra": "Ifá",
     "significado": "o destino dos homens; o oráculo; divindade que preside a adivinhação com os búzios",
     "audio": "ifa1.mp3",
@@ -4294,16 +1410,16 @@ var data = [
     "audioOriginal": "ifa0.mp3"
    },
    {
-    "origem": "Fon",
-    "palavra": "Nanã",
-    "significado": "a mãe, grande ancestral da linhagem dos deuses",
+    "origem": "fon",
+    "palavra": "Nanamburucu",
+    "significado": "a mãe, grande ancestral da linhagem dos deuses, também conhecida apenas como Nanã",
     "audio": "nanaburucu1.mp3",
-    "tradução": "Nanagbóhukún",
+    "tradução": "Nana Bùrúkù",
     "significadoOriginal": "a mãe, grande ancestral da linhagem dos deuses",
     "audioOriginal": "nanaburucu0.mp3"
    },
    {
-    "origem": "Fon",
+    "origem": "fon",
     "palavra": "neca",
     "significado": "pênis",
     "audio": "neca1.mp3",
@@ -4312,16 +1428,16 @@ var data = [
     "audioOriginal": "neca0.mp3"
    },
    {
-    "origem": "Yorubá",
+    "origem": "iorubá",
     "palavra": "odara",
     "significado": "bem, bom, bonito",
     "audio": "odara1.mp3",
-    "tradução": "odárá",
+    "tradução": "ðdàrà",
     "significadoOriginal": "bom, bonito, esplêndido, muito bem",
     "audioOriginal": "odara0.mp3"
    },
    {
-    "origem": "Yorubá",
+    "origem": "iorubá",
     "palavra": "Ogum",
     "significado": "orixá do ferro e da guerra",
     "audio": "ogum1.mp3",
@@ -4330,93 +1446,93 @@ var data = [
     "audioOriginal": "ogum0.mp3"
    },
    {
-    "origem": "Yorubá",
+    "origem": "iorubá",
     "palavra": "Omulu",
     "significado": "orixá da varíola e das doenças da pele",
     "audio": "omulu1.mp3",
-    "tradução": "Omolú",
+    "tradução": "ðmålú",
     "significadoOriginal": "orixá da varíola e das doenças da pele",
     "audioOriginal": "omulu0.mp3"
    },
    {
-    "origem": "Yorubá",
+    "origem": "iorubá",
     "palavra": "oriqui",
-    "significado": "cânticos ou poemas de louvor aos feitos e atributos dos orixás.",
+    "significado": "cânticos ou poemas de louvor aos feitos e atributos dos orixás",
     "audio": "oriqui1.mp3",
-    "tradução": "oríkí",
+    "tradução": "Oríkì",
     "significadoOriginal": "cânticos de louvor aos feitos e atributos dos orixás",
-    "audioOriginal": "cânticos ou poemas de louvor aos feitos e atributos dos orixás"
+    "audioOriginal": "oriqui0.mp3"
    },
    {
-    "origem": "Yorubá",
+    "origem": "iorubá",
     "palavra": "orixá",
     "significado": "divindade africana",
     "audio": "orixa1.mp3",
-    "tradução": "òrìshà",
+    "tradução": "Òrìæà",
     "significadoOriginal": "divindade",
     "audioOriginal": "orixa0.mp3"
    },
    {
-    "origem": "Yorubá",
+    "origem": "iorubá",
     "palavra": "Oxalá",
     "significado": "divindade suprema; pai de todos os orixás",
     "audio": "oxala1.mp3",
-    "tradução": "Òshálá",
+    "tradução": "Òrìæà-àlà",
     "significadoOriginal": "divindade suprema; pai de todos os orixás",
     "audioOriginal": "oxala0.mp3"
    },
    {
-    "origem": "Yorubá",
+    "origem": "iorubá",
     "palavra": "Oxóssi",
     "significado": "orixá da caça e das matas",
     "audio": "oxossi1.mp3",
-    "tradução": "Oshósì",
+    "tradução": "ÒæËwùsì",
     "significadoOriginal": "orixá da caça e das matas",
     "audioOriginal": "oxossi0.mp3"
    },
    {
-    "origem": "Yorubá",
+    "origem": "iorubá",
     "palavra": "Oxum",
     "significado": "orixá que comanda os rios e todas as águas doces",
     "audio": "oxum1.mp3",
-    "tradução": "Oshun",
+    "tradução": "þæun",
     "significadoOriginal": "orixá que comanda os rios e todas as águas doces",
     "audioOriginal": "oxum0.mp3"
    },
    {
-    "origem": "Yorubá",
+    "origem": "iorubá",
     "palavra": "Oxumaré",
     "significado": "orixá da riqueza, associado ao arco-íris",
     "audio": "oxumare1.mp3",
-    "tradução": "Òshumàré",
+    "tradução": "Òæùmàrè",
     "significadoOriginal": "orixá da riqueza, associado ao arco-íris",
     "audioOriginal": "oxumare0.mp3"
    },
    {
-    "origem": "Fon",
+    "origem": "fon",
     "palavra": "vodum",
-    "significado": "divindade ewé-fon, equivalente a orixá",
+    "significado": "vodu; divindade evé-fon, equivalente a orixá",
     "audio": "vodum1.mp3",
     "tradução": "vódun",
-    "significadoOriginal": "divindade ewé-fon, equivalente a orixá",
+    "significadoOriginal": "divindade evé-fon, equivalente a orixá",
     "audioOriginal": "vodum0.mp3"
    },
    {
-    "origem": "Yorubá",
+    "origem": "iorubá",
     "palavra": "Xangô",
     "significado": "orixá dos raios e do trovão",
     "audio": "xango1.mp3",
-    "tradução": "hàngó",
+    "tradução": "ñàngó",
     "significadoOriginal": "orixá dos raios e do trovão",
     "audioOriginal": "xango0.mp3"
    },
    {
-    "origem": "Yorubá",
+    "origem": "iorubá",
     "palavra": "xinxim",
-    "significado": "guisado de galinha ou outra carne com camarões secos, amendoim e castanha de caju",
+    "significado": "guisado de galinha ou outra carne, com camarões secos, amendoim e castanha de caju",
     "audio": "xinxim1.mp3",
-    "tradução": "oshinshin",
-    "significadoOriginal": "guisado de galinha ou outra carne com camarões secos e azeite de dendê",
+    "tradução": "ðæinæin",
+    "significadoOriginal": "guisado de galinha ou outra carne, com camarões secos e azeite de dendê",
     "audioOriginal": "xinxim0.mp3"
    }
   ],
@@ -4469,7 +1585,7 @@ var data = [
   "nome": "Inglês e Francês",
   "palavras": [
    {
-    "origem": "Francês",
+    "origem": "francês",
     "palavra": "abajur",
     "significado": "quebra-luz",
     "audio": "abajur0.mp3",
@@ -4478,16 +1594,16 @@ var data = [
     "audioOriginal": "abajur1.mp3"
    },
    {
-    "origem": "Inglês",
+    "origem": "inglês",
     "palavra": "acessar",
     "significado": "na tecnologia da informática, ter acesso a dados, arquivos, dispositivos, etc",
     "audio": "acessar0.mp3",
-    "tradução": "to acess",
+    "tradução": "to access",
     "significadoOriginal": "na tecnologia da informática, ter acesso a dados, arquivos, dispositivos, etc",
     "audioOriginal": "acessar1.mp3"
    },
    {
-    "origem": "Inglês",
+    "origem": "inglês",
     "palavra": "alô",
     "significado": "olá",
     "audio": "alo0.mp3",
@@ -4496,7 +1612,7 @@ var data = [
     "audioOriginal": "alo1.mp3"
    },
    {
-    "origem": "Francês",
+    "origem": "francês",
     "palavra": "ateliê",
     "significado": "estúdio; oficina",
     "audio": "atelie0.mp3",
@@ -4505,7 +1621,7 @@ var data = [
     "audioOriginal": "atelie1.mp3"
    },
    {
-    "origem": "Inglês",
+    "origem": "inglês",
     "palavra": "basquete",
     "significado": "bola ao cesto - modalidade esportiva",
     "audio": "basquete0.mp3",
@@ -4514,7 +1630,7 @@ var data = [
     "audioOriginal": "basquete1.mp3"
    },
    {
-    "origem": "Francês",
+    "origem": "francês",
     "palavra": "batom",
     "significado": "bastão de cosmético para os lábios",
     "audio": "batom0.mp3",
@@ -4523,7 +1639,7 @@ var data = [
     "audioOriginal": "batom1.mp3"
    },
    {
-    "origem": "Francês",
+    "origem": "francês",
     "palavra": "bebê",
     "significado": "criança recém-nascida",
     "audio": "bebe0.mp3",
@@ -4532,16 +1648,16 @@ var data = [
     "audioOriginal": "bebe1.mp3"
    },
    {
-    "origem": "Francês",
+    "origem": "francês",
     "palavra": "bicicleta",
-    "significado": "veículo de duas rodas",
+    "significado": "veículo de duas rodas, impulsionado por pedais",
     "audio": "bicicleta0.mp3",
     "tradução": "bicyclette",
-    "significadoOriginal": "veículo de duas rodas",
+    "significadoOriginal": "veículo de duas rodas, impulsionado por pedais",
     "audioOriginal": "bicicleta1.mp3"
    },
    {
-    "origem": "Inglês",
+    "origem": "inglês",
     "palavra": "bife",
     "significado": "fatia de carne bovina grelhada, cozida ou frita",
     "audio": "bife0.mp3",
@@ -4550,16 +1666,16 @@ var data = [
     "audioOriginal": "bife1.mp3"
    },
    {
-    "origem": "Francês",
+    "origem": "francês",
     "palavra": "bijuteria",
     "significado": "objetos de adorno pessoal que imitam joias",
-    "audio": "bijuteria0.mp3",
+    "audio": "bijuteria1.mp3",
     "tradução": "bijouterie",
     "significadoOriginal": "fabricação e comércio de joias",
-    "audioOriginal": "bijuteria1.mp3"
+    "audioOriginal": "bijuteria0.mp3"
    },
    {
-    "origem": "Francês",
+    "origem": "francês",
     "palavra": "boate",
     "significado": "casa noturna",
     "audio": "boate0.mp3",
@@ -4568,7 +1684,7 @@ var data = [
     "audioOriginal": "boate1.mp3"
    },
    {
-    "origem": "Francês",
+    "origem": "francês",
     "palavra": "boné",
     "significado": "cobertura de cabeça sem abas e com uma pala sobre os olhos",
     "audio": "bone0.mp3",
@@ -4577,7 +1693,7 @@ var data = [
     "audioOriginal": "bone1.mp3"
    },
    {
-    "origem": "Francês",
+    "origem": "francês",
     "palavra": "buquê",
     "significado": "ramalhete",
     "audio": "buque0.mp3",
@@ -4586,7 +1702,7 @@ var data = [
     "audioOriginal": "buque1.mp3"
    },
    {
-    "origem": "Inglês",
+    "origem": "inglês",
     "palavra": "cachorro-quente",
     "significado": "sanduíche de salsicha",
     "audio": "cachorro-quente0.mp3",
@@ -4595,7 +1711,7 @@ var data = [
     "audioOriginal": "cachorro-quente1.mp3"
    },
    {
-    "origem": "Francês",
+    "origem": "francês",
     "palavra": "camelô",
     "significado": "vendedor ambulante",
     "audio": "camelo0.mp3",
@@ -4604,7 +1720,7 @@ var data = [
     "audioOriginal": "camelo1.mp3"
    },
    {
-    "origem": "Francês",
+    "origem": "francês",
     "palavra": "champanhe",
     "significado": "vinho espumante",
     "audio": "champanhe0.mp3",
@@ -4613,7 +1729,7 @@ var data = [
     "audioOriginal": "champanhe1.mp3"
    },
    {
-    "origem": "Francês",
+    "origem": "francês",
     "palavra": "chapéu",
     "significado": "peça do vestuário usada para cobrir a cabeça",
     "audio": "chapeu0.mp3",
@@ -4622,7 +1738,7 @@ var data = [
     "audioOriginal": "chapeu1.mp3"
    },
    {
-    "origem": "Francês",
+    "origem": "francês",
     "palavra": "charme",
     "significado": "graça sedutora de uma pessoa",
     "audio": "charme0.mp3",
@@ -4631,25 +1747,25 @@ var data = [
     "audioOriginal": "charme1.mp3"
    },
    {
-    "origem": "Inglês",
-    "palavra": "check in",
-    "significado": "apresentar bilhete de viagem em companhia aérea ou dar entrada e registrar-se em hotel",
-    "audio": "PALAVRA NOVA - FAZER",
-    "tradução": "check-in",
-    "significadoOriginal": "apresentar bilhete de viagem em companhia aérea ou dar entrada e registrar-se em hotel",
-    "audioOriginal": "PALAVRA NOVA - FAZER"
+    "origem": "inglês",
+    "palavra": "check-in",
+    "significado": "apresentar bilhete de viagem em companhia aérea ou dar entrada e registrar-se em hotel, em redes sociais, etcl",
+    "audio": "check-in0.mp3",
+    "tradução": "to check-in",
+    "significadoOriginal": "apresentar bilhete de viagem em companhia aérea ou dar entrada e registrar-se em hotel, em redes sociais, etc",
+    "audioOriginal": "check-in1.mp3"
    },
    {
-    "origem": "Francês",
+    "origem": "francês",
     "palavra": "chefe",
     "significado": "aquele que ocupa o lugar de mando, também na gastronomia",
-    "audio": "PALAVRA NOVA - FAZER",
+    "audio": "chef0.mp3",
     "tradução": "chef",
     "significadoOriginal": "aquele que detém a autoridade; usado também na gastronomia",
-    "audioOriginal": "PALAVRA NOVA - FAZER"
+    "audioOriginal": "chef1.mp3"
    },
    {
-    "origem": "Inglês",
+    "origem": "inglês",
     "palavra": "chiclete",
     "significado": "goma de mascar",
     "audio": "chiclete0.mp3",
@@ -4658,7 +1774,7 @@ var data = [
     "audioOriginal": "chiclete1.mp3"
    },
    {
-    "origem": "Francês",
+    "origem": "francês",
     "palavra": "chique",
     "significado": "elegante e de bom gosto",
     "audio": "chique0.mp3",
@@ -4667,25 +1783,25 @@ var data = [
     "audioOriginal": "chique1.mp3"
    },
    {
-    "origem": "Inglês",
-    "palavra": "chutar",
+    "origem": "inglês",
+    "palavra": "chute",
     "significado": "pontapé",
     "audio": "chute0.mp3",
-    "tradução": "shoot",
+    "tradução": "to shoot",
     "significadoOriginal": "no futebol, impelir a bola com pontapé",
     "audioOriginal": "chute1.mp3"
    },
    {
-    "origem": "Francês",
+    "origem": "francês",
     "palavra": "creme",
-    "significado": "tipo de molho espesso preparado com produtos farináceos e creme de leite",
+    "significado": "tipo de molho espesso preparado com produtos farináceos e derivados de leite",
     "audio": "creme0.mp3",
     "tradução": "crème",
     "significadoOriginal": "tipo de molho espesso preparado com produtos farináceos e leite",
     "audioOriginal": "creme1.mp3"
    },
    {
-    "origem": "Francês",
+    "origem": "francês",
     "palavra": "debutante",
     "significado": "menina que completa 15 anos e faz sua estreia na vida social",
     "audio": "debutante0.mp3",
@@ -4694,79 +1810,79 @@ var data = [
     "audioOriginal": "debutante1.mp3"
    },
    {
-    "origem": "Inglês",
+    "origem": "inglês",
     "palavra": "deletar",
     "significado": "apagar",
     "audio": "deletar0.mp3",
-    "tradução": "delete",
+    "tradução": "to delete",
     "significadoOriginal": "apagar",
     "audioOriginal": "deletar1.mp3"
    },
    {
-    "origem": "Inglês",
+    "origem": "inglês",
     "palavra": "delivery",
     "significado": "entrega de mercadorias",
-    "audio": "PALAVRA NOVA - FAZER",
+    "audio": "delivery0.mp3",
     "tradução": "delivery",
     "significadoOriginal": "entrega de mercadorias",
-    "audioOriginal": "PALAVRA NOVA - FAZER"
+    "audioOriginal": "delivery1.mp3"
    },
    {
-    "origem": "Inglês",
+    "origem": "inglês",
     "palavra": "diet",
-    "significado": "dieta",
-    "audio": "PALAVRA NOVA - FAZER",
+    "significado": "dieta; regime; produto sem adição de açúcar",
+    "audio": "diet0.mp3",
     "tradução": "diet",
-    "significadoOriginal": "dieta",
-    "audioOriginal": "PALAVRA NOVA - FAZER"
+    "significadoOriginal": "base da alimentação de uma pessoa, um animal ou uma comunidade; tipo especial de alimentação restritiva por condição médica ou para reduzir o peso",
+    "audioOriginal": "diet1.mp3"
    },
    {
-    "origem": "Inglês",
+    "origem": "inglês",
     "palavra": "DJ",
     "significado": "aquele(a) que toca música em rádios ou festas",
-    "audio": "PALAVRA NOVA - FAZER",
+    "audio": "dj0.mp3",
     "tradução": "DJ",
     "significadoOriginal": "forma abreviada de disc jockey, aquele(a) que toca música em rádios ou festas",
-    "audioOriginal": "PALAVRA NOVA - FAZER"
+    "audioOriginal": "dj1.mp3"
    },
    {
-    "origem": "Inglês",
+    "origem": "inglês",
     "palavra": "download",
     "significado": "baixar programas, músicas ou informações",
-    "audio": "PALAVRA NOVA - FAZER",
+    "audio": "download0.mp3",
     "tradução": "to download",
     "significadoOriginal": "copiar eletronicamente programas, músicas ou informações em computadores ou internet",
-    "audioOriginal": "PALAVRA NOVA - FAZER"
+    "audioOriginal": "download1.mp3"
    },
    {
-    "origem": "Inglês",
+    "origem": "inglês",
     "palavra": "drinque",
-    "significado": "aperitivo",
+    "significado": "aperitivo; coquetel",
     "audio": "drinque0.mp3",
     "tradução": "drink",
-    "significadoOriginal": "aperitivo",
+    "significadoOriginal": "aperitivo; coquetel",
     "audioOriginal": "drinque1.mp3"
    },
    {
-    "origem": "Inglês",
-    "palavra": "email",
+    "origem": "inglês",
+    "palavra": "e-mail",
     "significado": "correio eletrônico",
-    "audio": "PALAVRA NOVA - FAZER",
+    "audio": "email0.mp3",
     "tradução": "email",
     "significadoOriginal": "forma abreviada de electronic mail, correio eletrônico",
-    "audioOriginal": "PALAVRA NOVA - FAZER"
+    "audioOriginal": "email1.mp3"
    },
    {
-    "origem": "Inglês",
-    "palavra": "empoderamento",
+    "origem": "inglês",
+    "palavra": "empoderar",
     "significado": "conferir poder a alguém",
-    "audio": "PALAVRA NOVA - FAZER",
+    "audio": "empoderar0.mp3",
     "tradução": "to empower",
     "significadoOriginal": "conferir poder a alguém",
-    "audioOriginal": "PALAVRA NOVA - FAZER"
+    "audioOriginal": "empoderar1.mp3"
    },
    {
-    "origem": "Inglês",
+    "origem": "inglês",
     "palavra": "esporte",
     "significado": "atividade física regular, para recreação ou condicionamento corporal",
     "audio": "esporte0.mp3",
@@ -4775,16 +1891,16 @@ var data = [
     "audioOriginal": "esporte1.mp3"
    },
    {
-    "origem": "Inglês",
+    "origem": "inglês",
     "palavra": "estresse",
     "significado": "tensão",
-    "audio": "PALAVRA NOVA - FAZER",
+    "audio": "estresse0.mp3",
     "tradução": "stress",
     "significadoOriginal": "tensão",
-    "audioOriginal": "PALAVRA NOVA - FAZER"
+    "audioOriginal": "estresse1.mp3"
    },
    {
-    "origem": "Inglês",
+    "origem": "inglês",
     "palavra": "fã",
     "significado": "indivíduo que tem grande admiração por pessoa pública; torcedor",
     "audio": "fa0.mp3",
@@ -4793,16 +1909,16 @@ var data = [
     "audioOriginal": "fa1.mp3"
    },
    {
-    "origem": "Inglês",
+    "origem": "inglês",
     "palavra": "faroeste",
-    "significado": "filme cuja ação se passa no Oeste dos Estados Unidos",
+    "significado": "filme cuja ação se passa no oeste dos Estados Unidos",
     "audio": "faroeste0.mp3",
     "tradução": "far-west",
-    "significadoOriginal": "filme cuja ação se passa no Oeste dos Estados Unidos",
+    "significadoOriginal": "região oeste dos Estados Unidos",
     "audioOriginal": "faroeste1.mp3"
    },
    {
-    "origem": "Inglês",
+    "origem": "inglês",
     "palavra": "filme",
     "significado": "película preparada para fotografia; obra cinematográfica",
     "audio": "filme0.mp3",
@@ -4811,79 +1927,79 @@ var data = [
     "audioOriginal": "filme1.mp3"
    },
    {
-    "origem": "Inglês",
+    "origem": "inglês",
     "palavra": "formatar",
-    "significado": "dar forma a",
-    "audio": "PALAVRA NOVA - FAZER",
+    "significado": "no domínio da tecnologia, preparar um meio magnético para receber dados",
+    "audio": "formatar0.mp3",
     "tradução": "to format",
-    "significadoOriginal": "no domínio da tecnologia, dar forma a",
-    "audioOriginal": "PALAVRA NOVA - FAZER"
+    "significadoOriginal": "dar forma a",
+    "audioOriginal": "formatar1.mp3"
    },
    {
-    "origem": "Inglês",
+    "origem": "inglês",
     "palavra": "funk",
-    "significado": "tipo de música",
-    "audio": "PALAVRA NOVA - FAZER",
+    "significado": "gênero musical",
+    "audio": "funk0.mp3",
     "tradução": "funk",
-    "significadoOriginal": "tipo de música",
-    "audioOriginal": "PALAVRA NOVA - FAZER"
+    "significadoOriginal": "estilo musical relacionado ao jazz",
+    "audioOriginal": "funk1.mp3"
    },
    {
-    "origem": "Inglês",
+    "origem": "inglês",
     "palavra": "futebol",
-    "significado": "Modalidade esportiva",
+    "significado": "modalidade esportiva",
     "audio": "futebol0.mp3",
     "tradução": "football",
     "significadoOriginal": "modalidade esportiva",
     "audioOriginal": "futebol1.mp3"
    },
    {
-    "origem": "Inglês",
+    "origem": "inglês",
     "palavra": "gangue",
     "significado": "bando, quadrilha",
-    "audio": "PALAVRA NOVA - FAZER",
+    "audio": "gangue0.mp3",
     "tradução": "gang",
     "significadoOriginal": "bando de malfeitores que agem em conjunto, quadrilha",
-    "audioOriginal": "PALAVRA NOVA - FAZER"
+    "audioOriginal": "gangue1.mp3"
    },
    {
-    "origem": "Inglês",
+    "origem": "inglês",
     "palavra": "gay",
     "significado": "homossexual",
-    "audio": "PALAVRA NOVA - FAZER",
+    "audio": "gay0.mp3",
     "tradução": "gay",
-    "significadoOriginal": "homossexual",
-    "audioOriginal": "PALAVRA NOVA - FAZER"
+    "significadoOriginal": "alegre; homossexual",
+    "audioOriginal": "gay1.mp3"
    },
    {
-    "origem": "Inglês",
+    "origem": "inglês",
     "palavra": "gol",
-    "significado": "no futebol, espaço delimitado por traves onde deve entrar a bola",
+    "significado": "no futebol, espaço delimitado por traves em que a bola deve entrar",
     "audio": "gol0.mp3",
     "tradução": "goal",
-    "significadoOriginal": "objetivo; meta; no futebol, espaço delimitado por traves onde deve entrar a bola",
+    "significadoOriginal": "objetivo; meta; no futebol, espaço delimitado por traves em que a bola deve entrar",
     "audioOriginal": "gol1.mp3"
    },
    {
-    "origem": "Inglês",
-    "palavra": "hip hop",
-    "significado": "movimento cultural de caráter social ou político que se manifesta através da música, dança, grafites, etc",
-    "audio": "PALAVRA NOVA - FAZER",
+    "origem": "inglês",
+    "palavra": "hip-hop",
+    "significado": "movimento cultural cujos temas são frequentemente sociais ou políticos e que se manifesta de formas artísticas variadas (dança, rap, grafites, etc.)”",
+    "audio": "hiphop0.mp3",
     "tradução": "hip hop",
-    "significadoOriginal": "gênero musical surgido nos Estados Unidos cujos temas são frequentemente sociais ou políticos",
-    "audioOriginal": "PALAVRA NOVA - FAZER"
+    "significadoOriginal": "movimento cultural afro-americano surgido nos Estados Unidos, cujos temas são frequentemente sociais ou políticos e que se manifesta de formas artísticas variadas (dança, rap, grafites, etc.)",
+    "audioOriginal": "hiphop1.mp3"
    },
    {
-    "origem": "Inglês",
+    "origem": "inglês",
     "palavra": "internet",
-    "significado": "sistema planetário que conecta computadores e permite que pessoas se comuniquem e dividam dados e informações",
-    "audio": "PALAVRA NOVA - FAZER",
+    "significado": "sistema mundial que conecta computadores e permite que pessoas se comuniquem e dividam dados e informações",
+    "audio": "internet0.mp3",
     "tradução": "internet",
-    "significadoOriginal": "sistema planetário que conecta computadores e permite que pessoas se comuniquem e dividam dados e informações",
-    "audioOriginal": "PALAVRA NOVA - FAZER"
+    "significadoOriginal": "sistema mundial que conecta computadores e permite que pessoas se comuniquem e dividam dados e informações",
+    "audioOriginal": "internet1.mp3"
    },
    {
-    "origem": "Francês",
+    "origem": "francês",
     "palavra": "jardim",
     "significado": "terreno onde se cultivam plantas ornamentais",
     "audio": "jardim0.mp3",
@@ -4892,43 +2008,43 @@ var data = [
     "audioOriginal": "jardim1.mp3"
    },
    {
-    "origem": "Inglês",
+    "origem": "inglês",
     "palavra": "jeans",
     "significado": "tipo de calça feita em algodão azul grosso; tipo de tecido grosso e durável; brim",
-    "audio": "PALAVRA NOVA - FAZER",
+    "audio": "jeans0.mp3",
     "tradução": "jeans",
     "significadoOriginal": "tipo de calça feita em algodão azul grosso; tipo de tecido grosso e durável; brim",
-    "audioOriginal": "PALAVRA NOVA - FAZER"
+    "audioOriginal": "jens1.mp3"
    },
    {
-    "origem": "Inglês",
+    "origem": "inglês",
     "palavra": "lanche",
     "significado": "refeição ligeira",
     "audio": "lanche0.mp3",
-    "tradução": "luch",
+    "tradução": "lunch",
     "significadoOriginal": "almoço",
     "audioOriginal": "lanche1.mp3"
    },
    {
-    "origem": "Inglês",
+    "origem": "inglês",
     "palavra": "líder",
     "significado": "pessoa que controla grupo, país ou situação; vencedor de competição",
-    "audio": "PALAVRA NOVA - FAZER",
+    "audio": "lider0.mp3",
     "tradução": "leader",
     "significadoOriginal": "pessoa que controla grupo, país ou situação; vencedor de competição",
-    "audioOriginal": "PALAVRA NOVA - FAZER"
+    "audioOriginal": "lider1.mp3"
    },
    {
-    "origem": "Inglês",
+    "origem": "inglês",
     "palavra": "link",
     "significado": "conexão entre pessoas, coisas, ideias; conexão entre documentos na internet",
-    "audio": "PALAVRA NOVA - FAZER",
+    "audio": "link0.mp3",
     "tradução": "link",
     "significadoOriginal": "conexão entre pessoas, coisas, ideias; conexão entre documentos na internet",
-    "audioOriginal": "PALAVRA NOVA - FAZER"
+    "audioOriginal": "link1.mp3"
    },
    {
-    "origem": "Francês",
+    "origem": "francês",
     "palavra": "maiô",
     "significado": "traje de banho feminino",
     "audio": "maio0.mp3",
@@ -4937,16 +2053,16 @@ var data = [
     "audioOriginal": "maio1.mp3"
    },
    {
-    "origem": "Francês",
+    "origem": "francês",
     "palavra": "manequim",
-    "significado": "pessoa que exibe em seu corpo roupas e adereços ou posa para revistas",
-    "audio": "PALAVRA NOVA - FAZER",
+    "significado": "pessoa que exibe em seu corpo roupas e adereços ou posa para revistas; figura que representa o ser humano, destinada a diferentes usos",
+    "audio": "manequim0.mp3",
     "tradução": "mannequin",
-    "significadoOriginal": "pessoa que exibe em seu corpo roupas e adereços ou posa para revistas",
-    "audioOriginal": "PALAVRA NOVA - FAZER"
+    "significadoOriginal": "pessoa que exibe em seu corpo roupas e adereços ou posa para revistas; figura que representa o ser humano, destinada a diferentes usos",
+    "audioOriginal": "manequim1.mp3"
    },
    {
-    "origem": "Francês",
+    "origem": "francês",
     "palavra": "maquiagem",
     "significado": "uso de produtos cosméticos para embelezamento e rejuvenescimento",
     "audio": "maquiagem0.mp3",
@@ -4955,16 +2071,16 @@ var data = [
     "audioOriginal": "maquiagem1.mp3"
    },
    {
-    "origem": "Francês",
+    "origem": "francês",
     "palavra": "metrô",
-    "significado": "sistema de transporte em grande parte subterrâneo",
-    "audio": "PALAVRA NOVA - FAZER",
+    "significado": "sistema de transporte rápido urbano, em grande parte subterrâneo",
+    "audio": "metro0.mp3",
     "tradução": "métro",
-    "significadoOriginal": "abreviação de métropolitain, caminho de ferro urbano em grande parte subterrâneo",
-    "audioOriginal": "PALAVRA NOVA - FAZER"
+    "significadoOriginal": "abreviação de métropolitain, sistema de transporte rápido urbano, em grande parte subterrâneo",
+    "audioOriginal": "metro1.mp3"
    },
    {
-    "origem": "Francês",
+    "origem": "francês",
     "palavra": "moda",
     "significado": "maneira e estilo de vestuário e conduta",
     "audio": "moda0.mp3",
@@ -4973,16 +2089,16 @@ var data = [
     "audioOriginal": "moda1.mp3"
    },
    {
-    "origem": "Francês",
+    "origem": "francês",
     "palavra": "moletom",
-    "significado": "peça de vestuário de tecido macio e quente",
-    "audio": "PALAVRA NOVA - FAZER",
+    "significado": "tecido macio e quente",
+    "audio": "moletom0.mp3",
     "tradução": "molleton",
     "significadoOriginal": "algodão ou lã grossos, geralmente macios e quentes",
-    "audioOriginal": "PALAVRA NOVA - FAZER"
+    "audioOriginal": "moletom1.mp3"
    },
    {
-    "origem": "Inglês",
+    "origem": "inglês",
     "palavra": "motel",
     "significado": "estabelecimento que aluga quartos para encontros amorosos",
     "audio": "motel0.mp3",
@@ -4991,7 +2107,7 @@ var data = [
     "audioOriginal": "motel1.mp3"
    },
    {
-    "origem": "Inglês",
+    "origem": "inglês",
     "palavra": "nocaute",
     "significado": "no boxe, a permanência de um lutador em estado de inconsciência por no mínimo dez segundos; derrota",
     "audio": "nocaute0.mp3",
@@ -5000,61 +2116,61 @@ var data = [
     "audioOriginal": "nocaute1.mp3"
    },
    {
-    "origem": "Francês",
+    "origem": "francês",
     "palavra": "omelete",
     "significado": "fritada de ovos batidos",
-    "audio": "PALAVRA NOVA - FAZER",
+    "audio": "omelete0.mp3",
     "tradução": "omelette",
     "significadoOriginal": "fritada de ovos batidos",
-    "audioOriginal": "PALAVRA NOVA - FAZER"
+    "audioOriginal": "omelete1.mp3"
    },
    {
-    "origem": "Inglês",
+    "origem": "inglês",
     "palavra": "página web",
-    "significado": "página de informações na internet sobre um assunto particular",
-    "audio": "PALAVRA NOVA - FAZER",
+    "significado": "página de informações na internet sobre um determinado assunto",
+    "audio": "webpage0.mp3",
     "tradução": "web page",
-    "significadoOriginal": "página de informações na internet sobre um assunto particular",
-    "audioOriginal": "PALAVRA NOVA - FAZER"
+    "significadoOriginal": "página de informações na internet sobre um determinado assunto",
+    "audioOriginal": "webpage1.mp3"
    },
    {
-    "origem": "Inglês",
+    "origem": "inglês",
     "palavra": "personal trainer",
-    "significado": "instrutor de condicionamento físico",
-    "audio": "PALAVRA NOVA - FAZER",
+    "significado": "instrutor particular de condicionamento físico",
+    "audio": "personal0.mp3",
     "tradução": "personal trainer",
     "significadoOriginal": "instrutor particular de condicionamento físico",
-    "audioOriginal": "PALAVRA NOVA - FAZER"
+    "audioOriginal": "personal1.mp3"
    },
    {
-    "origem": "Inglês",
+    "origem": "inglês",
     "palavra": "rap",
-    "significado": "gênero de música popular, urbana",
-    "audio": "PALAVRA NOVA - FAZER",
+    "significado": "gênero de música popular, urbana, parte do movimento hip-hop",
+    "audio": "rap0.mp3",
     "tradução": "rap",
-    "significadoOriginal": "gênero de música popular, urbana",
-    "audioOriginal": "PALAVRA NOVA - FAZER"
+    "significadoOriginal": "gênero de música popular, urbana, parte do movimento hip-hop",
+    "audioOriginal": "rap1.mp3"
    },
    {
-    "origem": "Inglês",
+    "origem": "inglês",
     "palavra": "recorde",
-    "significado": "proeza esportiva que ultrapassa o que foi feito anteriormente no mesmo gênero e nas mesmas condições",
+    "significado": "proeza que ultrapassa o que foi feito anteriormente no mesmo gênero e nas mesmas condições",
     "audio": "recorde0.mp3",
     "tradução": "record",
     "significadoOriginal": "proeza que ultrapassa o que foi feito anteriormente no mesmo gênero e nas mesmas condições",
     "audioOriginal": "recorde1.mp3"
    },
    {
-    "origem": "Francês",
+    "origem": "francês",
     "palavra": "reportagem",
-    "significado": "artigo de jornal, revista, rádio ou televisão a partir da investigação de um assunto",
-    "audio": "PALAVRA NOVA - FAZER",
+    "significado": "artigo de jornal, revista, rádio ou televisão, a partir da investigação de um assunto",
+    "audio": "reportagem0.mp3",
     "tradução": "reportage",
-    "significadoOriginal": "artigo de jornal, revista, rádio ou televisão a partir da investigação de um assunto",
-    "audioOriginal": "PALAVRA NOVA - FAZER"
+    "significadoOriginal": "artigo de jornal, revista, rádio ou televisão, a partir da investigação de um assunto",
+    "audioOriginal": "reportagem1.mp3"
    },
    {
-    "origem": "Francês",
+    "origem": "francês",
     "palavra": "restaurante",
     "significado": "estabelecimento que serve refeições",
     "audio": "restaurante0.mp3",
@@ -5063,34 +2179,34 @@ var data = [
     "audioOriginal": "restaurante1.mp3"
    },
    {
-    "origem": "Inglês",
+    "origem": "inglês",
     "palavra": "sanduíche",
-    "significado": "duas ou mais fatias de pão intercaladas com carne, queijo etc",
+    "significado": "duas ou mais fatias de pão intercaladas com carne, queijo, etc",
     "audio": "sanduiche0.mp3",
     "tradução": "sandwich",
-    "significadoOriginal": "duas ou mais fatias de pão intercaladas com carne, queijo etc",
+    "significadoOriginal": "duas ou mais fatias de pão intercaladas com carne, queijo, etc",
     "audioOriginal": "sanduiche1.mp3"
    },
    {
-    "origem": "Inglês",
-    "palavra": "self service",
+    "origem": "inglês",
+    "palavra": "self-service",
     "significado": "autosserviço",
-    "audio": "PALAVRA NOVA - FAZER",
+    "audio": "selfservice0.mp3",
     "tradução": "self-service",
-    "significadoOriginal": "servir-se a si mesmo",
-    "audioOriginal": "PALAVRA NOVA - FAZER"
+    "significadoOriginal": "autosserviço",
+    "audioOriginal": "selfservice1.mp3"
    },
    {
-    "origem": "Inglês",
+    "origem": "inglês",
     "palavra": "selfie",
     "significado": "retrato fotográfico de si próprio, tomado por meio de aparelho móvel",
-    "audio": "PALAVRA NOVA - FAZER",
+    "audio": "selfie0.mp3",
     "tradução": "selfie",
     "significadoOriginal": "retrato fotográfico de si próprio, tomado por meio de aparelho móvel",
-    "audioOriginal": "PALAVRA NOVA - FAZER"
+    "audioOriginal": "selfie1.mp3"
    },
    {
-    "origem": "Inglês",
+    "origem": "inglês",
     "palavra": "short",
     "significado": "calças curtas esportivas",
     "audio": "short0.mp3",
@@ -5099,7 +2215,7 @@ var data = [
     "audioOriginal": "short1.mp3"
    },
    {
-    "origem": "Inglês",
+    "origem": "inglês",
     "palavra": "surfe",
     "significado": "atividade esportiva",
     "audio": "surfe0.mp3",
@@ -5108,7 +2224,7 @@ var data = [
     "audioOriginal": "surfe1.mp3"
    },
    {
-    "origem": "Francês",
+    "origem": "francês",
     "palavra": "sutiã",
     "significado": "acessório para sustentar os seios sob o vestido ou a blusa",
     "audio": "sutia0.mp3",
@@ -5117,7 +2233,7 @@ var data = [
     "audioOriginal": "sutia1.mp3"
    },
    {
-    "origem": "Francês",
+    "origem": "francês",
     "palavra": "suvenir",
     "significado": "objeto característico de um lugar que se vende como lembrança",
     "audio": "suvenir0.mp3",
@@ -5126,7 +2242,7 @@ var data = [
     "audioOriginal": "suvenir1.mp3"
    },
    {
-    "origem": "Inglês",
+    "origem": "inglês",
     "palavra": "tênis",
     "significado": "modalidade esportiva",
     "audio": "tenis0.mp3",
@@ -5135,25 +2251,25 @@ var data = [
     "audioOriginal": "tenis1.mp3"
    },
    {
-    "origem": "Francês",
+    "origem": "francês",
     "palavra": "travesti",
-    "significado": "homem que se veste de mulher",
+    "significado": "pessoa que não se identifica com o gênero biológico e se veste e se comporta como pessoas de outro sexo",
     "audio": "travesti0.mp3",
     "tradução": "travesti",
     "significadoOriginal": "homem que se veste de mulher",
     "audioOriginal": "travesti1.mp3"
    },
    {
-    "origem": "Inglês",
-    "palavra": "tuitar",
-    "significado": "mensagem, imagem ou vídeo enviado por redes sociais",
-    "audio": "PALAVRA NOVA - FAZER",
+    "origem": "inglês",
+    "palavra": "tuíte",
+    "significado": "mensagem, imagem ou vídeo enviado por rede social",
+    "audio": "tweet0.mp3",
     "tradução": "tweet",
-    "significadoOriginal": "som feito por pássaro; mensagem, imagem ou vídeo enviado por redes sociais",
-    "audioOriginal": "PALAVRA NOVA - FAZER"
+    "significadoOriginal": "som feito por pássaro; mensagem, imagem ou vídeo enviado por rede social",
+    "audioOriginal": "tweet1.mp3"
    },
    {
-    "origem": "Inglês",
+    "origem": "inglês",
     "palavra": "uísque",
     "significado": "bebida destilada obtida a partir da fermentação de cereais como centeio, milho e cevada",
     "audio": "uisque0.mp3",
@@ -5162,17 +2278,17 @@ var data = [
     "audioOriginal": "uisque1.mp3"
    },
    {
-    "origem": "Inglês",
+    "origem": "inglês",
     "palavra": "vôlei",
     "significado": "modalidade esportiva",
     "audio": "volei0.mp3",
-    "tradução": "volley-ball",
+    "tradução": "volleyball",
     "significadoOriginal": "modalidade esportiva",
     "audioOriginal": "volei1.mp3"
    },
    {
-    "origem": "Inglês",
-    "palavra": "x-burguer",
+    "origem": "inglês",
+    "palavra": "x-búrguer",
     "significado": "sanduíche de hambúrguer com queijo",
     "audio": "xburguer0.mp3",
     "tradução": "cheeseburger",
@@ -5180,7 +2296,7 @@ var data = [
     "audioOriginal": "xburguer1.mp3"
    },
    {
-    "origem": "Inglês",
+    "origem": "inglês",
     "palavra": "xampu",
     "significado": "produto usado para lavar os cabelos",
     "audio": "xampu0.mp3",
@@ -5199,14 +2315,14 @@ var data = [
    },
    {
     "titulo": "Outras palavras Inglês",
-    "text": "<p><strong>Dom&iacute;nio do trabalho</strong> <br />business<br />coaching <br />co-working <br />homeoffice <br />networking <br />job-sharing <br />work-sharing <br />uber <br />workaholic <br />slow work <br />freelance<br /> start-up</p>\n<p><strong>Dom&iacute;nio da alimenta&ccedil;&atilde;o</strong> <br />drive-in<br />fast-food <br />junk food <br />nugget <br />snack<br />wrap <br />food truck <br />light <br />happy hour <br />fusion food <br />happy hour <br />slow food <br />bacon <br />banana split <br />brunch <br />coffee break <br />coquetel <br />hamb&uacute;rguer <br />ketchup <br />milk shake <br />sundae <br />sandu&iacute;che</p>\n<p><strong>Dom&iacute;nio das redes sociais</strong> <br />crowdfunding<br />hashtag <br />post<br />fan page <br />frame <br />inbox <br />caption</p>\n<p><strong>Dom&iacute;nio da tecnologia</strong> <br />air bag<br />CD <br />fax <br />leiaute <br />xerox <br />walkman</p>\n<p><strong>Dom&iacute;nio da tecnologia inform&aacute;tica</strong> <br />messenger <br />stories <br />blog <br />becape <br />chat<br />clique <br />cookies <br />hacker <br />hardware<br />home page <br />laptop <br />log in <br />mouse <br />off-line <br />on-line <br />print screen <br />site <br />software <br />spam <br />escanear<br />upgrade<br />designer<br />wifi</p>\n<p><strong>Dom&iacute;nio dos esportes</strong> <br />beisebol <br />boxe <br />cricket <br />golfe <br />handebol<br />jet-ski <br />j&oacute;quei <br />p&ecirc;nalti <br />play-off <br />pole position <br />ranking <br />turfe <br />voleibol</p>\n<p><strong>Dom&iacute;nio da Moda</strong> <br />antiaging<br />baby-doll<br />black-tie <br />blazer <br />blush <br />gloss <br />n&aacute;ilon <br />pul&ocirc;ver <br />short <br />t-shirt<br />t&ecirc;nis<br />top model</p>\n<p><strong>Dom&iacute;nio das artes</strong> <br />blues <br />stand up <br />country <br />grunge<br />happy end <br />jazz <br />m&iacute;dia <br />pay-per-view <br />pop <br />popstar <br />reality show <br />remake <br />rhythhm <br />rock-and-roll<br />script<br />show <br />showbiz <br />soul<br />street dance <br />street music <br />talk show <br />techno <br />twist <br />world music</p>\n<p><strong>Dom&iacute;nio do Turismo</strong> <br />all inclusive <br />apart-hotel <br />boarding pass <br />business class <br />camping<br />citytour <br />code-sharing <br />fitness center <br />free shop <br />gate<br />no show <br />overbooking <br />resort <br />room service <br />traveler's check <br />upgrade</p>\n<p><strong>Dom&iacute;nio da delinqu&ecirc;ncia</strong> <br />bullying<br />gangster<br />hold-up <br />kidnapping<br />hacker</p>\n<p><strong>De diversos dom&iacute;nios</strong> <br />fake news <br />al&ocirc; <br />antidoping <br />beatnik <br />AIDS <br />baby-sitter <br />best-seller <br />bingo <br />blecaute <br />b&oacute;i <br />office-boy <br />check-up<br />checape <br />closet <br />clube <br />crack <br />design<br />d&oacute;lar <br />drag queen <br />dumping <br />establishment <br />fashion <br />flat <br />gay <br />hall <br />happening <br />hippie <br />impeachment <br />know-how <br />marketing <br />outlet <br />pet-shop <br />piercing <br />playground <br />point <br />playboy <br />sex shop <br />sexy <br />shopping center <br />socialite <br />standard <br />streaptease <br />teen <br />top <br />topless <br />unisex <br />workshop <br />xerife <br />yuppie</p>\n<p><strong>Algumas express&otilde;es</strong>&nbsp;<br />DNA <br />O.K. <br />S.O.S. <br />VIP <br />w.c.</p>",
+    "text": "<p><strong>Dom&iacute;nio do trabalho</strong> <br />business<br />coaching <br />co-working <br />homeoffice <br />networking <br />job-sharing <br />work-sharing <br />uber <br />workaholic <br />slow work <br />freelance<br />start-up</p>\n<p><strong>Dom&iacute;nio da alimenta&ccedil;&atilde;o</strong> <br />drive-in<br />fast-food <br />junk food <br />nugget <br />snack<br />wrap <br />food truck <br />light <br />happy hour <br />fusion food<br />happy hour <br />slow food <br />bacon <br />banana split <br />brunch<br />coffee break <br />coquetel <br />hamb&uacute;rguer <br />ketchup <br />milk shake <br />sundae <br />sandu&iacute;che</p>\n<p><strong>Dom&iacute;nio das redes sociais</strong> <br />crowdfunding<br />hashtag <br />post<br />fan page <br />frame <br />inbox <br />caption</p>\n<p><strong>Dom&iacute;nio da tecnologia</strong> <br />air bag<br />CD <br />fax <br />leiaute <br />xerox <br />walkman</p>\n<p><strong>Dom&iacute;nio da tecnologia inform&aacute;tica</strong> <br />messenger <br />stories <br />blog <br />becape <br />chat<br />clique <br />cookies <br />hacker <br />hardware<br />home page <br />laptop <br />log in <br />mouse <br />off-line<br />on-line <br />print screen <br />site <br />software <br />spam <br />escanear<br />upgrade<br />designer<br />wifi</p>\n<p><strong>Dom&iacute;nio dos esportes</strong> <br />beisebol <br />boxe <br />cricket <br />golfe <br />handebol<br />jet-ski <br />j&oacute;quei <br />p&ecirc;nalti <br />play-off <br />pole position <br />ranking <br />turfe <br />voleibol</p>\n<p><strong>Dom&iacute;nio da Moda</strong> <br />antiaging<br />baby-doll<br />black-tie <br />blazer <br />blush <br />gloss <br />n&aacute;ilon <br />pul&ocirc;ver <br />short <br />t-shirt<br />t&ecirc;nis<br />top model</p>\n<p><strong>Dom&iacute;nio das artes</strong> <br />blues <br />stand up <br />country <br />grunge<br />happy end <br />jazz <br />m&iacute;dia <br />pay-per-view <br />pop <br />popstar <br />reality show <br />remake <br />rhythhm <br />rock-and-roll<br />script<br />show <br />showbiz <br />soul<br />street dance <br />street music<br />talk show <br />techno <br />twist <br />world music</p>\n<p><strong>Dom&iacute;nio do Turismo</strong> <br />all inclusive <br />apart-hotel <br />boarding pass <br />business class <br />camping<br />citytour <br />code-sharing <br />fitness center <br />free shop <br />gate<br />no show <br />overbooking <br />resort <br />room service <br />traveler's check <br />upgrade</p>\n<p><strong>Dom&iacute;nio da delinqu&ecirc;ncia</strong> <br />bullying<br />gangster<br />hold-up <br />kidnapping<br />hacker</p>\n<p><strong>De diversos dom&iacute;nios</strong> <br />fake news <br />al&ocirc; <br />antidoping <br />beatnik <br />AIDS <br />baby-sitter <br />best-seller <br />bingo <br />blecaute <br />b&oacute;i <br />office-boy<br />check-up<br />checape <br />closet <br />clube <br />crack <br />design<br />d&oacute;lar <br />drag queen <br />dumping <br />establishment <br />fashion <br />flat <br />gay<br />hall <br />happening <br />hippie <br />impeachment <br />know-how <br />marketing <br />outlet <br />pet-shop<br />piercing <br />playground <br />point <br />playboy <br />sex shop <br />sexy <br />shopping center <br />socialite <br />standard <br />streaptease <br />teen <br />top <br />topless<br />unisex<br />workshop <br />xerife <br />yuppie</p>\n<p><strong>Algumas express&otilde;es</strong>&nbsp;<br />DNA <br />O.K. <br />S.O.S. <br />VIP <br />w.c.</p>",
     "imagens": [
      "inglesfrances_2_1.jpg"
     ]
    },
    {
     "titulo": "Outras palavras Francês",
-    "text": "<p><strong>Dom&iacute;nio da moda</strong> <br />alta-costura <br />broche <br />busti&ecirc; <br />cachecol <br />chemisier<br />colete <br />collant<br />crepe<br />croch&ecirc;<br />echarpe<br />evas&ecirc;<br />fuseau<br />god&ecirc;<br />laqu&ecirc;<br />lingerie<br />n&eacute;cessaire<br />paet&ecirc;<br />palet&oacute;<br />penhoar<br />pochete <br />pr&ecirc;t-&agrave;-porter<br />robe<br />ruge<br />suti&atilde;<br />tailleur<br />tric&ocirc;</p>\n<p><strong>Dom&iacute;nio da gastronomia</strong> <br />&agrave; la carte<br />baguete<br />bechamel <br />bistr&ocirc;<br />buf&ecirc;<br />canap&eacute;<br />champignon<br />chantili<br />chef <br />couvert<br />crepe<br />crocante<br />croissant<br />croquete<br />escalope<br />escarg&ocirc;<br />fil&eacute; mignon<br />foie gras <br />fondue <br />frap&ecirc; <br />fricass&ecirc;<br />gourmet <br />gratinar<br />ma&icirc;tre<br />maionese<br />marrom glac&ecirc; <br />menu<br />musse <br />omelete<br />pat&ecirc; <br />pav&ecirc;<br />pur&ecirc;<br />quiche<br />raclete<br />rechaud <br />rocambole <br />saut&eacute;<br />sufl&ecirc;</p>\n<p><strong>Dom&iacute;nio da dan&ccedil;a</strong> <br />allong&eacute;<br />bal&eacute;<br />ballon&eacute;<br />demi-pli&eacute;<br />pas de deux <br />pirueta<br />pli&eacute;<br />canc&atilde;<br />quadrilha</p>\n<p><strong>Dom&iacute;nio das bebidas</strong> <br />conhaque<br />ros&eacute;<br />sommelier<br />flute</p>\n<p><strong>Dom&iacute;nio das artes</strong> <br />art d&eacute;co <br />ateli&ecirc;<br />avant-garde <br />avant-premi&egrave;re <br />belle &eacute;poque<br />cabar&eacute;<br />dubl&ecirc;<br />dublagem<br />marchand<br />matin&ecirc;<br />mise-en sc&egrave;ne<br />na&iuml;f<br />pot-pourri<br />premi&egrave;re<br />reprise<br />rococ&oacute;<br />vernissage<br />turn&ecirc;<br />vedete</p>\n<p><strong>Dom&iacute;nio das cores</strong> <br />bege <br />bord&ocirc; <br />degrad&ecirc;<br />marrom<br />ton-sur-ton</p>\n<p><strong>Dom&iacute;nio de jogos, brinquedos</strong> <br />carrossel<br />marionete <br />patinete<br />bilhar<br />roleta</p>\n<p><strong>De diversos dom&iacute;nios:</strong> <br />avalanche <br />bibel&ocirc; <br />bid&ecirc; <br />butique<br />cach&ecirc;<br />camel&ocirc;<br />cap&ocirc;<br />chal&eacute; <br />charrete  br />chofer  <r />coiffeur <br />clich&ecirc; <br />comit&ecirc; <br />compl&ocirc; <br />coqueluche <br />crach&aacute;  <b />creche <br />deboche <br />dossi&ecirc; <br />edredom <br />elite <br />envelope  <br/>fanfarra <br />fum&ecirc; <br />gafe <br />gigol&ocirc; <br />grand prix <br />greve <br />guich&ecirc; <br />habitu&eacute; <br />helic&oacute;ptero <br />jetom <br />limusine <br />madame <br />mademoiselle <br />pierr&ocirc; <br />premi&ecirc; <br />priv&ecirc; <br />raquete <br />reveillon<br />sach&ecirc; <br />toalete <br />voyeur</p>\n<p><strong>Algumas express&otilde;es</strong><br />d&eacute;j&agrave;-vu<br />en passant<br />hors-concours<br />t&ecirc;te-&agrave;-t&ecirc;te</p>",
+    "text": "<p><strong>Dom&iacute;nio da moda</strong> <br />alta-costura <br />broche <br />busti&ecirc; <br />cachecol <br />chemisier<br />colete <br />collant<br />crepe<br />croch&ecirc;<br />echarpe<br />evas&ecirc;<br />fuseau<br />god&ecirc;<br />laqu&ecirc;<br />lingerie<br />n&eacute;cessaire<br />paet&ecirc;<br />palet&oacute;<br />penhoar<br />pochete <br />pr&ecirc;t-&agrave;-porter<br />robe<br />ruge<br />suti&atilde;<br />tailleur<br />tric&ocirc;</p>\n<p><strong>Dom&iacute;nio da gastronomia</strong> <br />&agrave; la carte<br />baguete<br />bechamel<br />bistr&ocirc;<br />buf&ecirc;<br />canap&eacute;<br />champignon<br />chantili<br />chef<br />couvert<br />crepe<br />crocante<br />croissant<br />croquete<br />escalope<br />escarg&ocirc;<br />fil&eacute; mignon<br />foie gras<br />fondue <br />frap&ecirc; <br />fricass&ecirc;<br />gourmet <br />gratinar<br />ma&icirc;tre<br />maionese<br />marrom glac&ecirc; <br />menu<br />musse <br />omelete<br />pat&ecirc; <br />pav&ecirc;<br />pur&ecirc;<br />quiche<br />raclete<br />rechaud <br />rocambole <br />saut&eacute;<br />sufl&ecirc;</p>\n<p><strong>Dom&iacute;nio da dan&ccedil;a</strong> <br />allong&eacute;<br />bal&eacute;<br />ballon&eacute;<br />demi-pli&eacute;<br />pas de deux <br />pirueta<br />pli&eacute;<br />canc&atilde;<br />quadrilha</p>\n<p><strong>Dom&iacute;nio das bebidas</strong> <br />conhaque<br />ros&eacute;<br />sommelier<br />flute</p>\n<p><strong>Dom&iacute;nio das artes</strong> <br />art d&eacute;co <br />ateli&ecirc;<br />avant-garde <br />avant-premi&egrave;re <br />belle &eacute;poque<br />cabar&eacute;<br />dubl&ecirc;<br />dublagem<br />marchand<br />matin&ecirc;<br />mise-en sc&egrave;ne<br />na&iuml;f<br />pot-pourri<br />premi&egrave;re<br />reprise<br />rococ&oacute;<br />vernissage<br />turn&ecirc;<br />vedete</p>\n<p><strong>Dom&iacute;nio das cores</strong> <br />bege<br />bord&ocirc;<br />degrad&ecirc;<br />marrom<br />ton-sur-ton</p>\n<p><strong>Dom&iacute;nio de jogos, brinquedos</strong> <br />carrossel<br />marionete <br />patinete<br />bilhar<br />roleta</p>\n<p><strong>De diversos dom&iacute;nios:</strong> <br />avalanche <br />bibel&ocirc; <br />bid&ecirc;<br />butique<br />cach&ecirc;<br />camel&ocirc;<br />cap&ocirc;<br />chal&eacute; <br />charrete br />chofer <r />coiffeur <br />clich&ecirc; <br />comit&ecirc; <br />compl&ocirc; <br />coqueluche <br />crach&aacute; <b />creche <br />deboche <br />dossi&ecirc; <br />edredom <br />elite <br />envelope <br/>fanfarra <br />fum&ecirc; <br />gafe <br />gigol&ocirc; <br />grand prix <br />greve <br />guich&ecirc; <br />habitu&eacute; <br />helic&oacute;ptero <br />jetom <br />limusine <br />madame <br />mademoiselle <br />pierr&ocirc; <br />premi&ecirc; <br />priv&ecirc; <br />raquete <br />reveillon<br />sach&ecirc; <br />toalete <br />voyeur</p>\n<p><strong>Algumas express&otilde;es</strong><br />d&eacute;j&agrave;-vu<br />en passant<br />hors-concours<br />t&ecirc;te-&agrave;-t&ecirc;te</p>",
     "imagens": [
      "inglesfrances_3_1.jpg"
     ]
@@ -5217,16 +2333,16 @@ var data = [
   "nome": "Lingua de imigrantes",
   "palavras": [
    {
-    "origem": "Italiano",
+    "origem": "italiano",
     "palavra": "baderna",
     "significado": "desordem, confusão, tumulto",
     "audio": "baderna0.mp3",
-    "tradução": "baderna",
-    "significadoOriginal": "nome da dançarina italiana Marieta Baderna, que esteve no Rio de Janeiro em 1851, provocando tumulto",
+    "tradução": "Baderna",
+    "significadoOriginal": "sobrenome da dançarina italiana Marieta Baderna, que esteve no Rio de Janeiro em 1851, provocando tumulto",
     "audioOriginal": "baderna1.mp3"
    },
    {
-    "origem": "Italiano",
+    "origem": "italiano",
     "palavra": "bagatela",
     "significado": "coisa sem importância; soma irrisória de dinheiro",
     "audio": "bagatela0.mp3",
@@ -5235,7 +2351,7 @@ var data = [
     "audioOriginal": "bagatela1.mp3"
    },
    {
-    "origem": "Hebraico",
+    "origem": "hebraico",
     "palavra": "bar mitzvah",
     "significado": "na religião judaica, a maturidade religiosa do menino quando completa 13 anos; festa que comemora essa passagem",
     "audio": "barmitsvar0.mp3",
@@ -5244,7 +2360,7 @@ var data = [
     "audioOriginal": "barmitsvar1.mp3"
    },
    {
-    "origem": "Alemão",
+    "origem": "alemão",
     "palavra": "blitz",
     "significado": "batida policial ou ação fiscalizadora de caráter inesperado",
     "audio": "blitz0.mp3",
@@ -5253,17 +2369,17 @@ var data = [
     "audioOriginal": "blitz1.mp3"
    },
    {
-    "origem": "Japonês",
+    "origem": "japonês",
     "palavra": "bonsai",
-    "significado": "técnica e arte japonesa de miniaturizar plantas",
+    "significado": "técnica e arte de miniaturizar plantas",
     "audio": "bonsai0.mp3",
     "tradução": "bonsai",
     "significadoOriginal": "técnica e arte de miniaturizar plantas",
     "audioOriginal": "bonsai1.mp3"
    },
    {
-    "origem": "Italiano",
-    "palavra": "braciola",
+    "origem": "italiano",
+    "palavra": "brachola",
     "significado": "fatia de carne enrolada, recheada e cozida",
     "audio": "braxola0.mp3",
     "tradução": "braciola",
@@ -5271,7 +2387,7 @@ var data = [
     "audioOriginal": "braxola1.mp3"
    },
    {
-    "origem": "Japonês",
+    "origem": "japonês",
     "palavra": "camicase",
     "significado": "piloto japonês treinado para pilotar aviões carregados de explosivos em ataques suicidas; pessoa que se arrisca muito ao agir; suicida",
     "audio": "kamikase0.mp3",
@@ -5280,7 +2396,7 @@ var data = [
     "audioOriginal": "kamikase1.mp3"
    },
    {
-    "origem": "Italiano",
+    "origem": "italiano",
     "palavra": "canalha",
     "significado": "pessoa infame; patife; cafajeste",
     "audio": "canalha0.mp3",
@@ -5289,7 +2405,7 @@ var data = [
     "audioOriginal": "canalha1.mp3"
    },
    {
-    "origem": "Italiano",
+    "origem": "italiano",
     "palavra": "cantina",
     "significado": "restaurante de comida italiana",
     "audio": "cantina0.mp3",
@@ -5298,25 +2414,25 @@ var data = [
     "audioOriginal": "cantina1.mp3"
    },
    {
-    "origem": "Italiano",
-    "palavra": "capuccino",
-    "significado": "bebida feita com café e leite",
+    "origem": "italiano",
+    "palavra": "capuchino",
+    "significado": "bebida feita com café e espuma de leite",
     "audio": "capuccino0.mp3",
     "tradução": "cappuccino",
-    "significadoOriginal": "bebida feita com café e leite",
+    "significadoOriginal": "bebida feita com café e espuma de leite",
     "audioOriginal": "capuccino1.mp3"
    },
    {
-    "origem": "Japonês",
+    "origem": "japonês",
     "palavra": "caraoquê",
-    "significado": "tipo de entretenimento em que uma pessoa canta ao microfone acompanhada por fundos gravados",
+    "significado": "tipo de entretenimento em que uma pessoa canta ao microfone acompanhada por fundos musicais gravados ou acompanhados por banda",
     "audio": "karaoke0.mp3",
     "tradução": "karaoke",
-    "significadoOriginal": "tipo de entretenimento em que uma pessoa canta ao microfone acompanhada por fundos gravados",
+    "significadoOriginal": "tipo de entretenimento em que uma pessoa canta ao microfone acompanhada por fundos musicais gravados ou acompanhados por banda",
     "audioOriginal": "karaoke1.mp3"
    },
    {
-    "origem": "Japonês",
+    "origem": "japonês",
     "palavra": "caratê",
     "significado": "antiga arte marcial oriental, em que se usam apenas as mãos e os pés",
     "audio": "karate0.mp3",
@@ -5325,16 +2441,16 @@ var data = [
     "audioOriginal": "karate1.mp3"
    },
    {
-    "origem": "Espanhol",
+    "origem": "espanhol",
     "palavra": "ceviche",
-    "significado": "iguaria feita à base de peixe fresco cru cortado em pequenas tiras e marinado por um período em cítricos ao qual se adicionam temperos variados",
-    "audio": "",
+    "significado": "iguaria feita à base de peixe fresco cru, cortado em pequenas tiras e marinado em cítricos, à qual são adicionados temperos variados",
+    "audio": "ceviche0.mp3",
     "tradução": "ceviche",
-    "significadoOriginal": "iguaria feita à base de peixe fresco cru cortado em pequenas tiras e marinado por um período em cítricos ao qual se adicionam temperos variados",
-    "audioOriginal": ""
+    "significadoOriginal": "iguaria feita à base de peixe fresco cru, cortado em pequenas tiras e marinado em cítricos, à qual são adicionados temperos variados",
+    "audioOriginal": "ceviche1.mp3"
    },
    {
-    "origem": "Alemão",
+    "origem": "alemão",
     "palavra": "chope",
     "significado": "cerveja fresca servida em barril sob pressão",
     "audio": "shop0.mp3",
@@ -5343,25 +2459,25 @@ var data = [
     "audioOriginal": "shop1.mp3"
    },
    {
-    "origem": "Chinês",
+    "origem": "chinês",
     "palavra": "chop-suey",
-    "significado": "iguaria feita com legumes, acompanhados de tiras de carne de frango, porco ou peixe, servido com arroz",
+    "significado": "iguaria feita com legumes, acompanhados de tiras de carne de frango, porco ou peixe, servida com arroz",
     "audio": "chopsuey0.mp3",
     "tradução": "shap sui",
-    "significadoOriginal": "literalmente, miscelânea – iguaria feita com legumes, acompanhados de tiras de carne de frango, porco ou peixe, servido com arroz",
+    "significadoOriginal": "iguaria feita com legumes, acompanhados de tiras de carne de frango, porco ou peixe, servida com arroz; literalmente, miscelânea",
     "audioOriginal": "chopsuey1.mp3"
    },
    {
-    "origem": "Japonês",
+    "origem": "japonês",
     "palavra": "decasségui",
-    "significado": "descendente de japonês emigrado para o Brasil que vai trabalhar por período temporário no Japão, muitas vezes em subempregos",
+    "significado": "descendente de japonês emigrado para o Brasil, que vai trabalhar por período temporário no Japão, muitas vezes em subempregos",
     "audio": "decaceg0.mp3",
     "tradução": "dekassegui",
     "significadoOriginal": "trabalhador temporário",
     "audioOriginal": "decaceg1.mp3"
    },
    {
-    "origem": "Árabe",
+    "origem": "árabe",
     "palavra": "esfirra",
     "significado": "espécie de pastel de forno recheado com carne, queijo, verdura e temperos diversos",
     "audio": "esfiha0.mp3",
@@ -5370,7 +2486,7 @@ var data = [
     "audioOriginal": "esfiha1.mp3"
    },
    {
-    "origem": "Italiano",
+    "origem": "italiano",
     "palavra": "espaguete",
     "significado": "pasta alimentar à base de trigo em forma de fios delgados",
     "audio": "espageti0.mp3",
@@ -5379,7 +2495,7 @@ var data = [
     "audioOriginal": "espageti1.mp3"
    },
    {
-    "origem": "Italiano",
+    "origem": "italiano",
     "palavra": "galeto",
     "significado": "frango novo que se prepara assado no espeto",
     "audio": "galeto0.mp3",
@@ -5388,7 +2504,7 @@ var data = [
     "audioOriginal": "galeto1.mp3"
    },
    {
-    "origem": "Italiano",
+    "origem": "italiano",
     "palavra": "grafite",
     "significado": "desenhos feitos geralmente com spray de tinta em paredes e muros de uma cidade",
     "audio": "grafiti0.mp3",
@@ -5397,7 +2513,7 @@ var data = [
     "audioOriginal": "grafiti1.mp3"
    },
    {
-    "origem": "Japonês",
+    "origem": "japonês",
     "palavra": "jiu-jítsu",
     "significado": "método de luta criado no Japão por volta do século XVI",
     "audio": "giugtsu0.mp3",
@@ -5406,16 +2522,16 @@ var data = [
     "audioOriginal": "giugtsu1.mp3"
    },
    {
-    "origem": "Japonês",
+    "origem": "japonês",
     "palavra": "judô",
-    "significado": "sistema de luta corporal que constitui uma modalidade do antigo jiu-jítsu",
+    "significado": "sistema de luta corporal que se constitui em uma modalidade do antigo jiu-jítsu",
     "audio": "judo0.mp3",
     "tradução": "judo",
-    "significadoOriginal": "sistema de luta corporal que constitui uma modalidade do antigo jiu-jítsu",
+    "significadoOriginal": "sistema de luta corporal que se constitui em uma modalidade do antigo jiu-jítsu",
     "audioOriginal": "judo1.mp3"
    },
    {
-    "origem": "Iídiche",
+    "origem": "iídiche",
     "palavra": "kosher",
     "significado": "alimentos permitidos pela lei judaica",
     "audio": "cocher0.mp3",
@@ -5424,16 +2540,16 @@ var data = [
     "audioOriginal": "cocher1.mp3"
    },
    {
-    "origem": "Italiano",
+    "origem": "italiano",
     "palavra": "macarrão",
-    "significado": "massa alimentícia de origem italiana",
+    "significado": "massa alimentícia introduzida no Brasil por imigrantes italianos",
     "audio": "macarrao0.mp3",
     "tradução": "maccherone",
     "significadoOriginal": "massa ou pasta alimentícia de diversos tipos",
     "audioOriginal": "macarrao1.mp3"
    },
    {
-    "origem": "Italiano",
+    "origem": "italiano",
     "palavra": "máfia",
     "significado": "qualquer associação ou organização que usa métodos inescrupulosos para controlar uma atividade",
     "audio": "mafia0.mp3",
@@ -5442,7 +2558,7 @@ var data = [
     "audioOriginal": "mafia1.mp3"
    },
    {
-    "origem": "Árabe",
+    "origem": "árabe",
     "palavra": "mascate",
     "significado": "mercador ambulante",
     "audio": "mascati0.mp3",
@@ -5451,16 +2567,16 @@ var data = [
     "audioOriginal": "mascati1.mp3"
    },
    {
-    "origem": "Japonês",
+    "origem": "japonês",
     "palavra": "nissei",
     "significado": "filho de pais japoneses nascido na América",
     "audio": "nissei0.mp3",
     "tradução": "nisei",
-    "significadoOriginal": "literalmente, segunda geração; filho de pais japoneses nascido na América",
+    "significadoOriginal": "filho de pais japoneses nascido na América; literalmente, segunda geração",
     "audioOriginal": "nissei1.mp3"
    },
    {
-    "origem": "Italiano",
+    "origem": "italiano",
     "palavra": "ópera",
     "significado": "obra dramática musicada",
     "audio": "opera0.mp3",
@@ -5469,7 +2585,7 @@ var data = [
     "audioOriginal": "opera1.mp3"
    },
    {
-    "origem": "Italiano",
+    "origem": "italiano",
     "palavra": "palhaço",
     "significado": "ator cômico, especialmente de circo",
     "audio": "palhaco0.mp3",
@@ -5478,7 +2594,7 @@ var data = [
     "audioOriginal": "palhaco1.mp3"
    },
    {
-    "origem": "Italiano",
+    "origem": "italiano",
     "palavra": "panetone",
     "significado": "bolo de massa fermentada, com frutas cristalizadas e passas",
     "audio": "panetone0.mp3",
@@ -5487,16 +2603,16 @@ var data = [
     "audioOriginal": "panetone1.mp3"
    },
    {
-    "origem": "Italiano",
+    "origem": "italiano",
     "palavra": "pizza",
-    "significado": "iguaria feita de massa de pão aplainada, coberta com queijo, tomate e outros ingredientes e cozida em forno",
+    "significado": "iguaria feita de massa de pão aplainada, coberta com queijo, tomate e outros ingredientes, preparada em forno",
     "audio": "pizza0.mp3",
     "tradução": "pizza",
-    "significadoOriginal": "iguaria feita de massa de pão aplainada, coberta com queijo, tomate e outros ingredientes e cozida em forno",
+    "significadoOriginal": "iguaria feita de massa de pão aplainada, coberta com queijo, tomate e outros ingredientes, preparada em forno",
     "audioOriginal": "pizza1.mp3"
    },
    {
-    "origem": "Italiano",
+    "origem": "italiano",
     "palavra": "polenta",
     "significado": "pasta de fubá de milho cozida ou frita",
     "audio": "polenta0.mp3",
@@ -5505,25 +2621,25 @@ var data = [
     "audioOriginal": "polenta1.mp3"
    },
    {
-    "origem": "Árabe",
+    "origem": "árabe",
     "palavra": "quibe",
-    "significado": "iguaria árabe que se faz com carne e trigo, condimentados com pimenta, hortelã, cebola, entre outros",
+    "significado": "iguaria árabe que se faz com carne e trigo, condimentados com pimenta, hortelã e cebola, entre outros",
     "audio": "kibe0.mp3",
     "tradução": "quibbat",
-    "significadoOriginal": "iguaria árabe que se faz com carne e trigo, condimentados com pimenta, hortelã, cebola, entre outros",
+    "significadoOriginal": "iguaria árabe que se faz com carne e trigo, condimentados com pimenta, hortelã e cebola, entre outros",
     "audioOriginal": "kibe1.mp3"
    },
    {
-    "origem": "Espanhol",
+    "origem": "espanhol",
     "palavra": "quinoa",
     "significado": "cereal rico em proteínas, fibras, e vitaminas, consumido há cerca de cinco mil anos no Peru e Bolívia",
-    "audio": "",
+    "audio": "quinoa0.mp3",
     "tradução": "quinoa",
-    "significadoOriginal": "cereal rico em proteínas, fibras, e vitaminas, consumido há cerca de cinco mil anos no Peru e Bolívia",
-    "audioOriginal": ""
+    "significadoOriginal": "cereal rico em proteínas, fibras e vitaminas, consumido há cerca de 5 mil anos no Peru e na Bolívia",
+    "audioOriginal": "quinoa1.mp3"
    },
    {
-    "origem": "Italiano",
+    "origem": "italiano",
     "palavra": "regata",
     "significado": "competição de barcos a vela ou a remo",
     "audio": "regata0.mp3",
@@ -5532,16 +2648,16 @@ var data = [
     "audioOriginal": "regata1.mp3"
    },
    {
-    "origem": "Espanhol",
-    "palavra": "saltenhas",
+    "origem": "espanhol",
+    "palavra": "saltenha",
     "significado": "massa ou pão recheado de carne, frango, ovos e temperos, tradicionalmente utilizado por pastores de rebanhos e viajantes",
-    "audio": "",
+    "audio": "saltenhas0.mp3",
     "tradução": "salteña",
     "significadoOriginal": "massa ou pão recheado de carne, frango, ovos e temperos, tradicionalmente utilizado por pastores de rebanhos e viajantes. O mesmo que empanada",
-    "audioOriginal": ""
+    "audioOriginal": "saltenhas1.mp3"
    },
    {
-    "origem": "Japonês",
+    "origem": "japonês",
     "palavra": "samurai",
     "significado": "membro da classe dos guerreiros na organização feudal do Japão",
     "audio": "samurai0.mp3",
@@ -5550,7 +2666,7 @@ var data = [
     "audioOriginal": "samurai1.mp3"
    },
    {
-    "origem": "Japonês",
+    "origem": "japonês",
     "palavra": "saquê",
     "significado": "bebida típica japonesa, obtida de arroz fermentado",
     "audio": "sake0.mp3",
@@ -5559,7 +2675,7 @@ var data = [
     "audioOriginal": "sake1.mp3"
    },
    {
-    "origem": "Italiano",
+    "origem": "italiano",
     "palavra": "serenata",
     "significado": "apresentação musical que se faz ou se manda fazer à noite, próximo a casa da amada",
     "audio": "serenata0.mp3",
@@ -5568,7 +2684,7 @@ var data = [
     "audioOriginal": "serenata1.mp3"
    },
    {
-    "origem": "Alemão",
+    "origem": "alemão",
     "palavra": "strudel",
     "significado": "pastelão comprido e enrolado, feito de massa folhada, recheado e assado",
     "audio": "strudel0.mp3",
@@ -5577,7 +2693,7 @@ var data = [
     "audioOriginal": "strudel1.mp3"
    },
    {
-    "origem": "Japonês",
+    "origem": "japonês",
     "palavra": "sushi",
     "significado": "bolinho de arroz envolvido em folha de alga e ornado com fatias de peixe cru",
     "audio": "sushi",
@@ -5586,7 +2702,7 @@ var data = [
     "audioOriginal": "sushistrudel1.mp3"
    },
    {
-    "origem": "Chinês",
+    "origem": "chinês",
     "palavra": "tai chi chuan",
     "significado": "sistema chinês de exercícios de relaxamento e meditação",
     "audio": "taishishuan0.mp3",
@@ -5595,16 +2711,16 @@ var data = [
     "audioOriginal": "taishishuan1.mp3"
    },
    {
-    "origem": "Chinês",
+    "origem": "coreano",
     "palavra": "taekwondo",
-    "significado": "técnica milenar coreana de combate sem armas para defesa pessoal influenciada por artes marciais chinesas e japonesas",
-    "audio": "",
+    "significado": "técnica milenar coreana de combate sem armas para defesa pessoal, influenciada por artes marciais chinesas e japonesas",
+    "audio": "taekwondo0.mp3",
     "tradução": "taekwondo",
-    "significadoOriginal": "técnica milenar coreana de combate sem armas para defesa pessoal influenciada por artes marciais chinesas e japonesas",
-    "audioOriginal": ""
+    "significadoOriginal": "técnica milenar coreana de combate sem armas para defesa pessoal, influenciada por artes marciais chinesas e japonesas",
+    "audioOriginal": "taekwondo1.mp3"
    },
    {
-    "origem": "Italiano",
+    "origem": "italiano",
     "palavra": "tchau",
     "significado": "até logo; até a vista",
     "audio": "tchau0.mp3",
@@ -5613,7 +2729,7 @@ var data = [
     "audioOriginal": "tchau1.mp3"
    },
    {
-    "origem": "Alemão",
+    "origem": "alemão",
     "palavra": "xote",
     "significado": "dança de salão semelhante ao forró, executada ao som de sanfonas, especialmente no Nordeste",
     "audio": "xote0.mp3",
@@ -5690,488 +2806,488 @@ var data = [
  },
  {
   "nome": "Português pelo mundo",
-  "menu": [],
   "palavras": [
    {
-    "origem": "Africanense",
-    "palavra": "parra",
+    "origem": "africanse",
+    "palavra": "parar",
     "significado": "parar (um barco); remar mais lentamente",
-    "audio": "",
-    "tradução": "parar",
-    "significadoOriginal": ""
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "parra",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
-    "origem": "Africanense",
-    "palavra": "sambreel",
+    "origem": "africanse",
+    "palavra": "sombreiro",
     "significado": "sombrinha, guarda-sol",
-    "audio": "",
-    "tradução": "sombreiro",
-    "significadoOriginal": ""
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "sambreel",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "árabe",
-    "palavra": "ʾanānās",
+    "palavra": "ananás",
     "significado": "abacaxi",
-    "audio": "",
-    "tradução": "ananás",
-    "significadoOriginal": ""
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "ʾanānās",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "árabe",
-    "palavra": "fāranda",
+    "palavra": "varanda",
     "significado": "varanda",
-    "audio": "",
-    "tradução": "varanda",
-    "significadoOriginal": ""
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "fāranda",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "bengali",
-    "palavra": "paun-ruti",
+    "palavra": "pão",
     "significado": "pão",
-    "audio": "",
-    "tradução": "pão",
-    "significadoOriginal": ""
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "paun-ruti",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "cambojano",
-    "palavra": "rial",
+    "palavra": "real",
     "significado": "moeda do Cambodja",
-    "audio": "",
-    "tradução": "real",
-    "significadoOriginal": ""
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "rial",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "cambojano",
-    "palavra": "sāp′ū",
+    "palavra": "sabão",
     "significado": "sabão",
-    "audio": "",
-    "tradução": "sabão",
-    "significadoOriginal": ""
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "sāp′u",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "cingalês",
-    "palavra": "kendiya",
+    "palavra": "candeia",
     "significado": "vela",
-    "audio": "",
-    "tradução": "candeia",
-    "significadoOriginal": ""
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "kendiya",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "cingalês",
-    "palavra": "kasādaya",
+    "palavra": "casada",
     "significado": "casamento",
-    "audio": "",
-    "tradução": "casada",
-    "significadoOriginal": ""
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "kasādaya",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "cingalês",
-    "palavra": "pagāva",
+    "palavra": "paga (pagamento)",
     "significado": "suborno, propina",
-    "audio": "",
-    "tradução": "paga (pagamento)",
-    "significadoOriginal": ""
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "pagāva",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "cingalês",
-    "palavra": "kēntiya",
+    "palavra": "quente",
     "significado": "ira, raiva",
-    "audio": "",
-    "tradução": "quente",
-    "significadoOriginal": ""
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "kēntiya",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "guzerate",
-    "palavra": "ālamārī",
+    "palavra": "armário",
     "significado": "armário",
-    "audio": "",
-    "tradução": "armário",
-    "significadoOriginal": ""
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "ālamārī",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "guzerate",
-    "palavra": "bāladī",
+    "palavra": "balde",
     "significado": "balde",
-    "audio": "",
-    "tradução": "balde",
-    "significadoOriginal": ""
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "bāladī",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "guzerate",
-    "palavra": "phālatu",
+    "palavra": "falto (faltante)",
     "significado": "supérfluo, redundante",
-    "audio": "",
-    "tradução": "falto (faltante)",
-    "significadoOriginal": ""
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "phālatu",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "guzerate",
-    "palavra": "mēja",
+    "palavra": "mesa",
     "significado": "mesa",
-    "audio": "",
-    "tradução": "mesa",
-    "significadoOriginal": ""
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "mēja",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "guzerate",
-    "palavra": "mistrī",
+    "palavra": "mestre",
     "significado": "carpinteiro",
-    "audio": "",
-    "tradução": "mestre",
-    "significadoOriginal": ""
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "mistrī",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
-    "origem": "guzerate (de 'pão')",
-    "palavra": "pāū̃",
+    "origem": "guzerate",
+    "palavra": "pão",
     "significado": "pão",
-    "audio": "",
-    "tradução": "pão",
-    "significadoOriginal": ""
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "pāū̃",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "hindustâni",
-    "palavra": "almārī",
+    "palavra": "armário",
     "significado": "armário de prateleiras",
-    "audio": "",
-    "tradução": "armário",
-    "significadoOriginal": ""
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "almārī",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "hindustâni",
-    "palavra": "krūs",
+    "palavra": "cruz",
     "significado": "cruz cristã, crucifixo",
-    "audio": "",
-    "tradução": "cruz",
-    "significadoOriginal": ""
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "krūs",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "hindustâni",
-    "palavra": "ispāt",
+    "palavra": "espada",
     "significado": "ferro",
-    "audio": "",
-    "tradução": "espada",
-    "significadoOriginal": ""
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "ispāt",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "hindustâni",
-    "palavra": "mārtaul",
+    "palavra": "martelo",
     "significado": "martelo",
-    "audio": "",
-    "tradução": "martelo",
-    "significadoOriginal": ""
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "mārtaul",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "hindustâni",
-    "palavra": "nāv",
+    "palavra": "nau",
     "significado": "barco",
-    "audio": "",
-    "tradução": "nau",
-    "significadoOriginal": ""
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "nāv",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "japonês",
-    "palavra": "konpeitō",
+    "palavra": "confeito",
     "significado": "confeito",
-    "audio": "",
-    "tradução": "confeito",
-    "significadoOriginal": ""
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "konpeitō",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "japonês",
-    "palavra": "koppu",
+    "palavra": "copo",
     "significado": "copo",
-    "audio": "",
-    "tradução": "copo",
-    "significadoOriginal": ""
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "koppu",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "japonês",
-    "palavra": "furasuko",
+    "palavra": "frasco",
     "significado": "frasco",
-    "audio": "",
-    "tradução": "frasco",
-    "significadoOriginal": ""
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "furasuko",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "japonês",
-    "palavra": "marumero",
+    "palavra": "marmelo",
     "significado": "marmelo",
-    "audio": "",
-    "tradução": "marmelo",
-    "significadoOriginal": ""
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "marumero",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "japonês",
-    "palavra": "pan",
+    "palavra": "pão",
     "significado": "pão",
-    "audio": "",
-    "tradução": "pão",
-    "significadoOriginal": ""
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "pan",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "japonês",
-    "palavra": "tenpura",
+    "palavra": "têmpora (dia de jejum religioso)",
     "significado": "pedaços fritos de vegetais ou frutos do mar empanados",
-    "audio": "",
-    "tradução": "têmpora(s) (dias de jejum religioso) ",
-    "significadoOriginal": ""
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "tenpura",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
-    "origem": "malabar / malaiala",
-    "palavra": "kadalaas",
+    "origem": "malabar/malaiala",
+    "palavra": "cartaz",
     "significado": "papel (com origem em cartaz, licença de navegação usada a partir do séc. XVI, emitida pelos portugueses)",
-    "audio": "",
-    "tradução": "cartaz",
-    "significadoOriginal": ""
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "kadalaas",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
-    "origem": "malabar/malaiala (de ‘mestre’)",
-    "palavra": "mesthiri",
-    "significado": "supervisor, capaz",
-    "audio": "",
-    "tradução": "mestre",
-    "significadoOriginal": ""
+    "origem": "malabar/malaiala",
+    "palavra": "mestre",
+    "significado": "supervisor, capataz",
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "mesthiri",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "malabar/malaiala",
     "palavra": "pena",
     "significado": "caneta",
-    "audio": "",
+    "audio": "NÃO HAVERÁ ÁUDIO",
     "tradução": "pena",
-    "significadoOriginal": ""
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "malabar/malaiala",
-    "palavra": "thaal",
+    "palavra": "talão",
     "significado": "página",
-    "audio": "",
-    "tradução": "talão",
-    "significadoOriginal": ""
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "thaal",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "malaio",
-    "palavra": "almari",
+    "palavra": "armário",
     "significado": "armário",
-    "audio": "",
-    "tradução": "armário",
-    "significadoOriginal": ""
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "almari",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "malaio",
-    "palavra": "bangku",
+    "palavra": "banco",
     "significado": "banco",
-    "audio": "",
-    "tradução": "banco",
-    "significadoOriginal": ""
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "bangku",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "malaio",
-    "palavra": "bendera",
+    "palavra": "bandeira",
     "significado": "bandeira",
-    "audio": "",
-    "tradução": "bandeira",
-    "significadoOriginal": ""
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "bendera",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "malaio",
     "palavra": "bola",
     "significado": "bola",
-    "audio": "",
+    "audio": "NÃO HAVERÁ ÁUDIO",
     "tradução": "bola",
-    "significadoOriginal": ""
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "malaio",
     "palavra": "bomba",
     "significado": "bombeiro",
-    "audio": "",
+    "audio": "NÃO HAVERÁ ÁUDIO",
     "tradução": "bomba",
-    "significadoOriginal": ""
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "malaio",
-    "palavra": "boneka",
+    "palavra": "boneca",
     "significado": "boneca",
-    "audio": "",
-    "tradução": "boneca",
-    "significadoOriginal": ""
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "boneka",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "malaio",
-    "palavra": "kemeja",
+    "palavra": "camisa",
     "significado": "camisa",
-    "audio": "",
-    "tradução": "camisa",
-    "significadoOriginal": ""
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "kemeja",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "malaio",
-    "palavra": "kereta",
+    "palavra": "carreta",
     "significado": "carro, carruagem",
-    "audio": "",
-    "tradução": "carreta",
-    "significadoOriginal": ""
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "kereta",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "malaio",
-    "palavra": "sekolah",
+    "palavra": "escola",
     "significado": "escolar",
-    "audio": "",
-    "tradução": "escola",
-    "significadoOriginal": ""
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "sekolah",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "malaio",
-    "palavra": "pesta",
+    "palavra": "festa",
     "significado": "festa",
-    "audio": "",
-    "tradução": "festa",
-    "significadoOriginal": ""
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "pesta",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "malaio",
-    "palavra": "pita",
+    "palavra": "fita",
     "significado": "fita",
-    "audio": "",
-    "tradução": "fita",
-    "significadoOriginal": ""
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "pita",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "malaio",
-    "palavra": "garpu",
+    "palavra": "garfo",
     "significado": "garfo",
-    "audio": "",
-    "tradução": "garfo",
-    "significadoOriginal": ""
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "garpu",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "malaio",
-    "palavra": "lemau",
-    "significado": "limão / laranja",
-    "audio": "",
-    "tradução": "limão",
-    "significadoOriginal": ""
+    "palavra": "limão",
+    "significado": "limão e laranja",
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "lemau",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "malaio",
-    "palavra": "meja",
+    "palavra": "mesa",
     "significado": "mesa",
-    "audio": "",
-    "tradução": "mesa",
-    "significadoOriginal": ""
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "meja",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "malaio",
-    "palavra": "kejo",
+    "palavra": "queijo",
     "significado": "queijo",
-    "audio": "",
-    "tradução": "queijo ",
-    "significadoOriginal": ""
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "kejo",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "malaio",
     "palavra": "ronda",
     "significado": "patrulhar",
-    "audio": "",
+    "audio": "NÃO HAVERÁ ÁUDIO",
     "tradução": "ronda",
-    "significadoOriginal": ""
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "malaio",
-    "palavra": "tuala",
+    "palavra": "toalha",
     "significado": "toalha",
-    "audio": "",
-    "tradução": "toalha",
-    "significadoOriginal": ""
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "tuala",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "malaio",
-    "palavra": "biola",
-    "significado": "violin",
-    "audio": "",
-    "tradução": "viola",
-    "significadoOriginal": ""
+    "palavra": "viola",
+    "significado": "violino",
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "biola",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "suaíli",
-    "palavra": "karata",
+    "palavra": "carta",
     "significado": "carta",
-    "audio": "",
-    "tradução": "carta",
-    "significadoOriginal": ""
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "karata",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "suaíli",
-    "palavra": "kopa",
-    "significado": "copa (naipe)",
-    "audio": "",
-    "tradução": "copa",
-    "significadoOriginal": ""
+    "palavra": "copas",
+    "significado": "copas (naipe)",
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "kopa",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "suaíli",
-    "palavra": "dadu",
+    "palavra": "dado",
     "significado": "dado",
-    "audio": "",
-    "tradução": "dado",
-    "significadoOriginal": ""
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "dadu",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "suaíli",
-    "palavra": "dama",
-    "significado": "damas (jogo)",
-    "audio": "",
-    "tradução": "damas",
-    "significadoOriginal": ""
+    "palavra": "damas",
+    "significado": "jogo de damas",
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "dama",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "suaíli",
-    "palavra": "shupaza",
-    "significado": "espada (naipe)",
-    "audio": "",
-    "tradução": "espada",
-    "significadoOriginal": ""
+    "palavra": "espadas",
+    "significado": "espadas (naipe)",
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "shupaza",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "suaíli",
-    "palavra": "uru",
-    "significado": "ouro (naipe)",
-    "audio": "",
-    "tradução": "ouro",
-    "significadoOriginal": ""
+    "palavra": "ouros",
+    "significado": "ouros (naipe)",
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "uru",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "suaíli",
-    "palavra": "pao",
+    "palavra": "paus",
     "significado": "paus (naipe)",
-    "audio": "",
-    "tradução": "paus",
-    "significadoOriginal": ""
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "pao",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "suaíli",
-    "palavra": "turufu",
+    "palavra": "trunfo",
     "significado": "trunfo (jogo de cartas)",
-    "audio": "",
-    "tradução": "trunfo",
-    "significadoOriginal": ""
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "turufu",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "tailandês",
-    "palavra": "lay-lăng",
+    "palavra": "leilão",
     "significado": "barato/em saldo",
-    "audio": "",
-    "tradução": "leilão",
-    "significadoOriginal": ""
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "lay-lăng",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    },
    {
     "origem": "tailandês",
-    "palavra": "rĭan",
+    "palavra": "real",
     "significado": "moeda, medalha",
-    "audio": "",
-    "tradução": "real",
-    "significadoOriginal": ""
+    "audio": "NÃO HAVERÁ ÁUDIO",
+    "tradução": "rĭan",
+    "audioOriginal": "NÃO HAVERÁ ÁUDIO"
    }
-  ]
+  ],
+  "menu": []
  }
 ]

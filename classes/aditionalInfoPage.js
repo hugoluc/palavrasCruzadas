@@ -74,6 +74,7 @@ function aditionalInfoPage(){
 }
 
 aditionalInfoPage.prototype.init = function(_data,_callBack){
+
   this.callBack = _callBack
   this.data = _data
   this.container.style.display = "flex"
@@ -144,6 +145,21 @@ aditionalInfoPage.prototype.addslide = function(_images){
 
   var controlWidth = _images.length * (sizes.controlCircle + sizes.controlGap)
 
+  if(_images.length == 1 && _images[0] == ""){
+  
+    this.images.style.display = "none"
+    this.text.style.marginTop = "200px"
+    this.tittle.style.marginTop = "200px"
+
+  }else{
+  
+    this.images.style.display = "block"
+    this.text.style.marginTop = ""
+    this.tittle.style.marginTop = ""
+
+  }
+  
+
   var imageContainer = document.createElement("div")
   imageContainer.id = "imageContainer"
   this.images.appendChild(imageContainer)
@@ -157,6 +173,14 @@ aditionalInfoPage.prototype.addslide = function(_images){
   controlsContainer.style.left = (canvasSize.width/2) - (controlWidth/2) + "px"
   controlsContainer.style.zIndex = 1
   controlsContainer.id = "circles"
+  
+  if(_images.length == 1) {
+  
+    controlsContainer.style.display = "none"
+
+  }
+
+
   this.images.appendChild(controlsContainer)
 
   for (var i = 0; i < _images.length; i++) {
@@ -169,7 +193,7 @@ aditionalInfoPage.prototype.addslide = function(_images){
     image.style.width = "100%"
     image.style.transition = "opacity 1s"
     imageContainer.appendChild(image)
-
+    
     var circle = document.createElement("div")
     circle.style.width = sizes.controlCircle + "px"
     circle.style.height = sizes.controlCircle + "px"
@@ -179,6 +203,7 @@ aditionalInfoPage.prototype.addslide = function(_images){
     circle.style.boxShadow = "rgba(0, 0, 0, 0.2) 1px 2px 40px 10px"
     circle.style.transition = "background 0.5s"
     controlsContainer.appendChild(circle)
+
 
   }
 

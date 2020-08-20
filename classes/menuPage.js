@@ -17,6 +17,7 @@ function menuPage(){
     width : canvasSize.width - (2 * this.margin ),
     height : canvasSize.height * 0.09,
   }
+
   this.backBtn = document.createElement("button")
   this.backBtn.style.width = btnSize.width + "px"
   this.backBtn.style.height = btnSize.height + "px"
@@ -33,6 +34,11 @@ function menuPage(){
   this.backBtn.onclick = () => {
     enableCanvas = true
     toDefinition = false
+    
+    realWordTimes.wordTimeMin = initialWordTimes.wordTimeMin
+    realWordTimes.wordTimeMax = initialWordTimes.wordTimeMax
+
+
     this.reset()
     setTimeout(() => {
       definitionPage.reset()
@@ -56,12 +62,13 @@ function menuPage(){
 
   for(var i = 0; i < selectedData.menu.length; i++){
 
+    var _this = this
+
     var item = {};
     item.id = i
-    var _this = this
-    // item.finalPosition = canvasSize.height - this.marginBottom - ( this.itemHeight * (i+ 1) ) + "px"
+    
     item.container = document.createElement("div")
-    item.container.style.top = canvasSize.height - this.marginBottom - ( this.itemHeight * i ) + "px"
+    item.container.style.top = (canvasSize.height - this.marginBottom) - ( this.itemHeight * (selectedData.menu.length-i-1) ) + "px"
     item.container.style.position = "absolute"
     item.container.id = i
     item.container.className = "menuItem"
@@ -132,7 +139,7 @@ menuPage.prototype.animateMenus = function() {
 }
 
 menuPage.prototype.reset = function(){
-
+  
   var animationTime = 0.3
   var delay = 0.04
   this.backBtn.style.opacity = 0

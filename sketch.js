@@ -24,8 +24,10 @@ function draw() {
 
 
   if(appStart){
+    
     background(selectedStyleColors.system.bg.r,selectedStyleColors.system.bg.g,selectedStyleColors.system.bg.b);
 
+    if(dddd) debugger
     if(enableCanvas && !toDefinition){
       system.run();
     }
@@ -34,3 +36,5 @@ function draw() {
   }
 
 }
+
+var dddd = false
