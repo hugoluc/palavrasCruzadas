@@ -3,12 +3,12 @@ var words = [];
 
 function preload(){
 
-  sohne = loadFont('Sohne/Sohne-Mager.otf');
-  sohneBold = loadFont('Sohne/Sohne-Halbfett.otf');
+  sohne = loadFont('/Sohne/Sohne-Mager.otf');
+  sohneBold = loadFont('/Sohne/Sohne-Halbfett.otf');
   if(selectedData){
     for(i = 0; i <selectedData.palavras.length; i++){
-      selectedData.palavras[i].audioObj = selectedData.palavras[i].audio ? loadSound( "audios/" + selectedData.palavras[i].audio) : ""
-      selectedData.palavras[i].audioOriginalObj = selectedData.palavras[i].audioOriginal ? loadSound( "audios/" + selectedData.palavras[i].audioOriginal) : ""
+      selectedData.palavras[i].audioObj = selectedData.palavras[i].audio ? loadSound( "/audios/" + selectedData.palavras[i].audio) : ""
+      selectedData.palavras[i].audioOriginalObj = selectedData.palavras[i].audioOriginal ? loadSound( "/audios/" + selectedData.palavras[i].audioOriginal) : ""
     }
   }
 
@@ -17,6 +17,7 @@ function preload(){
 
 function setup() {
   createSelectMenu()
+  selectExp()
 }
 
 
@@ -27,7 +28,6 @@ function draw() {
     
     background(selectedStyleColors.system.bg.r,selectedStyleColors.system.bg.g,selectedStyleColors.system.bg.b);
 
-    if(dddd) debugger
     if(enableCanvas && !toDefinition){
       system.run();
     }
@@ -36,5 +36,3 @@ function draw() {
   }
 
 }
-
-var dddd = false

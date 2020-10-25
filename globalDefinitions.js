@@ -237,7 +237,6 @@ function createSelectMenu(){
 
   var container = document.createElement("div")
   container.id = "selectDataMenu"
-  // container.style.display = "flex"
   container.style.width = canvasSize.width + "px"
   document.body.appendChild(container)
 
@@ -257,22 +256,28 @@ function createSelectMenu(){
     item.style.lineHeight = height + "px"
     item.style.fontSize = "30px"
     item.style.fontFamily = "Sohne bold"
-    item.onclick = function() {
-      
-      document.body.removeChild(this.parentNode)
-      selectedData = data[this.id]
-      selectedStyleColors = style[this.dataset.style]
-
-      startApp()
-      preload()
-
+    item.onclick = function () { 
+      EXP_ID = this.id
+      selectExp() 
     }
-
-    item.dataset.style = 0
-    item.dataset.style = menuColorStyles[i]
-
     container.appendChild(item)
   }
+
+}
+
+var EXP_ID;
+
+function selectExp(){
+
+  if(EXP_ID == undefined) return
+
+  var container = document.querySelector("#selectDataMenu")
+  container.parentNode.removeChild(container)
+  selectedData = data[EXP_ID]
+  selectedStyleColors = style[0]
+
+  startApp()
+  preload()
 
 }
 

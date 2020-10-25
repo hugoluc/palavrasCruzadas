@@ -5,7 +5,7 @@ function loadImages(){
       var res = document.createElement("link")
       res.rel = "preload"
       res.as = "image"
-      res.href = "imagens/" +selectedData.menu[i].imagens[j]
+      res.href = "/imagens/" +selectedData.menu[i].imagens[j]
       document.head.appendChild(res)
     }
   }
@@ -18,13 +18,13 @@ function loadAudios(){
     var res = document.createElement("link")
     res.rel = "preload"
     res.as = "audio"
-    res.href = "audios/" + selectedData.palavras[i].audio
+    res.href = "/audios/" + selectedData.palavras[i].audio
     document.head.appendChild(res)
 
     var res = document.createElement("link")
     res.rel = "preload"
     res.as = "audio"
-    res.href = "audios/" + selectedData.palavras[i].audioOriginal
+    res.href = "/audios/" + selectedData.palavras[i].audioOriginal
     document.head.appendChild(res)
 
 
@@ -32,4 +32,3 @@ function loadAudios(){
 
 loadAudios()
 loadImages()
-
