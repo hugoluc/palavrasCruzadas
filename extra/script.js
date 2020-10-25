@@ -29,7 +29,7 @@ getMenus()
 
 function getWords() { 
 
-  var csvFilePath = '/Users/hugogoulartdelucena/Desktop/palavrasCruzadas/extra/palavras/' + index + '.csv'
+  var csvFilePath = '/Users/hugolucena/Desktop/palavrasCruzadas/extra/palavras/' + index + '.csv'
   console.log(">>>>>>>> getting words at index: " + csvFilePath);
   
 
@@ -47,11 +47,22 @@ function getWords() {
       palavra.origem = jsonObj[l]["Lingua"]
       palavra.palavra = jsonObj[l]["Palavra PT"]
       palavra.significado = jsonObj[l]["Significado PT"]
-      palavra.audio = jsonObj[l]["Audio PT"]
+      
+      if(jsonObj[l]["Audio Original"] == "NÃO HAVERÁ ÁUDIO"){
+        palavra.audio = undefined
+      }else{
+        palavra.audio = jsonObj[l]["Audio PT"]
+      }
 
       palavra.tradução = jsonObj[l]["Palavra Original"]
       palavra.significadoOriginal = jsonObj[l]["Significado Original"]
-      palavra.audioOriginal = jsonObj[l]["Audio Original"]
+      
+      if(jsonObj[l]["Audio Original"] == "NÃO HAVERÁ ÁUDIO"){
+        palavra.audioOriginal = undefined
+      }else{
+        palavra.audioOriginal = jsonObj[l]["Audio Original"]
+      }
+
       palavras.push(palavra)
     }
 
@@ -69,7 +80,7 @@ function getWords() {
 
 function getMenus() {
   
-  var csvFilePath = '/Users/hugogoulartdelucena/Desktop/palavrasCruzadas/extra/menus/' + menuIndex + '.csv'
+  var csvFilePath = '/Users/hugolucena/Desktop/palavrasCruzadas/extra/menus/' + menuIndex + '.csv'
   console.log(">>>>>>>> getting menus at index: " + menuIndex);
 
 
@@ -116,7 +127,7 @@ function saveData() {
 
   var data = 'var data = ' + JSON.stringify(allData, null, 1)
 
-  fs.writeFile("/Users/hugogoulartdelucena/Desktop/palavrasCruzadas/data.js", data, 'utf8', function(error){
+  fs.writeFile("/Users/hugolucena/Desktop/palavrasCruzadas/data.js", data, 'utf8', function(error){
     console.log(data)
     console.log(error)
   })
