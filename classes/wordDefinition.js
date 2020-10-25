@@ -14,6 +14,16 @@ function wordDefinition(){
   this.allContainer.id = "definition_container"
   document.body.append(this.allContainer)
 
+  this.tilteContainer = document.createElement("div")
+  this.tilteContainer.id = "title_contianer"
+  this.tilteContainer.style.position = "relative"
+  this.allContainer.append(this.tilteContainer)
+
+  this.descriptionContainer = document.createElement("div")
+  this.descriptionContainer.id = "description_contianer"
+  this.descriptionContainer.style.position = "relative"
+  this.allContainer.append(this.descriptionContainer)
+
   //titles
   this.firstTitle = document.createElement("div")
   this.firstTitle.className = "wordexplorer title"
@@ -21,11 +31,11 @@ function wordDefinition(){
   this.firstTitle.style.left = this.margin + "px"
   this.firstTitle.style.top = this.margin + "px"
   this.firstTitle.style.width = canvasSize.width - (2*this.margin) + "px"
-  this.firstTitle.style.fontSize = canvasSize.height * 0.028 + "px"
-  this.allContainer.append(this.firstTitle)
+  this.firstTitle.style.fontSize = canvasSize.height * 0.025 + "px"
+  this.tilteContainer.append(this.firstTitle)
 
   this.secondTitle = this.firstTitle.cloneNode(true)
-  this.allContainer.append(this.secondTitle)
+  this.tilteContainer.append(this.secondTitle)
 
   //line
   this.line = document.createElement("div")
@@ -35,7 +45,7 @@ function wordDefinition(){
   this.line.style.left = this.margin + "px"
   this.line.style.top = this.margin + canvasSize.height * 0.04  + "px"
   this.line.style.width = "0px"
-  this.allContainer.append(this.line)
+  this.descriptionContainer.append(this.line)
 
   //containers
   this.container = document.createElement("div")
@@ -44,11 +54,11 @@ function wordDefinition(){
   this.container.style.width = canvasSize.width - (2*this.margin) + "px"
   this.container.style.left = this.margin + "px"
   this.container.style.marginTop = this.margin * 0.3 + "px"
-  this.allContainer.append(this.container)
+  this.descriptionContainer.append(this.container)
 
   this.transContainer = this.container.cloneNode(true)
   this.transContainer.className = "wordexplorer container"
-  this.allContainer.append(this.transContainer)
+  this.descriptionContainer.append(this.transContainer)
 
   //words
   this.word = document.createElement("div")
@@ -105,14 +115,13 @@ function wordDefinition(){
 
 wordDefinition.prototype.init = function(_data, _callBack) {
 
-  console.log("word.init", _data);
+
   this.data = _data
 
   //setting callback and time per caracter
   this.callBack = () => { _callBack() }
 
   if(this.data.audioObj){
-    
     this.currentAudio = this.data.audioObj
     this.playSound()
     this.audioOpacity = 1
