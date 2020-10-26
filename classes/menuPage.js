@@ -38,12 +38,12 @@ function menuPage(){
     realWordTimes.wordTimeMin = initialWordTimes.wordTimeMin
     realWordTimes.wordTimeMax = initialWordTimes.wordTimeMax
 
-
     this.reset()
     setTimeout(() => {
       definitionPage.reset()
       btn.setColorChange(btn.fill,globalColors.yellow)
       btn.setReturn()
+      doFirstDraw = true
     },400)
   }
   this.container.append(this.backBtn)

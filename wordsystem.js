@@ -51,9 +51,7 @@ class WordSystem {
       this.lastMillis = millis()
 
       if(this.wordCount < this.wordLimit){
-    
         this.getNewWord()
-
       }
 
     }
@@ -112,7 +110,6 @@ class WordSystem {
 
   }
 
-
   clearDrag(){
 
     this.dragId = null;
@@ -146,7 +143,6 @@ class WordSystem {
   run() {
 
     this.getFirstWords()
-    console.log(this.wordCount)
 
     this.addWord()
 
@@ -172,7 +168,33 @@ class WordSystem {
       }
 
     }
-
   }
 
+  firstDraw(){
+    
+
+    var timeInterval = 100
+    var wordLimit = 20
+
+    for (var j = 0; j < wordLimit; j++) {    
+
+      this.getNewWord()
+
+      for (var l = 0; l < timeInterval; l++) {
+      
+        for (var i = this.displayWords.length - 1; i >= 0; i--) {
+          var w = this.displayWords[i];
+          
+          w.move();
+          w.grow();
+        
+        }
+    
+      }
+    }
+
+    return false
+
+  }
+  
 }

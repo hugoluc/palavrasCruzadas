@@ -5,6 +5,7 @@ var enableCanvas = false
 var toDefinition = false
 var selectedData;
 var appStart = false
+var doFirstDraw = true
 
 //-------------CONTROLES--------------------
 

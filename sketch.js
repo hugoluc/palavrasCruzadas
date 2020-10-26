@@ -23,8 +23,11 @@ function setup() {
 
 function draw() {
 
-
   if(appStart){
+
+    if(doFirstDraw){
+      doFirstDraw = system.firstDraw()
+    }
     
     background(selectedStyleColors.system.bg.r,selectedStyleColors.system.bg.g,selectedStyleColors.system.bg.b);
 
