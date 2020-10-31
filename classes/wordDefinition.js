@@ -27,15 +27,17 @@ function wordDefinition(){
   //titles
   this.firstTitle = document.createElement("div")
   this.firstTitle.className = "wordexplorer title"
-  this.firstTitle.innerHTML = "Em Português"
   this.firstTitle.style.left = this.margin + "px"
+  this.firstTitle.innerHTML = "Em Português"
   this.firstTitle.style.top = this.margin + "px"
   this.firstTitle.style.width = canvasSize.width - (2*this.margin) + "px"
   this.firstTitle.style.fontSize = canvasSize.height * 0.025 + "px"
   this.tilteContainer.append(this.firstTitle)
-
+  
   this.secondTitle = this.firstTitle.cloneNode(true)
   this.tilteContainer.append(this.secondTitle)
+  
+
 
   //line
   this.line = document.createElement("div")
@@ -133,11 +135,23 @@ wordDefinition.prototype.init = function(_data, _callBack) {
   }
 
   //setting text for content
+  
+
   this.setContent( this.word, _data.palavra)
-  this.description.innerHTML = _data.significado
   this.setContent( this.transWord, _data.tradução)
-  this.transDescription.innerHTML = _data.significadoOriginal
-  this.secondTitle.innerHTML = "Em " + _data.origem
+  
+  if(EXP_ID != 7){
+
+    this.description.innerHTML = _data.significado
+    this.transDescription.innerHTML = _data.significadoOriginal
+    this.secondTitle.innerHTML = "Em " + _data.origem
+
+  }else{
+    this.description.innerHTML = _data.significadoOriginal
+    this.transDescription.innerHTML = _data.significado
+    this.firstTitle.innerHTML = "Em " + _data.origem
+  }
+  
 
 
   this.allContainer.style.display = "block"

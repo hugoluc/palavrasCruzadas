@@ -38,20 +38,19 @@ function getWords() {
     for (var l = 0; l < jsonObj.length; l++) {
       var palavra = {}
     
+      // if(jsonObj[l]["Significado PT"] == "abacaxi"){debugger}
+
       palavra.origem = jsonObj[l]["Lingua"]
-      console.log("origem = ", palavra.origem);
       palavra.palavra = jsonObj[l]["Palavra PT"]
       palavra.significado = jsonObj[l]["Significado PT"]
+      palavra.tradução = jsonObj[l]["Palavra Original"]
+      palavra.significadoOriginal = jsonObj[l]["Significado Original"]
       
       if(jsonObj[l]["Audio Original"] == "NÃO HAVERÁ ÁUDIO"){
         palavra.audio = undefined
       }else{
         palavra.audio = jsonObj[l]["Audio PT"]
       }
-
-      palavra.tradução = jsonObj[l]["Palavra Original"]
-      palavra.significadoOriginal = jsonObj[l]["Significado Original"]
-      
       if(jsonObj[l]["Audio Original"] == "NÃO HAVERÁ ÁUDIO"){
         palavra.audioOriginal = undefined
       }else{
@@ -60,7 +59,8 @@ function getWords() {
 
       palavras.push(palavra)
     }
-
+  
+    
     allData[index].palavras = palavras
 
     if(index < names.length-1){
@@ -116,7 +116,6 @@ function saveData() {
     console.log("NOT READY!");
     console.log("Menu ready? : " + menuDone);
     console.log("Words ready? : " + wordsDone);
-    saveData()
     return
 
   } 

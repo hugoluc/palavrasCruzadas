@@ -155,13 +155,21 @@ class Word {
     textSize(this.size);
     textFont(sohneBold)
     this.textWidth = textWidth(this.word)
-    text(this.word, this.location.x, this.location.y);
+
+    
+    if(this.data.origem == "guzerate (de 'pão')") {
+
+      debugger
+
+      
+    }
+
+    text(this.replaceCharacters(this.word), this.location.x, this.location.y);
 
   }
 
   getNewSpeed() {
 
-    // console.log(this.location,this.pastMouseLocation);
     var speedX = (this.location.x - this.pastMouseLocation.x) * 0.1
     var speedY = (this.location.y - this.pastMouseLocation.y) * 0.1
     this.speed = createVector(speedX, speedY);
@@ -170,6 +178,42 @@ class Word {
 
   setPastSpeed() {
     this.pastMouseLocation = createVector(this.location.x,this.location.y)
+  }
+
+  replaceCharacters(_string){
+
+    return _string
+
+    var string = _string
+    var finished = false
+
+    var characters = [
+
+      "\u0101", // 0 = a
+      "\u016B", // 1 = ū
+      "\u0113", // 2 = ē
+      "\u012B", // 3 = ī
+      "\u016B" + "\u0303" // 4 = ū̃
+      //ă
+    ]
+
+    while(!finished){
+
+      for (let index = 0; index < characters.length; index++) {
+        string = string.replace(index.toString(),characters[index])      
+      }
+      
+      finished = true
+      
+      for (let index = 0; index < characters.length; index++) {
+        var t = string.indexOf(index.toString())
+        if(t > 0) finished = false
+      }
+
+   }
+  
+   return string
+
   }
 
 
