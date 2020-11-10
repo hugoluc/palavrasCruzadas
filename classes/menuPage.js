@@ -36,6 +36,7 @@ function menuPage(){
 
     if(!this.enableBackBtn) return
 
+    this.enableBackBtn = false
     enableCanvas = true
     toDefinition = false
     
@@ -168,7 +169,7 @@ menuPage.prototype.reset = function(){
 menuPage.prototype.toInfoPage = function(_data){
 
 
-  this.enableBackBtn = false;
+  this.enableBackBtn = false
   var _this = this
   this.reset()
   setTimeout( () => {

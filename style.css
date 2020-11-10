@@ -68,6 +68,13 @@ canvas {
   outline: none;
 }
 
+#menu_backBtn:active{
+
+  opacity: 0.9;
+  margin-top: 1px;
+
+}
+
 #aditionalText{
   overflow: auto;
 }
