@@ -11,6 +11,7 @@ function menuPage(){
   this.container.style.top = "0px"
   this.container.style.left = "0px"
   this.container.style.display = "none"
+  this.enableBackBtn = true
   document.body.append(this.container)
 
   var btnSize = {
@@ -32,6 +33,9 @@ function menuPage(){
   this.backBtn.innerHTML = "Explorar mais palavras"
   this.backBtn.id = "menu_backBtn"
   this.backBtn.onclick = () => {
+
+    if(!this.enableBackBtn) return
+
     enableCanvas = true
     toDefinition = false
     
@@ -105,7 +109,8 @@ function menuPage(){
 }
 
 menuPage.prototype.init = function(_data){
-
+  
+  this.enableBackBtn = true;
   this.container.style.display = "block"
   this.data = _data
   setTimeout( ()=> {
@@ -161,6 +166,9 @@ menuPage.prototype.reset = function(){
 }
 
 menuPage.prototype.toInfoPage = function(_data){
+
+
+  this.enableBackBtn = false;
   var _this = this
   this.reset()
   setTimeout( () => {
