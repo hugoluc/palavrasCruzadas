@@ -155,14 +155,8 @@ class Word {
     textSize(this.size);
     textFont(sohneBold)
     this.textWidth = textWidth(this.word)
-
     
-    if(this.data.origem == "guzerate (de 'pão')") {
-
-      debugger
-
-      
-    }
+    if(this.data.origem == "guzerate (de 'pão')") { debugger }
 
     text(this.replaceCharacters(this.word), this.location.x, this.location.y);
 

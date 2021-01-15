@@ -117,7 +117,6 @@ function wordDefinition(){
 
 wordDefinition.prototype.init = function(_data, _callBack) {
 
-
   this.data = _data
 
   //setting callback and time per caracter
@@ -171,6 +170,8 @@ wordDefinition.prototype.init = function(_data, _callBack) {
 
   }, 100 )
 
+  currentPage = this
+  
 }
 
 wordDefinition.prototype.changeToTrans = function(_data) {
@@ -272,4 +273,37 @@ wordDefinition.prototype.nextPage = function(_func){
   }else{
     _func()
   }
+}
+
+wordDefinition.prototype.toWordsPage = function(){
+
+  this.secondTitle.style.transform = "translateX(0px)"
+  this.firstTitle.style.transform = "translateX(" + canvasSize.width * 0.05 + "px)"
+  this.firstTitle.style.opacity = 0
+
+  this.transContainer.style.transform = "translateX(0px)"
+  this.container.style.transform = "translateX(" + (canvasSize.width * 0.05) + "px)"
+  this.container.style.opacity = 0
+
+  this.secondTitle.style.opacity = 0
+  this.line.style.opacity = 0
+  this.transContainer.style.opacity = 0
+  this.audio.style.opacity = 0
+  this.reset()
+  
+  //
+  this.enableBackBtn = false
+  enableCanvas = true
+  toDefinition = false
+  
+  realWordTimes.wordTimeMin = initialWordTimes.wordTimeMin
+  realWordTimes.wordTimeMax = initialWordTimes.wordTimeMax
+
+  setTimeout(() => {
+    definitionPage.reset()
+    btn.setColorChange(btn.fill,globalColors.yellow)
+    btn.setReturn()
+    doFirstDraw = true
+  },100)
+
 }

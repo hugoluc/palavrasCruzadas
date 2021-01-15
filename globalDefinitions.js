@@ -290,3 +290,23 @@ Element.prototype.insertChildAtIndex = function(child, index) {
     this.insertBefore(child, this.children[index])
   }
 }
+
+
+//TIMEOUT
+var currentPage;
+timeOut = setTimeout( toWordsPage, 3000)
+
+document.addEventListener("touchstart", ()=>{
+  resetTimer()
+})
+
+function resetTimer() {
+  clearTimeout(timeOut);
+  timeOut = setTimeout( toWordsPage, 180000)
+}
+
+function toWordsPage(){
+  if(currentPage){
+    currentPage.toWordsPage()
+  }
+}

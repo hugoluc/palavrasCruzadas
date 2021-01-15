@@ -33,23 +33,7 @@ function menuPage(){
   this.backBtn.innerHTML = "Explorar mais palavras"
   this.backBtn.id = "menu_backBtn"
   this.backBtn.onclick = () => {
-
-    if(!this.enableBackBtn) return
-
-    this.enableBackBtn = false
-    enableCanvas = true
-    toDefinition = false
-    
-    realWordTimes.wordTimeMin = initialWordTimes.wordTimeMin
-    realWordTimes.wordTimeMax = initialWordTimes.wordTimeMax
-
-    this.reset()
-    setTimeout(() => {
-      definitionPage.reset()
-      btn.setColorChange(btn.fill,globalColors.yellow)
-      btn.setReturn()
-      doFirstDraw = true
-    },400)
+    this.toWordsPage()
   }
   this.container.append(this.backBtn)
 
@@ -117,6 +101,7 @@ menuPage.prototype.init = function(_data){
   setTimeout( ()=> {
     this.animateMenus()
   }, 100)
+  currentPage = this
 
 }
 
@@ -175,5 +160,28 @@ menuPage.prototype.toInfoPage = function(_data){
   setTimeout( () => {
     this.infoPage.init(this.data[_data], () => { _this.init(_this.data) })
   },200)
+
+}
+
+menuPage.prototype.toWordsPage = function(_data){
+
+
+  if(!this.enableBackBtn) return
+
+  this.enableBackBtn = false
+  enableCanvas = true
+  toDefinition = false
+  
+  realWordTimes.wordTimeMin = initialWordTimes.wordTimeMin
+  realWordTimes.wordTimeMax = initialWordTimes.wordTimeMax
+
+  this.reset()
+
+  setTimeout(() => {
+    definitionPage.reset()
+    btn.setColorChange(btn.fill,globalColors.yellow)
+    btn.setReturn()
+    doFirstDraw = true
+  },400)
 
 }

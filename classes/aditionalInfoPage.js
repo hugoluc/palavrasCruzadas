@@ -97,7 +97,7 @@ aditionalInfoPage.prototype.init = function(_data,_callBack){
     this.addslide(this.data.imagens)
 
   },100)
-
+  currentPage = this
 }
 
 aditionalInfoPage.prototype.reset = function(){
@@ -241,5 +241,12 @@ aditionalInfoPage.prototype.changeImage = function(){
   images.children[this.imageIndex].style.opacity = 1
   circles.children[this.imageIndex].style.background = "white"
 
+
+}
+
+aditionalInfoPage.prototype.toWordsPage = function(){
+
+  this.back()
+  menu.toWordsPage()
 
 }
