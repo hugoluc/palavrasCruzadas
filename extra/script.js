@@ -125,7 +125,7 @@ function saveData() {
 
   debugger
 
-  fs.writeFile("/Users/hugolucena/Desktop/palavrasCruzadas/data.js", data, 'utf8', function(error){
+  fs.writeFile("../data.js", data, 'utf8', function(error){
     console.log(data)
     console.log(error)
   })
