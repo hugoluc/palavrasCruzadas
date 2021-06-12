@@ -27,7 +27,8 @@ getMenus()
 
 function getWords() { 
 
-  var csvFilePath = '/Users/hugolucena/Desktop/palavrasCruzadas/extra/palavras/' + index + '.csv'
+
+  var csvFilePath = __dirname + '/palavras/' + index + '.csv'
   console.log(">>>>>>>> getting words at index: " + csvFilePath);
   
   //readFile---------------------------------------------------------
@@ -75,7 +76,7 @@ function getWords() {
 
 function getMenus() {
   
-  var csvFilePath = '/Users/hugolucena/Desktop/palavrasCruzadas/extra/menus/' + menuIndex + '.csv'
+  var csvFilePath = __dirname + '/menus/' + menuIndex + '.csv'
   console.log(">>>>>>>> getting menus at index: " + menuIndex);
 
 
