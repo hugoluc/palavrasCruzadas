@@ -139,6 +139,33 @@ wordDefinition.prototype.init = function(_data, _callBack) {
   this.setContent( this.word, _data.palavra)
   this.setContent( this.transWord, _data.tradução)
   
+  replaceFont(this.word)
+  replaceFont(this.transWord)
+
+  function replaceFont(_element){
+
+    var letters = ["ū̃"]
+    var hasLetter = false
+
+    for(index in letters){
+      if(_element.innerHTML.search(letters[index]) > 0){
+        hasLetter = true
+      }
+    }
+
+    console.log(hasLetter);
+    console.log(_element.innerHTML);
+
+    if(hasLetter){
+      _element.style.fontFamily = "sans-serif"
+      _element.style.fontWeight = "600"
+      
+    }
+
+  }
+
+
+  
   if(EXP_ID != 7){
 
     this.description.innerHTML = _data.significado
@@ -146,11 +173,15 @@ wordDefinition.prototype.init = function(_data, _callBack) {
     this.secondTitle.innerHTML = "Em " + _data.origem
 
   }else{
-    this.description.innerHTML = _data.significadoOriginal
-    this.transDescription.innerHTML = _data.significado
-    this.firstTitle.innerHTML = "Em " + _data.origem
+
+    
+    this.description.innerHTML = _data.significado
+    this.transDescription.innerHTML = _data.significadoOriginal
+    this.secondTitle.innerHTML = "Em " + _data.origem
+    this.firstTitle.innerHTML = "Em Português"
+
   }
-  
+
 
 
   this.allContainer.style.display = "block"
