@@ -104,7 +104,7 @@ class WordSystem {
 
     selectedWord.setData(data);
 
-    //Pass is to the Word class constructor
+    //Pass it to the Word class constructor
     this.displayWords.push(selectedWord);
     this.wordCount++
 

@@ -1,5 +1,5 @@
 const { log } = require("console");
-const csv = require("csvtojson/v2");
+const csv = require("csvtojson");
 const fs = require("fs")
 
 var allData = []
@@ -37,8 +37,6 @@ function getWords() {
 
     for (var l = 0; l < jsonObj.length; l++) {
       var palavra = {}
-    
-      // if(jsonObj[l]["Significado PT"] == "abacaxi"){debugger}
 
       palavra.origem = jsonObj[l]["Lingua"]
       palavra.palavra = jsonObj[l]["Palavra PT"]

@@ -14,6 +14,9 @@ class Word {
   }
 
   setData(_data){
+
+    console.log(_data.palavra);
+
     this.data = _data
     this.word = _data.palavra;
     this.textWidth = textWidth(this.word)
@@ -97,6 +100,7 @@ class Word {
   }
 
   grow() {
+
     // Grow Words
     if (this.isBeingDragged) {
 
