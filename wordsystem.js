@@ -106,10 +106,7 @@ class WordSystem {
     //Select the word from the source
     var selectedWord = this.words.pop()
 
-    console.log(this.dataIndex);
     var index = this.dataIndex.pop()
-    
-    console.log(index);
     var data = this.data.palavras[index]
     
     this.genereteDataIndex()
