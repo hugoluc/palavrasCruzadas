@@ -153,9 +153,6 @@ wordDefinition.prototype.init = function(_data, _callBack) {
       }
     }
 
-    console.log(hasLetter);
-    console.log(_element.innerHTML);
-
     if(hasLetter){
       _element.style.fontFamily = "sans-serif"
       _element.style.fontWeight = "600"

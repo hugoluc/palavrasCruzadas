@@ -21,9 +21,10 @@ class WordSystem {
     this.origin = position.copy();
     this.wordId = 0
     this.dataIndex = []
-    for(var i = 0; i < this.data.palavras.length-1; i++){ this.dataIndex.push(i) }
+    
+    this.genereteDataIndex()
+    
     shuffleArray(this.dataIndex)
-
 
     this.clearDrag();
     this.wordLimit = CONTROLS.maxWodCount
@@ -85,22 +86,33 @@ class WordSystem {
 
   }
 
+  genereteDataIndex(){
+    
+    if(this.dataIndex.length <= 0){
+        
+      for(var i = 0; i < this.data.palavras.length; i++){ 
+        this.dataIndex.push(i) 
+      }
+
+    }
+
+    shuffleArray(this.dataIndex)
+
+  }
+
 
   getNewWord(){
     
     //Select the word from the source
     var selectedWord = this.words.pop()
 
+    console.log(this.dataIndex);
     var index = this.dataIndex.pop()
+    
+    console.log(index);
     var data = this.data.palavras[index]
     
-    if(this.dataIndex.length <= 0){
-        
-      for(var i = 0; i < this.data.palavras.length-1; i++){ this.dataIndex.push(i) }
-    
-      shuffleArray(this.dataIndex)
-
-    }
+    this.genereteDataIndex()
 
     selectedWord.setData(data);
 
@@ -109,6 +121,7 @@ class WordSystem {
     this.wordCount++
 
   }
+
 
   clearDrag(){
 
