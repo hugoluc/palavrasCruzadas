@@ -28,7 +28,7 @@ function wordDefinition(){
   this.firstTitle = document.createElement("div")
   this.firstTitle.className = "wordexplorer title"
   this.firstTitle.style.left = this.margin + "px"
-  this.firstTitle.innerHTML = "Em Português"
+  this.firstTitle.innerHTML = "Em português"
   this.firstTitle.style.top = this.margin + "px"
   this.firstTitle.style.width = canvasSize.width - (2*this.margin) + "px"
   this.firstTitle.style.fontSize = canvasSize.height * 0.025 + "px"
@@ -175,7 +175,7 @@ wordDefinition.prototype.init = function(_data, _callBack) {
     this.description.innerHTML = _data.significado
     this.transDescription.innerHTML = _data.significadoOriginal
     this.secondTitle.innerHTML = "Em " + _data.origem
-    this.firstTitle.innerHTML = "Em Português"
+    this.firstTitle.innerHTML = "Em português"
 
   }
 

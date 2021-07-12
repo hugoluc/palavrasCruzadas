@@ -207,7 +207,6 @@ aditionalInfoPage.prototype.addslide = function(_images){
 
   }
 
-  console.log("------------------");
   this.changeImage()
   this.slideActive = true
 
