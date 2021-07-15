@@ -8,6 +8,17 @@
   src: url("/Sohne/Sohne-Halbfett.otf")
 }
 
+@font-face {
+  font-family: "Ogum";
+  src: url("/Ogum/ogum.otf")
+}
+
+@font-face {
+  font-family: "Ogum bold";
+  src: url("/Ogum/ogumbold.otf")
+}
+
+
 body{
   -webkit-touch-callout: none;
   -webkit-user-select: none;

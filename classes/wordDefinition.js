@@ -144,7 +144,22 @@ wordDefinition.prototype.init = function(_data, _callBack) {
 
   function replaceFont(_element){
 
-    var letters = ["ū̃"]
+    var letters = [
+      "ū̃",
+      's\u0323',
+      
+      'a\u0323',
+      'á\u0323',
+      'à\u0323',
+
+      'e\u0323',
+      'é\u0323',
+      'è\u0323',
+      
+      'ó\u0323',
+      'ò\u0323',
+      'o\u0323'
+    ]
     var hasLetter = false
 
     for(index in letters){

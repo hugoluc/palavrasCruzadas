@@ -5,6 +5,8 @@ function preload(){
 
   sohne = loadFont('/Sohne/Sohne-Mager.otf');
   sohneBold = loadFont('/Sohne/Sohne-Halbfett.otf');
+  ogum = loadFont('/Ogum/ogum.otf');
+  ogumBold = loadFont('/Ogum/ogumbold.otf');
   if(selectedData){
     for(i = 0; i <selectedData.palavras.length; i++){
       selectedData.palavras[i].audioObj = selectedData.palavras[i].audio ? loadSound( "/audios/" + selectedData.palavras[i].audio) : ""

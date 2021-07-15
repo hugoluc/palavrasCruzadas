@@ -4182,7 +4182,7 @@ var data = [
     "origem": "fon/iorubá",
     "palavra": "acarajé",
     "significado": "bolo de feijão fradinho, temperado e moído com camarão seco, sal e cebola, frito no azeite de dendê",
-    "tradução": "Àkàrà (jä)",
+    "tradução": 'Àkàrà (je\u0323)',
     "significadoOriginal": "bolo de feijão frito no dendê",
     "audio": "acaraje1.mp3",
     "audioOriginal": "acaraje0.mp3"
@@ -4191,7 +4191,7 @@ var data = [
     "origem": "iorubá",
     "palavra": "afoxé",
     "significado": "cortejo carnavalesco da Bahia",
-    "tradução": "ÁfÆæä",
+    "tradução": 'Áfò\u0323s\u0323e\u0323',
     "significadoOriginal": "cortejo",
     "audio": "afoxe1.mp3",
     "audioOriginal": "afoxe0.mp3"
@@ -4218,7 +4218,7 @@ var data = [
     "origem": "iorubá",
     "palavra": "auê",
     "significado": "alvoroço, confusão",
-    "tradução": "ààwè",
+    "tradução": 'ààwè\u0323',
     "significadoOriginal": "confusão, tumulto",
     "audio": "aue1.mp3",
     "audioOriginal": "aue0.mp3"
@@ -4227,7 +4227,7 @@ var data = [
     "origem": "iorubá",
     "palavra": "axé",
     "significado": "objetos sagrados do orixá; força divina; amém",
-    "tradução": "Àæä",
+    "tradução": 'Às\u0323e\u0323',
     "significadoOriginal": "todo objeto sagrado da divindade, alicerce mágico do terreiro",
     "audio": "axe1.mp3",
     "audioOriginal": "axe0.mp3"
@@ -4261,9 +4261,9 @@ var data = [
    },
    {
     "origem": "iorubá",
-    "palavra": "ebó",
+    "palavra": 'ebo',
     "significado": "despacho, oferenda",
-    "tradução": "ïbå",
+    "tradução": 'e\u0323bo\u0323',
     "significadoOriginal": "oferenda a Exu e às divindades deixada em alguma encruzilhada",
     "audio": "ebo1.mp3",
     "audioOriginal": "ebo0.mp3"
@@ -4272,7 +4272,7 @@ var data = [
     "origem": "iorubá",
     "palavra": "Exu",
     "significado": "divindade que serve de intermediária entre os homens e os deuses, capaz de fazer tanto o mal quanto o bem",
-    "tradução": "Èæù",
+    "tradução": 'È\u0323ù',
     "significadoOriginal": "divindade que serve de intermediária entre os homens e os deuses, capaz de fazer tanto o mal quanto o bem",
     "audio": "exu1.mp3",
     "audioOriginal": "exu0.mp3"
@@ -4281,7 +4281,7 @@ var data = [
     "origem": "iorubá",
     "palavra": "ialorixá",
     "significado": "mãe-de-santo",
-    "tradução": "Ìyálórìæà",
+    "tradução": 'Ìyálórìs\u0323à',
     "significadoOriginal": "sacerdotisa",
     "audio": "ialorixa1.mp3",
     "audioOriginal": "ialorixa0.mp3"
@@ -4290,7 +4290,7 @@ var data = [
     "origem": "iorubá",
     "palavra": "Iansã",
     "significado": "orixá do fogo, do trovão e da tempestade",
-    "tradução": "Ìyá mÅsàn",
+    "tradução": 'Ìyá mé\u0323sàn',
     "significadoOriginal": "mãe do fogo",
     "audio": "iansa1.mp3",
     "audioOriginal": "iansa0.mp3"
@@ -4308,7 +4308,7 @@ var data = [
     "origem": "iorubá",
     "palavra": "Iemanjá",
     "significado": "orixá do mar",
-    "tradução": "Iyämåja",
+    "tradução": 'Iye\u0323mo\u0323ja',
     "significadoOriginal": "orixá do mar",
     "audio": "iemanja1.mp3",
     "audioOriginal": "iemanja0.mp3"
@@ -4344,7 +4344,7 @@ var data = [
     "origem": "iorubá",
     "palavra": "odara",
     "significado": "bem, bom, bonito",
-    "tradução": "ðdàrà",
+    "tradução": "o\u0323dàrà",
     "significadoOriginal": "bom, bonito, esplêndido, muito bem",
     "audio": "odara1.mp3",
     "audioOriginal": "odara0.mp3"
@@ -4362,7 +4362,7 @@ var data = [
     "origem": "iorubá",
     "palavra": "Omulu",
     "significado": "orixá da varíola e das doenças da pele",
-    "tradução": "ðmålú",
+    "tradução": 'o\u0323mo\u0323lú',
     "significadoOriginal": "orixá da varíola e das doenças da pele",
     "audio": "omulu1.mp3",
     "audioOriginal": "omulu0.mp3"
@@ -4380,7 +4380,7 @@ var data = [
     "origem": "iorubá",
     "palavra": "orixá",
     "significado": "divindade africana",
-    "tradução": "Òrìæà",
+    "tradução": 'Òrìs\u0323à',
     "significadoOriginal": "divindade",
     "audio": "orixa1.mp3",
     "audioOriginal": "orixa0.mp3"
@@ -4389,7 +4389,7 @@ var data = [
     "origem": "iorubá",
     "palavra": "Oxalá",
     "significado": "divindade suprema; pai de todos os orixás",
-    "tradução": "Òrìæà-àlà",
+    "tradução": 'Òrìs\u0323à-àlà',
     "significadoOriginal": "divindade suprema; pai de todos os orixás",
     "audio": "oxala1.mp3",
     "audioOriginal": "oxala0.mp3"
@@ -4398,7 +4398,7 @@ var data = [
     "origem": "iorubá",
     "palavra": "Oxóssi",
     "significado": "orixá da caça e das matas",
-    "tradução": "ÒæËwùsì",
+    "tradução": 'Òs\u0323ó\u0323wùsì',
     "significadoOriginal": "orixá da caça e das matas",
     "audio": "oxossi1.mp3",
     "audioOriginal": "oxossi0.mp3"
@@ -4407,7 +4407,7 @@ var data = [
     "origem": "iorubá",
     "palavra": "Oxum",
     "significado": "orixá que comanda os rios e todas as águas doces",
-    "tradução": "þæun",
+    "tradução": "ò\u0323s\u0323un",
     "significadoOriginal": "orixá que comanda os rios e todas as águas doces",
     "audio": "oxum1.mp3",
     "audioOriginal": "oxum0.mp3"
@@ -4416,7 +4416,7 @@ var data = [
     "origem": "iorubá",
     "palavra": "Oxumaré",
     "significado": "orixá da riqueza, associado ao arco-íris",
-    "tradução": "Òæùmàrè",
+    "tradução": "Òs\u0323ùmàrè",
     "significadoOriginal": "orixá da riqueza, associado ao arco-íris",
     "audio": "oxumare1.mp3",
     "audioOriginal": "oxumare0.mp3"
@@ -4434,7 +4434,7 @@ var data = [
     "origem": "iorubá",
     "palavra": "Xangô",
     "significado": "orixá dos raios e do trovão",
-    "tradução": "ñàngó",
+    "tradução": 's\u0323àngó',
     "significadoOriginal": "orixá dos raios e do trovão",
     "audio": "xango1.mp3",
     "audioOriginal": "xango0.mp3"
@@ -4443,7 +4443,7 @@ var data = [
     "origem": "iorubá",
     "palavra": "xinxim",
     "significado": "guisado de galinha ou outra carne, com camarões secos, amendoim e castanha de caju",
-    "tradução": "ðæinæin",
+    "tradução": 'o\u0323s\u0323ins\u0323in',
     "significadoOriginal": "guisado de galinha ou outra carne, com camarões secos e azeite de dendê",
     "audio": "xinxim1.mp3",
     "audioOriginal": "xinxim0.mp3"
