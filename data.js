@@ -257,7 +257,7 @@ var data = [
    {
     "origem": "tupinambá",
     "palavra": "mutirão",
-    "significado": "qualquer trabalho voluntário por parte de um grupo de pessoas de uma comunidade que tem por objetivo beneficiar alguém ou o grupo todos",
+    "significado": "qualquer trabalho voluntário por parte de um grupo de pessoas de uma comunidade que tem por objetivo beneficiar alguém ou o grupo todo",
     "tradução": "motyrõ",
     "significadoOriginal": "ajuda mútua e coletiva no trabalho",
     "audio": "mutirao1.mp3",
@@ -498,7 +498,7 @@ var data = [
    },
    {
     "titulo": "Outras palavras",
-    "text": "<h4>Nomes de plantas, &aacute;rvores, frutas</h4>\n<p>abacaxi</p>\n<p>aguap&eacute;</p>\n<p>anan&aacute;s</p>\n<p>ara&ccedil;&aacute;</p>\n<p>araticum</p>\n<p>aroeira</p>\n<p>bacupari</p>\n<p>caj&aacute;</p>\n<p>caju</p>\n<p>car&aacute;</p>\n<p>cumari</p>\n<p>jabuticaba</p>\n<p>jenipapo</p>\n<p>jerimum</p>\n<p>ju&aacute;</p>\n<p>ju&ccedil;ara</p>\n<p>manac&aacute;</p>\n<p>mangaba</p>\n<p>maniva</p>\n<p>maracuj&aacute;</p>\n<p>pitomba</p>\n<p>samambaia</p>\n<p>tai&aacute;</p>\n<p>taioba</p>\n<p>urucum</p>\n<p>cabri&uacute;va</p>\n<p>cambu&iacute;</p>\n<p>carna&uacute;ba</p>\n<p>copa&iacute;ba</p>\n<p>emba&uacute;ba</p>\n<p>indai&aacute;</p>\n<p>ing&aacute;</p>\n<p>jaborandi</p>\n<p>jacarand&aacute;</p>\n<p>jatob&aacute;</p>\n<p>jequitib&aacute;</p>\n<p>jeriv&aacute;</p>\n<p>oiti</p>\n<p>pindoba</p>\n<p>sapucaia</p>\n<p>&nbsp;</p>\n<h4>Nomes de aves</h4>\n<p>acau&atilde;</p>\n<p>anu</p>\n<p>ara&ccedil;ari</p>\n<p>araponga</p>\n<p>arara</p>\n<p>bacurau</p>\n<p>batu&iacute;ra</p>\n<p>canind&eacute;</p>\n<p>caracar&aacute;</p>\n<p>gra&uacute;na</p>\n<p>inhambu</p>\n<p>jaburu</p>\n<p>ja&ccedil;an&atilde;</p>\n<p>jacu</p>\n<p>jacutinga</p>\n<p>jandaia</p>\n<p>japu</p>\n<p>juriti</p>\n<p>macuco</p>\n<p>maguari</p>\n<p>maracan&atilde;</p>\n<p>mutum</p>\n<p>patativa</p>\n<p>sabi&aacute;</p>\n<p>sanha&ccedil;u</p>\n<p>saracura</p>\n<p>seriema</p>\n<p>tach&atilde;</p>\n<p>ti&ecirc;</p>\n<p>tucano</p>\n<p>tuiui&uacute;</p>\n<p>uirapuru</p>\n<p>urubu</p>\n<p>urutau</p>\n<p>&nbsp;</p>\n<h4>Nomes de mam&iacute;feros</h4>\n<p>ariranha</p>\n<p>caitetu</p>\n<p>coati</p>\n<p>cutia</p>\n<p>gamb&aacute;</p>\n<p>guariba</p>\n<p>jaguar</p>\n<p>paca</p>\n<p>pre&aacute;</p>\n<p>quati</p>\n<p>sagui</p>\n<p>su&ccedil;uarana</p>\n<p>tamandu&aacute;</p>\n<p>tatu</p>\n<p>&nbsp;&nbsp;</p>\n<h4>Nomes de r&eacute;pteis</h4>\n<p>boipeva</p>\n<p>caninana</p>\n<p>cururu</p>\n<p>jabuti</p>\n<p>jararaca</p>\n<p>jiboia</p>\n<p>sucuri</p>\n<p>surucucu</p>\n<p>tei&uacute;</p>\n<p>urutu</p>\n<p>&nbsp;</p>\n<h4>Nomes de peixes</h4>\n<p>acar&aacute;</p>\n<p>baiacu</p>\n<p>camarupim</p>\n<p>caramuru</p>\n<p>caranha</p>\n<p>ja&uacute;</p>\n<p>lambari</p>\n<p>mandi</p>\n<p>manjuba</p>\n<p>mu&ccedil;um</p>\n<p>pacu</p>\n<p>parati</p>\n<p>piaba</p>\n<p>piramutaba</p>\n<p>piranha</p>\n<p>piracanjuba</p>\n<p>pirarucu</p>\n<p>tambaqui</p>\n<p>tra&iacute;ra</p>\n<p>tucunar&eacute;</p>\n<p>&nbsp;</p>\n<h4>Nomes de crust&aacute;ceos e moluscos</h4>\n<p>aratupeba</p>\n<p>guaiamum</p>\n<p>sernambi</p>\n<p>sururu</p>\n<p>u&ccedil;&aacute;</p>\n<p>&nbsp;</p>\n<h4>Nomes de insetos</h4>\n<p>enxu</p>\n<p>i&ccedil;&aacute;</p>\n<p>jati</p>\n<p>mamangava</p>\n<p>maruim</p>\n<p>pium</p>\n<p>sa&uacute;va</p>\n<p>&nbsp;</p>\n<p><u>&nbsp;</u></p>\n<p>&nbsp;</p>\n<p>Pesquisa:</p>\n<p>Prof. Aryon sugere dois livros que podem ser encontrados na Bibl. M&aacute;rio de Andrade, na Bibl. da USP (Ci&ecirc;ncias Humanas) ou na do Museu Paulista, p. ex.:</p>\n<p>(a) Fernando Silva, A. B. Galv&atilde;o Bueno Trigueirinho e Salom&atilde;o Scliar (eds.), <em>Hans Staden, primeiro viajante.</em> S&atilde;o Paulo: Difus&atilde;o Europeia do Livro, s. d.</p>\n<p>Trata-se de um &aacute;lbum <em>in folio</em> com reprodu&ccedil;&otilde;es ampliadas, mas muito n&iacute;tidas, das ilustra&ccedil;&otilde;es nas edi&ccedil;&otilde;es do s&eacute;c. XVI do livro de Hans Staden.</p>\n<p>(b) A. M&eacute;traux, <em>La civilisation mat&eacute;rielle des tribus tupi-guarani. </em>Paris: Librairie Orientaliste Paul Geuthner, 1928.<br /> </p>\n<p>&Eacute; um estudo fundamental sobre a cultura material dos povos tupis-guaranis. Muitas das ilustra&ccedil;&otilde;es reproduzem gravuras de livros dos s&eacute;culos XVI e XVII, outras s&atilde;o fotografias dos objetos dos tupinamb&aacute;s preservados em museus europeus (Copenhague, Basileia, etc.). <br /> </p>",
+    "text": "<h4>Nomes de plantas, &aacute;rvores, frutas</h4>\n<p>abacaxi</p>\n<p>aguap&eacute;</p>\n<p>anan&aacute;s</p>\n<p>ara&ccedil;&aacute;</p>\n<p>araticum</p>\n<p>aroeira</p>\n<p>bacupari</p>\n<p>caj&aacute;</p>\n<p>caju</p>\n<p>car&aacute;</p>\n<p>cumari</p>\n<p>jabuticaba</p>\n<p>jenipapo</p>\n<p>jerimum</p>\n<p>ju&aacute;</p>\n<p>ju&ccedil;ara</p>\n<p>manac&aacute;</p>\n<p>mangaba</p>\n<p>maniva</p>\n<p>maracuj&aacute;</p>\n<p>pitomba</p>\n<p>samambaia</p>\n<p>tai&aacute;</p>\n<p>taioba</p>\n<p>urucum</p>\n<p>cabri&uacute;va</p>\n<p>cambu&iacute;</p>\n<p>carna&uacute;ba</p>\n<p>copa&iacute;ba</p>\n<p>emba&uacute;ba</p>\n<p>indai&aacute;</p>\n<p>ing&aacute;</p>\n<p>jaborandi</p>\n<p>jacarand&aacute;</p>\n<p>jatob&aacute;</p>\n<p>jequitib&aacute;</p>\n<p>jeriv&aacute;</p>\n<p>oiti</p>\n<p>pindoba</p>\n<p>sapucaia</p>\n<p>&nbsp;</p>\n<h4>Nomes de aves</h4>\n<p>acau&atilde;</p>\n<p>anu</p>\n<p>ara&ccedil;ari</p>\n<p>araponga</p>\n<p>arara</p>\n<p>bacurau</p>\n<p>batu&iacute;ra</p>\n<p>canind&eacute;</p>\n<p>caracar&aacute;</p>\n<p>gra&uacute;na</p>\n<p>inhambu</p>\n<p>jaburu</p>\n<p>ja&ccedil;an&atilde;</p>\n<p>jacu</p>\n<p>jacutinga</p>\n<p>jandaia</p>\n<p>japu</p>\n<p>juriti</p>\n<p>macuco</p>\n<p>maguari</p>\n<p>maracan&atilde;</p>\n<p>mutum</p>\n<p>patativa</p>\n<p>sabi&aacute;</p>\n<p>sanha&ccedil;u</p>\n<p>saracura</p>\n<p>seriema</p>\n<p>tach&atilde;</p>\n<p>ti&ecirc;</p>\n<p>tucano</p>\n<p>tuiui&uacute;</p>\n<p>uirapuru</p>\n<p>urubu</p>\n<p>urutau</p>\n<p>&nbsp;</p>\n<h4>Nomes de mam&iacute;feros</h4>\n<p>ariranha</p>\n<p>caitetu</p>\n<p>coati</p>\n<p>cutia</p>\n<p>gamb&aacute;</p>\n<p>guariba</p>\n<p>jaguar</p>\n<p>paca</p>\n<p>pre&aacute;</p>\n<p>quati</p>\n<p>sagui</p>\n<p>su&ccedil;uarana</p>\n<p>tamandu&aacute;</p>\n<p>tatu</p>\n<p>&nbsp;&nbsp;</p>\n<h4>Nomes de r&eacute;pteis</h4>\n<p>boipeva</p>\n<p>caninana</p>\n<p>cururu</p>\n<p>jabuti</p>\n<p>jararaca</p>\n<p>jiboia</p>\n<p>sucuri</p>\n<p>surucucu</p>\n<p>tei&uacute;</p>\n<p>urutu</p>\n<p>&nbsp;</p>\n<h4>Nomes de peixes</h4>\n<p>acar&aacute;</p>\n<p>baiacu</p>\n<p>camarupim</p>\n<p>caramuru</p>\n<p>caranha</p>\n<p>ja&uacute;</p>\n<p>lambari</p>\n<p>mandi</p>\n<p>manjuba</p>\n<p>mu&ccedil;um</p>\n<p>pacu</p>\n<p>parati</p>\n<p>piaba</p>\n<p>piramutaba</p>\n<p>piranha</p>\n<p>piracanjuba</p>\n<p>pirarucu</p>\n<p>tambaqui</p>\n<p>tra&iacute;ra</p>\n<p>tucunar&eacute;</p>\n<p>&nbsp;</p>\n<h4>Nomes de crust&aacute;ceos e moluscos</h4>\n<p>aratupeba</p>\n<p>guaiamum</p>\n<p>sernambi</p>\n<p>sururu</p>\n<p>u&ccedil;&aacute;</p>\n<p>&nbsp;</p>\n<h4>Nomes de insetos</h4>\n<p>enxu</p>\n<p>i&ccedil;&aacute;</p>\n<p>jati</p>\n<p>mamangava</p>\n<p>maruim</p>\n<p>pium</p>\n<p>sa&uacute;va</p>",
     "imagens": [
      "tupinamba_7_1.png"
     ]
@@ -3454,7 +3454,7 @@ var data = [
    {
     "origem": "espanhol",
     "palavra": "baunilha",
-    "significado": "planta nativa das América Central, cuja essência é utilizada em confeitaria",
+    "significado": "planta nativa da América Central, cuja essência é utilizada em confeitaria",
     "tradução": "vainilla",
     "significadoOriginal": "planta nativa da América Central, cuja essência é utilizada em confeitaria",
     "audio": "baunilha1.mp3",
@@ -3598,7 +3598,7 @@ var data = [
    {
     "origem": "espanhol",
     "palavra": "gaúcho",
-    "significado": "habitante da zona rural dos pampas, no Rio Grande do Sul, na Argentina e no Uruguaii",
+    "significado": "habitante da zona rural dos pampas, no Rio Grande do Sul, na Argentina e no Uruguai",
     "tradução": "gaucho",
     "significadoOriginal": "habitante da zona rural dos pampas, no Rio Grande do Sul, na Argentina e no Uruguai",
     "audio": "gaucho1.mp3",
@@ -3643,7 +3643,7 @@ var data = [
    {
     "origem": "espanhol",
     "palavra": "mate",
-    "significado": "infusão preparada com a erva-mate; chimarrãoo",
+    "significado": "infusão preparada com a erva-mate; chimarrão",
     "tradução": "mate",
     "significadoOriginal": "infusão preparada com a erva-mate; cabaça usada para se tomar essa infusão",
     "audio": "mate1.mp3",
@@ -4500,24 +4500,6 @@ var data = [
     "audioOriginal": "abajur0.mp3"
    },
    {
-    "origem": "inglês",
-    "palavra": "acessar",
-    "significado": "na tecnologia da informática, ter acesso a dados, arquivos, dispositivos, etc",
-    "tradução": "to access",
-    "significadoOriginal": "na tecnologia da informática, ter acesso a dados, arquivos, dispositivos, etc",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
-    "origem": "inglês",
-    "palavra": "alô",
-    "significado": "olá",
-    "tradução": "hello",
-    "significadoOriginal": "olá",
-    "audio": "",
-    "audioOriginal": ""
-   },
-   {
     "origem": "francês",
     "palavra": "ateliê",
     "significado": "estúdio; oficina",
@@ -4655,9 +4637,9 @@ var data = [
    {
     "origem": "inglês",
     "palavra": "check-in",
-    "significado": "apresentar bilhete de viagem em companhia aérea ou dar entrada e registrar-se em hotel, em redes sociais, etcl",
+    "significado": "apresentar bilhete de viagem em companhia aérea ou dar entrada e registrar-se em hotel, em redes sociais, etc.",
     "tradução": "to check-in",
-    "significadoOriginal": "apresentar bilhete de viagem em companhia aérea ou dar entrada e registrar-se em hotel, em redes sociais, etc",
+    "significadoOriginal": "apresentar bilhete de viagem em companhia aérea ou dar entrada e registrar-se em hotel, em redes sociais, etc.",
     "audio": "check-in1.mp3",
     "audioOriginal": "check-in0.mp3"
    },
@@ -4786,15 +4768,6 @@ var data = [
     "significadoOriginal": "conferir poder a alguém",
     "audio": "empoderar1.mp3",
     "audioOriginal": "empoderar0.mp3"
-   },
-   {
-    "origem": "inglês",
-    "palavra": "esporte",
-    "significado": "atividade física regular, para recreação ou condicionamento corporal",
-    "tradução": "sport",
-    "significadoOriginal": "atividade física regular, para recreação ou condicionamento corporal",
-    "audio": "esporte1.mp3",
-    "audioOriginal": "esporte0.mp3"
    },
    {
     "origem": "inglês",
@@ -5036,7 +5009,7 @@ var data = [
     "significado": "página de informações na internet sobre um determinado assunto",
     "tradução": "web page",
     "significadoOriginal": "página de informações na internet sobre um determinado assunto",
-    "audio": "webpage1.mp3",
+    "audio": "webpage1.wav",
     "audioOriginal": "webpage0.mp3"
    },
    {
@@ -5099,7 +5072,7 @@ var data = [
     "significado": "autosserviço",
     "tradução": "self-service",
     "significadoOriginal": "autosserviço",
-    "audio": "selfservice1.mp3",
+    "audio": "selservice1.mp3",
     "audioOriginal": "selfservice0.mp3"
    },
    {
@@ -5288,11 +5261,11 @@ var data = [
    {
     "origem": "japonês",
     "palavra": "camicase",
-    "significado": "piloto japonês treinado para pilotar aviões carregados de explosivos em ataques suicidas; pessoa que se arrisca muito ao agir; suicida",
+    "significado": "piloto Japonês treinado para pilotar aviões carregados de explosivos em ataques suicidas; pessoa que se arrisca muito ao agir; suicida",
     "tradução": "kamikaze",
-    "significadoOriginal": "literalmente, vento divino; piloto japonês treinado para pilotar aviões carregados de explosivos em ataques suicidas",
-    "audio": "kamikase1.mp3",
-    "audioOriginal": "kamikase0.mp3"
+    "significadoOriginal": "literalmente, vento divino; piloto Japonês treinado para pilotar aviões carregados de explosivos em ataques suicidas",
+    "audio": "kamikaze1.mp3",
+    "audioOriginal": "kamikaze0.mp3"
    },
    {
     "origem": "italiano",
@@ -5363,13 +5336,13 @@ var data = [
     "significado": "iguaria feita com legumes, acompanhados de tiras de carne de frango, porco ou peixe, servida com arroz",
     "tradução": "shap sui",
     "significadoOriginal": "iguaria feita com legumes, acompanhados de tiras de carne de frango, porco ou peixe, servida com arroz; literalmente, miscelânea",
-    "audio": "chopsuey1.mp3",
-    "audioOriginal": "chopsuey0.mp3"
+    "audio": "chopsuei1.mp3",
+    "audioOriginal": "chopsuei0.mp3"
    },
    {
     "origem": "japonês",
     "palavra": "decasségui",
-    "significado": "descendente de japonês emigrado para o Brasil, que vai trabalhar por período temporário no Japão, muitas vezes em subempregos",
+    "significado": "descendente de Japonês emigrado para o Brasil, que vai trabalhar por período temporário no Japão, muitas vezes em subempregos",
     "tradução": "dekassegui",
     "significadoOriginal": "trabalhador temporário",
     "audio": "decaceg1.mp3",
@@ -5397,7 +5370,7 @@ var data = [
     "origem": "italiano",
     "palavra": "galeto",
     "significado": "frango novo que se prepara assado no espeto",
-    "tradução": "gallétto",
+    "tradução": "galletto",
     "significadoOriginal": "galo pequeno",
     "audio": "galeto1.mp3",
     "audioOriginal": "galeto0.mp3"
@@ -5441,7 +5414,7 @@ var data = [
    {
     "origem": "italiano",
     "palavra": "macarrão",
-    "significado": "massa alimentícia introduzida no Brasil por imigrantes italianos",
+    "significado": "massa alimentícia introduzida no Brasil por imigrantes Italianos",
     "tradução": "maccherone",
     "significadoOriginal": "massa ou pasta alimentícia de diversos tipos",
     "audio": "macarrao1.mp3",
@@ -5461,7 +5434,7 @@ var data = [
     "palavra": "mascate",
     "significado": "mercador ambulante",
     "tradução": "Masqat",
-    "significadoOriginal": "cidade do mundo árabe, hoje capital de Omã, célebre por seus mercadores",
+    "significadoOriginal": "cidade do mundo Árabe, hoje capital de Omã, célebre por seus mercadores",
     "audio": "mascati1.mp3",
     "audioOriginal": "mascati0.mp3"
    },
@@ -5522,9 +5495,9 @@ var data = [
    {
     "origem": "árabe",
     "palavra": "quibe",
-    "significado": "iguaria árabe que se faz com carne e trigo, condimentados com pimenta, hortelã e cebola, entre outros",
+    "significado": "iguaria Árabe que se faz com carne e trigo, condimentados com pimenta, hortelã e cebola, entre outros",
     "tradução": "quibbat",
-    "significadoOriginal": "iguaria árabe que se faz com carne e trigo, condimentados com pimenta, hortelã e cebola, entre outros",
+    "significadoOriginal": "iguaria Árabe que se faz com carne e trigo, condimentados com pimenta, hortelã e cebola, entre outros",
     "audio": "kibe1.mp3",
     "audioOriginal": "kibe0.mp3"
    },
@@ -5576,7 +5549,7 @@ var data = [
    {
     "origem": "italiano",
     "palavra": "serenata",
-    "significado": "apresentação musical que se faz ou se manda fazer à noite, próximo a casa da amada",
+    "significado": "apresentação musical que se faz ou se manda fazer à noite, próximo à casa da amada",
     "tradução": "serenata",
     "significadoOriginal": "seresta; apresentação musical que se faz ou se manda fazer à noite, próximo a casa da amada",
     "audio": "serenata1.mp3",
@@ -5603,9 +5576,9 @@ var data = [
    {
     "origem": "chinês",
     "palavra": "tai chi chuan",
-    "significado": "sistema chinês de exercícios de relaxamento e meditação",
+    "significado": "sistema Chinês de exercícios de relaxamento e meditação",
     "tradução": "taijiquan",
-    "significadoOriginal": "sistema chinês de exercícios de relaxamento e meditação",
+    "significadoOriginal": "sistema Chinês de exercícios de relaxamento e meditação",
     "audio": "taishishuan1.mp3",
     "audioOriginal": "taishishuan0.mp3"
    },
@@ -5623,7 +5596,7 @@ var data = [
     "palavra": "tchau",
     "significado": "até logo; até a vista",
     "tradução": "ciao",
-    "significadoOriginal": "forma de cumprimento entre os italianos",
+    "significadoOriginal": "forma de cumprimento entre os Italianos",
     "audio": "tchau1.mp3",
     "audioOriginal": "tchau0.mp3"
    },
@@ -5654,7 +5627,7 @@ var data = [
    },
    {
     "titulo": "Sírios e libaneses",
-    "text": "<p>Os imigrantes s&iacute;rios e libaneses come&ccedil;aram a chegar ao Brasil a partir do final do s&eacute;culo XIX. A pretens&atilde;o inicial era uma imigra&ccedil;&atilde;o tempor&aacute;ria, destinada a redimir suas fam&iacute;lias de situa&ccedil;&otilde;es sociais e econ&ocirc;micas dif&iacute;ceis em seus pa&iacute;ses. Mas o provis&oacute;rio acabou se tornando permanente e, ao inv&eacute;s do imigrante retornar, a fam&iacute;lia &eacute; que o acompanhou. Irm&atilde;o puxando irm&atilde;os, filhos, esposas, primos, pais, tios, av&oacute;s, conterr&acirc;neos, conhecidos.</p>\n<p>No novo pa&iacute;s, a maior parte dos imigrantes estabeleceu-se no com&eacute;rcio. Em todo o Brasil, embrenharam-se como mascates, com caixas ou malas &agrave;s costas ou em lombo de burro, vendendo mercadorias de consumo popular &ndash; linhas de costura, f&oacute;sforos, roupas, tecidos, bijuterias, alimentos. Nas grandes cidades, aglomeraram-se em zonas centrais, pr&oacute;prias ao com&eacute;rcio. Com o passar do tempo, foram se integrando cada vez mais &agrave; sociedade brasileira, demonstrando uma extraordin&aacute;ria capacidade de adapta&ccedil;&atilde;o &agrave; nova terra. Tais fluxos tradicionais foram renovados pela chegada de fam&iacute;lias, em sua maioria mu&ccedil;ulmanas, fugidas da guerra civil libanesa (1975&ndash;1990) e, mais recentemente (a partir de 2011), de fam&iacute;lias de refugiados da guerra civil na S&iacute;ria.</p>",
+    "text": "<p>Os imigrantes s&iacute;rios e libaneses come&ccedil;aram a chegar ao Brasil a partir do final do s&eacute;culo XIX. A pretens&atilde;o inicial era uma imigra&ccedil;&atilde;o tempor&aacute;ria, destinada a redimir suas fam&iacute;lias de situa&ccedil;&otilde;es sociais e econ&ocirc;micas dif&iacute;ceis em seus pa&iacute;ses. Mas o provis&oacute;rio acabou se tornando permanente e, ao inv&eacute;s de o imigrante retornar, a fam&iacute;lia &eacute; que o acompanhou. Irm&atilde;o puxando irm&atilde;os, filhos, esposas, primos, pais, tios, av&oacute;s, conterr&acirc;neos, conhecidos.</p>\n<p>No novo pa&iacute;s, a maior parte dos imigrantes estabeleceu-se no com&eacute;rcio. Em todo o Brasil, embrenharam-se como mascates, com caixas ou malas &agrave;s costas ou em lombo de burro, vendendo mercadorias de consumo popular &ndash; linhas de costura, f&oacute;sforos, roupas, tecidos, bijuterias, alimentos. Nas grandes cidades, aglomeraram-se em zonas centrais, pr&oacute;prias ao com&eacute;rcio. Com o passar do tempo, foram se integrando cada vez mais &agrave; sociedade brasileira, demonstrando uma extraordin&aacute;ria capacidade de adapta&ccedil;&atilde;o &agrave; nova terra. Tais fluxos tradicionais foram renovados pela chegada de fam&iacute;lias, em sua maioria mu&ccedil;ulmanas, fugidas da guerra civil libanesa (1975&ndash;1990) e, mais recentemente (a partir de 2011), de fam&iacute;lias de refugiados da guerra civil na S&iacute;ria.</p>",
     "imagens": [
      "imigrantes_3_1.png"
     ]
@@ -5700,7 +5673,7 @@ var data = [
   "nome": "Português pelo mundo",
   "palavras": [
    {
-    "origem": "Africanse",
+    "origem": "africanse",
     "palavra": "parar",
     "significado": "parar (um barco); remar mais lentamente",
     "tradução": "parra",
@@ -5709,7 +5682,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Africanse",
+    "origem": "africanse",
     "palavra": "sombreiro",
     "significado": "sombrinha, guarda-sol",
     "tradução": "sambreel",
@@ -5718,7 +5691,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Bengali",
+    "origem": "bengali",
     "palavra": "pão",
     "significado": "pão",
     "tradução": "paun-ruti",
@@ -5727,7 +5700,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Cambojano",
+    "origem": "cambojano",
     "palavra": "real",
     "significado": "moeda do Cambodja",
     "tradução": "rial",
@@ -5736,7 +5709,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Cingalês",
+    "origem": "cingalês",
     "palavra": "candeia",
     "significado": "vela",
     "tradução": "kendiya",
@@ -5745,7 +5718,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Japonês",
+    "origem": "japonês",
     "palavra": "copo",
     "significado": "copo",
     "tradução": "koppu",
@@ -5754,7 +5727,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Japonês",
+    "origem": "japonês",
     "palavra": "frasco",
     "significado": "frasco",
     "tradução": "furasuko",
@@ -5763,7 +5736,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Japonês",
+    "origem": "japonês",
     "palavra": "marmelo",
     "significado": "marmelo",
     "tradução": "marumero",
@@ -5772,7 +5745,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Japonês",
+    "origem": "japonês",
     "palavra": "pão",
     "significado": "pão",
     "tradução": "pan",
@@ -5781,16 +5754,16 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Japonês",
-    "palavra": "têmpora(s) (dias de jejum religioso)",
-    "significado": "pedaços fritos de vegetais ou frutos do mar empanados",
+    "origem": "japonês",
+    "palavra": "têmporas",
+    "significado": "dias de jejum religioso, pedaços fritos de vegetais ou frutos do mar empanados",
     "tradução": "tenpura",
     "significadoOriginal": "Região de uso: Japão",
     "audio": "",
     "audioOriginal": ""
    },
    {
-    "origem": "Malabar/Malaiala ",
+    "origem": "malabar/malaiala ",
     "palavra": "cartaz",
     "significado": "papel (com origem em cartaz, licença de navegação usada a partir do séc. XVI, emitida pelos portugueses)",
     "tradução": "kadalaas",
@@ -5799,7 +5772,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Malabar/Maiala (de ‘mestre’)",
+    "origem": "malabar/maiala (de ‘mestre’)",
     "palavra": "mestre",
     "significado": "supervisor, capaz",
     "tradução": "mesthiri",
@@ -5808,7 +5781,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Malabar/Malaiala ",
+    "origem": "malabar/malaiala ",
     "palavra": "pena",
     "significado": "caneta",
     "tradução": "pena",
@@ -5817,7 +5790,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Malabar/Malaiala ",
+    "origem": "malabar/malaiala ",
     "palavra": "talão",
     "significado": "página",
     "tradução": "thaal",
@@ -5826,7 +5799,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Malaio",
+    "origem": "malaio",
     "palavra": "armário",
     "significado": "armário",
     "tradução": "almari",
@@ -5835,7 +5808,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Malaio",
+    "origem": "malaio",
     "palavra": "banco",
     "significado": "banco",
     "tradução": "bangku",
@@ -5844,7 +5817,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Malaio",
+    "origem": "malaio",
     "palavra": "bandeira",
     "significado": "bandeira",
     "tradução": "bendera",
@@ -5853,7 +5826,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Malaio",
+    "origem": "malaio",
     "palavra": "bola",
     "significado": "bola",
     "tradução": "bola",
@@ -5862,7 +5835,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Malaio",
+    "origem": "malaio",
     "palavra": "bomba",
     "significado": "bombeiro",
     "tradução": "bomba",
@@ -5871,7 +5844,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Malaio",
+    "origem": "malaio",
     "palavra": "boneca",
     "significado": "boneca",
     "tradução": "boneka",
@@ -5880,7 +5853,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Malaio",
+    "origem": "malaio",
     "palavra": "camisa",
     "significado": "camisa",
     "tradução": "kemeja",
@@ -5889,7 +5862,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Malaio",
+    "origem": "malaio",
     "palavra": "carreta",
     "significado": "carro, carruagem",
     "tradução": "kereta",
@@ -5898,7 +5871,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Malaio",
+    "origem": "malaio",
     "palavra": "escola",
     "significado": "escolar",
     "tradução": "sekolah",
@@ -5907,7 +5880,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Malaio",
+    "origem": "malaio",
     "palavra": "festa",
     "significado": "festa",
     "tradução": "pesta",
@@ -5916,7 +5889,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Malaio",
+    "origem": "malaio",
     "palavra": "fita",
     "significado": "fita",
     "tradução": "pita",
@@ -5925,7 +5898,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Malaio",
+    "origem": "malaio",
     "palavra": "garfo",
     "significado": "garfo",
     "tradução": "garpu",
@@ -5934,7 +5907,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Malaio",
+    "origem": "malaio",
     "palavra": "limão",
     "significado": "limão / laranja ",
     "tradução": "lemau",
@@ -5943,7 +5916,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Malaio",
+    "origem": "malaio",
     "palavra": "mesa",
     "significado": "mesa",
     "tradução": "meja",
@@ -5952,7 +5925,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Malaio",
+    "origem": "malaio",
     "palavra": "queijo",
     "significado": "queijo",
     "tradução": "kejo",
@@ -5961,7 +5934,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Malaio",
+    "origem": "malaio",
     "palavra": "ronda",
     "significado": "patrulhar",
     "tradução": "ronda",
@@ -5970,7 +5943,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Malaio",
+    "origem": "malaio",
     "palavra": "toalha",
     "significado": "toalha",
     "tradução": "tuala",
@@ -5979,7 +5952,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Malaio",
+    "origem": "malaio",
     "palavra": "viola",
     "significado": "violin",
     "tradução": "biola",
@@ -5988,7 +5961,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Suaíli",
+    "origem": "suaíli",
     "palavra": "carta",
     "significado": "carta",
     "tradução": "karata",
@@ -5997,7 +5970,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Suaíli",
+    "origem": "suaíli",
     "palavra": "copa",
     "significado": "copa (naipe)",
     "tradução": "kopa",
@@ -6006,7 +5979,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Suaíli",
+    "origem": "suaíli",
     "palavra": "dado",
     "significado": "dado",
     "tradução": "dadu",
@@ -6015,7 +5988,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Suaíli",
+    "origem": "suaíli",
     "palavra": "damas",
     "significado": "damas (jogo) ",
     "tradução": "dama",
@@ -6024,7 +5997,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Suaíli",
+    "origem": "suaíli",
     "palavra": "espada",
     "significado": "espada (naipe)",
     "tradução": "shupaza",
@@ -6033,7 +6006,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Suaíli",
+    "origem": "suaíli",
     "palavra": "ouro",
     "significado": "ouro (naipe)",
     "tradução": "uru",
@@ -6042,7 +6015,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Suaíli",
+    "origem": "suaíli",
     "palavra": "paus",
     "significado": "paus (naipe)",
     "tradução": "pao",
@@ -6051,7 +6024,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Suaíli",
+    "origem": "suaíli",
     "palavra": "trunfo",
     "significado": "trunfo (jogo de cartas)",
     "tradução": "turufu",
@@ -6060,7 +6033,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Guzerate",
+    "origem": "guzerate",
     "palavra": "armário",
     "significado": "armário",
     "tradução": "ālamārī",
@@ -6069,8 +6042,8 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Hindustâni",
-    "palavra": "armário",
+    "origem": "hindustâni",
+    "palavra": "estante",
     "significado": "armário de prateleiras",
     "tradução": "almārī",
     "significadoOriginal": "Região de uso: norte e oeste do subcontinente indiano",
@@ -6078,7 +6051,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Árabe",
+    "origem": "árabe",
     "palavra": "ananás",
     "significado": "abacaxi",
     "tradução": "ʾanānās",
@@ -6087,7 +6060,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Guzerate",
+    "origem": "guzerate",
     "palavra": "balde",
     "significado": "balde",
     "tradução": "bāladī",
@@ -6096,7 +6069,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Árabe",
+    "origem": "árabe",
     "palavra": "varanda",
     "significado": "varanda",
     "tradução": "fāranda",
@@ -6105,7 +6078,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Hindustâni",
+    "origem": "hindustâni",
     "palavra": "espada",
     "significado": "ferro",
     "tradução": "ispāt",
@@ -6114,7 +6087,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Cingalês",
+    "origem": "cingalês",
     "palavra": "casada",
     "significado": "casamento",
     "tradução": "kasādaya",
@@ -6123,7 +6096,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Japonês",
+    "origem": "japonês",
     "palavra": "confeito",
     "significado": "confeito",
     "tradução": "konpeitō",
@@ -6132,7 +6105,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Hindustâni",
+    "origem": "hindustâni",
     "palavra": "cruz",
     "significado": "cruz cristã, crucifixo",
     "tradução": "krūs",
@@ -6141,7 +6114,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Tailandês",
+    "origem": "tailandês",
     "palavra": "leilão",
     "significado": "barato/em saldo",
     "tradução": "lay-lăng",
@@ -6150,7 +6123,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Hindustâni",
+    "origem": "hindustâni",
     "palavra": "martelo",
     "significado": "martelo",
     "tradução": "mārtaul",
@@ -6159,7 +6132,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Guzerate",
+    "origem": "guzerate",
     "palavra": "mesa",
     "significado": "mesa",
     "tradução": "mēja",
@@ -6168,7 +6141,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Guzerate",
+    "origem": "guzerate",
     "palavra": "mestre",
     "significado": "carpinteiro",
     "tradução": "mistrī",
@@ -6177,7 +6150,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Hindustâni",
+    "origem": "hindustâni",
     "palavra": "nau",
     "significado": "barco",
     "tradução": "nāv",
@@ -6186,16 +6159,16 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Cingalês",
-    "palavra": "paga (pagamento)",
-    "significado": "suborno, propina",
+    "origem": "cingalês",
+    "palavra": "paga",
+    "significado": "pagamento, suborno, propina",
     "tradução": "pagāva",
     "significadoOriginal": "Região de uso: Sri Lanka",
     "audio": "",
     "audioOriginal": ""
    },
    {
-    "origem": "Guzerate",
+    "origem": "guzerate",
     "palavra": "pão",
     "significado": "pão",
     "tradução": "pāū̃",
@@ -6204,16 +6177,16 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Guzerate",
-    "palavra": "falto (faltante)",
-    "significado": "supérfluo, redundante",
+    "origem": "guzerate",
+    "palavra": "falto",
+    "significado": "faltante, supérfluo, redundante",
     "tradução": "phālatu",
     "significadoOriginal": "Região de uso: Guzerate (noroeste da Índia)",
     "audio": "",
     "audioOriginal": ""
    },
    {
-    "origem": "Tailandês",
+    "origem": "tailandês",
     "palavra": "real",
     "significado": "moeda, medalha",
     "tradução": "rĭan",
@@ -6222,7 +6195,7 @@ var data = [
     "audioOriginal": ""
    },
    {
-    "origem": "Cambojano",
+    "origem": "cambojano",
     "palavra": "sabão",
     "significado": "sabão",
     "tradução": "sāp′u",
