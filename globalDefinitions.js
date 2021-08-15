@@ -171,8 +171,12 @@ function mouseReleased() {
     system.allWords[system.dragId].isBeingDragged = false
 
     if(system.checkDrag() != null && btn.checkHover()){
+      
       toDefinition = true
+      btn.setColorChange(btn.text,globalColors.gray,0)
+      
       btn.nextPage(() => {
+      
         enableCanvas = false
 
         definitionPage.init( system.allWords[system.dragId].data, () => {

@@ -165,7 +165,6 @@ menuPage.prototype.toInfoPage = function(_data){
 
 menuPage.prototype.toWordsPage = function(_data){
 
-
   if(!this.enableBackBtn) return
 
   this.enableBackBtn = false

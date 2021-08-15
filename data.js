@@ -5072,7 +5072,7 @@ var data = [
     "significado": "autosserviço",
     "tradução": "self-service",
     "significadoOriginal": "autosserviço",
-    "audio": "selservice1.mp3",
+    "audio": "selfservice1.mp3",
     "audioOriginal": "selfservice0.mp3"
    },
    {

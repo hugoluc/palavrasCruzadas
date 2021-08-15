@@ -160,6 +160,7 @@ wordDefinition.prototype.init = function(_data, _callBack) {
       'ò\u0323',
       'o\u0323'
     ]
+    
     var hasLetter = false
 
     for(index in letters){

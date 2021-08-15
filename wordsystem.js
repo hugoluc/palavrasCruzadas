@@ -3,9 +3,9 @@ var selectedWord;
 
 class WordSystem {
 
-  
-
   constructor(position,_data) {
+
+    this.framecounter = 0
   
     this.firstWordsDone = false
   
@@ -44,9 +44,13 @@ class WordSystem {
 
   addWord() {
 
+    
+
     var elapsedTime = millis() - this.lastMillis
 
     if(elapsedTime > this.nextWordTime){
+
+      
 
       this.nextWordTime = getRandomInt(realWordTimes.wordTimeMax - realWordTimes.wordTimeMin) + realWordTimes.wordTimeMin
       this.lastMillis = millis()
@@ -56,6 +60,8 @@ class WordSystem {
       }
 
     }
+
+
   }
 
   getFirstWords(){
@@ -102,6 +108,7 @@ class WordSystem {
 
 
   getNewWord(){
+
     
     //Select the word from the source
     var selectedWord = this.words.pop()
@@ -116,6 +123,7 @@ class WordSystem {
     //Pass it to the Word class constructor
     this.displayWords.push(selectedWord);
     this.wordCount++
+
 
   }
 
@@ -150,6 +158,7 @@ class WordSystem {
 
   }
 
+
   run() {
 
     this.getFirstWords()
@@ -181,7 +190,6 @@ class WordSystem {
   }
 
   firstDraw(){
-    
 
     var timeInterval = 100
     var wordLimit = 20
