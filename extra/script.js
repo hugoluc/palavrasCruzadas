@@ -121,8 +121,6 @@ function saveData() {
 
   var data = 'var data = ' + JSON.stringify(allData, null, 1)
 
-  debugger
-
   fs.writeFile("../data.js", data, 'utf8', function(error){
     console.log(data)
     console.log(error)

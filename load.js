@@ -28,6 +28,7 @@ function loadAudios(){
     document.head.appendChild(res)
 
 
+  }
 }
 
 loadAudios()

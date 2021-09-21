@@ -1,3 +1,5 @@
+
+
 function menuPage(){
 
   this.yellow = [globalColors.yellow.r,globalColors.yellow.g,globalColors.yellow.b]
@@ -10,6 +12,7 @@ function menuPage(){
   this.container.style.position = "absolute"
   this.container.style.top = "0px"
   this.container.style.left = "0px"
+  console.log(">>>>>> INIT NONE");
   this.container.style.display = "none"
   this.enableBackBtn = true
   document.body.append(this.container)
@@ -32,7 +35,9 @@ function menuPage(){
   this.backBtn.style.color = "rgba(" + this.yellow[0] + "," + this.yellow[1] + "," + this.yellow[2] + "," + this.alpha + ")"
   this.backBtn.innerHTML = "Explorar mais palavras"
   this.backBtn.id = "menu_backBtn"
+  
   this.backBtn.onclick = () => {
+    console.log("TO WORDSSSS");
     this.toWordsPage()
   }
   this.container.append(this.backBtn)
@@ -106,7 +111,7 @@ menuPage.prototype.init = function(_data){
 }
 
 menuPage.prototype.animateMenus = function() {
-     // debugger
+     
     var delay = 0.04
     this.backBtn.style.opacity = 1
     this.backBtn.style.transitionDelay = "translateY(0px)"
@@ -146,13 +151,13 @@ menuPage.prototype.reset = function(){
   }
 
   setTimeout(() => {
+    if(this.enableBackBtn) return
     this.container.style.display = "none"
-  }, 1000)
+  }, 5000)
 
 }
 
 menuPage.prototype.toInfoPage = function(_data){
-
 
   this.enableBackBtn = false
   var _this = this
@@ -173,6 +178,8 @@ menuPage.prototype.toWordsPage = function(_data){
   
   realWordTimes.wordTimeMin = initialWordTimes.wordTimeMin
   realWordTimes.wordTimeMax = initialWordTimes.wordTimeMax
+
+  console.log(">>>>>>>>>>>>>>> TO WORDS PAGE");
 
   this.reset()
 

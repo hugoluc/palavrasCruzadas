@@ -4218,7 +4218,7 @@ var data = [
     "origem": "iorubá",
     "palavra": "auê",
     "significado": "alvoroço, confusão",
-    "tradução": 'ààwè\u0323',
+    "tradução": 'Àwé',
     "significadoOriginal": "confusão, tumulto",
     "audio": "aue1.mp3",
     "audioOriginal": "aue0.mp3"
@@ -4245,7 +4245,7 @@ var data = [
     "origem": "iorubá",
     "palavra": "babalorixá",
     "significado": "pai-de-santo",
-    "tradução": "babalórìshà",
+    "tradução": "bàbálórìs\u0323à",
     "significadoOriginal": "sacerdote",
     "audio": "babalorixa1.mp3",
     "audioOriginal": "babalorixa0.mp3"
@@ -4272,7 +4272,7 @@ var data = [
     "origem": "iorubá",
     "palavra": "Exu",
     "significado": "divindade que serve de intermediária entre os homens e os deuses, capaz de fazer tanto o mal quanto o bem",
-    "tradução": 'È\u0323ù',
+    "tradução": 'Ès\u0323ù',
     "significadoOriginal": "divindade que serve de intermediária entre os homens e os deuses, capaz de fazer tanto o mal quanto o bem",
     "audio": "exu1.mp3",
     "audioOriginal": "exu0.mp3"
@@ -4362,7 +4362,7 @@ var data = [
     "origem": "iorubá",
     "palavra": "Omulu",
     "significado": "orixá da varíola e das doenças da pele",
-    "tradução": 'o\u0323mo\u0323lú',
+    "tradução": 'O\u0323mo\u0323lú',
     "significadoOriginal": "orixá da varíola e das doenças da pele",
     "audio": "omulu1.mp3",
     "audioOriginal": "omulu0.mp3"
@@ -4398,7 +4398,7 @@ var data = [
     "origem": "iorubá",
     "palavra": "Oxóssi",
     "significado": "orixá da caça e das matas",
-    "tradução": 'Òs\u0323ó\u0323wùsì',
+    "tradução": 'Ò\u0323s\u0323o\u0323sí',
     "significadoOriginal": "orixá da caça e das matas",
     "audio": "oxossi1.mp3",
     "audioOriginal": "oxossi0.mp3"
@@ -4559,8 +4559,8 @@ var data = [
     "significado": "objetos de adorno pessoal que imitam joias",
     "tradução": "bijouterie",
     "significadoOriginal": "fabricação e comércio de joias",
-    "audio": "bijuteria0.mp3",
-    "audioOriginal": "bijuteria1.mp3"
+    "audio": "bijuteria1.mp3",
+    "audioOriginal": "bijuteria0.mp3"
    },
    {
     "origem": "francês",
@@ -5072,7 +5072,7 @@ var data = [
     "significado": "autosserviço",
     "tradução": "self-service",
     "significadoOriginal": "autosserviço",
-    "audio": "selfservice1.mp3",
+    "audio": "selservice1.mp3",
     "audioOriginal": "selfservice0.mp3"
    },
    {

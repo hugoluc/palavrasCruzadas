@@ -75,6 +75,7 @@ function aditionalInfoPage(){
 
 aditionalInfoPage.prototype.init = function(_data,_callBack){
 
+  this.loaded = false
   this.callBack = _callBack
   this.data = _data
   this.container.style.display = "flex"
@@ -89,12 +90,13 @@ aditionalInfoPage.prototype.init = function(_data,_callBack){
 
     this.images.style.opacity = 1
     this.images.style.transform = "translateX(0px)"
-    // this.images.style.backgroundImage = "url(imagens/" + _data.imagens[0] + ")"
 
     this.backBtn.style.opacity = 1
     this.backBtnContainer.style.opacity = 1
-    // debugger
+    
     this.addslide(this.data.imagens)
+
+    this.loaded = true
 
   },100)
   currentPage = this
