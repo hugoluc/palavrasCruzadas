@@ -12,7 +12,6 @@ function menuPage(){
   this.container.style.position = "absolute"
   this.container.style.top = "0px"
   this.container.style.left = "0px"
-  console.log(">>>>>> INIT NONE");
   this.container.style.display = "none"
   this.enableBackBtn = true
   document.body.append(this.container)
@@ -37,7 +36,6 @@ function menuPage(){
   this.backBtn.id = "menu_backBtn"
   
   this.backBtn.onclick = () => {
-    console.log("TO WORDSSSS");
     this.toWordsPage()
   }
   this.container.append(this.backBtn)
@@ -142,7 +140,6 @@ menuPage.prototype.reset = function(){
   this.backBtn.style.transitionDelay = "translateY(-10px)"
 
   for(var i = 0; i < selectedData.menu.length; i++){
-    // this.menuItems[i].container.style.display = "none"
     this.menuItems[i].container.style.transitionDuration = animationTime + "s , 1.5s "
     this.menuItems[i].container.style.transitionTimingFunction = "ease, ease"
     this.menuItems[i].container.style.opacity = 0
@@ -158,6 +155,8 @@ menuPage.prototype.reset = function(){
 }
 
 menuPage.prototype.toInfoPage = function(_data){
+
+  if(!this.enableBackBtn) return
 
   this.enableBackBtn = false
   var _this = this
@@ -179,8 +178,6 @@ menuPage.prototype.toWordsPage = function(_data){
   realWordTimes.wordTimeMin = initialWordTimes.wordTimeMin
   realWordTimes.wordTimeMax = initialWordTimes.wordTimeMax
 
-  console.log(">>>>>>>>>>>>>>> TO WORDS PAGE");
-
   this.reset()
 
   setTimeout(() => {
@@ -188,6 +185,6 @@ menuPage.prototype.toWordsPage = function(_data){
     btn.setColorChange(btn.fill,globalColors.yellow)
     btn.setReturn()
     doFirstDraw = true
-  },400)
+  },600)
 
-}
+} 
