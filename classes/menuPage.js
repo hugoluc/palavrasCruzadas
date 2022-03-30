@@ -98,6 +98,7 @@ function menuPage(){
 
 menuPage.prototype.init = function(_data){
   
+  console.log("-------------------menu init----------------");
   this.enableBackBtn = true;
   this.container.style.display = "block"
   this.data = _data
@@ -156,12 +157,21 @@ menuPage.prototype.reset = function(){
 
 menuPage.prototype.toInfoPage = function(_data){
 
+  console.log("---->to info Page");
+
   if(!this.enableBackBtn) return
+  if(animating) return
 
   this.enableBackBtn = false
+  animating = true
+
+  console.log("SETTIMNEOUT!");
+
+
   var _this = this
   this.reset()
   setTimeout( () => {
+    animating = false
     this.infoPage.init(this.data[_data], () => { _this.init(_this.data) })
   },200)
 

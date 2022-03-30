@@ -6,9 +6,9 @@ var toDefinition = false
 var selectedData;
 var appStart = false
 var doFirstDraw = true
+var animating = false
 
 //-------------CONTROLES--------------------
-
 
 
 CONTROLS = {
@@ -80,7 +80,7 @@ var style = [
     "hoverdBtn" : globalColors.gray,
 
     "particle" : globalColors.white,
-    "selectedParticle" : globalColors.yellow
+    "selectedParticle" : globalColors.yellow,
 
   },
   "description" : {
@@ -224,7 +224,7 @@ function startApp() {
   toDefinition = false
   
   createCanvas(canvasSize.width, canvasSize.height);
-  frameRate(60);
+  frameRate(50);
   
   
   btn = new inspectionBtn()
@@ -298,7 +298,7 @@ Element.prototype.insertChildAtIndex = function(child, index) {
 
 //TIMEOUT
 var currentPage;
-timeOut = setTimeout( toWordsPage, 3000)
+timeOut = setTimeout( resetAll, 3000)
 
 document.addEventListener("touchstart", ()=>{
   resetTimer()
@@ -306,10 +306,10 @@ document.addEventListener("touchstart", ()=>{
 
 function resetTimer() {
   clearTimeout(timeOut);
-  timeOut = setTimeout( toWordsPage, 180000)
+  timeOut = setTimeout( resetAll, 180000)
 }
 
-function toWordsPage(){
+function resetAll(){
   if(currentPage){
     currentPage.toWordsPage()
   }

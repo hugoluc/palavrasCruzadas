@@ -74,7 +74,7 @@ function aditionalInfoPage(){
 }
 
 aditionalInfoPage.prototype.init = function(_data,_callBack){
-
+  console.log("-------------------infoPage init----------------");
   this.loaded = false
   this.callBack = _callBack
   this.data = _data
@@ -100,6 +100,7 @@ aditionalInfoPage.prototype.init = function(_data,_callBack){
 
   },100)
   currentPage = this
+  this.enableBack = true
 }
 
 aditionalInfoPage.prototype.reset = function(){
@@ -124,10 +125,19 @@ aditionalInfoPage.prototype.reset = function(){
 }
 
 aditionalInfoPage.prototype.back = function(){
+  
+  if(!this.enableBack) return
+  if(animating) return
+
+  console.log("------>Back");
+  this.enableBack = false
+  animating = true
   var _this = this
   _this.callBack(menu.data)
 
   setTimeout(() => {
+    animating = false
+    _this.enableBack = true
     _this.container.style.display = "none"
   },500)
 
@@ -245,7 +255,7 @@ aditionalInfoPage.prototype.changeImage = function(){
 
 }
 
-aditionalInfoPage.prototype.toWordsPage = function(){
+aditionalInfoPage.prototype.resetAll = function(){
 
   this.back()
   menu.toWordsPage()

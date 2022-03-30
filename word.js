@@ -77,7 +77,7 @@ class Word {
   toHover(){
 
     if(this.a > 0 & this.hover){
-      this.a =- 10
+      this.a = 10
     }
 
   }
