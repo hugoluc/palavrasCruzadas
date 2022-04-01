@@ -240,20 +240,29 @@ wordDefinition.prototype.changeToTrans = function(_data) {
   },100)
 
 
-    this.forwardBtn.onclick = () => {
-      this.nextPage( () => { this.finish(_data) } )
-    }
+  this.forwardBtn.onclick = () => {
+    this.nextPage( () => { this.toMenuPage(_data) } )
+  }
 
 }
 
-wordDefinition.prototype.finish = function(_data) {
+wordDefinition.prototype.toMenuPage = function(_data) {
+
+  if(animating) return
+
+  console.log("TO MENU");
+
+  animating = true
 
   this.secondTitle.style.opacity = 0
   this.line.style.opacity = 0
   this.transContainer.style.opacity = 0
   this.audio.style.opacity = 0
   this.callBack()
-  setTimeout( () => { this.reset() } , 2000 )
+  setTimeout( () => { 
+    animating = false
+    this.reset() 
+  } , 2000 )
 
 }
 

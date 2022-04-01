@@ -74,7 +74,7 @@ function aditionalInfoPage(){
 }
 
 aditionalInfoPage.prototype.init = function(_data,_callBack){
-  console.log("-------------------infoPage init----------------");
+  
   this.loaded = false
   this.callBack = _callBack
   this.data = _data
@@ -129,7 +129,6 @@ aditionalInfoPage.prototype.back = function(){
   if(!this.enableBack) return
   if(animating) return
 
-  console.log("------>Back");
   this.enableBack = false
   animating = true
   var _this = this

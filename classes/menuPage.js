@@ -1,5 +1,3 @@
-
-
 function menuPage(){
 
   this.yellow = [globalColors.yellow.r,globalColors.yellow.g,globalColors.yellow.b]
@@ -32,8 +30,11 @@ function menuPage(){
   this.backBtn.style.border = btnSize.height * 0.06 + "px solid";
   this.backBtn.style.fontSize = btnSize.height * 0.35 + "px"
   this.backBtn.style.color = "rgba(" + this.yellow[0] + "," + this.yellow[1] + "," + this.yellow[2] + "," + this.alpha + ")"
+  this.backBtn.style.transition = "opacity 1s"
+  this.backBtn.style.opacity = 0
   this.backBtn.innerHTML = "Explorar mais palavras"
   this.backBtn.id = "menu_backBtn"
+  
   
   this.backBtn.onclick = () => {
     this.toWordsPage()
@@ -98,14 +99,22 @@ function menuPage(){
 
 menuPage.prototype.init = function(_data){
   
-  console.log("-------------------menu init----------------");
   this.enableBackBtn = true;
   this.container.style.display = "block"
   this.data = _data
+
+  var animationSetupTime = 100
+  animating = true
   setTimeout( ()=> {
+    console.log("INITIATE MENU ANIMATION");
     this.animateMenus()
-  }, 100)
+  }, animationSetupTime)
   currentPage = this
+
+  setTimeout( ()=> { 
+    console.log("ALLOW ANIMATION");
+    animating = false 
+  }, 600 )
 
 }
 
@@ -114,6 +123,7 @@ menuPage.prototype.animateMenus = function() {
     var delay = 0.04
     this.backBtn.style.opacity = 1
     this.backBtn.style.transitionDelay = "translateY(0px)"
+    this.backBtn.style.opacity = 1
 
     for(var i = 0; i < this.data.length; i++){
       this.menuItems[i].container.style.display = "flex"
@@ -156,17 +166,13 @@ menuPage.prototype.reset = function(){
 }
 
 menuPage.prototype.toInfoPage = function(_data){
-
-  console.log("---->to info Page");
+  
 
   if(!this.enableBackBtn) return
   if(animating) return
 
   this.enableBackBtn = false
   animating = true
-
-  console.log("SETTIMNEOUT!");
-
 
   var _this = this
   this.reset()
@@ -179,8 +185,13 @@ menuPage.prototype.toInfoPage = function(_data){
 
 menuPage.prototype.toWordsPage = function(_data){
 
-  if(!this.enableBackBtn) return
 
+  if(!this.enableBackBtn) return
+  if(animating) return
+
+  console.log("---------------TO WORDS------------");
+
+  animating = true
   this.enableBackBtn = false
   enableCanvas = true
   toDefinition = false
@@ -190,7 +201,9 @@ menuPage.prototype.toWordsPage = function(_data){
 
   this.reset()
 
-  setTimeout(() => {
+  setTimeout(() =>
+   {
+    animating = false
     definitionPage.reset()
     btn.setColorChange(btn.fill,globalColors.yellow)
     btn.setReturn()
