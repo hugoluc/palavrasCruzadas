@@ -106,13 +106,11 @@ menuPage.prototype.init = function(_data){
   var animationSetupTime = 100
   animating = true
   setTimeout( ()=> {
-    console.log("INITIATE MENU ANIMATION");
     this.animateMenus()
   }, animationSetupTime)
   currentPage = this
 
   setTimeout( ()=> { 
-    console.log("ALLOW ANIMATION");
     animating = false 
   }, 600 )
 
@@ -188,8 +186,6 @@ menuPage.prototype.toWordsPage = function(_data){
 
   if(!this.enableBackBtn) return
   if(animating) return
-
-  console.log("---------------TO WORDS------------");
 
   animating = true
   this.enableBackBtn = false

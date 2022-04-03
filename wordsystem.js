@@ -127,7 +127,6 @@ class WordSystem {
 
   }
 
-
   clearDrag(){
 
     this.dragId = null;
@@ -157,7 +156,6 @@ class WordSystem {
     }
 
   }
-
 
   run() {
 

@@ -29,7 +29,6 @@ function getWords() {
 
 
   var csvFilePath = __dirname + '/palavras/' + index + '.csv'
-  console.log(">>>>>>>> getting words at index: " + csvFilePath);
   
   //readFile---------------------------------------------------------
   csv().fromFile(csvFilePath).then((jsonObj) => {
@@ -107,8 +106,6 @@ function getMenus() {
 
 
 function saveData() {
-
-  console.log("SAVING....");
 
   if(!menuDone || !wordsDone ){
   

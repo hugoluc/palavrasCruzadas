@@ -138,7 +138,7 @@ var btn, definitionPage, menu, system, sounds;
 //globalFunctions
 function mousePressed() {
 
-  if(enableCanvas){
+  if(enableCanvas && !btn.transtitionNextPage){
     if(system.checkWordsClick()){
       btn.wordSelected()
       system.allWords[system.dragId].setPastSpeed()
@@ -166,12 +166,14 @@ function mouseDragged() {
 
 function mouseReleased() {
 
-  if(enableCanvas && system.dragId){
+
+  if(enableCanvas && system.dragId && !btn.transtitionNextPage){
 
     system.allWords[system.dragId].isBeingDragged = false
 
     if(system.checkDrag() != null && btn.checkHover()){
       
+
       toDefinition = true
       btn.setColorChange(btn.text,globalColors.gray,0)
       
@@ -190,7 +192,8 @@ function mouseReleased() {
         })
 
       })
-    }else{
+    }else if(!btn.transtitionNextPage){
+
       var id = system.dragId
       btn.wordReleased()
       system.clearDrag();

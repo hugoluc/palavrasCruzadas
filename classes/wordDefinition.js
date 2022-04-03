@@ -250,8 +250,6 @@ wordDefinition.prototype.toMenuPage = function(_data) {
 
   if(animating) return
 
-  console.log("TO MENU");
-
   animating = true
 
   this.secondTitle.style.opacity = 0

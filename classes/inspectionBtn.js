@@ -150,7 +150,7 @@ inspectionBtn.prototype.nextPage = function(_callBack,_data){
 
   this.callBack = _callBack
   this.transtitionNextPage = true
-  // this.transitionToColor = false
+  
 
 }
 
@@ -202,6 +202,7 @@ inspectionBtn.prototype.dislayNextPage = function(){
 
   //stop transition when finished and call callback function to change to next page
   if(!this.transitionToColor,this.transitionsDone.text && this.transitionsDone.x && this.transitionsDone.y && this.transitionsDone.height && this.transitionsDone.width){
+    
     this.transtitionNextPage = false
     this.callBack()
   }
