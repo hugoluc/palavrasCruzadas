@@ -150,7 +150,7 @@ function mousePressed() {
 
 function mouseDragged() {
 
-  if(enableCanvas && system.dragId != null){
+  if(enableCanvas && system.dragId != null &&  !btn.transtitionNextPage){
 
       system.allWords[system.dragId].setHover(false)
 
